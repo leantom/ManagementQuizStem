@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ADMIN_ALLOWED_EMAILS</key>
+	<string></string>
 	<key>FIREBASE_ENV</key>
 	<string>$(FIREBASE_ENV)</string>
 	<key>NSAppTransportSecurity</key>

@@ -10,7 +10,13 @@ This is a code-level audit of the Firestore usage in the current macOS admin app
 - `ManagementQuizStem/Topics/ChallengesViewModel.swift`
 - `ManagementQuizStem/Topics/Badge/BadgesViewModel.swift`
 
-The app uses the default Firebase app from `GoogleService-Info.plist` via `FirebaseApp.configure()` and does not implement environment switching in code. The bundled Firebase project is `brainbolt-281c7`. Anonymous auth is enabled at app startup.
+The app configures Firebase through `FirebaseConfigurator.configure()` and selects `FIREBASE_ENV` from the Xcode build configuration. `Debug` maps to `dev`, `Beta` maps to `beta`, and `Release` maps to `prod`. Firestore clients are created through `AppFirestore.database()`, which maps:
+
+- `dev` -> database `(default)`
+- `beta` -> database `beta-stem-db`
+- `prod` -> database `prod-stem-db`
+
+Only `GoogleService-Info.plist` is currently present in the repo, so all environments fall back to that Firebase project unless environment-specific plists are supplied elsewhere at build time. The bundled plist points to project `brainbolt-281c7`. Anonymous auth is enabled at app startup.
 
 ## Reachable Admin Flows
 

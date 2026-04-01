@@ -5,15 +5,6 @@
 //  Created by QuangHo on 20/11/24.
 //
 
-
-//
-//  ChallengesViewModel.swift
-//  QuizStem
-//
-//  Created by QuangHo on 20/11/24.
-//
-
-
 import SwiftUI
 import FirebaseFirestore
 import Foundation
@@ -55,31 +46,18 @@ struct Challenge: Identifiable, Codable {
     var updatedAt: Date
 }
 
-
 struct Reward: Codable {
     var type: String     // e.g., "points", "badge"
     var value: Int       // Number of points or identifier for badge
     var description: String?
 }
 
-
 class ChallengesViewModel: ObservableObject {
     @Published var currentChallenges: [Challenge] = []
     @Published var errorMessage: String?
     @Published var successMessage: String?
 
-    
-    @State private var title: String = ""
-    @State private var description: String = ""
-    @State private var type: String = "daily"
-    @State private var startDate: Date = Date()
-    @State private var endDate: Date = Date()
-    @State private var rewards: String = ""
-    
-    @State  var selectedTopics: [Topic] = []
-    @State  var selectedQuestions: [Question] = []
-    
-    private var db = Firestore.firestore()
+    private let repository = ChallengesRepository()
     private var listenerRegistration: ListenerRegistration?
 
     deinit {
@@ -87,38 +65,32 @@ class ChallengesViewModel: ObservableObject {
     }
 
     func fetchCurrentChallenges() {
-        let now = Date()
-        listenerRegistration = db.collection("challenges")
-            .whereField("startDate", isLessThanOrEqualTo: now)
-            .whereField("endDate", isGreaterThanOrEqualTo: now)
-            .order(by: "startDate")
-            .addSnapshotListener { [weak self] snapshot, error in
-                guard let self = self else { return }
-                if let error = error {
-                    self.errorMessage = "Failed to fetch challenges: \(error.localizedDescription)"
-                } else {
-                    self.currentChallenges = snapshot?.documents.compactMap { doc in
-                        try? doc.data(as: Challenge.self)
-                    } ?? []
-                }
+        listenerRegistration = repository.listenForCurrentChallenges { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let challenges):
+                self.currentChallenges = challenges
+            case .failure(let error):
+                self.errorMessage = "Failed to fetch challenges: \(error.localizedDescription)"
             }
+        }
     }
     
     func fetchChallenges(ofType type: String) {
-        let now = Date()
-        listenerRegistration = db.collection("challenges")
-            .whereField("type", isEqualTo: type)
-            .whereField("startDate", isLessThanOrEqualTo: now)
-            .whereField("endDate", isGreaterThanOrEqualTo: now)
-            .order(by: "startDate")
-            .addSnapshotListener { [weak self] snapshot, error in
-                // Handle data as above
+        listenerRegistration = repository.listenForChallenges(ofType: type) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let challenges):
+                self.currentChallenges = challenges
+            case .failure(let error):
+                self.errorMessage = "Failed to fetch challenges: \(error.localizedDescription)"
             }
+        }
     }
     
     func createChallenge(_ challenge: Challenge) {
         do {
-            let _ = try db.collection("challenges").addDocument(from: challenge) { [weak self] error in
+            try repository.create(challenge) { [weak self] error in
                 if let error = error {
                     self?.errorMessage = "Failed to create challenge: \(error.localizedDescription)"
                 } else {
@@ -129,5 +101,4 @@ class ChallengesViewModel: ObservableObject {
             self.errorMessage = "Failed to encode challenge: \(error.localizedDescription)"
         }
     }
-    
 }

@@ -32,34 +32,28 @@ class TopicsViewModel: ObservableObject {
     @Published var errorMessage: String?
     @Published var successMessage: String?
     
-    private let db = Firestore.firestore()
+    private let repository = TopicsRepository()
     private let storage = Storage.storage()
     @Published var topics: [Topic] = [] // Store all topics for the Picker
     
     func fetchAllTopics() {
-        db.collection("Topics")
-            .order(by: "category")
-            .getDocuments { snapshot, error in
-                if let error = error {
-                    self.errorMessage = "Failed to fetch topics: \(error.localizedDescription)"
-                } else {
-                    self.topics = snapshot?.documents.compactMap { doc -> Topic? in
-                        try? doc.data(as: Topic.self)
-                    } ?? []
+        repository.fetchAll { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let topics):
+                    self.topics = topics
                     print(self.topics.count)
+                case .failure(let error):
+                    self.errorMessage = "Failed to fetch topics: \(error.localizedDescription)"
                 }
             }
+        }
     }
     
     func fetchAllTopicsASync() async {
         AppState.shared.topics.removeAll()
         do {
-            let snapshot = try await db.collection("Topics")
-                .order(by: "category")
-                .getDocuments()
-            let topics = snapshot.documents.compactMap { doc -> Topic? in
-                try? doc.data(as: Topic.self)
-            }
+            let topics = try await repository.fetchAll()
             DispatchQueue.main.async {
                 self.topics = topics
             }
@@ -91,7 +85,7 @@ class TopicsViewModel: ObservableObject {
     }
     
     func removeTopic(by id: String) {
-        db.collection("Topics").document(id).delete { error in
+        repository.delete(topicID: id) { error in
             if let error = error {
                 self.errorMessage = "Failed to delete topic: \(error.localizedDescription)"
             } else {
@@ -105,10 +99,10 @@ class TopicsViewModel: ObservableObject {
     
     //MARK: Function to upload a new topic to Firestore
     func uploadTopic(topicData: [String: Any]) {
-        guard let name = topicData["name"],
-              let category = topicData["category"] as? String,
-              let description = topicData["description"],
-              let trending = topicData["trending"] else {
+        guard let name = topicData[FirestoreField.Topic.name],
+              let category = topicData[FirestoreField.Topic.category] as? String,
+              let description = topicData[FirestoreField.Topic.description],
+              let trending = topicData[FirestoreField.Topic.trending] else {
             self.errorMessage = "Invalid topic data in CSV file."
             return
         }
@@ -121,14 +115,14 @@ class TopicsViewModel: ObservableObject {
         
         let topicID = UUID().uuidString
         let topic = [
-            "id": topicID,
-            "name": name,
-            "category": category,
-            "description": description,
-            "trending": trending,
+            FirestoreField.Topic.id: topicID,
+            FirestoreField.Topic.name: name,
+            FirestoreField.Topic.category: category,
+            FirestoreField.Topic.description: description,
+            FirestoreField.Topic.trending: trending,
         ]
         
-        db.collection("Topics").document(topicID).setData(topic) { error in
+        repository.create(topicID: topicID, data: topic) { error in
             if let error = error {
                 self.errorMessage = "Failed to upload topic: \(error.localizedDescription)"
             } else {
@@ -142,22 +136,22 @@ class TopicsViewModel: ObservableObject {
         var updateData: [String: Any] = [:]
 
         if !topic.name.isEmpty {
-            updateData["name"] = topic.name
+            updateData[FirestoreField.Topic.name] = topic.name
         }
         if !topic.category.isEmpty {
-            updateData["category"] = topic.category
+            updateData[FirestoreField.Topic.category] = topic.category
         }
         if let description = topic.description, !description.isEmpty {
-            updateData["description"] = description
+            updateData[FirestoreField.Topic.description] = description
         }
         if let iconURL = topic.iconURL, !iconURL.isEmpty {
-            updateData["iconURL"] = iconURL
+            updateData[FirestoreField.Topic.iconURL] = iconURL
         }
         if let trending = topic.trending {
-            updateData["trending"] = trending
+            updateData[FirestoreField.Topic.trending] = trending
         }
         if let educationLevel = topic.educationLevel, !educationLevel.isEmpty {
-            updateData["educationLevel"] = educationLevel
+            updateData[FirestoreField.Topic.educationLevel] = educationLevel
         }
 
         guard !updateData.isEmpty else {
@@ -165,7 +159,7 @@ class TopicsViewModel: ObservableObject {
             return
         }
 
-        db.collection("Topics").document(topic.id).updateData(updateData) { error in
+        repository.update(topicID: topic.id, data: updateData) { error in
             if let error = error {
                 self.errorMessage = "Failed to update topic: \(error.localizedDescription)"
                 self.successMessage = nil
@@ -249,10 +243,10 @@ class TopicsViewModel: ObservableObject {
                 // Validate the number of columns
                 if columns.count == 4 {
                     let topicData: [String: Any] = [
-                        "category": columns[1].trimmingCharacters(in: .whitespaces), // Category
-                        "name": columns[0].trimmingCharacters(in: .whitespaces), // Name
-                        "description": columns[2].trimmingCharacters(in: .whitespaces), // Description
-                        "trending": Int(columns[3].trimmingCharacters(in: .whitespaces)) ?? 0 // Trending as Int
+                        FirestoreField.Topic.category: columns[1].trimmingCharacters(in: .whitespaces), // Category
+                        FirestoreField.Topic.name: columns[0].trimmingCharacters(in: .whitespaces), // Name
+                        FirestoreField.Topic.description: columns[2].trimmingCharacters(in: .whitespaces), // Description
+                        FirestoreField.Topic.trending: Int(columns[3].trimmingCharacters(in: .whitespaces)) ?? 0 // Trending as Int
                     ]
                     uploadTopic(topicData: topicData)
                 } else {
@@ -287,9 +281,10 @@ class TopicsViewModel: ObservableObject {
         updatedTopic.educationLevel = newEducationLevel
         
         // Update the Firestore document
-        db.collection("Topics").document(topic.id).updateData([
-            "educationLevel": newEducationLevel
-        ]) { error in
+        repository.updateEducationLevel(
+            topicID: topic.id,
+            educationLevel: newEducationLevel
+        ) { error in
             if let error = error {
                 self.errorMessage = "Failed to update education level: \(error.localizedDescription)"
             } else {

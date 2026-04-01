@@ -1,13 +1,7 @@
-//
-//  ContentView.swift
-//  ManagementQuizStem
-//
-//  Created by QuangHo on 14/11/24.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct AdminShellView: View {
+    @EnvironmentObject private var authSession: AuthSessionController
     @State private var selectedSection: SidebarSection? = .uploadFromCSV
     
     var body: some View {
@@ -62,12 +56,23 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
+        .toolbar {
+            ToolbarItemGroup {
+                Text(authSession.currentUserEmail ?? "Admin")
+                    .foregroundColor(.secondary)
+
+                Button("Sign Out") {
+                    authSession.signOut()
+                }
+            }
+        }
         .frame(minWidth: 800, minHeight: 600)
     }
 }
 
 #Preview {
-    ContentView()
+    AdminShellView()
+        .environmentObject(AuthSessionController())
 }
 
 // Define Sidebar Sections

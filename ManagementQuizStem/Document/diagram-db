@@ -1,0 +1,92 @@
+
+graph TD
+  subgraph Firestore
+    S["Subjects/{subjectId}
+- name
+- short_name
+- description
+- trending
+- icon_url
+- topicIds[]"]
+
+    T["Topics/{topicId}
+- id
+- name
+- category
+- description
+- iconURL
+- educationLevel
+- trending"]
+
+    Q["Questions/{questionId}
+- difficulty
+- questionText
+- options[]
+- correctAnswer
+- topicID
+- explanation
+- imported root path
+- questionId is typically sha256(questionText)"]
+
+    C["challenges/{challengeId}
+- type
+- title
+- description
+- startDate
+- remainTime
+- endDate
+- difficultyLevel
+- questions[]
+- rewards[]
+- isActive
+- createdAt
+- updatedAt"]
+
+    B["badges/{badgeId}
+- title
+- description
+- icon
+- criteria
+- createdAt
+- updatedAt"]
+
+    LQ["Topics/{topicId}/Questions
+- legacy subcollection path
+- still exists in code
+- not main read path"]
+  end
+
+  subgraph Embedded_Documents
+    BC["BadgeCriteria
+- action
+- topic
+- accuracy
+- question
+- timeLimit
+- streak"]
+
+    TW["TimeWindow
+- startTime
+- endTime"]
+
+    RW["Reward
+- type
+- value
+- description"]
+  end
+
+  subgraph Cloud_Storage
+    GS["Storage
+/icons/{id}.jpg"]
+  end
+
+  S -->|"topicIds[] declared relation"| T
+  T -.->|"UI also matches Topic.name == Subject.name"| S
+  T -->|"Questions.topicID"| Q
+  C -->|"questions[] stores questionIds"| Q
+  C -->|"rewards[]"| RW
+  B -->|"criteria"| BC
+  BC -->|"timeWindow"| TW
+  S -->|"icon_url"| GS
+  T -->|"iconURL"| GS
+  T -->|"legacy write path"| LQ

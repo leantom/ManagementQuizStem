@@ -39,25 +39,26 @@ class QuestionsViewModel: ObservableObject {
     @Published var topics: [Topic] = [] // Store all topics for the Picker
     @Published var listQuestions: [QuestionImport] = []
     @Published var questions: [Question] = []
-    private let db = Firestore.firestore()
+    private let topicsRepository = TopicsRepository()
+    private let questionsRepository = QuestionsRepository()
     @Published var questionIDsImport:[String] = []
+    
     func fetchAllTopics() {
-        db.collection("Topics")
-            .order(by: "category")
-            .getDocuments { snapshot, error in
-                if let error = error {
+        topicsRepository.fetchAll { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let topics):
+                    self.topics = topics
+                case .failure(let error):
                     self.errorMessage = "Failed to fetch topics: \(error.localizedDescription)"
-                } else {
-                    self.topics = snapshot?.documents.compactMap { doc -> Topic? in
-                        try? doc.data(as: Topic.self)
-                    } ?? []
                 }
             }
+        }
     }
     
     // Function to upload a question to Firestore under a specific topic
     func uploadQuestion(topicID: String, questionData: [String: Any]) {
-        db.collection("Topics").document(topicID).collection("Questions").addDocument(data: questionData) { error in
+        questionsRepository.uploadQuestionToTopicSubcollection(topicID: topicID, data: questionData) { error in
             if let error = error {
                 self.errorMessage = "Failed to upload question: \(error.localizedDescription)"
             } else {
@@ -65,6 +66,7 @@ class QuestionsViewModel: ObservableObject {
             }
         }
     }
+    
     func filterTopics(by name: String) -> Topic? {
         topics.first { topic in
             return topic.category == name
@@ -85,14 +87,7 @@ class QuestionsViewModel: ObservableObject {
     
     func fetchQuestionsByTopic(topicID: String) async -> [Question] {
         do {
-            let snapshot = try await db.collection("Questions")
-                .whereField("topicID", isEqualTo: topicID)
-                .getDocuments()
-            
-            let questions = snapshot.documents.compactMap { doc -> Question? in
-                try? doc.data(as: Question.self)
-            }
-            return questions
+            return try await questionsRepository.fetchQuestions(topicID: topicID)
         } catch {
             DispatchQueue.main.async {
                 self.errorMessage = "Failed to fetch questions: \(error.localizedDescription)"
@@ -103,16 +98,7 @@ class QuestionsViewModel: ObservableObject {
     
     func deleteQuestionsByTopic(topicID: String) async {
         do {
-            let snapshot = try await db.collection("Questions")
-                .whereField("topicID", isEqualTo: topicID)
-                .getDocuments()
-            
-            let batch = db.batch()
-            snapshot.documents.forEach { document in
-                batch.deleteDocument(document.reference)
-            }
-            
-            try await batch.commit()
+            try await questionsRepository.deleteQuestions(topicID: topicID)
             
             DispatchQueue.main.async {
                 self.successMessage = "Questions deleted successfully!"
@@ -133,16 +119,11 @@ class QuestionsViewModel: ObservableObject {
         }
         do {
             // Query Firestore for questions with the specified criteria
-            let snapshot = try await db.collection("Questions")
-                .whereField("difficulty", isEqualTo: level)
-                .whereField("topicID", in: topics)
-                .limit(to: 15)
-                .getDocuments()
-            
-            // Map Firestore documents to the `Question` model
-            let _questions = try snapshot.documents.compactMap { doc in
-                try doc.data(as: Question.self)
-            }
+            let _questions = try await questionsRepository.fetchQuestions(
+                level: level,
+                topicIDs: topics,
+                limit: 15
+            )
             DispatchQueue.main.async {
                 self.questions = _questions.shuffled()
             }
@@ -226,8 +207,7 @@ class QuestionsViewModel: ObservableObject {
         }
         
         // Step 4: Prepare batch upload for new questions
-        let batch = self.db.batch()
-        var encounteredError: Error?
+        let batch = questionsRepository.makeBatch()
         
         for question in newQuestions {
             guard let topicName = question.topic else {
@@ -244,20 +224,24 @@ class QuestionsViewModel: ObservableObject {
                 .compactMap { String(format: "%02x", $0) }
                 .joined()
             
-            let questionRef = self.db.collection("Questions").document(questionID)
-            batch.setData([
-                "topicID": topic.id,
-                "difficulty": question.difficulty,
-                "questionText": question.questionText,
-                "options": question.options,
-                "correctAnswer": question.correctAnswer,
-                "explanation": question.explanation ?? ""
-            ], forDocument: questionRef, merge: false) // Use merge: false to avoid overwriting
+            questionsRepository.addImportedQuestion(
+                to: batch,
+                topicID: topic.id,
+                questionID: questionID,
+                data: [
+                    FirestoreField.Question.topicID: topic.id,
+                    FirestoreField.Question.difficulty: question.difficulty,
+                    FirestoreField.Question.questionText: question.questionText,
+                    FirestoreField.Question.options: question.options,
+                    FirestoreField.Question.correctAnswer: question.correctAnswer,
+                    FirestoreField.Question.explanation: question.explanation ?? ""
+                ]
+            )
             self.questionIDsImport.append(questionID)
         }
         
         // Step 5: Commit the batch
-        batch.commit { error in
+        questionsRepository.commit(batch) { error in
             DispatchQueue.main.async {
                 if let error = error {
                     self.errorMessage = "Failed to upload questions: \(error.localizedDescription)"
@@ -300,8 +284,7 @@ class QuestionsViewModel: ObservableObject {
             }
             
             // Step 4: Prepare batch upload for new questions
-            let batch = self.db.batch()
-            var encounteredError: Error?
+            let batch = self.questionsRepository.makeBatch()
             
             for question in newQuestions {
                 guard let topicCategory = question.topic else {
@@ -318,20 +301,24 @@ class QuestionsViewModel: ObservableObject {
                     .compactMap { String(format: "%02x", $0) }
                     .joined()
                 
-                let questionRef = self.db.collection("Questions").document(questionID)
-                batch.setData([
-                    "topicID": topic.id,
-                    "difficulty": question.difficulty,
-                    "questionText": question.questionText,
-                    "options": question.options,
-                    "correctAnswer": question.correctAnswer,
-                    "explanation": question.explanation ?? ""
-                ], forDocument: questionRef, merge: false) // Use merge: false to avoid overwriting
+                self.questionsRepository.addImportedQuestion(
+                    to: batch,
+                    topicID: topic.id,
+                    questionID: questionID,
+                    data: [
+                        FirestoreField.Question.topicID: topic.id,
+                        FirestoreField.Question.difficulty: question.difficulty,
+                        FirestoreField.Question.questionText: question.questionText,
+                        FirestoreField.Question.options: question.options,
+                        FirestoreField.Question.correctAnswer: question.correctAnswer,
+                        FirestoreField.Question.explanation: question.explanation ?? ""
+                    ]
+                )
                 self.questionIDsImport.append(questionID)
             }
             
             // Step 5: Commit the batch
-            batch.commit { error in
+            self.questionsRepository.commit(batch) { error in
                 DispatchQueue.main.async {
                     if let error = error {
                         self.errorMessage = "Failed to upload questions: \(error.localizedDescription)"
@@ -349,86 +336,43 @@ class QuestionsViewModel: ObservableObject {
     ///   - questionIDs: Array of question IDs to check.
     ///   - completion: Closure returning a set of existing question IDs.
     private func fetchExistingQuestionIDs(questionIDs: [String], completion: @escaping (Set<String>) -> Void) {
-        var existingIDs = Set<String>()
-        let batchSize = 10
-        let batches = stride(from: 0, to: questionIDs.count, by: batchSize).map {
-            Array(questionIDs[$0..<min($0 + batchSize, questionIDs.count)])
-        }
-        
-        let dispatchGroup = DispatchGroup()
-        
-        for batch in batches {
-            dispatchGroup.enter()
-            db.collection("Questions")
-                .whereField(FieldPath.documentID(), in: batch)
-                .getDocuments { snapshot, error in
-                    if let error = error {
-                        DispatchQueue.main.async {
-                            self.errorMessage = "Error checking duplicates: \(error.localizedDescription)"
-                        }
-                        dispatchGroup.leave()
-                        return
-                    }
-                    
-                    if let snapshot = snapshot {
-                        for doc in snapshot.documents {
-                            existingIDs.insert(doc.documentID)
-                        }
-                    }
-                    dispatchGroup.leave()
-                }
-        }
-        
-        dispatchGroup.notify(queue: .main) {
-            completion(existingIDs)
-        }
-    }
-    func fetchQuestionsByTopic(topicID: String, completion: @escaping ([Question]) -> Void) {
-        db.collection("Questions")
-            .whereField("topicID", isEqualTo: topicID)
-            .getDocuments { snapshot, error in
-                if let error = error {
-                    DispatchQueue.main.async {
-                        self.errorMessage = "Failed to fetch questions: \(error.localizedDescription)"
-                    }
+        questionsRepository.fetchExistingQuestionIDs(questionIDs) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let existingIDs):
+                    completion(existingIDs)
+                case .failure(let error):
+                    self.errorMessage = "Error checking duplicates: \(error.localizedDescription)"
                     completion([])
-                } else {
-                    let questions = snapshot?.documents.compactMap { doc -> Question? in
-                        try? doc.data(as: Question.self)
-                    } ?? []
-                    DispatchQueue.main.async {
-                        completion(questions)
-                    }
                 }
             }
+        }
     }
-    func deleteQuestionsByTopic(topicID: String, completion: @escaping () -> Void) {
-        db.collection("Questions")
-            .whereField("topicID", isEqualTo: topicID)
-            .getDocuments { snapshot, error in
-                if let error = error {
-                    DispatchQueue.main.async {
-                        self.errorMessage = "Failed to delete questions: \(error.localizedDescription)"
-                    }
-                    return
-                }
-                
-                let batch = self.db.batch()
-                snapshot?.documents.forEach { document in
-                    batch.deleteDocument(document.reference)
-                }
-                
-                batch.commit { error in
-                    DispatchQueue.main.async {
-                        if let error = error {
-                            self.errorMessage = "Failed to delete questions: \(error.localizedDescription)"
-                        } else {
-                            self.successMessage = "Questions deleted successfully!"
-                            completion()
-                        }
-                    }
+    
+    func fetchQuestionsByTopic(topicID: String, completion: @escaping ([Question]) -> Void) {
+        questionsRepository.fetchQuestions(topicID: topicID) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let questions):
+                    completion(questions)
+                case .failure(let error):
+                    self.errorMessage = "Failed to fetch questions: \(error.localizedDescription)"
+                    completion([])
                 }
             }
+        }
+    }
+    
+    func deleteQuestionsByTopic(topicID: String, completion: @escaping () -> Void) {
+        questionsRepository.deleteQuestions(topicID: topicID) { error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    self.errorMessage = "Failed to delete questions: \(error.localizedDescription)"
+                } else {
+                    self.successMessage = "Questions deleted successfully!"
+                    completion()
+                }
+            }
+        }
     }
 }
-

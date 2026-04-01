@@ -12,7 +12,7 @@ class BadgesViewModel: ObservableObject {
     @Published var errorMessage: String?
     @Published var successMessage: String?
     
-    private var db = Firestore.firestore()
+    private let repository = BadgesRepository()
     private var listenerRegistration: ListenerRegistration?
     
     deinit {
@@ -21,24 +21,21 @@ class BadgesViewModel: ObservableObject {
     
     /// Fetch all badges from Firestore
     func fetchBadges() {
-        listenerRegistration = db.collection("badges")
-            .order(by: "createdAt", descending: true)
-            .addSnapshotListener { [weak self] snapshot, error in
-                guard let self = self else { return }
-                if let error = error {
-                    self.errorMessage = "Failed to fetch badges: \(error.localizedDescription)"
-                } else {
-                    self.badges = snapshot?.documents.compactMap { doc in
-                        try? doc.data(as: Badge.self)
-                    } ?? []
-                }
+        listenerRegistration = repository.listenForBadges { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let badges):
+                self.badges = badges
+            case .failure(let error):
+                self.errorMessage = "Failed to fetch badges: \(error.localizedDescription)"
             }
+        }
     }
     
     /// Create a new badge in Firestore
     func createBadge(_ badge: Badge) {
         do {
-            let _ = try db.collection("badges").addDocument(from: badge) { [weak self] error in
+            try repository.create(badge) { [weak self] error in
                 if let error = error {
                     self?.errorMessage = "Failed to create badge: \(error.localizedDescription)"
                 } else {
@@ -57,7 +54,7 @@ class BadgesViewModel: ObservableObject {
             return
         }
         do {
-            let _ = try db.collection("badges").document(badgeID).setData(from: badge) { [weak self] error in
+            try repository.update(badge) { [weak self] error in
                 if let error = error {
                     self?.errorMessage = "Failed to update badge: \(error.localizedDescription)"
                 } else {
@@ -75,7 +72,7 @@ class BadgesViewModel: ObservableObject {
             errorMessage = "Badge ID is missing."
             return
         }
-        db.collection("badges").document(badgeID).delete { [weak self] error in
+        repository.delete(badgeID: badgeID) { [weak self] error in
             if let error = error {
                 self?.errorMessage = "Failed to delete badge: \(error.localizedDescription)"
             } else {
@@ -85,34 +82,7 @@ class BadgesViewModel: ObservableObject {
     }
     
     func createListBadge(badges: [Badge], completion: @escaping (Result<Void, Error>) -> Void) {
-        let batch = db.batch()
-        let badgesCollection = db.collection("badges")
-        
-        for badge in badges {
-            // If badge.id is nil, Firestore will auto-generate a unique ID
-            let documentRef: DocumentReference
-            if let badgeId = badge.id {
-                documentRef = badgesCollection.document(badgeId)
-            } else {
-                documentRef = badgesCollection.document()
-            }
-            
-            do {
-                try batch.setData(from: badge, forDocument: documentRef)
-            } catch let error {
-                completion(.failure(error))
-                return
-            }
-        }
-        
-        // Commit the batch
-        batch.commit { error in
-            if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.success(()))
-            }
-        }
+        repository.createListBadge(badges: badges, completion: completion)
     }
     
     

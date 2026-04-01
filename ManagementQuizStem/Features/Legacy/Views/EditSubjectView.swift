@@ -5,7 +5,6 @@
 //  Created by QuangHo on 19/3/25.
 //
 
-
 import SwiftUI
 
 struct EditSubjectView: View {
@@ -62,9 +61,9 @@ struct EditSubjectView: View {
         
         // Prepare data; the uploadTopic function auto-generates an id
         let topicData: [String: String] = [
-            "category": category,
-            "name": name,
-            "description": description
+            FirestoreField.Topic.category: category,
+            FirestoreField.Topic.name: name,
+            FirestoreField.Topic.description: description
         ]
         
         viewModel.uploadTopic(topicData: topicData)

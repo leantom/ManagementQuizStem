@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseAuth
 import FirebaseCore
+import SwiftUI
 
 private struct AdminAccessConfiguration {
     static let allowedEmailsKey = "ADMIN_ALLOWED_EMAILS"
@@ -155,6 +156,17 @@ final class AuthSessionController: ObservableObject {
 
     var environmentDatabaseID: String {
         environment.firestoreDatabaseID()
+    }
+
+    var environmentTint: Color {
+        switch environment {
+        case .dev:
+            return Color(red: 0.14, green: 0.47, blue: 0.91)
+        case .beta:
+            return Color(red: 0.22, green: 0.58, blue: 0.44)
+        case .prod:
+            return Color(red: 0.84, green: 0.22, blue: 0.30)
+        }
     }
 
     var firebaseProjectID: String {

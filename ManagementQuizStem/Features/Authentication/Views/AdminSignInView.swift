@@ -475,8 +475,9 @@ private struct AdminInputField: View {
                 .font(.system(size: 13, weight: .semibold, design: .rounded))
                 .foregroundStyle(AdminPalette.ink)
 
-            TextField("", text: $text, prompt: Text(placeholder).foregroundStyle(.secondary))
+            TextField("", text: $text, prompt: Text(placeholder))
                 .textFieldStyle(.plain)
+                .foregroundStyle(.black)
                 .autocorrectionDisabled()
                 .padding(.horizontal, 16)
                 .padding(.vertical, 14)
@@ -503,8 +504,9 @@ private struct AdminSecureInputField: View {
                 .font(.system(size: 13, weight: .semibold, design: .rounded))
                 .foregroundStyle(AdminPalette.ink)
 
-            SecureField("", text: $text, prompt: Text(placeholder).foregroundStyle(.secondary))
+            SecureField("", text: $text, prompt: Text(placeholder))
                 .textFieldStyle(.plain)
+                .foregroundStyle(.black)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 14)
                 .background(
@@ -547,19 +549,6 @@ private enum AdminPalette {
     static let deepBlue = Color(red: 0.12, green: 0.22, blue: 0.49)
     static let stroke = Color(red: 0.84, green: 0.87, blue: 0.92)
     static let danger = Color(red: 0.82, green: 0.21, blue: 0.27)
-}
-
-private extension AuthSessionController {
-    var environmentTint: Color {
-        switch environment {
-        case .dev:
-            return Color(red: 0.14, green: 0.47, blue: 0.91)
-        case .beta:
-            return Color(red: 0.22, green: 0.58, blue: 0.44)
-        case .prod:
-            return Color(red: 0.84, green: 0.22, blue: 0.30)
-        }
-    }
 }
 
 #Preview {

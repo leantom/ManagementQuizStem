@@ -24,6 +24,20 @@ extension FirestoreRepository {
     func makeBatch() -> WriteBatch {
         db.batch()
     }
+
+    func countDocuments(
+        in query: Query,
+        completion: @escaping (Result<Int, Error>) -> Void
+    ) {
+        query.count.getAggregation(source: .server) { snapshot, error in
+            if let error {
+                completion(.failure(error))
+                return
+            }
+
+            completion(.success(Int(truncating: snapshot?.count ?? 0)))
+        }
+    }
 }
 
 struct SubjectsRepository: FirestoreRepository {
@@ -79,6 +93,10 @@ struct SubjectsRepository: FirestoreRepository {
         completion: @escaping (Error?) -> Void
     ) {
         FirestorePaths.subject(subjectID, in: db).updateData(data, completion: completion)
+    }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.subjects(in: db), completion: completion)
     }
 }
 
@@ -137,6 +155,10 @@ struct TopicsRepository: FirestoreRepository {
 
     func delete(topicID: String, completion: @escaping (Error?) -> Void) {
         FirestorePaths.topic(topicID, in: db).delete(completion: completion)
+    }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.topics(in: db), completion: completion)
     }
 }
 
@@ -314,6 +336,60 @@ struct QuestionsRepository: FirestoreRepository {
     func commit(_ batch: WriteBatch, completion: @escaping (Error?) -> Void) {
         batch.commit(completion: completion)
     }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.rootQuestions(in: db), completion: completion)
+    }
+
+    func countQuestions(
+        topicIDs: [String],
+        completion: @escaping (Result<Int, Error>) -> Void
+    ) {
+        let uniqueTopicIDs = Array(Set(topicIDs)).filter { !$0.isEmpty }
+
+        guard uniqueTopicIDs.isEmpty == false else {
+            completion(.success(0))
+            return
+        }
+
+        let batchSize = 10
+        let batches = stride(from: 0, to: uniqueTopicIDs.count, by: batchSize).map {
+            Array(uniqueTopicIDs[$0..<min($0 + batchSize, uniqueTopicIDs.count)])
+        }
+
+        let group = DispatchGroup()
+        let lock = NSLock()
+        var totalCount = 0
+        var capturedError: Error?
+
+        for batch in batches {
+            group.enter()
+            let query = FirestorePaths.rootQuestions(in: db)
+                .whereField(FirestoreField.Question.topicID, in: batch)
+
+            countDocuments(in: query) { result in
+                defer { group.leave() }
+
+                lock.lock()
+                defer { lock.unlock() }
+
+                switch result {
+                case .success(let count):
+                    totalCount += count
+                case .failure(let error):
+                    capturedError = error
+                }
+            }
+        }
+
+        group.notify(queue: .main) {
+            if let capturedError {
+                completion(.failure(capturedError))
+            } else {
+                completion(.success(totalCount))
+            }
+        }
+    }
 }
 
 struct ChallengesRepository: FirestoreRepository {
@@ -359,6 +435,37 @@ struct ChallengesRepository: FirestoreRepository {
 
                 onUpdate(.success(snapshot?.decodedDocuments(as: Challenge.self) ?? []))
             }
+    }
+
+    func fetchCurrentChallengesPreview(
+        now: Date = Date(),
+        limit: Int = 3,
+        completion: @escaping (Result<[Challenge], Error>) -> Void
+    ) {
+        FirestorePaths.challenges(in: db)
+            .whereField(FirestoreField.Challenge.startDate, isLessThanOrEqualTo: now)
+            .whereField(FirestoreField.Challenge.endDate, isGreaterThanOrEqualTo: now)
+            .order(by: FirestoreField.Challenge.startDate)
+            .limit(to: limit)
+            .getDocuments { snapshot, error in
+                if let error {
+                    completion(.failure(error))
+                    return
+                }
+
+                completion(.success(snapshot?.decodedDocuments(as: Challenge.self) ?? []))
+            }
+    }
+
+    func countCurrentChallenges(
+        now: Date = Date(),
+        completion: @escaping (Result<Int, Error>) -> Void
+    ) {
+        let query = FirestorePaths.challenges(in: db)
+            .whereField(FirestoreField.Challenge.startDate, isLessThanOrEqualTo: now)
+            .whereField(FirestoreField.Challenge.endDate, isGreaterThanOrEqualTo: now)
+
+        countDocuments(in: query, completion: completion)
     }
 
     func create(_ challenge: Challenge, completion: @escaping (Error?) -> Void) throws {
@@ -436,5 +543,9 @@ struct BadgesRepository: FirestoreRepository {
                 completion(.success(()))
             }
         }
+    }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.badges(in: db), completion: completion)
     }
 }

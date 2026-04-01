@@ -265,7 +265,7 @@ private struct DashboardEnvironmentCard: View {
             Text("Environment Status")
                 .font(.system(size: 11, weight: .bold, design: .rounded))
                 .tracking(0.8)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
 
             HStack(alignment: .center, spacing: 12) {
                 Image(systemName: "mappin.circle.fill")
@@ -326,7 +326,7 @@ private struct DashboardMetricCard: View {
             Text(title.uppercased())
                 .font(.system(size: 11, weight: .bold, design: .rounded))
                 .tracking(0.8)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
 
             Text(value)
                 .font(.system(size: 34, weight: .bold, design: .rounded))
@@ -360,7 +360,7 @@ private struct DashboardPanel<Content: View>: View {
                 Text(title.uppercased())
                     .font(.system(size: 11, weight: .bold, design: .rounded))
                     .tracking(0.8)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.black)
 
                 Spacer(minLength: 0)
 
@@ -424,7 +424,7 @@ private struct DashboardActivityRow: View {
 
             Text(item.stamp)
                 .font(.system(size: 10, weight: .bold, design: .rounded))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
         }
         .padding(.vertical, 14)
         .overlay(alignment: .bottom) {

@@ -200,6 +200,20 @@ struct QuestionsRepository: FirestoreRepository {
             }
     }
 
+    func fetchAllQuestions(
+        completion: @escaping (Result<[Question], Error>) -> Void
+    ) {
+        FirestorePaths.rootQuestions(in: db)
+            .getDocuments { snapshot, error in
+                if let error {
+                    completion(.failure(error))
+                    return
+                }
+
+                completion(.success(snapshot?.decodedDocuments(as: Question.self) ?? []))
+            }
+    }
+
     func deleteQuestions(topicID: String) async throws {
         let snapshot = try await FirestorePaths.rootQuestions(in: db)
             .whereField(FirestoreField.Question.topicID, isEqualTo: topicID)
@@ -337,6 +351,59 @@ struct QuestionsRepository: FirestoreRepository {
         batch.commit(completion: completion)
     }
 
+    func replaceQuestion(
+        existingQuestionID: String?,
+        existingTopicID: String?,
+        newQuestionID: String,
+        newTopicID: String,
+        data: [String: Any],
+        completion: @escaping (Error?) -> Void
+    ) {
+        let batch = makeBatch()
+
+        if let existingQuestionID, existingQuestionID != newQuestionID {
+            batch.deleteDocument(FirestorePaths.rootQuestion(existingQuestionID, in: db))
+        }
+
+        if let existingQuestionID, let existingTopicID,
+           existingTopicID != newTopicID || existingQuestionID != newQuestionID {
+            batch.deleteDocument(
+                FirestorePaths.topicQuestion(
+                    topicID: existingTopicID,
+                    questionID: existingQuestionID,
+                    in: db
+                )
+            )
+        }
+
+        for reference in importedQuestionReferences(topicID: newTopicID, questionID: newQuestionID) {
+            batch.setData(data, forDocument: reference, merge: false)
+        }
+
+        batch.commit(completion: completion)
+    }
+
+    func deleteQuestion(
+        questionID: String,
+        topicID: String?,
+        completion: @escaping (Error?) -> Void
+    ) {
+        let batch = makeBatch()
+        batch.deleteDocument(FirestorePaths.rootQuestion(questionID, in: db))
+
+        if let topicID, topicID.isEmpty == false {
+            batch.deleteDocument(
+                FirestorePaths.topicQuestion(
+                    topicID: topicID,
+                    questionID: questionID,
+                    in: db
+                )
+            )
+        }
+
+        batch.commit(completion: completion)
+    }
+
     func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
         countDocuments(in: FirestorePaths.rootQuestions(in: db), completion: completion)
     }
@@ -397,6 +464,21 @@ struct ChallengesRepository: FirestoreRepository {
 
     init(db: Firestore = AppFirestore.database()) {
         self.db = db
+    }
+
+    func listenForAllChallenges(
+        onUpdate: @escaping (Result<[Challenge], Error>) -> Void
+    ) -> ListenerRegistration {
+        FirestorePaths.challenges(in: db)
+            .order(by: FirestoreField.Challenge.startDate, descending: true)
+            .addSnapshotListener { snapshot, error in
+                if let error = error {
+                    onUpdate(.failure(error))
+                    return
+                }
+
+                onUpdate(.success(snapshot?.decodedDocuments(as: Challenge.self) ?? []))
+            }
     }
 
     func listenForCurrentChallenges(

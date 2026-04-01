@@ -53,15 +53,45 @@ struct Reward: Codable {
 }
 
 class ChallengesViewModel: ObservableObject {
+    @Published var allChallenges: [Challenge] = []
     @Published var currentChallenges: [Challenge] = []
+    @Published var isLoadingLibrary = false
     @Published var errorMessage: String?
     @Published var successMessage: String?
 
     private let repository = ChallengesRepository()
     private var listenerRegistration: ListenerRegistration?
+    private var hasLoadedLibrary = false
 
     deinit {
         listenerRegistration?.remove()
+    }
+
+    func loadChallengeLibrary(force: Bool = false) {
+        guard hasLoadedLibrary == false || force else { return }
+
+        hasLoadedLibrary = true
+        isLoadingLibrary = true
+        errorMessage = nil
+        listenerRegistration?.remove()
+
+        listenerRegistration = repository.listenForAllChallenges { [weak self] result in
+            guard let self = self else { return }
+
+            DispatchQueue.main.async {
+                self.isLoadingLibrary = false
+
+                switch result {
+                case .success(let challenges):
+                    self.allChallenges = challenges
+                    self.currentChallenges = challenges.filter { challenge in
+                        challenge.isActive && challenge.startDate <= .now && challenge.endDate >= .now
+                    }
+                case .failure(let error):
+                    self.errorMessage = "Failed to fetch challenges: \(error.localizedDescription)"
+                }
+            }
+        }
     }
 
     func fetchCurrentChallenges() {
@@ -70,6 +100,7 @@ class ChallengesViewModel: ObservableObject {
             switch result {
             case .success(let challenges):
                 self.currentChallenges = challenges
+                self.allChallenges = challenges
             case .failure(let error):
                 self.errorMessage = "Failed to fetch challenges: \(error.localizedDescription)"
             }
@@ -99,6 +130,26 @@ class ChallengesViewModel: ObservableObject {
             }
         } catch {
             self.errorMessage = "Failed to encode challenge: \(error.localizedDescription)"
+        }
+    }
+
+    func createChallenge(
+        _ challenge: Challenge,
+        onSuccess: (() -> Void)? = nil
+    ) {
+        do {
+            try repository.create(challenge) { [weak self] error in
+                DispatchQueue.main.async {
+                    if let error = error {
+                        self?.errorMessage = "Failed to create challenge: \(error.localizedDescription)"
+                    } else {
+                        self?.successMessage = "Challenge created successfully!"
+                        onSuccess?()
+                    }
+                }
+            }
+        } catch {
+            errorMessage = "Failed to encode challenge: \(error.localizedDescription)"
         }
     }
 }

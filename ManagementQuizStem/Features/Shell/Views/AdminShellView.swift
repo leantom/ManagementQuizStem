@@ -143,7 +143,7 @@ struct AdminShellView: View {
         HStack(spacing: 16) {
             HStack(spacing: 10) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.black)
 
                 TextField("Quick search data...", text: $searchText)
                     .textFieldStyle(.plain)

@@ -27,7 +27,7 @@ struct AdminSignInView: View {
                         Text("Admin Sign-In")
                             .font(.system(size: 12, weight: .semibold, design: .rounded))
                             .tracking(1.2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(.black)
 
                         Text("Authenticate to continue")
                             .font(.system(size: 34, weight: .bold, design: .rounded))
@@ -175,7 +175,7 @@ struct AdminAuthLoadingView: View {
 
                         Text("\(authSession.environmentLabel) • \(authSession.environmentDatabaseID)")
                             .font(.system(size: 13, weight: .medium, design: .rounded))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(.black)
                     }
                 }
                 .padding(18)
@@ -260,7 +260,7 @@ private struct AdminAuthScaffold<Panel: View>: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("ManagementQuizStem")
                         .font(.system(size: 13, weight: .semibold, design: .rounded))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.black)
 
                     Text("Admin CMS")
                         .font(.system(size: 24, weight: .bold, design: .rounded))
@@ -318,7 +318,7 @@ private struct AdminAuthScaffold<Panel: View>: View {
 
             Text("Authorized operators only. Imports, destructive tools, and live content edits will run against the environment shown here.")
                 .font(.system(size: 13, weight: .medium, design: .rounded))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
                 .fixedSize(horizontal: false, vertical: true)
         }
     }
@@ -371,7 +371,7 @@ private struct AdminContextCard: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(title)
                 .font(.system(size: 12, weight: .semibold, design: .rounded))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
 
             Text(value)
                 .font(.system(size: 18, weight: .bold, design: .rounded))
@@ -529,7 +529,7 @@ private struct AdminMetaRow: View {
         HStack(alignment: .firstTextBaseline, spacing: 12) {
             Text(title)
                 .font(.system(size: 12, weight: .semibold, design: .rounded))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
                 .frame(width: 124, alignment: .leading)
 
             Text(value)

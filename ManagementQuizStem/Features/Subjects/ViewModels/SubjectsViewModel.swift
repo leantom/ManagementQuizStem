@@ -9,39 +9,41 @@ enum SubjectCurriculumLevel: String, CaseIterable {
 }
 
 enum SubjectCategoryMapping: String, CaseIterable {
-    case naturalSciences = "Natural Sciences"
-    case formalSciences = "Formal Sciences"
-    case appliedSciences = "Applied Sciences"
+    case science = "Science"
     case technology = "Technology"
-    case interdisciplinary = "Interdisciplinary"
+    case engineering = "Engineering"
+    case math = "Math"
+    case arts = "Arts"
 
     static func mapping(for subjectName: String) -> SubjectCategoryMapping {
         switch subjectName.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() {
-        case "physics", "chemistry", "biology", "earth science":
-            return .naturalSciences
-        case "mathematics", "math":
-            return .formalSciences
-        case "engineering":
-            return .appliedSciences
-        case "computer science", "technology & innovation", "aws certified developer - associate":
+        case "science", "physics", "chemistry", "biology", "earth science":
+            return .science
+        case "technology", "computer science", "technology & innovation", "aws certified developer - associate":
             return .technology
+        case "engineering":
+            return .engineering
+        case "mathematics", "math":
+            return .math
+        case "arts", "art", "music", "design":
+            return .arts
         default:
-            return .interdisciplinary
+            return .science
         }
     }
 
     var icon: String {
         switch self {
-        case .naturalSciences:
+        case .science:
             return "flask.fill"
-        case .formalSciences:
-            return "function"
-        case .appliedSciences:
-            return "gearshape.2.fill"
         case .technology:
             return "desktopcomputer"
-        case .interdisciplinary:
-            return "square.stack.3d.up.fill"
+        case .engineering:
+            return "gearshape.2.fill"
+        case .math:
+            return "function"
+        case .arts:
+            return "paintpalette.fill"
         }
     }
 }
@@ -57,7 +59,8 @@ final class SubjectsViewModel: ObservableObject {
     @Published var selectedImage: NSImage?
 
     @Published var selectedSubjectID: String?
-    @Published var selectedCategoryMapping = SubjectCategoryMapping.interdisciplinary.rawValue
+    @Published var selectedTopicIDs: Set<String> = []
+    @Published var selectedCategoryMapping = SubjectCategoryMapping.science.rawValue
     @Published var selectedCurriculumLevel = SubjectCurriculumLevel.core.rawValue
     @Published var totalQuestionCount = 0
 
@@ -189,6 +192,7 @@ final class SubjectsViewModel: ObservableObject {
         selectedImage = nil
 
         let linkedTopics = resolvedTopics(for: subject)
+        selectedTopicIDs = Set(linkedTopics.map(\.id))
         selectedCategoryMapping = SubjectCategoryMapping.mapping(for: subject.name).rawValue
         selectedCurriculumLevel = derivedCurriculumLevel(from: linkedTopics).rawValue
 
@@ -206,7 +210,8 @@ final class SubjectsViewModel: ObservableObject {
         description = ""
         iconURL = ""
         selectedImage = nil
-        selectedCategoryMapping = SubjectCategoryMapping.interdisciplinary.rawValue
+        selectedTopicIDs = []
+        selectedCategoryMapping = SubjectCategoryMapping.science.rawValue
         selectedCurriculumLevel = SubjectCurriculumLevel.core.rawValue
         totalQuestionCount = 0
     }
@@ -273,16 +278,23 @@ final class SubjectsViewModel: ObservableObject {
     }
 
     func resolvedTopicsForCurrentDraft() -> [Topic] {
-        if let selectedSubject {
-            return resolvedTopics(for: selectedSubject)
+        guard selectedTopicIDs.isEmpty == false else { return [] }
+
+        return topics.filter { selectedTopicIDs.contains($0.id) }
+    }
+
+    func isTopicSelected(_ topic: Topic) -> Bool {
+        selectedTopicIDs.contains(topic.id)
+    }
+
+    func toggleTopicSelection(_ topic: Topic) {
+        if selectedTopicIDs.contains(topic.id) {
+            selectedTopicIDs.remove(topic.id)
+        } else {
+            selectedTopicIDs.insert(topic.id)
         }
 
-        let normalizedName = name.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        guard normalizedName.isEmpty == false else { return [] }
-
-        return topics.filter {
-            $0.name.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() == normalizedName
-        }
+        refreshQuestionCount(for: Array(selectedTopicIDs))
     }
 
     func categoryMapping(for subject: Subject) -> String {

@@ -22,7 +22,7 @@ struct BadgeView: View {
 
             Text(badge.description)
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.black)
                 .multilineTextAlignment(.center)
                 .padding(.top, 4)
 

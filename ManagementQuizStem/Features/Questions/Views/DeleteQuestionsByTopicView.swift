@@ -41,10 +41,10 @@ struct DeleteQuestionsByTopicView: View {
                             .font(.headline)
                         Text("Answer: \(question.correctAnswer)")
                             .font(.subheadline)
-                            .foregroundColor(.secondary)
+                            .foregroundStyle(.black)
                         Text("Topic: \(question.topicID)")
                             .font(.subheadline)
-                            .foregroundColor(.secondary)
+                            .foregroundStyle(.black)
                     }
                     .padding(.vertical, 5)
                 }

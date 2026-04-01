@@ -35,10 +35,6 @@
 				challenges_week10.json,
 				challenges_week11.json,
 				challenges_week12.json,
-				"Document/ badge system strategy.txt",
-				Document/Badge.txt,
-				"Document/Roadmap 2.txt",
-				Document/Roadmap.txt,
 				Info.plist,
 			);
 			target = F90E210B2CE60B4E009FA61A /* ManagementQuizStem */;
@@ -62,10 +58,6 @@
 				challenges_week10.json,
 				challenges_week11.json,
 				challenges_week12.json,
-				"Document/ badge system strategy.txt",
-				Document/Badge.txt,
-				"Document/Roadmap 2.txt",
-				Document/Roadmap.txt,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */

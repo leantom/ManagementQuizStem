@@ -4,6 +4,7 @@ import UniformTypeIdentifiers
 struct CreateNewSubjectView: View {
     @StateObject private var viewModel = SubjectsViewModel()
     @State private var searchText = ""
+    @State private var topicSearchText = ""
 
     var body: some View {
         HStack(alignment: .top, spacing: 22) {
@@ -49,7 +50,7 @@ struct CreateNewSubjectView: View {
 
             HStack(spacing: 10) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.black)
 
                 TextField("Search subjects, categories, or IDs...", text: $searchText)
                     .textFieldStyle(.plain)
@@ -128,6 +129,28 @@ struct CreateNewSubjectView: View {
         )
     }
 
+    private var filteredTopicOptions: [Topic] {
+        let sortedTopics = viewModel.topics.sorted { lhs, rhs in
+            let titleComparison = lhs.category.localizedCaseInsensitiveCompare(rhs.category)
+            if titleComparison == .orderedSame {
+                return lhs.name.localizedCaseInsensitiveCompare(rhs.name) == .orderedAscending
+            }
+
+            return titleComparison == .orderedAscending
+        }
+
+        let query = topicSearchText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard query.isEmpty == false else { return sortedTopics }
+
+        return sortedTopics.filter { topic in
+            topic.category.localizedCaseInsensitiveContains(query) ||
+            topic.name.localizedCaseInsensitiveContains(query) ||
+            (topic.description?.localizedCaseInsensitiveContains(query) ?? false) ||
+            (topic.educationLevel?.localizedCaseInsensitiveContains(query) ?? false) ||
+            topic.id.localizedCaseInsensitiveContains(query)
+        }
+    }
+
     private var editorPanel: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack(alignment: .top) {
@@ -164,7 +187,7 @@ struct CreateNewSubjectView: View {
                     Text("Subject Icon")
                         .font(.system(size: 11, weight: .bold, design: .rounded))
                         .tracking(0.8)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.black)
 
                     HStack(spacing: 14) {
                         ZStack {
@@ -211,7 +234,7 @@ struct CreateNewSubjectView: View {
                 Text("Category Mapping")
                     .font(.system(size: 11, weight: .bold, design: .rounded))
                     .tracking(0.8)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.black)
 
                 Picker("", selection: $viewModel.selectedCategoryMapping) {
                     ForEach(viewModel.categoryMappings, id: \.self) { mapping in
@@ -233,10 +256,75 @@ struct CreateNewSubjectView: View {
             }
 
             VStack(alignment: .leading, spacing: 8) {
+                HStack {
+                    Text("Linked Topics")
+                        .font(.system(size: 11, weight: .bold, design: .rounded))
+                        .tracking(0.8)
+                        .foregroundStyle(.black)
+
+                    Spacer()
+
+                    Text("\(viewModel.selectedTopicCount) selected")
+                        .font(.system(size: 11, weight: .bold, design: .rounded))
+                        .foregroundStyle(viewModel.selectedTopicCount == 0 ? SubjectsPalette.warning : SubjectsPalette.primary)
+                }
+
+                HStack(spacing: 10) {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(SubjectsPalette.subtleInk)
+
+                    TextField("Search topics by title, subject, or level...", text: $topicSearchText)
+                        .textFieldStyle(.plain)
+                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(SubjectsPalette.surfaceSecondary)
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .stroke(SubjectsPalette.border, lineWidth: 1)
+                )
+
+                ScrollView(.vertical, showsIndicators: true) {
+                    LazyVStack(alignment: .leading, spacing: 10) {
+                        if filteredTopicOptions.isEmpty {
+                            Text(viewModel.topics.isEmpty ? "No topics available yet." : "No topics match the current search.")
+                                .font(.system(size: 12, weight: .medium, design: .rounded))
+                                .foregroundStyle(SubjectsPalette.subtleInk)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.vertical, 8)
+                        } else {
+                            ForEach(filteredTopicOptions) { topic in
+                                SubjectsTopicSelectionRow(
+                                    topic: topic,
+                                    isSelected: viewModel.isTopicSelected(topic)
+                                ) {
+                                    viewModel.toggleTopicSelection(topic)
+                                }
+                            }
+                        }
+                    }
+                    .padding(12)
+                }
+                .frame(minHeight: 170, maxHeight: 220)
+                .background(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(SubjectsPalette.surfaceSecondary)
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .stroke(SubjectsPalette.border, lineWidth: 1)
+                )
+            }
+
+            VStack(alignment: .leading, spacing: 8) {
                 Text("Curriculum Level")
                     .font(.system(size: 11, weight: .bold, design: .rounded))
                     .tracking(0.8)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.black)
 
                 HStack(spacing: 10) {
                     ForEach(viewModel.curriculumLevels, id: \.self) { level in
@@ -262,7 +350,7 @@ struct CreateNewSubjectView: View {
                 Text("Subject Description")
                     .font(.system(size: 11, weight: .bold, design: .rounded))
                     .tracking(0.8)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.black)
 
                 TextEditor(text: $viewModel.description)
                     .font(.system(size: 13, weight: .medium, design: .rounded))
@@ -348,6 +436,57 @@ struct CreateNewSubjectView: View {
     }
 }
 
+private struct SubjectsTopicSelectionRow: View {
+    let topic: Topic
+    let isSelected: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundStyle(isSelected ? SubjectsPalette.primary : SubjectsPalette.subtleInk.opacity(0.7))
+
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(topic.category)
+                        .font(.system(size: 13, weight: .bold, design: .rounded))
+                        .foregroundStyle(SubjectsPalette.ink)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                    Text(topic.name)
+                        .font(.system(size: 11, weight: .semibold, design: .rounded))
+                        .foregroundStyle(SubjectsPalette.subtleInk)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+
+                if let educationLevel = topic.educationLevel, educationLevel.isEmpty == false {
+                    Text(educationLevel.uppercased())
+                        .font(.system(size: 10, weight: .bold, design: .rounded))
+                        .foregroundStyle(SubjectsPalette.primary)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background(
+                            Capsule(style: .continuous)
+                                .fill(Color.white)
+                        )
+                }
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(isSelected ? Color.white : Color.white.opacity(0.72))
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .stroke(isSelected ? SubjectsPalette.primary.opacity(0.35) : SubjectsPalette.border.opacity(0.8), lineWidth: 1)
+            )
+        }
+        .buttonStyle(.plain)
+    }
+}
+
 private struct SubjectLibraryRow: View {
     let subject: Subject
     let reference: String
@@ -375,7 +514,7 @@ private struct SubjectLibraryRow: View {
 
                         Text(reference)
                             .font(.system(size: 10, weight: .bold, design: .rounded))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(.black)
                     }
                     .frame(width: 160, alignment: .leading)
 
@@ -396,7 +535,7 @@ private struct SubjectLibraryRow: View {
 
                     Text(lastUpdatedLabel)
                         .font(.system(size: 12, weight: .semibold, design: .rounded))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.black)
                         .frame(width: 96, alignment: .leading)
                 }
                 .padding(.horizontal, 14)
@@ -447,10 +586,11 @@ private struct SubjectsEditorField: View {
             Text(title)
                 .font(.system(size: 11, weight: .bold, design: .rounded))
                 .tracking(0.8)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
 
             TextField("", text: $text)
                 .textFieldStyle(.plain)
+                .foregroundStyle(.black)
                 .font(.system(size: 14, weight: .medium, design: .rounded))
                 .padding(.horizontal, 14)
                 .padding(.vertical, 12)
@@ -475,7 +615,7 @@ private struct SubjectsReadOnlyField: View {
             Text(title)
                 .font(.system(size: 11, weight: .bold, design: .rounded))
                 .tracking(0.8)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
 
             Text(value)
                 .font(.system(size: 14, weight: .medium, design: .rounded))
@@ -504,7 +644,7 @@ private struct SubjectsTableHeader: View {
         Text(title.uppercased())
             .font(.system(size: 10, weight: .bold, design: .rounded))
             .tracking(0.8)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.black)
             .frame(width: width, alignment: alignment)
     }
 }
@@ -536,7 +676,7 @@ private struct SubjectsStatCard: View {
             Text(title.uppercased())
                 .font(.system(size: 10, weight: .bold, design: .rounded))
                 .tracking(0.8)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.black)
 
             Text(value)
                 .font(.system(size: 24, weight: .bold, design: .rounded))

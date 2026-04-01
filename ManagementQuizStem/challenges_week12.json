@@ -1,0 +1,237 @@
+{
+  "id": "challenge-70022",
+  "type": "weekly",
+  "title": "Computer Science Hardcore Challenge",
+  "description": "Test your advanced computer science knowledge with 15 tough questions covering algorithms, data structures, machine learning, and more. You have only 5 minutes (remainTime = 300) to prove your expertise!",
+  "startDate": "2025-05-27T00:00:00Z",
+  "endDate": "2025-06-10T00:00:00Z",
+  "difficultyLevel": "Advanced",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "FACB844A-A670-435D-A23F-9543FC01039A",
+      "topic": "Data Structures & Algorithms",
+      "difficulty": "Advanced",
+      "questionText": "What is the time complexity of inserting an element into a Red-Black Tree in the worst case?",
+      "options": [
+        "A) O(n)",
+        "B) O(log n)",
+        "C) O(1)",
+        "D) O(n log n)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Red-Black Trees maintain balance, so insertions take O(log n) time in the worst case."
+    },
+    {
+      "topicID": "FACB844A-A670-435D-A23F-9543FC01039A",
+      "topic": "Data Structures & Algorithms",
+      "difficulty": "Advanced",
+      "questionText": "Which algorithm is commonly used to find the shortest path in a graph with non-negative edge weights?",
+      "options": [
+        "A) Prim\u2019s Algorithm",
+        "B) Kruskal\u2019s Algorithm",
+        "C) Dijkstra\u2019s Algorithm",
+        "D) Bellman-Ford Algorithm"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Dijkstra\u2019s algorithm efficiently finds the shortest path in graphs with non-negative weights."
+    },
+    {
+      "topicID": "D6D8462C-CBCA-4EDF-9441-E74121C5F6DC",
+      "topic": "Machine Learning",
+      "difficulty": "Advanced",
+      "questionText": "Which of the following techniques reduces overfitting in deep learning models?",
+      "options": [
+        "A) Increasing learning rate",
+        "B) Dropout",
+        "C) Using more epochs",
+        "D) None of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dropout randomly disables neurons during training to reduce overfitting."
+    },
+    {
+      "topicID": "FACB844A-A670-435D-A23F-9543FC01039A",
+      "topic": "Data Structures & Algorithms",
+      "difficulty": "Advanced",
+      "questionText": "Which data structure is best suited for implementing a LRU (Least Recently Used) cache?",
+      "options": [
+        "A) Array",
+        "B) Queue",
+        "C) HashMap with Doubly Linked List",
+        "D) Stack"
+      ],
+      "correctAnswer": "C",
+      "explanation": "An LRU cache can be efficiently implemented using a HashMap and a Doubly Linked List for O(1) operations."
+    },
+    {
+      "topicID": "FACB844A-A670-435D-A23F-9543FC01039A",
+      "topic": "Data Structures & Algorithms",
+      "difficulty": "Advanced",
+      "questionText": "What is the space complexity of a recursive DFS traversal on a graph?",
+      "options": [
+        "A) O(1)",
+        "B) O(V)",
+        "C) O(E)",
+        "D) O(log V)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Recursive DFS uses the call stack, which may grow up to O(V) in depth for a connected graph."
+    },
+    {
+      "topicID": "FD5D8AF6-2AED-4CB7-B2DD-859A0AE1422F",
+      "topic": "Cybersecurity",
+      "difficulty": "Advanced",
+      "questionText": "Which of the following is most effective against SQL injection?",
+      "options": [
+        "A) Hashing passwords",
+        "B) Input validation with regex",
+        "C) Parameterized queries",
+        "D) CAPTCHA"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Parameterized queries prevent attackers from injecting malicious SQL code."
+    },
+    {
+      "topicID": "49AD7C3A-E322-42BF-A8C5-E5E4F5918EDA",
+      "topic": "Computer Networks",
+      "difficulty": "Advanced",
+      "questionText": "Which protocol is used for secure communication over the Internet?",
+      "options": [
+        "A) FTP",
+        "B) HTTP",
+        "C) SMTP",
+        "D) HTTPS"
+      ],
+      "correctAnswer": "D",
+      "explanation": "HTTPS uses SSL/TLS to encrypt HTTP data, ensuring secure communication."
+    },
+    {
+      "topicID": "D6D8462C-CBCA-4EDF-9441-E74121C5F6DC",
+      "topic": "Machine Learning",
+      "difficulty": "Advanced",
+      "questionText": "What is the vanishing gradient problem?",
+      "options": [
+        "A) Gradients become infinite",
+        "B) Gradients become too small during backpropagation",
+        "C) Gradients oscillate rapidly",
+        "D) Gradients are always zero"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In deep networks, gradients can become very small, preventing effective learning."
+    },
+    {
+      "topicID": "C298C116-6783-451B-A588-DC20EC12753D",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "In software design, what does the term 'coupling' refer to?",
+      "options": [
+        "A) Code reuse",
+        "B) Degree of interdependence between modules",
+        "C) Number of methods in a class",
+        "D) Amount of memory used"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Coupling measures how closely connected different modules or classes are."
+    },
+    {
+      "topicID": "C36215AB-EFED-4234-AD45-66CBA16604DF",
+      "topic": "Databases",
+      "difficulty": "Advanced",
+      "questionText": "What is the main advantage of using indexes in a database?",
+      "options": [
+        "A) Reduce storage space",
+        "B) Speed up query execution",
+        "C) Encrypt data",
+        "D) Normalize tables"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indexes allow quick data retrieval, significantly improving query performance."
+    },
+    {
+      "topicID": "C36215AB-EFED-4234-AD45-66CBA16604DF",
+      "topic": "Databases",
+      "difficulty": "Advanced",
+      "questionText": "What is a foreign key in relational databases?",
+      "options": [
+        "A) Primary identifier of a record",
+        "B) A key used to sort records",
+        "C) A key referencing a primary key in another table",
+        "D) An auto-incremented key"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A foreign key ensures referential integrity between tables."
+    },
+    {
+      "topicID": "D6D8462C-CBCA-4EDF-9441-E74121C5F6DC",
+      "topic": "Machine Learning",
+      "difficulty": "Advanced",
+      "questionText": "Which type of learning uses labeled data?",
+      "options": [
+        "A) Reinforcement learning",
+        "B) Unsupervised learning",
+        "C) Supervised learning",
+        "D) Semi-supervised learning"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Supervised learning uses labeled datasets to train models to make predictions."
+    },
+    {
+      "topicID": "D6D8462C-CBCA-4EDF-9441-E74121C5F6DC",
+      "topic": "Machine Learning",
+      "difficulty": "Advanced",
+      "questionText": "Which loss function is commonly used for binary classification?",
+      "options": [
+        "A) Mean squared error",
+        "B) Cross-entropy",
+        "C) Hinge loss",
+        "D) Absolute error"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cross-entropy measures the performance of a classification model whose output is a probability."
+    },
+    {
+      "topicID": "FD5D8AF6-2AED-4CB7-B2DD-859A0AE1422F",
+      "topic": "Cybersecurity",
+      "difficulty": "Advanced",
+      "questionText": "What does a digital signature ensure?",
+      "options": [
+        "A) File encryption",
+        "B) Data authenticity and integrity",
+        "C) Faster transmission",
+        "D) Code obfuscation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Digital signatures verify that the message has not been tampered with and comes from a valid sender."
+    },
+    {
+      "topicID": "FD5D8AF6-2AED-4CB7-B2DD-859A0AE1422F",
+      "topic": "Cybersecurity",
+      "difficulty": "Advanced",
+      "questionText": "Which of the following is a symmetric encryption algorithm?",
+      "options": [
+        "A) RSA",
+        "B) AES",
+        "C) ECC",
+        "D) DSA"
+      ],
+      "correctAnswer": "B",
+      "explanation": "AES is a widely-used symmetric key encryption algorithm."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 1500,
+      "description": "Earn 1500 points for completing the Computer Science Hardcore Challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'CS Challenger' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-05-27T00:00:00Z",
+  "updatedAt": "2025-05-27T00:00:00Z"
+}

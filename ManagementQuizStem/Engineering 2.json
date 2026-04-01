@@ -1,0 +1,944 @@
+[
+  {
+    "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+    "topic": "Electrical Engineering",
+    "difficulty": "Beginner",
+    "questionText": "What is the unit of electrical power?",
+    "options": ["A) Watt", "B) Volt", "C) Ampere", "D) Coulomb"],
+    "correctAnswer": "A",
+    "explanation": "Electrical power is measured in watts (W), which is the rate of energy transfer."
+  },
+  {
+    "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+    "topic": "Electrical Engineering",
+    "difficulty": "Intermediate",
+    "questionText": "Which component is used to convert AC power to DC power?",
+    "options": ["A) Transformer", "B) Rectifier", "C) Capacitor", "D) Inductor"],
+    "correctAnswer": "B",
+    "explanation": "A rectifier is used to convert alternating current (AC) to direct current (DC)."
+  },
+  {
+    "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+    "topic": "Electrical Engineering",
+    "difficulty": "Advanced",
+    "questionText": "What is the Thevenin equivalent circuit?",
+    "options": [
+      "A) A circuit with only resistors",
+      "B) A simplified representation of a complex circuit",
+      "C) A representation using only capacitors",
+      "D) A circuit with zero voltage"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thevenin's theorem simplifies a complex circuit into a single voltage source and series resistance."
+  },
+  {
+    "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+    "topic": "Mechanical Engineering",
+    "difficulty": "Beginner",
+    "questionText": "What is the purpose of lubrication in mechanical systems?",
+    "options": [
+      "A) Increase friction",
+      "B) Reduce wear and friction",
+      "C) Generate heat",
+      "D) Strengthen materials"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Lubrication reduces friction and wear between moving parts in mechanical systems."
+  },
+  {
+    "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+    "topic": "Mechanical Engineering",
+    "difficulty": "Intermediate",
+    "questionText": "Which type of heat exchanger is most commonly used in automotive engines?",
+    "options": ["A) Shell and Tube", "B) Plate", "C) Radiator", "D) Air-to-Air"],
+    "correctAnswer": "C",
+    "explanation": "Radiators are used in automotive engines to cool the engine by transferring heat to the surrounding air."
+  },
+  {
+    "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+    "topic": "Mechanical Engineering",
+    "difficulty": "Advanced",
+    "questionText": "What is the main function of a governor in an engine?",
+    "options": [
+      "A) Reduce fuel consumption",
+      "B) Control engine speed",
+      "C) Increase engine power",
+      "D) Adjust engine timing"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A governor regulates the speed of an engine by adjusting the fuel supply based on load conditions."
+  },
+  {
+    "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+    "topic": "Civil Engineering",
+    "difficulty": "Beginner",
+    "questionText": "What is the main purpose of reinforced concrete?",
+    "options": [
+      "A) Increase thermal conductivity",
+      "B) Improve aesthetic value",
+      "C) Enhance tensile strength",
+      "D) Reduce weight"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Reinforced concrete combines concrete's compressive strength with steel's tensile strength for structural durability."
+  },
+  {
+    "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+    "topic": "Civil Engineering",
+    "difficulty": "Intermediate",
+    "questionText": "What is the term for the load applied to a structure that varies over time?",
+    "options": ["A) Static Load", "B) Dead Load", "C) Dynamic Load", "D) Axial Load"],
+    "correctAnswer": "C",
+    "explanation": "Dynamic load refers to forces that vary with time, such as wind or traffic on a bridge."
+  },
+  {
+    "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+    "topic": "Civil Engineering",
+    "difficulty": "Advanced",
+    "questionText": "What is the Modulus of Elasticity a measure of in materials?",
+    "options": [
+      "A) Thermal resistance",
+      "B) Plastic deformation",
+      "C) Stiffness under stress",
+      "D) Electrical conductivity"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The Modulus of Elasticity measures a material's stiffness and its ability to resist deformation under stress."
+  },
+  {
+    "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+    "topic": "Chemical Engineering",
+    "difficulty": "Beginner",
+    "questionText": "What is the purpose of a distillation process?",
+    "options": [
+      "A) Mix chemical compounds",
+      "B) Separate components based on boiling points",
+      "C) Measure reaction rates",
+      "D) Neutralize acids"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Distillation separates components in a mixture by their differences in boiling points."
+  },
+  {
+    "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+    "topic": "Chemical Engineering",
+    "difficulty": "Intermediate",
+    "questionText": "Which type of reactor is commonly used for highly exothermic reactions?",
+    "options": [
+      "A) Batch Reactor",
+      "B) Plug Flow Reactor",
+      "C) Continuous Stirred-Tank Reactor (CSTR)",
+      "D) Packed Bed Reactor"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Packed bed reactors are ideal for highly exothermic reactions due to efficient heat removal and surface area contact."
+  },
+  {
+    "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+    "topic": "Chemical Engineering",
+    "difficulty": "Advanced",
+    "questionText": "What is Raoult's Law used for?",
+    "options": [
+      "A) Calculating vapor pressure of a solution",
+      "B) Measuring diffusion rates",
+      "C) Analyzing reaction kinetics",
+      "D) Determining molecular weight"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Raoult's Law calculates the vapor pressure of a solution based on the partial pressures of its components."
+  },
+  
+    {
+      "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+      "topic": "Electrical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "Which law defines the relationship between voltage, current, and resistance?",
+      "options": ["A) Kirchhoff's Law", "B) Ohm's Law", "C) Coulomb's Law", "D) Faraday's Law"],
+      "correctAnswer": "B",
+      "explanation": "Ohm's Law states that voltage is directly proportional to the product of current and resistance (V = IR)."
+    },
+    {
+      "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+      "topic": "Electrical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the main purpose of an operational amplifier?",
+      "options": [
+        "A) Store electrical energy",
+        "B) Amplify voltage signals",
+        "C) Generate a sinusoidal signal",
+        "D) Convert AC to DC"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An operational amplifier is used to amplify voltage signals in electronic circuits."
+    },
+    {
+      "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+      "topic": "Electrical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "Which component is used to control the frequency of an oscillator circuit?",
+      "options": ["A) Resistor", "B) Inductor", "C) Capacitor", "D) Transformer"],
+      "correctAnswer": "C",
+      "explanation": "A capacitor controls the frequency of an oscillator circuit by determining the charging and discharging time of the circuit."
+    },
+    {
+      "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the function of a piston in an internal combustion engine?",
+      "options": [
+        "A) Convert fuel into energy",
+        "B) Transfer force from combustion gases to the crankshaft",
+        "C) Lubricate engine components",
+        "D) Regulate air intake"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The piston transfers force generated by combustion gases to the crankshaft, converting linear motion to rotational motion."
+    },
+    {
+      "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "Which principle is used in the design of a hydraulic press?",
+      "options": [
+        "A) Bernoulli's Principle",
+        "B) Pascal's Law",
+        "C) Archimedes' Principle",
+        "D) Newton's Third Law"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pascal's Law states that pressure applied to a confined fluid is transmitted uniformly, enabling hydraulic presses to multiply force."
+    },
+    {
+      "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "What is the primary purpose of a heat pump in a mechanical system?",
+      "options": [
+        "A) Convert heat into electricity",
+        "B) Transfer heat from one location to another",
+        "C) Store thermal energy",
+        "D) Increase the efficiency of a turbine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A heat pump transfers heat from one location to another, often against the natural heat flow, for heating or cooling purposes."
+    },
+    {
+      "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+      "topic": "Civil Engineering",
+      "difficulty": "Beginner",
+      "questionText": "Which material is most commonly used in road construction?",
+      "options": ["A) Concrete", "B) Bitumen", "C) Steel", "D) Glass"],
+      "correctAnswer": "B",
+      "explanation": "Bitumen, a sticky, black, and highly viscous liquid, is widely used in road construction as a binding agent."
+    },
+    {
+      "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+      "topic": "Civil Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the main purpose of geotextiles in construction?",
+      "options": [
+        "A) Improve thermal insulation",
+        "B) Prevent soil erosion",
+        "C) Increase concrete strength",
+        "D) Act as a waterproof layer"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geotextiles are used to stabilize soil, prevent erosion, and improve the strength of the soil in construction projects."
+    },
+    {
+      "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+      "topic": "Civil Engineering",
+      "difficulty": "Advanced",
+      "questionText": "Which test measures the compressive strength of concrete?",
+      "options": [
+        "A) Slump Test",
+        "B) Cube Test",
+        "C) Tensile Test",
+        "D) Hardness Test"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The cube test is used to measure the compressive strength of concrete by testing a sample's ability to resist crushing under pressure."
+    },
+    {
+      "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+      "topic": "Chemical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the primary function of a separator in a chemical process?",
+      "options": [
+        "A) Combine reactants",
+        "B) Separate components of a mixture",
+        "C) Measure flow rates",
+        "D) Store chemical products"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Separators are used to isolate different components of a mixture based on their physical or chemical properties."
+    },
+    {
+      "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+      "topic": "Chemical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the purpose of a heat exchanger in chemical processing?",
+      "options": [
+        "A) Maintain constant pressure",
+        "B) Transfer heat between fluids",
+        "C) Increase reaction speed",
+        "D) Neutralize acidic compounds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heat exchangers transfer heat between two or more fluids, enabling temperature regulation in chemical processes."
+    },
+    {
+      "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+      "topic": "Chemical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "Which law governs the diffusion of gases through a porous medium?",
+      "options": [
+        "A) Raoult's Law",
+        "B) Fick's Law",
+        "C) Dalton's Law",
+        "D) Graham's Law"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Graham's Law describes the diffusion of gases through a porous medium, stating that the rate is inversely proportional to the square root of its molar mass."
+    }
+  ,
+  
+    {
+      "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+      "topic": "Electrical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "Which device is used to store electrical energy in an electric field?",
+      "options": ["A) Resistor", "B) Capacitor", "C) Inductor", "D) Diode"],
+      "correctAnswer": "B",
+      "explanation": "A capacitor stores electrical energy in an electric field and releases it when required."
+    },
+    {
+      "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+      "topic": "Electrical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the primary purpose of a circuit breaker?",
+      "options": [
+        "A) Convert AC to DC",
+        "B) Amplify signals",
+        "C) Protect circuits from overload",
+        "D) Store electrical energy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A circuit breaker automatically interrupts electrical flow to protect circuits from overloads or short circuits."
+    },
+    {
+      "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+      "topic": "Electrical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "What is the purpose of impedance matching in electrical circuits?",
+      "options": [
+        "A) Increase circuit resistance",
+        "B) Maximize power transfer",
+        "C) Minimize current flow",
+        "D) Reduce inductance"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Impedance matching ensures maximum power transfer between source and load by making their impedances equal."
+    },
+    {
+      "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the function of a gearbox in mechanical systems?",
+      "options": [
+        "A) Increase engine power",
+        "B) Regulate fuel flow",
+        "C) Change speed and torque",
+        "D) Lubricate moving parts"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A gearbox adjusts the speed and torque transmitted from the engine to the wheels or machinery."
+    },
+    {
+      "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "Which type of welding uses a non-consumable tungsten electrode?",
+      "options": [
+        "A) MIG Welding",
+        "B) TIG Welding",
+        "C) Arc Welding",
+        "D) Gas Welding"
+      ],
+      "correctAnswer": "B",
+      "explanation": "TIG (Tungsten Inert Gas) welding uses a non-consumable tungsten electrode to produce the weld."
+    },
+    {
+      "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "What is the primary purpose of a flywheel in a mechanical system?",
+      "options": [
+        "A) Store rotational energy",
+        "B) Reduce vibration",
+        "C) Control engine temperature",
+        "D) Increase engine speed"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A flywheel stores rotational energy and helps maintain a constant speed in mechanical systems."
+    },
+    {
+      "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+      "topic": "Civil Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the primary function of a culvert in road construction?",
+      "options": [
+        "A) Provide structural support",
+        "B) Drain water under the road",
+        "C) Reduce soil erosion",
+        "D) Enhance road aesthetics"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A culvert allows water to flow beneath roads or railways, preventing flooding and erosion."
+    },
+    {
+      "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+      "topic": "Civil Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the term for the horizontal load exerted by soil on a retaining wall?",
+      "options": ["A) Axial Load", "B) Lateral Earth Pressure", "C) Dead Load", "D) Shear Load"],
+      "correctAnswer": "B",
+      "explanation": "Lateral earth pressure is the horizontal load exerted by soil on structures like retaining walls."
+    },
+    {
+      "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+      "topic": "Civil Engineering",
+      "difficulty": "Advanced",
+      "questionText": "What is the significance of a soil's Atterberg limits?",
+      "options": [
+        "A) Measure compressive strength",
+        "B) Indicate water content for phase changes",
+        "C) Assess thermal conductivity",
+        "D) Determine permeability"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Atterberg limits define the water content at which soil transitions between solid, plastic, and liquid states."
+    },
+    {
+      "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+      "topic": "Chemical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the primary function of a catalyst in a chemical reaction?",
+      "options": [
+        "A) Slow down the reaction",
+        "B) Increase the reaction rate",
+        "C) Absorb excess heat",
+        "D) Neutralize reactants"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A catalyst increases the reaction rate by lowering the activation energy without being consumed in the process."
+    },
+    {
+      "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+      "topic": "Chemical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the term for the heat required to convert a liquid to a vapor without changing its temperature?",
+      "options": [
+        "A) Specific Heat",
+        "B) Latent Heat of Vaporization",
+        "C) Heat Capacity",
+        "D) Enthalpy"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The latent heat of vaporization is the heat energy required to convert a liquid into a vapor at a constant temperature."
+    },
+    {
+      "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+      "topic": "Chemical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "Which equation represents the ideal gas law?",
+      "options": [
+        "A) PV = nRT",
+        "B) F = ma",
+        "C) P1V1 = P2V2",
+        "D) Q = mcΔT"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The ideal gas law (PV = nRT) relates pressure, volume, and temperature for an ideal gas."
+    }
+  ,
+  
+    {
+      "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+      "topic": "Electrical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the role of an inductor in an electrical circuit?",
+      "options": [
+        "A) Store energy in a magnetic field",
+        "B) Store energy in an electric field",
+        "C) Convert AC to DC",
+        "D) Measure resistance"
+      ],
+      "correctAnswer": "A",
+      "explanation": "An inductor stores energy in a magnetic field when electrical current flows through it."
+    },
+    {
+      "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+      "topic": "Electrical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "Which law states that the line integral of the magnetic field around a closed loop is equal to the current enclosed?",
+      "options": [
+        "A) Gauss's Law",
+        "B) Ampere's Law",
+        "C) Faraday's Law",
+        "D) Lenz's Law"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ampere's Law states that the line integral of the magnetic field around a closed loop is equal to the total current enclosed by the loop."
+    },
+    {
+      "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+      "topic": "Electrical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "What is the function of a Zener diode in an electrical circuit?",
+      "options": [
+        "A) Amplify current",
+        "B) Allow current in one direction",
+        "C) Provide voltage regulation",
+        "D) Store electrical energy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A Zener diode is designed to maintain a stable voltage across its terminals, making it useful for voltage regulation."
+    },
+    {
+      "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the function of a pulley in a mechanical system?",
+      "options": [
+        "A) Increase speed",
+        "B) Reduce load effort",
+        "C) Store energy",
+        "D) Convert motion"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A pulley is used to reduce the effort required to lift a load by distributing force through a rope or cable."
+    },
+    {
+      "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What type of stress occurs when a material is twisted?",
+      "options": ["A) Shear Stress", "B) Compressive Stress", "C) Torsional Stress", "D) Tensile Stress"],
+      "correctAnswer": "C",
+      "explanation": "Torsional stress is generated when a material is twisted along its axis."
+    },
+    {
+      "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "What is the purpose of a clutch in a mechanical system?",
+      "options": [
+        "A) Increase torque",
+        "B) Transmit power from engine to drivetrain",
+        "C) Store kinetic energy",
+        "D) Reduce vibration"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A clutch engages and disengages the connection between the engine and the drivetrain to transmit power effectively."
+    },
+    {
+      "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+      "topic": "Civil Engineering",
+      "difficulty": "Beginner",
+      "questionText": "What is the main purpose of a dam?",
+      "options": [
+        "A) Generate electricity",
+        "B) Prevent soil erosion",
+        "C) Store water",
+        "D) All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Dams are multipurpose structures used for water storage, electricity generation, and flood prevention."
+    },
+    {
+      "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+      "topic": "Civil Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the term for the ability of a soil to transmit water?",
+      "options": ["A) Permeability", "B) Porosity", "C) Density", "D) Compaction"],
+      "correctAnswer": "A",
+      "explanation": "Permeability is a measure of how easily water can flow through soil or rock."
+    },
+    {
+      "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+      "topic": "Civil Engineering",
+      "difficulty": "Advanced",
+      "questionText": "Which method is commonly used to determine the shear strength of soil?",
+      "options": [
+        "A) Consolidation Test",
+        "B) Triaxial Shear Test",
+        "C) Permeability Test",
+        "D) Proctor Compaction Test"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The triaxial shear test measures the shear strength of soil under controlled stress conditions."
+    },
+    {
+      "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+      "topic": "Chemical Engineering",
+      "difficulty": "Beginner",
+      "questionText": "Which type of chemical reactor is designed for continuous operation?",
+      "options": [
+        "A) Batch Reactor",
+        "B) Plug Flow Reactor",
+        "C) Stirred Tank Reactor",
+        "D) Fluidized Bed Reactor"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A plug flow reactor is designed for continuous operation, where reactants flow through the reactor in a tubular design."
+    },
+    {
+      "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+      "topic": "Chemical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the purpose of the Reynolds number in fluid mechanics?",
+      "options": [
+        "A) Measure viscosity",
+        "B) Predict flow patterns",
+        "C) Determine fluid density",
+        "D) Calculate heat transfer"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Reynolds number is used to predict flow patterns in a fluid, determining whether the flow is laminar or turbulent."
+    },
+    {
+      "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+      "topic": "Chemical Engineering",
+      "difficulty": "Advanced",
+      "questionText": "Which law describes the rate of effusion of a gas through a small hole?",
+      "options": [
+        "A) Raoult's Law",
+        "B) Fick's Law",
+        "C) Graham's Law",
+        "D) Dalton's Law"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Graham's Law states that the rate of effusion of a gas is inversely proportional to the square root of its molar mass."
+    }
+  ,
+      {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Electrical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary function of a transformer?",
+        "options": [
+          "A) Convert DC to AC",
+          "B) Step up or step down voltage levels",
+          "C) Measure electrical resistance",
+          "D) Store electrical energy"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A transformer is used to increase (step up) or decrease (step down) voltage levels in an electrical circuit."
+      },
+      {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Electrical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the principle behind the operation of an electric generator?",
+        "options": [
+          "A) Faraday's Law of Electromagnetic Induction",
+          "B) Ohm's Law",
+          "C) Lenz's Law",
+          "D) Ampere's Circuital Law"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Electric generators work based on Faraday's Law, which states that a changing magnetic field induces an electromotive force (EMF) in a conductor."
+      },
+      {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Electrical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary function of an operational amplifier in an analog circuit?",
+        "options": [
+          "A) Amplify voltage signals",
+          "B) Convert AC to DC",
+          "C) Stabilize current",
+          "D) Generate a sinusoidal signal"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Operational amplifiers (op-amps) are used to amplify voltage signals and are a fundamental component in analog circuits."
+      },
+      {
+        "topicID": "eng12345-6789-0abc-defg-hijk123456789",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the unit of pressure in the International System of Units (SI)?",
+        "options": ["A) Pascal", "B) Joule", "C) Newton", "D) Watt"],
+        "correctAnswer": "A",
+        "explanation": "Pressure is measured in Pascals (Pa), where 1 Pascal is equal to 1 Newton per square meter."
+      },
+      {
+        "topicID": "eng12345-6789-0abc-defg-hijk123456789",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the purpose of a throttle valve in an internal combustion engine?",
+        "options": [
+          "A) Control air-fuel mixture",
+          "B) Increase combustion temperature",
+          "C) Cool the engine",
+          "D) Convert heat to mechanical energy"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The throttle valve regulates the amount of air entering the engine, controlling the air-fuel mixture and engine power."
+      },
+      {
+        "topicID": "eng12345-6789-0abc-defg-hijk123456789",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for the ratio of the actual heat extracted to the maximum possible heat that could be extracted in a refrigeration cycle?",
+        "options": [
+          "A) Heat Transfer Coefficient",
+          "B) Coefficient of Performance (COP)",
+          "C) Thermal Efficiency",
+          "D) Refrigeration Index"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Coefficient of Performance (COP) measures the efficiency of a refrigeration cycle by comparing the actual heat extracted to the maximum possible heat."
+      },
+      {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Civil Engineering",
+        "difficulty": "Beginner",
+        "questionText": "Which of the following is a load-bearing structure?",
+        "options": ["A) Beam", "B) Column", "C) Wall", "D) All of the above"],
+        "correctAnswer": "D",
+        "explanation": "Beams, columns, and walls are all load-bearing structures that transfer loads to the foundation."
+      },
+      {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Civil Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the main purpose of a slump test in concrete?",
+        "options": [
+          "A) Measure the compressive strength",
+          "B) Determine the workability",
+          "C) Measure the density",
+          "D) Assess curing time"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The slump test measures the workability or consistency of fresh concrete, which indicates how easily it can be placed."
+      },
+      {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Civil Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of reinforcement bars in concrete?",
+        "options": [
+          "A) Increase compressive strength",
+          "B) Resist tensile stresses",
+          "C) Reduce water absorption",
+          "D) Enhance curing process"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Reinforcement bars (rebar) are added to concrete to resist tensile stresses, improving the overall structural integrity."
+      },
+      {
+        "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+        "topic": "Chemical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the term for the energy required to initiate a chemical reaction?",
+        "options": [
+          "A) Activation Energy",
+          "B) Potential Energy",
+          "C) Kinetic Energy",
+          "D) Thermal Energy"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Activation energy is the minimum energy required for reactants to undergo a chemical reaction."
+      },
+      {
+        "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+        "topic": "Chemical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the main purpose of a scrubber in industrial chemical processes?",
+        "options": [
+          "A) Mix chemical reactants",
+          "B) Remove pollutants from gas emissions",
+          "C) Increase heat transfer",
+          "D) Compress gases"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A scrubber is used to remove harmful pollutants such as sulfur dioxide from industrial gas emissions."
+      },
+      {
+        "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+        "topic": "Chemical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "Which type of chemical reactor is most efficient for carrying out highly exothermic reactions?",
+        "options": [
+          "A) Batch Reactor",
+          "B) Packed Bed Reactor",
+          "C) Fluidized Bed Reactor",
+          "D) Plug Flow Reactor"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A fluidized bed reactor provides efficient heat transfer and control, making it ideal for highly exothermic reactions."
+      }
+    ,
+    
+      {
+        "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+        "topic": "Electrical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the SI unit of electric current?",
+        "options": ["A) Volt", "B) Ampere", "C) Ohm", "D) Joule"],
+        "correctAnswer": "B",
+        "explanation": "The SI unit of electric current is the ampere (A)."
+      },
+      {
+        "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+        "topic": "Electrical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the purpose of a fuse in an electrical circuit?",
+        "options": [
+          "A) Amplify the current",
+          "B) Store electrical energy",
+          "C) Protect against overcurrent",
+          "D) Convert AC to DC"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A fuse protects electrical circuits by breaking the connection when current exceeds a safe level."
+      },
+      {
+        "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+        "topic": "Electrical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "Which principle is used in the design of an induction motor?",
+        "options": [
+          "A) Coulomb's Law",
+          "B) Faraday's Law",
+          "C) Lenz's Law",
+          "D) Mutual Induction"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Induction motors operate based on mutual induction, where a changing magnetic field induces a current in the rotor."
+      },
+      {
+        "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the purpose of a cooling system in an engine?",
+        "options": [
+          "A) Increase fuel efficiency",
+          "B) Maintain optimal operating temperature",
+          "C) Reduce air intake",
+          "D) Enhance combustion"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The cooling system prevents the engine from overheating by maintaining optimal operating temperatures."
+      },
+      {
+        "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What type of gear is commonly used to transmit motion between non-parallel shafts?",
+        "options": ["A) Spur Gear", "B) Bevel Gear", "C) Helical Gear", "D) Worm Gear"],
+        "correctAnswer": "B",
+        "explanation": "Bevel gears are used to transmit motion between shafts that are not parallel, often at right angles."
+      },
+      {
+        "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the difference between static and dynamic balancing in rotating machinery?",
+        "options": [
+          "A) Static balancing considers only weight distribution, while dynamic balancing includes rotational forces.",
+          "B) Static balancing includes vibrations, while dynamic balancing does not.",
+          "C) Static balancing is for non-rotating parts, and dynamic balancing is for all parts.",
+          "D) There is no difference between static and dynamic balancing."
+        ],
+        "correctAnswer": "A",
+        "explanation": "Static balancing ensures weight distribution around a centerline, while dynamic balancing accounts for rotational forces during operation."
+      },
+      {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Civil Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary purpose of a bridge?",
+        "options": [
+          "A) Divert water flow",
+          "B) Allow passage over an obstacle",
+          "C) Support high-rise buildings",
+          "D) Prevent soil erosion"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Bridges are structures built to provide passage over obstacles such as rivers, valleys, or roads."
+      },
+      {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Civil Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the purpose of a geotechnical investigation in construction?",
+        "options": [
+          "A) Design building aesthetics",
+          "B) Determine soil properties and stability",
+          "C) Calculate project costs",
+          "D) Monitor construction progress"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Geotechnical investigations assess soil properties and stability to ensure safe and efficient construction practices."
+      },
+      {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Civil Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the main purpose of prestressed concrete in structural engineering?",
+        "options": [
+          "A) Reduce weight",
+          "B) Increase tensile strength",
+          "C) Enhance fire resistance",
+          "D) Improve thermal insulation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Prestressed concrete enhances tensile strength by applying compressive forces, making it more resistant to tension."
+      },
+      {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Chemical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the purpose of a heat exchanger in a chemical plant?",
+        "options": [
+          "A) Mix reactants",
+          "B) Transfer heat between fluids",
+          "C) Store chemical products",
+          "D) Increase fluid pressure"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A heat exchanger transfers heat between fluids, maintaining optimal operating conditions in chemical processes."
+      },
+      {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Chemical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "Which separation process uses differences in boiling points to separate components of a mixture?",
+        "options": [
+          "A) Filtration",
+          "B) Distillation",
+          "C) Crystallization",
+          "D) Sedimentation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Distillation separates mixture components based on differences in their boiling points."
+      },
+      {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Chemical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the role of a catalyst in a chemical reaction?",
+        "options": [
+          "A) Increase activation energy",
+          "B) Decrease reaction rate",
+          "C) Lower activation energy",
+          "D) Change the equilibrium constant"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A catalyst lowers the activation energy of a reaction, increasing the reaction rate without being consumed."
+      }
+    
+]

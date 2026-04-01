@@ -1,0 +1,307 @@
+{
+  "id": "challenge-physics-sat-clean-v3",
+  "type": "weekly",
+  "title": "SAT Physics Mastery Challenge",
+  "description": "Sharpen your physics skills with 20 SAT-style questions from mechanics to thermodynamics. Time is ticking!",
+  "startDate": "2025-06-25T08:09:47.057337Z",
+  "endDate": "2025-07-02T08:09:47.057346Z",
+  "difficultyLevel": "Advanced",
+  "remainTime": 1050,
+  "questions": [
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Intermediate",
+      "questionText": "A 2 kg object is dropped from a height of 20 meters. Ignoring air resistance, what is its velocity just before hitting the ground?",
+      "options": [
+        "A) 10 m/s",
+        "B) 15 m/s",
+        "C) 20 m/s",
+        "D) 25 m/s"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Using v = \u221a(2gh) = \u221a(2\u00d79.8\u00d720) \u2248 20 m/s"
+    },
+    {
+      "topicID": "A2C881F9-9E0A-4BB3-865E-90D67AE157DF",
+      "topic": "Particle Physics",
+      "difficulty": "Easy",
+      "questionText": "Which of the following particles has no electric charge?",
+      "options": [
+        "A) Electron",
+        "B) Proton",
+        "C) Neutron",
+        "D) Positron"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Neutrons are neutral, electrons and protons are charged."
+    },
+    {
+      "topicID": "13C3917E-74FA-4368-BAB5-3E46724EF61F",
+      "topic": "Electromagnetism",
+      "difficulty": "Easy",
+      "questionText": "What is the electric potential energy of a 2 C charge placed in a 12 V electric field?",
+      "options": [
+        "A) 6 J",
+        "B) 12 J",
+        "C) 24 J",
+        "D) 36 J"
+      ],
+      "correctAnswer": "C",
+      "explanation": "U = qV = 2 \u00d7 12 = 24 J"
+    },
+    {
+      "topicID": "7283E02C-C82E-4568-B3EB-D273C852037C",
+      "topic": "Acoustics",
+      "difficulty": "Easy",
+      "questionText": "If the frequency of a wave is doubled while its speed remains constant, what happens to the wavelength?",
+      "options": [
+        "A) Doubled",
+        "B) Halved",
+        "C) Unchanged",
+        "D) Quadrupled"
+      ],
+      "correctAnswer": "B",
+      "explanation": "v = f\u03bb \u2192 if f doubles, \u03bb must halve to keep v constant."
+    },
+    {
+      "topicID": "5F801844-E91F-443A-83ED-8791C0A501B5",
+      "topic": "Optics",
+      "difficulty": "Intermediate",
+      "questionText": "A convex lens forms an image that is real, inverted, and larger than the object. Where is the object placed?",
+      "options": [
+        "A) Between F and 2F",
+        "B) Beyond 2F",
+        "C) At F",
+        "D) Between lens and F"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This condition occurs when the object is between F and 2F from the lens."
+    },
+    {
+      "topicID": "13C3917E-74FA-4368-BAB5-3E46724EF61F",
+      "topic": "Electromagnetism",
+      "difficulty": "Intermediate",
+      "questionText": "What is the total resistance of three 6-ohm resistors in parallel?",
+      "options": [
+        "A) 2 ohms",
+        "B) 6 ohms",
+        "C) 18 ohms",
+        "D) 3 ohms"
+      ],
+      "correctAnswer": "A",
+      "explanation": "1/R = 1/6 + 1/6 + 1/6 \u2192 R = 2 ohms"
+    },
+    {
+      "topicID": "697B2144-B727-4C60-ACCA-6059D49A2B3C",
+      "topic": "Thermodynamics",
+      "difficulty": "Easy",
+      "questionText": "What happens to a gas\u2019s pressure if the volume is halved while temperature remains constant?",
+      "options": [
+        "A) Doubles",
+        "B) Halves",
+        "C) Quadruples",
+        "D) Unchanged"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Boyle\u2019s Law: P \u221d 1/V \u2192 halve volume, pressure doubles."
+    },
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Intermediate",
+      "questionText": "A 5 kg object moves in a circle of radius 2 m with speed 4 m/s. What is the centripetal force?",
+      "options": [
+        "A) 10 N",
+        "B) 20 N",
+        "C) 40 N",
+        "D) 80 N"
+      ],
+      "correctAnswer": "D",
+      "explanation": "F = mv\u00b2/r = 5\u00d716/2 = 80 N"
+    },
+    {
+      "topicID": "5F801844-E91F-443A-83ED-8791C0A501B5",
+      "topic": "Optics",
+      "difficulty": "Easy",
+      "questionText": "The energy of a photon is directly proportional to which property?",
+      "options": [
+        "A) Speed",
+        "B) Frequency",
+        "C) Wavelength",
+        "D) Amplitude"
+      ],
+      "correctAnswer": "B",
+      "explanation": "E = hf, so energy is proportional to frequency."
+    },
+    {
+      "topicID": "A2C881F9-9E0A-4BB3-865E-90D67AE157DF",
+      "topic": "Particle Physics",
+      "difficulty": "Intermediate",
+      "questionText": "Which subatomic particle is emitted during beta decay?",
+      "options": [
+        "A) Neutron",
+        "B) Proton",
+        "C) Electron",
+        "D) Alpha particle"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Beta decay releases electrons (beta particles)."
+    },
+    {
+      "topicID": "697B2144-B727-4C60-ACCA-6059D49A2B3C",
+      "topic": "Thermodynamics",
+      "difficulty": "Advanced",
+      "questionText": "What is the root mean square (RMS) speed of gas molecules related to?",
+      "options": [
+        "A) Pressure only",
+        "B) Volume only",
+        "C) Temperature and mass",
+        "D) Temperature and density"
+      ],
+      "correctAnswer": "C",
+      "explanation": "v_rms \u221d \u221a(T/M) so it depends on temperature and molecular mass."
+    },
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Easy",
+      "questionText": "Which of the following is a scalar quantity?",
+      "options": [
+        "A) Force",
+        "B) Velocity",
+        "C) Acceleration",
+        "D) Energy"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Energy is scalar; others are vectors with direction."
+    },
+    {
+      "topicID": "5F801844-E91F-443A-83ED-8791C0A501B5",
+      "topic": "Optics",
+      "difficulty": "Advanced",
+      "questionText": "Which condition must be met for total internal reflection to occur?",
+      "options": [
+        "A) Light travels from air to water",
+        "B) Angle of incidence = 90\u00b0",
+        "C) Light travels from denser to rarer medium at critical angle",
+        "D) Light hits a mirror"
+      ],
+      "correctAnswer": "C",
+      "explanation": "TIR only occurs from denser to rarer medium at or above critical angle."
+    },
+    {
+      "topicID": "13C3917E-74FA-4368-BAB5-3E46724EF61F",
+      "topic": "Electromagnetism",
+      "difficulty": "Easy",
+      "questionText": "A wire carries 3 A current. How much charge flows through it in 10 seconds?",
+      "options": [
+        "A) 0.3 C",
+        "B) 3 C",
+        "C) 10 C",
+        "D) 30 C"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Q = It = 3\u00d710 = 30 C"
+    },
+    {
+      "topicID": "7283E02C-C82E-4568-B3EB-D273C852037C",
+      "topic": "Acoustics",
+      "difficulty": "Easy",
+      "questionText": "A transverse wave on a string has a frequency of 5 Hz and a wavelength of 2 meters. What is its speed?",
+      "options": [
+        "A) 2.5 m/s",
+        "B) 5 m/s",
+        "C) 10 m/s",
+        "D) 15 m/s"
+      ],
+      "correctAnswer": "C",
+      "explanation": "v = f\u03bb = 5\u00d72 = 10 m/s"
+    },
+    {
+      "topicID": "13C3917E-74FA-4368-BAB5-3E46724EF61F",
+      "topic": "Electromagnetism",
+      "difficulty": "Advanced",
+      "questionText": "A 3 \u03bcC charge is placed in an electric field of strength 2\u00d710\u00b3 N/C. What is the force on it?",
+      "options": [
+        "A) 3\u00d710\u207b\u00b3 N",
+        "B) 0.6 N",
+        "C) 6 N",
+        "D) 6000 N"
+      ],
+      "correctAnswer": "B",
+      "explanation": "F = qE = 3e-6 \u00d7 2000 = 0.006 N = 0.6 N"
+    },
+    {
+      "topicID": "7283E02C-C82E-4568-B3EB-D273C852037C",
+      "topic": "Acoustics",
+      "difficulty": "Intermediate",
+      "questionText": "The Doppler effect causes a sound to appear ______ if the source is moving toward the listener.",
+      "options": [
+        "A) Lower in pitch",
+        "B) Louder",
+        "C) Higher in pitch",
+        "D) Faster in speed"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Approaching sound has higher frequency = higher pitch."
+    },
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Advanced",
+      "questionText": "Which principle explains lift in airplane wings?",
+      "options": [
+        "A) Archimedes\u2019 principle",
+        "B) Newton\u2019s first law",
+        "C) Bernoulli\u2019s principle",
+        "D) Boyle\u2019s law"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Bernoulli\u2019s principle: faster air over wing = lower pressure = lift."
+    },
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Intermediate",
+      "questionText": "What quantity is conserved in all types of collisions?",
+      "options": [
+        "A) Kinetic Energy",
+        "B) Momentum",
+        "C) Acceleration",
+        "D) Force"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Momentum is conserved in all collisions; KE is not always."
+    },
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Easy",
+      "questionText": "What does the slope of a position vs. time graph represent?",
+      "options": [
+        "A) Acceleration",
+        "B) Velocity",
+        "C) Force",
+        "D) Distance"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Slope of position-time graph = velocity."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 1200,
+      "description": "Earn 1200 XP for completing this physics challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Badge Earned: SAT Physics Master"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-06-25T08:09:47.057374Z",
+  "updatedAt": "2025-06-25T08:09:47.057376Z"
+}

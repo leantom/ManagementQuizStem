@@ -1,0 +1,538 @@
+[
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Beginner",
+        "questionText": "What is the IUPAC name for the following compound: CH₃-CH₂-CH₂-CH₃?",
+        "options": [
+            "A) Methane",
+            "B) Propane",
+            "C) Butane",
+            "D) Pentane"
+        ],
+        "correctAnswer": "C",
+        "explanation": "This compound has 4 carbon atoms in a straight chain, making it butane."
+    },
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which type of isomerism is exhibited by 2-butanol and diethyl ether (C₄H₁₀O)?",
+        "options": [
+            "A) Geometric isomerism",
+            "B) Functional group isomerism",
+            "C) Chain isomerism",
+            "D) Optical isomerism"
+        ],
+        "correctAnswer": "B",
+        "explanation": "These compounds have the same molecular formula but different functional groups (alcohol vs. ether), making them functional group isomers."
+    },
+    {
+        "topicID": 2,
+        "topic": "Inorganic Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "In the crystal field theory, which d-orbital splits into the highest energy level in an octahedral complex?",
+        "options": [
+            "A) dxy",
+            "B) dxz",
+            "C) dz²",
+            "D) dx²-y²"
+        ],
+        "correctAnswer": "D",
+        "explanation": "In octahedral complexes, the dx²-y² and dz² orbitals form the eg set, with dx²-y² typically having slightly higher energy."
+    },
+    {
+        "topicID": 3,
+        "topic": "Physical Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Calculate the pH of a buffer solution containing 0.2M acetic acid (Ka = 1.8×10⁻⁵) and 0.3M sodium acetate.",
+        "options": [
+            "A) 4.43",
+            "B) 4.83",
+            "C) 5.23",
+            "D) 5.63"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Using Henderson-Hasselbalch equation: pH = pKa + log([A⁻]/[HA]) = -log(1.8×10⁻⁵) + log(0.3/0.2) = 4.83"
+    },
+    {
+        "topicID": 4,
+        "topic": "Biochemistry",
+        "difficulty": "Advanced",
+        "questionText": "Which amino acid does NOT participate in disulfide bond formation?",
+        "options": [
+            "A) Cysteine",
+            "B) Methionine",
+            "C) Serine",
+            "D) Homocysteine"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Serine contains a hydroxyl group (-OH) instead of a thiol group (-SH), so it cannot form disulfide bonds."
+    },
+    {
+        "topicID": 5,
+        "topic": "Analytical Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "In HPLC analysis, what is the relationship between retention time and polarity for a normal phase column?",
+        "options": [
+            "A) Polar compounds elute first",
+            "B) Non-polar compounds elute first",
+            "C) All compounds elute simultaneously",
+            "D) Elution is independent of polarity"
+        ],
+        "correctAnswer": "B",
+        "explanation": "In normal phase HPLC, the stationary phase is polar and the mobile phase is non-polar, so non-polar compounds elute first."
+    },
+    {
+        "topicID": 6,
+        "topic": "Environmental Chemistry",
+        "difficulty": "Beginner",
+        "questionText": "Which gas is primarily responsible for the depletion of the ozone layer?",
+        "options": [
+            "A) Carbon dioxide",
+            "B) Methane",
+            "C) Chlorofluorocarbons",
+            "D) Sulfur dioxide"
+        ],
+        "correctAnswer": "C",
+        "explanation": "CFCs release chlorine radicals in the stratosphere, which catalyze the breakdown of ozone molecules."
+    },
+    {
+        "topicID": 7,
+        "topic": "Chemical Reactions",
+        "difficulty": "Intermediate",
+        "questionText": "In the reaction 2NO₂ ⇌ 2NO + O₂, if the concentration of NO₂ is doubled, how does the equilibrium rate of forward reaction change?",
+        "options": [
+            "A) Doubles",
+            "B) Quadruples",
+            "C) No change",
+            "D) Halves"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rate = k[NO₂]². When [NO₂] doubles, the rate increases by a factor of 2² = 4."
+    },
+    {
+        "topicID": 8,
+        "topic": "Periodic Table & Elements",
+        "difficulty": "Advanced",
+        "questionText": "Which electronic configuration correctly represents the ground state of Cr³⁺?",
+        "options": [
+            "A) [Ar]3d³",
+            "B) [Ar]3d⁴",
+            "C) [Ar]3d³4s¹",
+            "D) [Ar]3d²4s¹"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Cr ([Ar]3d⁵4s¹) loses 4s¹ electron and two 3d electrons to form Cr³⁺ with [Ar]3d³ configuration."
+    },
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "In the SN2 reaction of CH₃Br with OH⁻, what happens to the stereochemistry at the carbon center?",
+        "options": [
+            "A) Retention of configuration",
+            "B) Racemization",
+            "C) Inversion of configuration",
+            "D) No stereochemical change"
+        ],
+        "correctAnswer": "C",
+        "explanation": "SN2 reactions proceed through a backside attack, resulting in inversion of configuration at the carbon center."
+    },
+    {
+        "topicID": 2,
+        "topic": "Inorganic Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "What is the oxidation state of chromium in K₂Cr₂O₇?",
+        "options": [
+            "A) +4",
+            "B) +5",
+            "C) +6",
+            "D) +7"
+        ],
+        "correctAnswer": "C",
+        "explanation": "In K₂Cr₂O₇: 2(+1) + 2x + 7(-2) = 0, solving for x gives +6 for Cr"
+    },
+    {
+        "topicID": 3,
+        "topic": "Physical Chemistry",
+        "difficulty": "Beginner",
+        "questionText": "Which law states that the total pressure of a gas mixture equals the sum of the partial pressures of its components?",
+        "options": [
+            "A) Boyle's Law",
+            "B) Charles's Law",
+            "C) Dalton's Law",
+            "D) Graham's Law"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Dalton's Law of Partial Pressures states that Ptotal = P1 + P2 + P3 + ..."
+    },
+    
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "What product is formed when propene undergoes hydroboration-oxidation?",
+        "options": [
+            "A) 1-propanol",
+            "B) 2-propanol",
+            "C) Propanal",
+            "D) Propanone"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Hydroboration-oxidation of alkenes follows anti-Markovnikov's rule, producing the primary alcohol (1-propanol)."
+    },
+    {
+        "topicID": 2,
+        "topic": "Inorganic Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which electronic configuration corresponds to a d⁵ high-spin complex?",
+        "options": [
+            "A) ↑↓ ↑↓ ↑↓ ↑↓ ↑↓",
+            "B) ↑  ↑  ↑  ↑  ↑",
+            "C) ↑↓ ↑↓ ↑  ↑  ↑",
+            "D) ↑↓ ↑  ↑  ↑  ↑"
+        ],
+        "correctAnswer": "B",
+        "explanation": "In a high-spin d⁵ complex, electrons occupy all five d orbitals singly according to Hund's rule."
+    },
+    {
+        "topicID": 3,
+        "topic": "Physical Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "For a first-order reaction, how does the half-life relate to the rate constant k?",
+        "options": [
+            "A) t₁/₂ = k",
+            "B) t₁/₂ = ln(2)/k",
+            "C) t₁/₂ = 2k",
+            "D) t₁/₂ = k/ln(2)"
+        ],
+        "correctAnswer": "B",
+        "explanation": "For a first-order reaction, the half-life is equal to ln(2)/k, where k is the rate constant."
+    },
+    {
+        "topicID": 4,
+        "topic": "Biochemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which process in cellular respiration produces the most ATP molecules?",
+        "options": [
+            "A) Glycolysis",
+            "B) Krebs cycle",
+            "C) Electron transport chain",
+            "D) Pyruvate oxidation"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The electron transport chain produces the most ATP through oxidative phosphorylation, generating approximately 34 ATP molecules."
+    },
+    {
+        "topicID": 5,
+        "topic": "Analytical Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "In HPLC, what is the relationship between retention time and polarity of the mobile phase?",
+        "options": [
+            "A) Increasing mobile phase polarity always increases retention time",
+            "B) Increasing mobile phase polarity always decreases retention time",
+            "C) The relationship depends on whether normal or reverse phase HPLC is used",
+            "D) There is no relationship between mobile phase polarity and retention time"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The effect of mobile phase polarity on retention time depends on whether normal phase (polar stationary phase) or reverse phase (non-polar stationary phase) HPLC is used."
+    },
+    {
+        "topicID": 6,
+        "topic": "Environmental Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which gas is the primary contributor to the greenhouse effect?",
+        "options": [
+            "A) Nitrogen",
+            "B) Carbon dioxide",
+            "C) Water vapor",
+            "D) Methane"
+        ],
+        "correctAnswer": "C",
+        "explanation": "While CO₂ gets more attention, water vapor is actually the primary greenhouse gas in Earth's atmosphere, responsible for about 60% of the greenhouse effect."
+    },
+    {
+        "topicID": 7,
+        "topic": "Chemical Reactions",
+        "difficulty": "Intermediate",
+        "questionText": "What happens to the equilibrium constant (Keq) when a reaction is reversed?",
+        "options": [
+            "A) It remains the same",
+            "B) It becomes zero",
+            "C) It becomes the reciprocal of the original",
+            "D) It doubles"
+        ],
+        "correctAnswer": "C",
+        "explanation": "When a reaction is reversed, the equilibrium constant becomes the reciprocal (1/Keq) of the original value."
+    },
+    {
+        "topicID": 8,
+        "topic": "Periodic Table & Elements",
+        "difficulty": "Advanced",
+        "questionText": "Which trend is correctly described for the periodic table?",
+        "options": [
+            "A) Atomic radius increases down a group",
+            "B) First ionization energy decreases across a period",
+            "C) Electronegativity increases down a group",
+            "D) Electron affinity is highest for noble gases"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Atomic radius increases down a group due to the addition of new electron shells, while the other statements are incorrect."
+    },
+    
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which type of isomerism is exhibited by 2-butanol and diethyl ether (C₄H₁₀O)?",
+        "options": [
+            "A) Geometric isomerism",
+            "B) Functional group isomerism",
+            "C) Chain isomerism",
+            "D) Optical isomerism"
+        ],
+        "correctAnswer": "B",
+        "explanation": "These compounds have the same molecular formula but different functional groups (alcohol vs. ether), making them functional group isomers."
+    },
+    {
+        "topicID": 2,
+        "topic": "Inorganic Chemistry",
+        "difficulty": "Beginner",
+        "questionText": "Which of the following is the correct oxidation state of chromium in potassium dichromate (K₂Cr₂O₇)?",
+        "options": [
+            "A) +3",
+            "B) +5",
+            "C) +6",
+            "D) +7"
+        ],
+        "correctAnswer": "C",
+        "explanation": "In potassium dichromate, each chromium atom has an oxidation state of +6, as calculated from the compound's overall charge."
+    },
+    {
+        "topicID": 3,
+        "topic": "Physical Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "What is the term for the energy required to remove an electron from a neutral atom in the gas phase?",
+        "options": [
+            "A) Ionization energy",
+            "B) Electron affinity",
+            "C) Lattice energy",
+            "D) Bond dissociation energy"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Ionization energy refers to the energy needed to remove an electron from an isolated atom or ion in its gaseous state."
+    },
+    {
+        "topicID": 4,
+        "topic": "Biochemistry",
+        "difficulty": "Advanced",
+        "questionText": "Which molecule acts as the main carrier of genetic information in most living organisms?",
+        "options": [
+            "A) RNA",
+            "B) DNA",
+            "C) Proteins",
+            "D) Lipids"
+        ],
+        "correctAnswer": "B",
+        "explanation": "DNA (Deoxyribonucleic acid) is the primary molecule responsible for storing and transmitting genetic information in most organisms."
+    },
+    {
+        "topicID": 5,
+        "topic": "Analytical Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which analytical technique is commonly used to identify functional groups in a molecule by analyzing vibrational frequencies?",
+        "options": [
+            "A) NMR spectroscopy",
+            "B) IR spectroscopy",
+            "C) Mass spectrometry",
+            "D) UV-Vis spectroscopy"
+        ],
+        "correctAnswer": "B",
+        "explanation": "IR (Infrared) spectroscopy identifies functional groups based on characteristic vibrational frequencies of bonds."
+    },
+    {
+        "topicID": 6,
+        "topic": "Environmental Chemistry",
+        "difficulty": "Beginner",
+        "questionText": "Which gas is primarily responsible for the greenhouse effect?",
+        "options": [
+            "A) Oxygen",
+            "B) Carbon dioxide",
+            "C) Nitrogen",
+            "D) Argon"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Carbon dioxide (CO₂) is a significant greenhouse gas that traps heat in the atmosphere, contributing to global warming."
+    },
+    {
+        "topicID": 7,
+        "topic": "Chemical Reactions",
+        "difficulty": "Intermediate",
+        "questionText": "In a redox reaction, what happens to the reducing agent?",
+        "options": [
+            "A) It gains electrons and is reduced.",
+            "B) It loses electrons and is oxidized.",
+            "C) It neither gains nor loses electrons.",
+            "D) It is consumed without changing its oxidation state."
+        ],
+        "correctAnswer": "B",
+        "explanation": "The reducing agent donates electrons to another species, thereby losing electrons and undergoing oxidation."
+    },
+    {
+        "topicID": 8,
+        "topic": "Periodic Table & Elements",
+        "difficulty": "Intermediate",
+        "questionText": "Which group in the periodic table is commonly referred to as the 'noble gases'?",
+        "options": [
+            "A) Group 1",
+            "B) Group 2",
+            "C) Group 17",
+            "D) Group 18"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Group 18 elements, such as helium, neon, and argon, are known as noble gases due to their stability and lack of reactivity."
+    }
+    ,
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "What is the major product of the reaction between ethene and HBr in the presence of peroxides?",
+        "options": [
+            "A) 1-Bromoethane",
+            "B) 2-Bromoethane",
+            "C) Ethanol",
+            "D) No reaction"
+        ],
+        "correctAnswer": "A",
+        "explanation": "In the presence of peroxides, the reaction follows the anti-Markovnikov rule, producing 1-bromoethane."
+    },
+    {
+        "topicID": 2,
+        "topic": "Inorganic Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which property of transition metals allows them to act as catalysts?",
+        "options": [
+            "A) High electronegativity",
+            "B) Variable oxidation states",
+            "C) Low melting points",
+            "D) Large atomic radii"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Transition metals have variable oxidation states, enabling them to form intermediate compounds and act as catalysts."
+    },
+    {
+        "topicID": 3,
+        "topic": "Physical Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "Which of the following equations represents the Clausius-Clapeyron relation?",
+        "options": [
+            "A) PV = nRT",
+            "B) dlnP/dT = ΔHvap/RT²",
+            "C) ΔG = ΔH - TΔS",
+            "D) k = Ae^(-Ea/RT)"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Clausius-Clapeyron equation describes the relationship between the vapor pressure and temperature of a substance."
+    },
+    {
+        "topicID": 4,
+        "topic": "Biochemistry",
+        "difficulty": "Beginner",
+        "questionText": "What is the building block of proteins?",
+        "options": [
+            "A) Monosaccharides",
+            "B) Nucleotides",
+            "C) Fatty acids",
+            "D) Amino acids"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Proteins are composed of amino acids linked together by peptide bonds."
+    },
+    {
+        "topicID": 5,
+        "topic": "Analytical Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "Which technique is used to separate ions based on their mobility in an electric field?",
+        "options": [
+            "A) Gas chromatography",
+            "B) Liquid-liquid extraction",
+            "C) Ion chromatography",
+            "D) Electrophoresis"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Electrophoresis separates charged particles based on their size and charge in an electric field."
+    },
+    {
+        "topicID": 6,
+        "topic": "Environmental Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which of the following is a common method to measure water hardness?",
+        "options": [
+            "A) pH test",
+            "B) EDTA titration",
+            "C) Flame test",
+            "D) Precipitation reaction"
+        ],
+        "correctAnswer": "B",
+        "explanation": "EDTA titration is a standard technique for determining the concentration of calcium and magnesium ions, which contribute to water hardness."
+    },
+    {
+        "topicID": 7,
+        "topic": "Chemical Reactions",
+        "difficulty": "Beginner",
+        "questionText": "What is the type of reaction where an acid reacts with a base to form salt and water?",
+        "options": [
+            "A) Combustion",
+            "B) Neutralization",
+            "C) Precipitation",
+            "D) Redox"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A neutralization reaction occurs when an acid reacts with a base to produce a salt and water."
+    },
+    {
+        "topicID": 8,
+        "topic": "Periodic Table & Elements",
+        "difficulty": "Advanced",
+        "questionText": "Which element in the periodic table has the highest electronegativity?",
+        "options": [
+            "A) Oxygen",
+            "B) Fluorine",
+            "C) Nitrogen",
+            "D) Chlorine"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Fluorine has the highest electronegativity value of 3.98 on the Pauling scale, making it the most electronegative element."
+    },
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Beginner",
+        "questionText": "What type of bond is formed in an alkane molecule?",
+        "options": [
+            "A) Single covalent bonds",
+            "B) Double covalent bonds",
+            "C) Triple covalent bonds",
+            "D) Ionic bonds"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Alkanes are saturated hydrocarbons containing only single covalent bonds between carbon atoms."
+    },
+    {
+        "topicID": 6,
+        "topic": "Environmental Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "Which compound is primarily responsible for ozone layer depletion?",
+        "options": [
+            "A) Carbon dioxide",
+            "B) Methane",
+            "C) Chlorofluorocarbons (CFCs)",
+            "D) Sulfur dioxide"
+        ],
+        "correctAnswer": "C",
+        "explanation": "CFCs release chlorine atoms in the stratosphere, which catalyze the breakdown of ozone molecules, leading to ozone layer depletion."
+    }
+
+]

@@ -1,0 +1,114 @@
+
+    {
+        "topicID": 1,
+        "topic": "Organic Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "What product is formed when propene undergoes hydroboration-oxidation?",
+        "options": [
+            "A) 1-propanol",
+            "B) 2-propanol",
+            "C) Propanal",
+            "D) Propanone"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Hydroboration-oxidation of alkenes follows anti-Markovnikov's rule, producing the primary alcohol (1-propanol)."
+    },
+    {
+        "topicID": 2,
+        "topic": "Inorganic Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which electronic configuration corresponds to a d⁵ high-spin complex?",
+        "options": [
+            "A) ↑↓ ↑↓ ↑↓ ↑↓ ↑↓",
+            "B) ↑  ↑  ↑  ↑  ↑",
+            "C) ↑↓ ↑↓ ↑  ↑  ↑",
+            "D) ↑↓ ↑  ↑  ↑  ↑"
+        ],
+        "correctAnswer": "B",
+        "explanation": "In a high-spin d⁵ complex, electrons occupy all five d orbitals singly according to Hund's rule."
+    },
+    {
+        "topicID": 3,
+        "topic": "Physical Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "For a first-order reaction, how does the half-life relate to the rate constant k?",
+        "options": [
+            "A) t₁/₂ = k",
+            "B) t₁/₂ = ln(2)/k",
+            "C) t₁/₂ = 2k",
+            "D) t₁/₂ = k/ln(2)"
+        ],
+        "correctAnswer": "B",
+        "explanation": "For a first-order reaction, the half-life is equal to ln(2)/k, where k is the rate constant."
+    },
+    {
+        "topicID": 4,
+        "topic": "Biochemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which process in cellular respiration produces the most ATP molecules?",
+        "options": [
+            "A) Glycolysis",
+            "B) Krebs cycle",
+            "C) Electron transport chain",
+            "D) Pyruvate oxidation"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The electron transport chain produces the most ATP through oxidative phosphorylation, generating approximately 34 ATP molecules."
+    },
+    {
+        "topicID": 5,
+        "topic": "Analytical Chemistry",
+        "difficulty": "Advanced",
+        "questionText": "In HPLC, what is the relationship between retention time and polarity of the mobile phase?",
+        "options": [
+            "A) Increasing mobile phase polarity always increases retention time",
+            "B) Increasing mobile phase polarity always decreases retention time",
+            "C) The relationship depends on whether normal or reverse phase HPLC is used",
+            "D) There is no relationship between mobile phase polarity and retention time"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The effect of mobile phase polarity on retention time depends on whether normal phase (polar stationary phase) or reverse phase (non-polar stationary phase) HPLC is used."
+    },
+    {
+        "topicID": 6,
+        "topic": "Environmental Chemistry",
+        "difficulty": "Intermediate",
+        "questionText": "Which gas is the primary contributor to the greenhouse effect?",
+        "options": [
+            "A) Nitrogen",
+            "B) Carbon dioxide",
+            "C) Water vapor",
+            "D) Methane"
+        ],
+        "correctAnswer": "C",
+        "explanation": "While CO₂ gets more attention, water vapor is actually the primary greenhouse gas in Earth's atmosphere, responsible for about 60% of the greenhouse effect."
+    },
+    {
+        "topicID": 7,
+        "topic": "Chemical Reactions",
+        "difficulty": "Intermediate",
+        "questionText": "What happens to the equilibrium constant (Keq) when a reaction is reversed?",
+        "options": [
+            "A) It remains the same",
+            "B) It becomes zero",
+            "C) It becomes the reciprocal of the original",
+            "D) It doubles"
+        ],
+        "correctAnswer": "C",
+        "explanation": "When a reaction is reversed, the equilibrium constant becomes the reciprocal (1/Keq) of the original value."
+    },
+    {
+        "topicID": 8,
+        "topic": "Periodic Table & Elements",
+        "difficulty": "Advanced",
+        "questionText": "Which trend is correctly described for the periodic table?",
+        "options": [
+            "A) Atomic radius increases down a group",
+            "B) First ionization energy decreases across a period",
+            "C) Electronegativity increases down a group",
+            "D) Electron affinity is highest for noble gases"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Atomic radius increases down a group due to the addition of new electron shells, while the other statements are incorrect."
+    }
+

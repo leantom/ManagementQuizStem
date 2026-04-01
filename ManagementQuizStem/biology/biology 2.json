@@ -1,0 +1,452 @@
+[
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the result of crossing two heterozygous organisms for a single trait (Aa x Aa)?",
+        "options": [
+            "A) 1:2:1 genotype ratio",
+            "B) 3:1 phenotype ratio",
+            "C) Both A and B",
+            "D) None of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A cross between two heterozygous organisms results in a 1:2:1 genotype ratio and a 3:1 phenotype ratio for a dominant-recessive trait."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "Which term describes the phenomenon where one gene influences multiple phenotypic traits?",
+        "options": [
+            "A) Epistasis",
+            "B) Pleiotropy",
+            "C) Codominance",
+            "D) Polygenic inheritance"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Pleiotropy occurs when a single gene influences multiple phenotypic traits, such as the gene for sickle-cell anemia affecting hemoglobin and circulation."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Intermediate",
+        "questionText": "What is the term for a structure that has lost its original function through evolution?",
+        "options": [
+            "A) Homologous structure",
+            "B) Analogous structure",
+            "C) Vestigial structure",
+            "D) Fossil structure"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Vestigial structures are remnants of features that were functional in ancestors but have lost their original purpose over time, such as the human appendix."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "Which type of natural selection favors individuals at both extremes of a trait distribution?",
+        "options": [
+            "A) Stabilizing selection",
+            "B) Directional selection",
+            "C) Disruptive selection",
+            "D) Balancing selection"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Disruptive selection occurs when individuals with extreme traits are favored over those with intermediate traits, potentially leading to speciation."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the name for organisms that produce their own food using sunlight or chemical energy?",
+        "options": [
+            "A) Consumers",
+            "B) Decomposers",
+            "C) Producers",
+            "D) Detritivores"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Producers, such as plants and algae, make their own food through photosynthesis or chemosynthesis, forming the base of the food chain."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "Which biogeochemical cycle involves the processes of nitrification, denitrification, and nitrogen fixation?",
+        "options": [
+            "A) Carbon cycle",
+            "B) Water cycle",
+            "C) Nitrogen cycle",
+            "D) Phosphorus cycle"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The nitrogen cycle includes processes like nitrogen fixation (conversion of N₂ to ammonia), nitrification (conversion to nitrate), and denitrification (conversion back to N₂)."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the name of the structure in eukaryotic cells that organizes microtubules during cell division?",
+        "options": [
+            "A) Centriole",
+            "B) Spindle fiber",
+            "C) Centrosome",
+            "D) Kinetochore"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The centrosome is the region in eukaryotic cells where microtubules are organized, particularly during mitosis and meiosis."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which cellular organelle is responsible for packaging and modifying proteins for secretion?",
+        "options": [
+            "A) Endoplasmic reticulum",
+            "B) Golgi apparatus",
+            "C) Lysosome",
+            "D) Ribosome"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Golgi apparatus modifies, sorts, and packages proteins for secretion or use within the cell."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the primary function of the alveoli in the lungs?",
+        "options": [
+            "A) Transporting oxygen",
+            "B) Filtering dust particles",
+            "C) Gas exchange",
+            "D) Producing mucus"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The alveoli are tiny air sacs in the lungs where oxygen is exchanged for carbon dioxide in the blood."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "Which hormone is secreted by the pancreas to lower blood glucose levels?",
+        "options": [
+            "A) Insulin",
+            "B) Glucagon",
+            "C) Cortisol",
+            "D) Adrenaline"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Insulin is secreted by the pancreas and promotes the uptake of glucose by cells, reducing blood glucose levels."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Intermediate",
+        "questionText": "Which bacterial process involves the exchange of genetic material through a pilus?",
+        "options": [
+            "A) Transformation",
+            "B) Transduction",
+            "C) Conjugation",
+            "D) Binary fission"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Conjugation is the process where bacteria exchange genetic material through a structure called a pilus."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for a virus that remains dormant within a host cell for a long period?",
+        "options": [
+            "A) Lytic virus",
+            "B) Lysogenic virus",
+            "C) Retrovirus",
+            "D) Viroid"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A lysogenic virus integrates its genetic material into the host genome and remains dormant until triggered to enter the lytic cycle."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the role of tRNA in protein synthesis?",
+        "options": [
+            "A) Carries the genetic code",
+            "B) Brings amino acids to the ribosome",
+            "C) Synthesizes RNA",
+            "D) Forms peptide bonds"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Transfer RNA (tRNA) brings specific amino acids to the ribosome during translation, matching its anticodon to the mRNA codon."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which technique is used to amplify DNA sequences in a laboratory setting?",
+        "options": [
+            "A) CRISPR",
+            "B) PCR",
+            "C) Gel electrophoresis",
+            "D) DNA sequencing"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Polymerase Chain Reaction (PCR) is a technique used to amplify specific DNA sequences exponentially in vitro."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Intermediate",
+        "questionText": "What is the term for the movement of plants toward or away from light?",
+        "options": [
+            "A) Phototropism",
+            "B) Geotropism",
+            "C) Hydrotropism",
+            "D) Thigmotropism"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Phototropism is the directional growth of a plant in response to light, often towards the light source."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "Which plant hormone is responsible for breaking seed dormancy and promoting germination?",
+        "options": [
+            "A) Gibberellin",
+            "B) Ethylene",
+            "C) Auxin",
+            "D) Cytokinin"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Gibberellins play a key role in breaking seed dormancy and promoting the germination process by stimulating growth."
+    }
+    ,{
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Intermediate",
+        "questionText": "Which type of inheritance is characterized by traits controlled by multiple genes?",
+        "options": [
+            "A) Polygenic inheritance",
+            "B) Codominance",
+            "C) Incomplete dominance",
+            "D) Epistasis"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Polygenic inheritance involves multiple genes contributing to a single trait, such as skin color or height in humans."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "What term describes genes located on the same chromosome that tend to be inherited together?",
+        "options": [
+            "A) Alleles",
+            "B) Homologous genes",
+            "C) Linked genes",
+            "D) Recessive genes"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Linked genes are located close together on the same chromosome and are often inherited together due to reduced likelihood of crossing over."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Intermediate",
+        "questionText": "Which mechanism increases genetic variation in a population?",
+        "options": [
+            "A) Natural selection",
+            "B) Genetic drift",
+            "C) Mutation",
+            "D) Bottleneck effect"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Mutations introduce new alleles into a population, increasing genetic variation and providing raw material for evolution."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "Which evolutionary phenomenon results in two species evolving in response to each other?",
+        "options": [
+            "A) Divergent evolution",
+            "B) Convergent evolution",
+            "C) Coevolution",
+            "D) Adaptive radiation"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Coevolution occurs when two species influence each other's evolution, such as predators and their prey or flowering plants and pollinators."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the term for the maximum rate of population growth under ideal conditions?",
+        "options": [
+            "A) Carrying capacity",
+            "B) Logistic growth",
+            "C) Exponential growth",
+            "D) Biotic potential"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Biotic potential is the maximum reproductive capacity of a population under ideal conditions with unlimited resources."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "What type of ecological interaction occurs when one species benefits while the other is unaffected?",
+        "options": [
+            "A) Parasitism",
+            "B) Mutualism",
+            "C) Commensalism",
+            "D) Predation"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Commensalism is an interaction where one species benefits, and the other is neither harmed nor helped, such as barnacles on a whale."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Intermediate",
+        "questionText": "Which organelle is responsible for the synthesis of lipids in a cell?",
+        "options": [
+            "A) Rough endoplasmic reticulum",
+            "B) Smooth endoplasmic reticulum",
+            "C) Golgi apparatus",
+            "D) Ribosomes"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The smooth endoplasmic reticulum synthesizes lipids, detoxifies substances, and stores calcium ions."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which component of the cytoskeleton is involved in muscle contraction and cell movement?",
+        "options": [
+            "A) Microtubules",
+            "B) Intermediate filaments",
+            "C) Actin filaments",
+            "D) Centrosomes"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Actin filaments (microfilaments) play a critical role in muscle contraction, cell movement, and maintaining cell shape."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Intermediate",
+        "questionText": "Which part of the brain regulates balance and coordination?",
+        "options": [
+            "A) Cerebrum",
+            "B) Cerebellum",
+            "C) Medulla oblongata",
+            "D) Hypothalamus"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The cerebellum controls balance, coordination, and fine motor skills, ensuring smooth and coordinated movements."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "What type of blood vessel carries blood away from the heart?",
+        "options": [
+            "A) Vein",
+            "B) Artery",
+            "C) Capillary",
+            "D) Venule"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Arteries carry oxygenated blood away from the heart to the body, except for the pulmonary arteries, which carry deoxygenated blood to the lungs."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Intermediate",
+        "questionText": "Which of the following structures allows bacteria to survive harsh conditions?",
+        "options": [
+            "A) Capsule",
+            "B) Flagella",
+            "C) Endospore",
+            "D) Pilus"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Endospores are tough, dormant structures formed by bacteria to survive extreme conditions such as heat, radiation, and desiccation."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "Which staining method is used to identify Mycobacterium tuberculosis?",
+        "options": [
+            "A) Gram stain",
+            "B) Acid-fast stain",
+            "C) Capsule stain",
+            "D) Endospore stain"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The acid-fast staining technique is used to identify Mycobacterium species, including the tuberculosis-causing bacterium."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the name of the bond that connects amino acids in a protein?",
+        "options": [
+            "A) Hydrogen bond",
+            "B) Ionic bond",
+            "C) Peptide bond",
+            "D) Phosphodiester bond"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Peptide bonds form between amino acids during protein synthesis, linking them into polypeptide chains."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which enzyme synthesizes RNA primers during DNA replication?",
+        "options": [
+            "A) Helicase",
+            "B) Primase",
+            "C) DNA polymerase",
+            "D) Ligase"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Primase synthesizes short RNA primers to provide a starting point for DNA polymerase during replication."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Intermediate",
+        "questionText": "What type of root system is common in monocots?",
+        "options": [
+            "A) Taproot system",
+            "B) Fibrous root system",
+            "C) Adventitious root system",
+            "D) Lateral root system"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Monocots, such as grasses, typically have a fibrous root system consisting of many thin, branching roots."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "Which process in plants converts nitrate (NO₃⁻) into organic nitrogen compounds?",
+        "options": [
+            "A) Nitrogen fixation",
+            "B) Nitrification",
+            "C) Assimilation",
+            "D) Denitrification"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Assimilation is the process by which plants convert inorganic nitrate (NO₃⁻) into organic nitrogen compounds like amino acids."
+    }
+    
+]
+ 

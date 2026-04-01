@@ -1,0 +1,237 @@
+{
+  "id": "challenge-20250601-math-int-adv",
+  "type": "weekly",
+  "title": "Weekly Math Challenge \u2013 Intermediate to Advanced",
+  "description": "Challenge yourself with 15 math questions ranging from Intermediate to Advanced difficulty. Topics include algebra, calculus, linear algebra, and more.",
+  "startDate": "2025-06-01T00:00:00Z",
+  "endDate": "2025-06-08T00:00:00Z",
+  "difficultyLevel": "Intermediate\u2013Advanced",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Solve for x: 2x + 3 = 11",
+      "options": [
+        "A) 4",
+        "B) 3",
+        "C) 5",
+        "D) 6"
+      ],
+      "correctAnswer": "A",
+      "explanation": "2x = 8 \u2192 x = 4."
+    },
+    {
+      "topicID": "972708E1-80D8-4D8C-90DD-BA526C8803AE",
+      "topic": "Calculus",
+      "difficulty": "Intermediate",
+      "questionText": "What is the derivative of f(x) = x\u00b3?",
+      "options": [
+        "A) 2x",
+        "B) 3x\u00b2",
+        "C) x\u00b2",
+        "D) x\u00b3"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The derivative of x\u00b3 is 3x\u00b2."
+    },
+    {
+      "topicID": "3AA4D6CB-8266-4FC1-9357-9374A53856FF",
+      "topic": "Linear Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "What is the rank of a 2x2 identity matrix?",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) 2",
+        "D) 4"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The identity matrix is full rank."
+    },
+    {
+      "topicID": "1AF857AD-DB8A-4872-A1A5-794319320C19",
+      "topic": "Discrete Mathematics",
+      "difficulty": "Intermediate",
+      "questionText": "How many edges does a complete graph with 5 vertices have?",
+      "options": [
+        "A) 10",
+        "B) 5",
+        "C) 15",
+        "D) 8"
+      ],
+      "correctAnswer": "A",
+      "explanation": "n(n-1)/2 = 5\u00d74/2 = 10."
+    },
+    {
+      "topicID": "2E23F496-6F4A-4EE4-9379-8DD8F5A0A0DD",
+      "topic": "Statistics & Probability",
+      "difficulty": "Intermediate",
+      "questionText": "The mean of the numbers 2, 4, 6, 8, 10 is:",
+      "options": [
+        "A) 5",
+        "B) 6",
+        "C) 7",
+        "D) 8"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sum = 30, Mean = 30/5 = 6."
+    },
+    {
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "topic": "Trigonometry",
+      "difficulty": "Advanced",
+      "questionText": "What is the value of tan(\u03c0/4)?",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) \u221a2",
+        "D) Undefined"
+      ],
+      "correctAnswer": "B",
+      "explanation": "tan(\u03c0/4) = 1."
+    },
+    {
+      "topicID": "972708E1-80D8-4D8C-90DD-BA526C8803AE",
+      "topic": "Calculus",
+      "difficulty": "Advanced",
+      "questionText": "If f(x) = e^x, what is f''(x)?",
+      "options": [
+        "A) e^x",
+        "B) x",
+        "C) 1",
+        "D) 0"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The derivative of e^x is e^x; so is the second derivative."
+    },
+    {
+      "topicID": "3AA4D6CB-8266-4FC1-9357-9374A53856FF",
+      "topic": "Linear Algebra",
+      "difficulty": "Advanced",
+      "questionText": "A matrix is invertible if and only if its determinant is:",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) Non-zero",
+        "D) Negative"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A non-zero determinant implies the matrix is invertible."
+    },
+    {
+      "topicID": "1AF857AD-DB8A-4872-A1A5-794319320C19",
+      "topic": "Discrete Mathematics",
+      "difficulty": "Advanced",
+      "questionText": "How many permutations of 4 items from a set of 6?",
+      "options": [
+        "A) 120",
+        "B) 360",
+        "C) 720",
+        "D) 24"
+      ],
+      "correctAnswer": "B",
+      "explanation": "6P4 = 6\u00d75\u00d74\u00d73 = 360."
+    },
+    {
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "topic": "Algebra",
+      "difficulty": "Advanced",
+      "questionText": "What is the solution set for the inequality: x\u00b2 - 4 < 0?",
+      "options": [
+        "A) x > 2",
+        "B) x < -2",
+        "C) -2 < x < 2",
+        "D) x \u2208 \u211d"
+      ],
+      "correctAnswer": "C",
+      "explanation": "x\u00b2 < 4 means between -2 and 2."
+    },
+    {
+      "topicID": "3AA4D6CB-8266-4FC1-9357-9374A53856FF",
+      "topic": "Linear Algebra",
+      "difficulty": "Advanced",
+      "questionText": "If A is an orthogonal matrix, then A\u207b\u00b9 equals:",
+      "options": [
+        "A) A",
+        "B) A\u1d57",
+        "C) 0",
+        "D) det(A)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "For orthogonal matrices, A\u207b\u00b9 = A\u1d57."
+    },
+    {
+      "topicID": "972708E1-80D8-4D8C-90DD-BA526C8803AE",
+      "topic": "Calculus",
+      "difficulty": "Intermediate",
+      "questionText": "What is the limit of (1 + 1/n)^n as n \u2192 \u221e?",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) e",
+        "D) \u221e"
+      ],
+      "correctAnswer": "C",
+      "explanation": "This limit defines the constant e."
+    },
+    {
+      "topicID": "2E23F496-6F4A-4EE4-9379-8DD8F5A0A0DD",
+      "topic": "Statistics & Probability",
+      "difficulty": "Intermediate",
+      "questionText": "The variance of the data set {4, 4, 4, 4} is:",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) 4",
+        "D) Undefined"
+      ],
+      "correctAnswer": "A",
+      "explanation": "All values are equal, so variance = 0."
+    },
+    {
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "topic": "Trigonometry",
+      "difficulty": "Intermediate",
+      "questionText": "What is cos(0\u00b0)?",
+      "options": [
+        "A) 1",
+        "B) 0",
+        "C) -1",
+        "D) Undefined"
+      ],
+      "correctAnswer": "A",
+      "explanation": "cos(0\u00b0) = 1."
+    },
+    {
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "topic": "Trigonometry",
+      "difficulty": "Advanced",
+      "questionText": "What is the exact value of cos(\u03c0)?",
+      "options": [
+        "A) 1",
+        "B) 0",
+        "C) -1",
+        "D) Undefined"
+      ],
+      "correctAnswer": "C",
+      "explanation": "cos(\u03c0) = -1."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 500,
+      "description": "Complete this advanced challenge to earn 500 points!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Earn the 'Math Elite' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-05-31T00:00:00Z",
+  "updatedAt": "2025-05-31T00:00:00Z"
+}

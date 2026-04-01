@@ -1,0 +1,790 @@
+[
+    {
+        "topicID": "comp12345-6789-0abc-defg-hijk123456789",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Beginner",
+        "questionText": "What is the correct syntax to print 'Hello, World!' in Python?",
+        "options": ["A) printf('Hello, World!')", "B) echo 'Hello, World!'", "C) print('Hello, World!')", "D) cout << 'Hello, World!'"],
+        "correctAnswer": "C",
+        "explanation": "In Python, the print() function is used to display output."
+    },
+    {
+        "topicID": "comp12345-6789-0abc-defg-hijk123456789",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Intermediate",
+        "questionText": "What does the term 'variable' refer to in programming?",
+        "options": ["A) A fixed value", "B) A storage location with a name", "C) A program function", "D) A mathematical constant"],
+        "correctAnswer": "B",
+        "explanation": "A variable is a named storage location that holds data in a program."
+    },
+    {
+        "topicID": "comp12345-6789-0abc-defg-hijk123456789",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Advanced",
+        "questionText": "Which of the following is an example of a dynamic programming problem?",
+        "options": ["A) Binary Search", "B) Sorting an Array", "C) Longest Common Subsequence", "D) Traversing a Linked List"],
+        "correctAnswer": "C",
+        "explanation": "Dynamic programming solves problems by breaking them down into overlapping subproblems, such as finding the longest common subsequence."
+    },
+    {
+        "topicID": "comp23456-7890-1abc-defg-hijk234567890",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Beginner",
+        "questionText": "Which data structure uses the LIFO (Last In, First Out) principle?",
+        "options": ["A) Queue", "B) Stack", "C) Linked List", "D) Array"],
+        "correctAnswer": "B",
+        "explanation": "A stack follows the Last In, First Out principle."
+    },
+    {
+        "topicID": "comp23456-7890-1abc-defg-hijk234567890",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Intermediate",
+        "questionText": "What is the time complexity of searching for an element in a binary search tree (BST)?",
+        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n²)"],
+        "correctAnswer": "B",
+        "explanation": "In a balanced binary search tree, the time complexity of searching is O(log n)."
+    },
+    {
+        "topicID": "comp23456-7890-1abc-defg-hijk234567890",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Advanced",
+        "questionText": "Which sorting algorithm is based on the divide-and-conquer approach?",
+        "options": ["A) Bubble Sort", "B) Merge Sort", "C) Selection Sort", "D) Insertion Sort"],
+        "correctAnswer": "B",
+        "explanation": "Merge Sort is a divide-and-conquer algorithm that splits the array, sorts each part, and then merges them."
+    },
+    {
+        "topicID": "comp34567-8901-2abc-defg-hijk345678901",
+        "topic": "Artificial Intelligence",
+        "difficulty": "Beginner",
+        "questionText": "Which of the following is a branch of Artificial Intelligence?",
+        "options": ["A) Machine Learning", "B) Data Structures", "C) Networking", "D) Cryptography"],
+        "correctAnswer": "A",
+        "explanation": "Machine Learning is a subfield of Artificial Intelligence."
+    },
+    {
+        "topicID": "comp34567-8901-2abc-defg-hijk345678901",
+        "topic": "Artificial Intelligence",
+        "difficulty": "Intermediate",
+        "questionText": "Which algorithm is commonly used for decision-making in AI systems?",
+        "options": ["A) Breadth-First Search", "B) Minimax Algorithm", "C) Hashing", "D) Recursion"],
+        "correctAnswer": "B",
+        "explanation": "The Minimax Algorithm is used in game theory for decision-making, particularly in AI systems."
+    },
+    {
+        "topicID": "comp34567-8901-2abc-defg-hijk345678901",
+        "topic": "Artificial Intelligence",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of a neural network in AI?",
+        "options": ["A) Data encryption", "B) Pattern recognition", "C) Data transmission", "D) Memory allocation"],
+        "correctAnswer": "B",
+        "explanation": "Neural networks are designed to recognize patterns and are widely used in AI for tasks like image and speech recognition."
+    },
+    {
+        "topicID": "comp45678-9012-3abc-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Beginner",
+        "questionText": "What does the acronym 'VPN' stand for in cybersecurity?",
+        "options": ["A) Virtual Private Network", "B) Virtual Public Network", "C) Variable Private Network", "D) Virtual Protected Network"],
+        "correctAnswer": "A",
+        "explanation": "VPN stands for Virtual Private Network, which allows secure communication over public networks."
+    },
+    {
+        "topicID": "comp45678-9012-3abc-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Intermediate",
+        "questionText": "Which type of attack involves overwhelming a server with excessive requests to make it unavailable?",
+        "options": ["A) Phishing", "B) Ransomware", "C) Denial of Service (DoS)", "D) SQL Injection"],
+        "correctAnswer": "C",
+        "explanation": "A Denial of Service (DoS) attack floods a server with requests, making it inaccessible to legitimate users."
+    },
+    {
+        "topicID": "comp45678-9012-3abc-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of a firewall in a network?",
+        "options": ["A) Encrypt data", "B) Prevent unauthorized access", "C) Detect malware", "D) Manage bandwidth"],
+        "correctAnswer": "B",
+        "explanation": "A firewall monitors and controls incoming and outgoing network traffic to prevent unauthorized access."
+    },
+    {
+        "topicID": "comp56789-0123-4abc-defg-hijk567890123",
+        "topic": "Databases",
+        "difficulty": "Beginner",
+        "questionText": "What does SQL stand for?",
+        "options": ["A) Structured Question Language", "B) Simple Query Language", "C) Structured Query Language", "D) Standard Query Language"],
+        "correctAnswer": "C",
+        "explanation": "SQL stands for Structured Query Language, used to manage and query databases."
+    },
+    {
+        "topicID": "comp56789-0123-4abc-defg-hijk567890123",
+        "topic": "Databases",
+        "difficulty": "Intermediate",
+        "questionText": "What type of database structure uses tables to store data?",
+        "options": ["A) NoSQL", "B) Relational Database", "C) Document Database", "D) Key-Value Store"],
+        "correctAnswer": "B",
+        "explanation": "Relational databases use tables to store data, with rows representing records and columns representing attributes."
+    },
+    {
+        "topicID": "comp56789-0123-4abc-defg-hijk567890123",
+        "topic": "Databases",
+        "difficulty": "Advanced",
+        "questionText": "What is normalization in databases?",
+        "options": ["A) Data encryption", "B) Reducing data redundancy", "C) Indexing data", "D) Storing data in JSON format"],
+        "correctAnswer": "B",
+        "explanation": "Normalization organizes a database to reduce redundancy and improve data integrity."
+    }
+    ,
+    
+    {
+        "topicID": "comp67890-1234-5abc-defg-hijk678901234",
+        "topic": "Computer Networks",
+        "difficulty": "Beginner",
+        "questionText": "What does the acronym 'IP' stand for in networking?",
+        "options": ["A) Internet Protocol", "B) Internal Process", "C) Instant Program", "D) Independent Packet"],
+        "correctAnswer": "A",
+        "explanation": "IP stands for Internet Protocol, which governs the format and routing of data packets on the internet."
+    },
+    {
+        "topicID": "comp67890-1234-5abc-defg-hijk678901234",
+        "topic": "Computer Networks",
+        "difficulty": "Intermediate",
+        "questionText": "What is the default subnet mask for a Class C IP address?",
+        "options": ["A) 255.255.0.0", "B) 255.255.255.0", "C) 255.0.0.0", "D) 255.255.255.255"],
+        "correctAnswer": "B",
+        "explanation": "The default subnet mask for a Class C IP address is 255.255.255.0."
+    },
+    {
+        "topicID": "comp67890-1234-5abc-defg-hijk678901234",
+        "topic": "Computer Networks",
+        "difficulty": "Advanced",
+        "questionText": "Which protocol is used to resolve IP addresses to MAC addresses?",
+        "options": ["A) DHCP", "B) ARP", "C) ICMP", "D) FTP"],
+        "correctAnswer": "B",
+        "explanation": "The Address Resolution Protocol (ARP) is used to map IP addresses to MAC addresses."
+    },
+    {
+        "topicID": "comp78901-2345-6abc-defg-hijk789012345",
+        "topic": "Machine Learning",
+        "difficulty": "Beginner",
+        "questionText": "What is the purpose of supervised learning?",
+        "options": ["A) Grouping unlabeled data", "B) Predicting outcomes using labeled data", "C) Detecting patterns without guidance", "D) Encrypting data"],
+        "correctAnswer": "B",
+        "explanation": "Supervised learning uses labeled data to train models to predict outcomes."
+    },
+    {
+        "topicID": "comp78901-2345-6abc-defg-hijk789012345",
+        "topic": "Machine Learning",
+        "difficulty": "Intermediate",
+        "questionText": "Which algorithm is commonly used for classification tasks?",
+        "options": ["A) K-Means", "B) Linear Regression", "C) Decision Trees", "D) PCA"],
+        "correctAnswer": "C",
+        "explanation": "Decision Trees are widely used for classification tasks in machine learning."
+    },
+    {
+        "topicID": "comp78901-2345-6abc-defg-hijk789012345",
+        "topic": "Machine Learning",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary function of a loss function in machine learning?",
+        "options": ["A) Measure model accuracy", "B) Penalize prediction errors", "C) Normalize data", "D) Train neural networks"],
+        "correctAnswer": "B",
+        "explanation": "A loss function quantifies the error in a model's predictions and is used to improve model performance."
+    },
+    {
+        "topicID": "comp89012-3456-7abc-defg-hijk890123456",
+        "topic": "Web Development",
+        "difficulty": "Beginner",
+        "questionText": "What does HTML stand for?",
+        "options": ["A) HyperText Markup Language", "B) HyperText Mainframe Language", "C) HyperTransfer Markup Language", "D) HighText Machine Language"],
+        "correctAnswer": "A",
+        "explanation": "HTML stands for HyperText Markup Language, used to structure web pages."
+    },
+    {
+        "topicID": "comp89012-3456-7abc-defg-hijk890123456",
+        "topic": "Web Development",
+        "difficulty": "Intermediate",
+        "questionText": "Which CSS property is used to change the background color of an element?",
+        "options": ["A) color", "B) background-color", "C) bg-color", "D) background"],
+        "correctAnswer": "B",
+        "explanation": "The 'background-color' property in CSS changes an element's background color."
+    },
+    {
+        "topicID": "comp89012-3456-7abc-defg-hijk890123456",
+        "topic": "Web Development",
+        "difficulty": "Advanced",
+        "questionText": "Which HTTP method is used to update an existing resource on a server?",
+        "options": ["A) GET", "B) POST", "C) PUT", "D) DELETE"],
+        "correctAnswer": "C",
+        "explanation": "The HTTP PUT method updates an existing resource on a server."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Databases",
+        "difficulty": "Beginner",
+        "questionText": "What is a primary key in a database table?",
+        "options": ["A) A key used to unlock the database", "B) A unique identifier for a record", "C) A foreign key reference", "D) A type of index"],
+        "correctAnswer": "B",
+        "explanation": "A primary key uniquely identifies each record in a database table."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Databases",
+        "difficulty": "Intermediate",
+        "questionText": "What is the purpose of an index in a database?",
+        "options": ["A) Improve query performance", "B) Reduce data redundancy", "C) Maintain data integrity", "D) Enforce relationships between tables"],
+        "correctAnswer": "A",
+        "explanation": "Indexes improve database query performance by enabling faster data retrieval."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Databases",
+        "difficulty": "Advanced",
+        "questionText": "What is a database transaction?",
+        "options": ["A) A sequence of database operations treated as a single unit", "B) A data backup operation", "C) A database query that retrieves multiple records", "D) A process of normalizing tables"],
+        "correctAnswer": "A",
+        "explanation": "A transaction is a sequence of database operations executed as a single unit of work, ensuring consistency and reliability."
+    },
+    {
+        "topicID": "comp90123-4567-8abc-defg-hijk012345678",
+        "topic": "Artificial Intelligence",
+        "difficulty": "Beginner",
+        "questionText": "What is the purpose of natural language processing (NLP)?",
+        "options": ["A) Image recognition", "B) Understanding human language", "C) Data encryption", "D) File compression"],
+        "correctAnswer": "B",
+        "explanation": "NLP focuses on enabling computers to understand and process human language."
+    },
+    {
+        "topicID": "comp90123-4567-8abc-defg-hijk012345678",
+        "topic": "Artificial Intelligence",
+        "difficulty": "Intermediate",
+        "questionText": "Which algorithm is commonly used for clustering data?",
+        "options": ["A) K-Means", "B) Linear Regression", "C) Decision Tree", "D) Naive Bayes"],
+        "correctAnswer": "A",
+        "explanation": "K-Means is a popular algorithm for clustering data points into groups based on their features."
+    },
+    {
+        "topicID": "comp90123-4567-8abc-defg-hijk012345678",
+        "topic": "Artificial Intelligence",
+        "difficulty": "Advanced",
+        "questionText": "Which type of neural network is best suited for sequence prediction tasks?",
+        "options": ["A) Convolutional Neural Network (CNN)", "B) Recurrent Neural Network (RNN)", "C) Feedforward Neural Network", "D) Generative Adversarial Network (GAN)"],
+        "correctAnswer": "B",
+        "explanation": "Recurrent Neural Networks (RNNs) are designed for sequence prediction tasks like time series forecasting and language modeling."
+    }
+    ,
+    
+    {
+        "topicID": "comp34567-8901-2xyz-defg-hijk234567890",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Beginner",
+        "questionText": "Which of the following is a valid variable name in most programming languages?",
+        "options": ["A) 1variable", "B) _variable", "C) variable-name", "D) variable#"],
+        "correctAnswer": "B",
+        "explanation": "Variable names typically cannot start with a number, use special characters like '#', or include hyphens. An underscore is valid."
+    },
+    {
+        "topicID": "comp34567-8901-2xyz-defg-hijk234567890",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Intermediate",
+        "questionText": "Which of the following control structures is used to execute a block of code repeatedly?",
+        "options": ["A) If-Else", "B) Loop", "C) Switch", "D) Function"],
+        "correctAnswer": "B",
+        "explanation": "Loops, such as for and while, are used to execute a block of code repeatedly until a condition is met."
+    },
+    {
+        "topicID": "comp34567-8901-2xyz-defg-hijk234567890",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Advanced",
+        "questionText": "What is the time complexity of inserting an element at the beginning of a singly linked list?",
+        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n²)"],
+        "correctAnswer": "A",
+        "explanation": "In a singly linked list, inserting at the beginning requires updating the head pointer, which takes constant time O(1)."
+    },
+    {
+        "topicID": "comp45678-9012-3xyz-defg-hijk345678901",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Beginner",
+        "questionText": "What is the purpose of a hash table?",
+        "options": ["A) Sort data", "B) Store data for quick lookup", "C) Compress data", "D) Encrypt data"],
+        "correctAnswer": "B",
+        "explanation": "A hash table stores data in key-value pairs, enabling quick data lookup based on the key."
+    },
+    {
+        "topicID": "comp45678-9012-3xyz-defg-hijk345678901",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Intermediate",
+        "questionText": "What is the height of a balanced binary tree with n nodes?",
+        "options": ["A) O(n)", "B) O(log n)", "C) O(n log n)", "D) O(1)"],
+        "correctAnswer": "B",
+        "explanation": "The height of a balanced binary tree is O(log n) because the tree grows logarithmically with the number of nodes."
+    },
+    {
+        "topicID": "comp45678-9012-3xyz-defg-hijk345678901",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Advanced",
+        "questionText": "Which of the following is true about Dijkstra’s algorithm?",
+        "options": [
+            "A) It finds the shortest path in a graph with negative weights",
+            "B) It uses a priority queue",
+            "C) It works only on directed graphs",
+            "D) It uses depth-first search"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Dijkstra’s algorithm uses a priority queue to determine the shortest path in a graph with non-negative weights."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Beginner",
+        "questionText": "What is the purpose of a CAPTCHA?",
+        "options": ["A) Block malware", "B) Identify human users", "C) Encrypt data", "D) Optimize network traffic"],
+        "correctAnswer": "B",
+        "explanation": "CAPTCHA is used to distinguish human users from bots and prevent automated access."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Intermediate",
+        "questionText": "Which type of malware is designed to spread across networks?",
+        "options": ["A) Virus", "B) Worm", "C) Ransomware", "D) Trojan"],
+        "correctAnswer": "B",
+        "explanation": "A worm is self-replicating malware that spreads across networks without user intervention."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary purpose of the TLS (Transport Layer Security) protocol?",
+        "options": ["A) Encrypt data in transit", "B) Securely store data", "C) Detect malware", "D) Authenticate users"],
+        "correctAnswer": "A",
+        "explanation": "TLS ensures secure communication over the internet by encrypting data in transit."
+    },
+    {
+        "topicID": "comp67890-1234-5xyz-defg-hijk567890123",
+        "topic": "Web Development",
+        "difficulty": "Beginner",
+        "questionText": "Which language is used to style web pages?",
+        "options": ["A) HTML", "B) CSS", "C) JavaScript", "D) SQL"],
+        "correctAnswer": "B",
+        "explanation": "CSS (Cascading Style Sheets) is used to style web pages by applying colors, layouts, and fonts."
+    },
+    {
+        "topicID": "comp67890-1234-5xyz-defg-hijk567890123",
+        "topic": "Web Development",
+        "difficulty": "Intermediate",
+        "questionText": "What does the 'box model' in CSS represent?",
+        "options": [
+            "A) The structure of a webpage",
+            "B) The layout of an image",
+            "C) The content, padding, border, and margin of an element",
+            "D) A type of grid layout"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The box model in CSS consists of the content, padding, border, and margin of an element."
+    },
+    {
+        "topicID": "comp67890-1234-5xyz-defg-hijk567890123",
+        "topic": "Web Development",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of the 'async' attribute in an HTML script tag?",
+        "options": [
+            "A) Prevent the script from loading",
+            "B) Load the script only after the DOM is fully loaded",
+            "C) Allow the script to load independently of other scripts",
+            "D) Load the script only when clicked"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The 'async' attribute allows the script to load independently, improving page load times."
+    },
+    {
+        "topicID": "comp78901-2345-6xyz-defg-hijk678901234",
+        "topic": "Machine Learning",
+        "difficulty": "Beginner",
+        "questionText": "Which of the following is a commonly used Python library for machine learning?",
+        "options": ["A) NumPy", "B) TensorFlow", "C) Flask", "D) Django"],
+        "correctAnswer": "B",
+        "explanation": "TensorFlow is a popular Python library for machine learning and deep learning."
+    },
+    {
+        "topicID": "comp78901-2345-6xyz-defg-hijk678901234",
+        "topic": "Machine Learning",
+        "difficulty": "Intermediate",
+        "questionText": "What does overfitting mean in machine learning?",
+        "options": [
+            "A) The model performs well on training data but poorly on new data",
+            "B) The model performs well on all datasets",
+            "C) The model is under-trained",
+            "D) The model has too few features"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Overfitting occurs when a model learns the training data too well, including noise, and fails to generalize to new data."
+    },
+    {
+        "topicID": "comp78901-2345-6xyz-defg-hijk678901234",
+        "topic": "Machine Learning",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary purpose of a regularization technique in machine learning?",
+        "options": [
+            "A) Increase the training error",
+            "B) Reduce model complexity",
+            "C) Improve data preprocessing",
+            "D) Handle missing data"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Regularization reduces model complexity and prevents overfitting by adding a penalty to large model coefficients."
+    }
+    ,
+    
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Beginner",
+        "questionText": "Which of the following data types is used to store a sequence of characters in most programming languages?",
+        "options": ["A) Integer", "B) Boolean", "C) String", "D) Float"],
+        "correctAnswer": "C",
+        "explanation": "A string is a data type used to store a sequence of characters."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Intermediate",
+        "questionText": "What is recursion in programming?",
+        "options": [
+            "A) A function that calls itself",
+            "B) A loop that iterates over data",
+            "C) A method of data compression",
+            "D) A sorting algorithm"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Recursion occurs when a function calls itself as part of its computation."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Advanced",
+        "questionText": "Which sorting algorithm is the most efficient for large datasets?",
+        "options": ["A) Bubble Sort", "B) Quick Sort", "C) Selection Sort", "D) Insertion Sort"],
+        "correctAnswer": "B",
+        "explanation": "Quick Sort is one of the most efficient algorithms for large datasets with average time complexity O(n log n)."
+    },
+    {
+        "topicID": "comp45678-9012-3xyz-defg-hijk345678901",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Beginner",
+        "questionText": "Which data structure uses the FIFO (First In, First Out) principle?",
+        "options": ["A) Stack", "B) Queue", "C) Tree", "D) Graph"],
+        "correctAnswer": "B",
+        "explanation": "A queue follows the FIFO principle, meaning the first element added is the first to be removed."
+    },
+    {
+        "topicID": "comp45678-9012-3xyz-defg-hijk345678901",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Intermediate",
+        "questionText": "What is the worst-case time complexity of searching an element in an unbalanced binary search tree (BST)?",
+        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n²)"],
+        "correctAnswer": "C",
+        "explanation": "In the worst case, an unbalanced BST behaves like a linked list, making the search time complexity O(n)."
+    },
+    {
+        "topicID": "comp45678-9012-3xyz-defg-hijk345678901",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Advanced",
+        "questionText": "What is the time complexity of building a heap from an unsorted array of size n?",
+        "options": ["A) O(n)", "B) O(n log n)", "C) O(log n)", "D) O(n²)"],
+        "correctAnswer": "A",
+        "explanation": "Building a heap from an unsorted array has a time complexity of O(n)."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Beginner",
+        "questionText": "What does the acronym 'HTTPS' stand for?",
+        "options": ["A) HyperText Transfer Protocol Secure", "B) HyperTransfer Text Protocol Secure", "C) HyperText Transfer Secure", "D) HyperThread Transfer Protocol Secure"],
+        "correctAnswer": "A",
+        "explanation": "HTTPS stands for HyperText Transfer Protocol Secure, which uses SSL/TLS for encrypted communication."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Intermediate",
+        "questionText": "Which cryptographic technique uses two keys, one public and one private?",
+        "options": ["A) Symmetric Encryption", "B) Asymmetric Encryption", "C) Hashing", "D) Steganography"],
+        "correctAnswer": "B",
+        "explanation": "Asymmetric encryption uses a pair of keys—one public and one private—for secure communication."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Cybersecurity",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary goal of a penetration test?",
+        "options": [
+            "A) Encrypt sensitive data",
+            "B) Identify vulnerabilities in a system",
+            "C) Back up critical data",
+            "D) Optimize server performance"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Penetration testing aims to identify and exploit vulnerabilities in a system to improve its security."
+    },
+    {
+        "topicID": "comp67890-1234-5xyz-defg-hijk567890123",
+        "topic": "Web Development",
+        "difficulty": "Beginner",
+        "questionText": "Which of the following is used to make websites interactive?",
+        "options": ["A) HTML", "B) CSS", "C) JavaScript", "D) PHP"],
+        "correctAnswer": "C",
+        "explanation": "JavaScript is used to add interactivity to websites, such as dynamic content updates."
+    },
+    {
+        "topicID": "comp67890-1234-5xyz-defg-hijk567890123",
+        "topic": "Web Development",
+        "difficulty": "Intermediate",
+        "questionText": "What is the role of a RESTful API in web development?",
+        "options": [
+            "A) Design web pages",
+            "B) Manage client-side interactions",
+            "C) Facilitate communication between clients and servers",
+            "D) Optimize server performance"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A RESTful API allows clients and servers to communicate using HTTP methods."
+    },
+    {
+        "topicID": "comp67890-1234-5xyz-defg-hijk567890123",
+        "topic": "Web Development",
+        "difficulty": "Advanced",
+        "questionText": "Which HTTP status code indicates a successful request?",
+        "options": ["A) 200", "B) 404", "C) 500", "D) 401"],
+        "correctAnswer": "A",
+        "explanation": "The HTTP status code 200 indicates that the server successfully processed the client's request."
+    },
+    {
+        "topicID": "comp78901-2345-6xyz-defg-hijk678901234",
+        "topic": "Machine Learning",
+        "difficulty": "Beginner",
+        "questionText": "What is the difference between supervised and unsupervised learning?",
+        "options": [
+            "A) Supervised learning uses unlabeled data; unsupervised learning uses labeled data",
+            "B) Supervised learning uses labeled data; unsupervised learning uses unlabeled data",
+            "C) Both use labeled data",
+            "D) Both use unlabeled data"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Supervised learning uses labeled data to train models, while unsupervised learning finds patterns in unlabeled data."
+    },
+    {
+        "topicID": "comp78901-2345-6xyz-defg-hijk678901234",
+        "topic": "Machine Learning",
+        "difficulty": "Intermediate",
+        "questionText": "What is a confusion matrix in machine learning?",
+        "options": [
+            "A) A data structure for organizing algorithms",
+            "B) A table to evaluate classification models",
+            "C) A chart for regression analysis",
+            "D) A neural network optimization method"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A confusion matrix evaluates the performance of classification models by comparing predictions to actual values."
+    },
+    {
+        "topicID": "comp78901-2345-6xyz-defg-hijk678901234",
+        "topic": "Machine Learning",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of dropout in neural networks?",
+        "options": [
+            "A) Increase model accuracy",
+            "B) Reduce overfitting",
+            "C) Improve computational efficiency",
+            "D) Standardize input data"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Dropout reduces overfitting by randomly deactivating a subset of neurons during training."
+    }
+    ,
+    {
+        "topicID": "comp89012-3456-7xyz-defg-hijk678901234",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Beginner",
+        "questionText": "Which keyword is used to define a function in Python?",
+        "options": ["A) function", "B) define", "C) def", "D) fn"],
+        "correctAnswer": "C",
+        "explanation": "In Python, the `def` keyword is used to define a function."
+    },
+    {
+        "topicID": "comp89012-3456-7xyz-defg-hijk678901234",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Intermediate",
+        "questionText": "Which operator is used for exponentiation in Python?",
+        "options": ["A) **", "B) ^", "C) %", "D) *"],
+        "correctAnswer": "A",
+        "explanation": "The double asterisk (`**`) operator is used for exponentiation in Python."
+    },
+    {
+        "topicID": "comp89012-3456-7xyz-defg-hijk678901234",
+        "topic": "Programming Fundamentals",
+        "difficulty": "Advanced",
+        "questionText": "What is a lambda function in Python?",
+        "options": [
+            "A) A function with no name",
+            "B) A function that executes asynchronously",
+            "C) A function that calls itself",
+            "D) A function that takes multiple arguments"
+        ],
+        "correctAnswer": "A",
+        "explanation": "A lambda function in Python is an anonymous function that is defined using the `lambda` keyword."
+    },
+    {
+        "topicID": "comp90123-4567-8xyz-defg-hijk789012345",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Beginner",
+        "questionText": "Which data structure is used to implement depth-first search (DFS)?",
+        "options": ["A) Queue", "B) Stack", "C) Linked List", "D) Priority Queue"],
+        "correctAnswer": "B",
+        "explanation": "Depth-first search (DFS) is implemented using a stack, either explicitly or through recursion."
+    },
+    {
+        "topicID": "comp90123-4567-8xyz-defg-hijk789012345",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Intermediate",
+        "questionText": "What is the best-case time complexity of the Quick Sort algorithm?",
+        "options": ["A) O(n)", "B) O(n log n)", "C) O(n²)", "D) O(log n)"],
+        "correctAnswer": "B",
+        "explanation": "The best-case time complexity of Quick Sort is O(n log n), which occurs when the pivot divides the array into two equal halves."
+    },
+    {
+        "topicID": "comp90123-4567-8xyz-defg-hijk789012345",
+        "topic": "Data Structures & Algorithms",
+        "difficulty": "Advanced",
+        "questionText": "Which algorithm is used to detect a cycle in a directed graph?",
+        "options": [
+            "A) Breadth-First Search",
+            "B) Floyd's Cycle Detection",
+            "C) Tarjan's Algorithm",
+            "D) Depth-First Search"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Depth-First Search (DFS) can be used to detect cycles in a directed graph by checking for back edges during traversal."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Cybersecurity",
+        "difficulty": "Beginner",
+        "questionText": "What is phishing?",
+        "options": [
+            "A) A method to encrypt data",
+            "B) An attack that tricks users into revealing sensitive information",
+            "C) A tool for detecting malware",
+            "D) A type of password management"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Phishing is a cyberattack where attackers deceive users into providing sensitive information like passwords and credit card numbers."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Cybersecurity",
+        "difficulty": "Intermediate",
+        "questionText": "What is the role of a honeypot in cybersecurity?",
+        "options": [
+            "A) A tool for encrypting sensitive data",
+            "B) A decoy system to attract and analyze cyberattacks",
+            "C) A firewall configuration",
+            "D) A password management system"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A honeypot is a decoy system set up to attract and analyze cyberattacks, helping to identify vulnerabilities."
+    },
+    {
+        "topicID": "comp12345-6789-0xyz-defg-hijk901234567",
+        "topic": "Cybersecurity",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary purpose of Public Key Infrastructure (PKI)?",
+        "options": [
+            "A) Encrypting data at rest",
+            "B) Managing digital certificates and public keys",
+            "C) Preventing phishing attacks",
+            "D) Scanning for malware"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Public Key Infrastructure (PKI) is used to manage digital certificates and public keys for secure communication."
+    },
+    {
+        "topicID": "comp23456-7890-1xyz-defg-hijk234567890",
+        "topic": "Machine Learning",
+        "difficulty": "Beginner",
+        "questionText": "What is a feature in machine learning?",
+        "options": [
+            "A) A training dataset",
+            "B) An individual measurable property or characteristic of data",
+            "C) A set of hyperparameters",
+            "D) A loss function"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A feature is an individual measurable property or characteristic used as input for a machine learning model."
+    },
+    {
+        "topicID": "comp23456-7890-1xyz-defg-hijk234567890",
+        "topic": "Machine Learning",
+        "difficulty": "Intermediate",
+        "questionText": "What is the main purpose of gradient descent in training machine learning models?",
+        "options": [
+            "A) To compute the model's accuracy",
+            "B) To optimize the model's weights",
+            "C) To reduce overfitting",
+            "D) To split the dataset"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Gradient descent is an optimization algorithm used to minimize a model's loss function by updating its weights iteratively."
+    },
+    {
+        "topicID": "comp23456-7890-1xyz-defg-hijk234567890",
+        "topic": "Machine Learning",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary purpose of the activation function in a neural network?",
+        "options": [
+            "A) Normalize input data",
+            "B) Introduce non-linearity",
+            "C) Optimize weights",
+            "D) Reduce overfitting"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The activation function introduces non-linearity, enabling neural networks to model complex relationships."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Web Development",
+        "difficulty": "Beginner",
+        "questionText": "Which HTTP method is used to request data from a server?",
+        "options": ["A) POST", "B) GET", "C) PUT", "D) DELETE"],
+        "correctAnswer": "B",
+        "explanation": "The HTTP GET method is used to request data from a server."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Web Development",
+        "difficulty": "Intermediate",
+        "questionText": "What is a Content Delivery Network (CDN) used for?",
+        "options": [
+            "A) Encrypting web traffic",
+            "B) Improving website loading speed",
+            "C) Managing databases",
+            "D) Scaling server infrastructure"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A CDN improves website performance by delivering content from servers closer to the user's location."
+    },
+    {
+        "topicID": "comp56789-0123-4xyz-defg-hijk456789012",
+        "topic": "Web Development",
+        "difficulty": "Advanced",
+        "questionText": "Which of the following is a characteristic of Single Page Applications (SPAs)?",
+        "options": [
+            "A) Server-side rendering for every request",
+            "B) Navigation without full page reloads",
+            "C) Relies entirely on static files",
+            "D) Does not use JavaScript"
+        ],
+        "correctAnswer": "B",
+        "explanation": "SPAs update the content dynamically without requiring a full page reload, providing a smoother user experience."
+    }
+    
+]

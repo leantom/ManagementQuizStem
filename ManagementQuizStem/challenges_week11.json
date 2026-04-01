@@ -1,0 +1,118 @@
+{
+  "id": "challenge-78908",
+  "type": "daily",
+  "title": "Biology Mastery Challenge",
+  "description": "Sharpen your biology skills with this 20-question daily challenge covering anatomy, physiology, cell biology, genetics, and more!",
+  "startDate": "2024-12-05T00:00:00Z",
+  "endDate": "2024-12-06T00:00:00Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "1B70E68E-0EC4-4F2D-A4D7-3B7D8EF934DE",
+      "topic": "Anatomy & Physiology",
+      "difficulty": "Intermediate",
+      "questionText": "Which organ in the human body is responsible for filtering blood and producing urine?",
+      "options": ["A) Liver", "B) Kidney", "C) Heart", "D) Pancreas"],
+      "correctAnswer": "B",
+      "explanation": "The kidneys filter waste from the blood and produce urine."
+    },
+    {
+      "topicID": "731F5E0C-824E-40C5-B714-BD51E7CB4475",
+      "topic": "Cell Biology",
+      "difficulty": "Intermediate",
+      "questionText": "Which organelle is known as the powerhouse of the cell?",
+      "options": ["A) Nucleus", "B) Mitochondrion", "C) Ribosome", "D) Endoplasmic Reticulum"],
+      "correctAnswer": "B",
+      "explanation": "Mitochondria generate ATP, the cell’s main energy currency."
+    },
+    {
+      "topicID": "E4CBDAF3-8D1C-4A75-ACFB-E524FFC12A24",
+      "topic": "Ecology",
+      "difficulty": "Intermediate",
+      "questionText": "What term describes a group of organisms of the same species living in the same area?",
+      "options": ["A) Community", "B) Ecosystem", "C) Population", "D) Biome"],
+      "correctAnswer": "C",
+      "explanation": "A population is a group of the same species living in one area."
+    },
+    {
+      "topicID": "5DD0A766-53F4-492B-BD3C-8DCB40871A1E",
+      "topic": "Evolution",
+      "difficulty": "Intermediate",
+      "questionText": "Which scientist is best known for the theory of natural selection?",
+      "options": ["A) Mendel", "B) Pasteur", "C) Darwin", "D) Lamarck"],
+      "correctAnswer": "C",
+      "explanation": "Charles Darwin proposed natural selection as a mechanism of evolution."
+    },
+    {
+      "topicID": "E09C6CBC-4C91-426B-A72C-BF75E7AA346E",
+      "topic": "Genetics",
+      "difficulty": "Intermediate",
+      "questionText": "What molecule carries genetic instructions in most living organisms?",
+      "options": ["A) RNA", "B) Protein", "C) DNA", "D) Lipid"],
+      "correctAnswer": "C",
+      "explanation": "DNA contains the genetic code for building proteins."
+    },
+    {
+      "topicID": "A11B9955-59C3-47A6-90B9-830A3D3F375E",
+      "topic": "Microbiology",
+      "difficulty": "Intermediate",
+      "questionText": "Which microorganism is used to make bread rise?",
+      "options": ["A) Bacteria", "B) Mold", "C) Yeast", "D) Virus"],
+      "correctAnswer": "C",
+      "explanation": "Yeast ferments sugars and produces carbon dioxide, which causes dough to rise."
+    },
+    {
+      "topicID": "0FD4D9DF-2BA5-4126-ABF7-C99538EB24CA",
+      "topic": "Molecular Biology",
+      "difficulty": "Intermediate",
+      "questionText": "What is the function of mRNA in protein synthesis?",
+      "options": ["A) Synthesizing DNA", "B) Carrying amino acids", "C) Transporting genetic code", "D) Breaking down proteins"],
+      "correctAnswer": "C",
+      "explanation": "mRNA carries genetic information from DNA to the ribosome for protein synthesis."
+    },
+    {
+      "topicID": "8C7DEF16-25AB-4AA0-BE24-A4AF9335C63D",
+      "topic": "Botany",
+      "difficulty": "Intermediate",
+      "questionText": "Which pigment is essential for photosynthesis in plants?",
+      "options": ["A) Melanin", "B) Keratin", "C) Hemoglobin", "D) Chlorophyll"],
+      "correctAnswer": "D",
+      "explanation": "Chlorophyll absorbs sunlight and drives the photosynthesis process."
+    },
+    {
+      "topicID": "1B70E68E-0EC4-4F2D-A4D7-3B7D8EF934DE",
+      "topic": "Anatomy & Physiology",
+      "difficulty": "Intermediate",
+      "questionText": "Which type of muscle is found in the walls of internal organs?",
+      "options": ["A) Skeletal", "B) Cardiac", "C) Smooth", "D) Voluntary"],
+      "correctAnswer": "C",
+      "explanation": "Smooth muscle lines internal structures such as intestines and blood vessels."
+    },
+    {
+      "topicID": "731F5E0C-824E-40C5-B714-BD51E7CB4475",
+      "topic": "Cell Biology",
+      "difficulty": "Intermediate",
+      "questionText": "What is the function of ribosomes in a cell?",
+      "options": ["A) DNA replication", "B) Protein synthesis", "C) Energy production", "D) Waste removal"],
+      "correctAnswer": "B",
+      "explanation": "Ribosomes are responsible for assembling amino acids into proteins."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 400,
+      "description": "Earn 400 points for completing the Biology Mastery Challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'Biology Explorer' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2024-12-05T00:00:00Z",
+  "updatedAt": "2024-12-05T00:00:00Z"
+}
+

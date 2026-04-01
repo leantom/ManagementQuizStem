@@ -1,0 +1,167 @@
+{
+  "id": "challenge-70007",
+  "type": "weekly",
+  "title": "STEAM Expansion Challenge",
+  "description": "Dive deeper into various STEAM topics! From algebra to quantum mechanics, these 10 questions will put your interdisciplinary knowledge to the test.",
+  "startDate": "2025-04-07T00:00:00Z",
+  "endDate": "2025-04-14T00:00:00Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Which property in algebra ensures that a × (b + c) = ab + ac?",
+      "options": [
+        "A) Commutative property",
+        "B) Distributive property",
+        "C) Associative property",
+        "D) Identity property"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The distributive property allows multiplication to be applied to each term inside the parentheses."
+    },
+    {
+      "topicID": "697B2144-B727-4C60-ACCA-6059D49A2B3C",
+      "topic": "Thermodynamics",
+      "difficulty": "Intermediate",
+      "questionText": "Which thermodynamic potential is minimized in a system at constant temperature (T) and volume (V)?",
+      "options": [
+        "A) Helmholtz Free Energy (F)",
+        "B) Gibbs Free Energy (G)",
+        "C) Enthalpy (H)",
+        "D) Internal Energy (U)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Helmholtz Free Energy (F = U − TS) is the potential that is minimized at constant temperature and volume."
+    },
+    {
+      "topicID": "DE35C776-A38D-4ED8-B822-3DFBAAE954F9",
+      "topic": "Artificial Intelligence",
+      "difficulty": "Intermediate",
+      "questionText": "Which term describes a situation where a machine learning model performs extremely well on training data but poorly on new, unseen data?",
+      "options": [
+        "A) Underfitting",
+        "B) Overfitting",
+        "C) Regularization",
+        "D) Generalization"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Overfitting occurs when a model learns details and noise in the training data to the extent that it negatively impacts its performance on unseen data."
+    },
+    {
+      "topicID": "B2828E2D-DDE7-4E98-9D32-7A66E02934BF",
+      "topic": "Astronomy",
+      "difficulty": "Intermediate",
+      "questionText": "Which type of galaxy is characterized by a flat, rotating disk containing spiral arms and often a central bulge?",
+      "options": [
+        "A) Elliptical galaxy",
+        "B) Spiral galaxy",
+        "C) Irregular galaxy",
+        "D) Lenticular galaxy"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Spiral galaxies feature prominent, curving arms in a disk, often with a bright central nucleus or bulge."
+    },
+    {
+      "topicID": "2E23F496-6F4A-4EE4-9379-8DD8F5A0A0DD",
+      "topic": "Statistics & Probability",
+      "difficulty": "Intermediate",
+      "questionText": "Which measure of central tendency is found by summing all the values in a dataset and then dividing by the number of values?",
+      "options": [
+        "A) Median",
+        "B) Mode",
+        "C) Mean",
+        "D) Range"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The mean (arithmetic average) is calculated by adding all observations and dividing by the total count."
+    },
+    {
+      "topicID": "1C847C19-3D69-4FFC-BA9B-F2288468F11D",
+      "topic": "Quantum Mechanics",
+      "difficulty": "Intermediate",
+      "questionText": "Which principle states that certain pairs of physical properties, like position and momentum, cannot both be known to arbitrary precision simultaneously?",
+      "options": [
+        "A) Pauli Exclusion Principle",
+        "B) Born Rule",
+        "C) Heisenberg’s Uncertainty Principle",
+        "D) Correspondence Principle"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Heisenberg's Uncertainty Principle says one cannot determine both the position and momentum of a particle with perfect accuracy at the same time."
+    },
+    {
+      "topicID": "694D806F-178C-4865-8E29-E3874212D7FD",
+      "topic": "Analytical Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which analytical method separates ions or molecules based on their mass-to-charge ratio (m/z)?",
+      "options": [
+        "A) UV-Vis Spectroscopy",
+        "B) NMR Spectroscopy",
+        "C) Mass Spectrometry",
+        "D) IR Spectroscopy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mass spectrometry sorts ions by their mass-to-charge ratio, allowing precise analysis of molecular composition."
+    },
+    {
+      "topicID": "13C3917E-74FA-4368-BAB5-3E46724EF61F",
+      "topic": "Electromagnetism",
+      "difficulty": "Intermediate",
+      "questionText": "Which of Maxwell's equations (in integral form) states that the line integral of the magnetic field B around a closed loop equals μ₀ times the enclosed current?",
+      "options": [
+        "A) Gauss's Law for Electricity",
+        "B) Gauss's Law for Magnetism",
+        "C) Faraday's Law of Induction",
+        "D) Ampère's Law (with Maxwell's Correction)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Ampère's Law, in integral form, asserts ∮B·dl = μ₀I_enc (plus the displacement current term in Maxwell’s complete form)."
+    },
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Intermediate",
+      "questionText": "Which quantity remains constant for a rigid body experiencing uniform circular motion if no external torque is applied?",
+      "options": [
+        "A) Linear momentum",
+        "B) Angular momentum",
+        "C) Kinetic energy",
+        "D) Potential energy"
+      ],
+      "correctAnswer": "B",
+      "explanation": "With no external torque, the angular momentum of the rotating body remains constant."
+    },
+    {
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "topic": "Trigonometry",
+      "difficulty": "Intermediate",
+      "questionText": "Which angle measure in radians is equivalent to 180°?",
+      "options": [
+        "A) 2π radians",
+        "B) π radians",
+        "C) π/2 radians",
+        "D) 3π/2 radians"
+      ],
+      "correctAnswer": "B",
+      "explanation": "π radians is equivalent to 180°."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 750,
+      "description": "Earn 750 points for completing this STEAM Expansion Challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'STEAM Explorer II' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-04-07T00:00:00Z",
+  "updatedAt": "2025-04-07T00:00:00Z"
+}

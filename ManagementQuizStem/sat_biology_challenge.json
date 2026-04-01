@@ -1,0 +1,307 @@
+{
+  "id": "challenge-biology-sat-week-v2",
+  "type": "weekly",
+  "title": "SAT Biology - No Repeats",
+  "description": "20 SAT-style biology questions with unique content across major biological domains.",
+  "startDate": "2025-06-23T01:11:24.756344Z",
+  "endDate": "2025-06-30T01:11:24.756366Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 900,
+  "questions": [
+    {
+      "questionText": "What part of the brain regulates vital functions like heart rate and breathing?",
+      "options": [
+        "A) Cerebellum",
+        "B) Medulla oblongata",
+        "C) Thalamus",
+        "D) Corpus callosum"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The medulla controls involuntary activities like heart rate and breathing.",
+      "topic": "Anatomy & Physiology",
+      "topicID": "1B70E68E-0EC4-4F2D-A4D7-3B7D8EF934DE",
+      "difficulty": "Beginner"
+    },
+    {
+      "questionText": "Which organelle packages and modifies proteins for transport within the cell?",
+      "options": [
+        "A) Nucleus",
+        "B) Lysosome",
+        "C) Golgi apparatus",
+        "D) Mitochondria"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The Golgi apparatus processes and packages proteins.",
+      "topic": "Cell Biology",
+      "topicID": "731F5E0C-824E-40C5-B714-BD51E7CB4475",
+      "difficulty": "Beginner"
+    },
+    {
+      "questionText": "Which molecule acts as the primary energy currency in cells?",
+      "options": [
+        "A) DNA",
+        "B) Glucose",
+        "C) ATP",
+        "D) NADH"
+      ],
+      "correctAnswer": "C",
+      "explanation": "ATP (adenosine triphosphate) stores and transfers energy for cellular processes.",
+      "topic": "Molecular Biology",
+      "topicID": "0FD4D9DF-2BA5-4126-ABF7-C99538EB24CA",
+      "difficulty": "Beginner"
+    },
+    {
+      "questionText": "What is the function of guard cells in plant leaves?",
+      "options": [
+        "A) Conduct water",
+        "B) Absorb sunlight",
+        "C) Regulate gas exchange",
+        "D) Provide support"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Guard cells control the opening and closing of stomata to regulate gas exchange.",
+      "topic": "Botany",
+      "topicID": "8C7DEF16-25AB-4AA0-BE24-A4AF9335C63D",
+      "difficulty": "Beginner"
+    },
+    {
+      "questionText": "Which biome is characterized by low rainfall, permafrost, and short vegetation?",
+      "options": [
+        "A) Taiga",
+        "B) Savanna",
+        "C) Tundra",
+        "D) Rainforest"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tundras have permafrost, low biodiversity, and cold, dry conditions.",
+      "topic": "Ecology",
+      "topicID": "E4CBDAF3-8D1C-4A75-ACFB-E524FFC12A24",
+      "difficulty": "Beginner"
+    },
+    {
+      "questionText": "Which structure allows bacteria to transfer DNA through conjugation?",
+      "options": [
+        "A) Flagellum",
+        "B) Ribosome",
+        "C) Pilus",
+        "D) Plasmid"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pili are used by bacteria to exchange DNA via conjugation.",
+      "topic": "Microbiology",
+      "topicID": "A11B9955-59C3-47A6-90B9-830A3D3F375E",
+      "difficulty": "Beginner"
+    },
+    {
+      "questionText": "Which base pairs with guanine in DNA?",
+      "options": [
+        "A) Cytosine",
+        "B) Adenine",
+        "C) Thymine",
+        "D) Uracil"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In DNA, cytosine pairs with guanine.",
+      "topic": "Genetics",
+      "topicID": "E09C6CBC-4C91-426B-A72C-BF75E7AA346E",
+      "difficulty": "Beginner"
+    },
+    {
+      "questionText": "Which evolutionary process results in the formation of new species due to geographic isolation?",
+      "options": [
+        "A) Convergent evolution",
+        "B) Genetic drift",
+        "C) Allopatric speciation",
+        "D) Hybridization"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Allopatric speciation occurs when physical barriers separate populations.",
+      "topic": "Evolution",
+      "topicID": "5DD0A766-53F4-492B-BD3C-8DCB40871A1E",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Which part of the eye adjusts to control the amount of light entering?",
+      "options": [
+        "A) Retina",
+        "B) Iris",
+        "C) Lens",
+        "D) Cornea"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The iris contracts or expands to control pupil size and regulate light entry.",
+      "topic": "Anatomy & Physiology",
+      "topicID": "1B70E68E-0EC4-4F2D-A4D7-3B7D8EF934DE",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "What is the role of ribosomes in the cell?",
+      "options": [
+        "A) Energy production",
+        "B) Transporting waste",
+        "C) Synthesizing proteins",
+        "D) Storing lipids"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Ribosomes build proteins from amino acids.",
+      "topic": "Cell Biology",
+      "topicID": "731F5E0C-824E-40C5-B714-BD51E7CB4475",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Which biomolecule contains nitrogen, carbon, hydrogen, and oxygen and forms enzymes?",
+      "options": [
+        "A) Lipids",
+        "B) Carbohydrates",
+        "C) Nucleic acids",
+        "D) Proteins"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Proteins are made of amino acids and function as enzymes.",
+      "topic": "Molecular Biology",
+      "topicID": "0FD4D9DF-2BA5-4126-ABF7-C99538EB24CA",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Which plant hormone is responsible for cell elongation and phototropism?",
+      "options": [
+        "A) Ethylene",
+        "B) Cytokinin",
+        "C) Auxin",
+        "D) Gibberellin"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Auxin promotes elongation and directional growth toward light.",
+      "topic": "Botany",
+      "topicID": "8C7DEF16-25AB-4AA0-BE24-A4AF9335C63D",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Which factor is abiotic in an ecosystem?",
+      "options": [
+        "A) Plants",
+        "B) Fungi",
+        "C) Temperature",
+        "D) Insects"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Abiotic factors are non-living, such as light, temperature, and water.",
+      "topic": "Ecology",
+      "topicID": "E4CBDAF3-8D1C-4A75-ACFB-E524FFC12A24",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Which structure helps bacteria resist antibiotics?",
+      "options": [
+        "A) Capsule",
+        "B) Cell wall",
+        "C) Ribosome",
+        "D) Endospore"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Endospores are resistant to heat, chemicals, and antibiotics.",
+      "topic": "Microbiology",
+      "topicID": "A11B9955-59C3-47A6-90B9-830A3D3F375E",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Which RNA type brings amino acids to the ribosome during translation?",
+      "options": [
+        "A) mRNA",
+        "B) rRNA",
+        "C) tRNA",
+        "D) siRNA"
+      ],
+      "correctAnswer": "C",
+      "explanation": "tRNA carries amino acids during protein synthesis.",
+      "topic": "Genetics",
+      "topicID": "E09C6CBC-4C91-426B-A72C-BF75E7AA346E",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "Which structure in Darwin\u2019s finches is an example of adaptive radiation?",
+      "options": [
+        "A) Wings",
+        "B) Beaks",
+        "C) Feathers",
+        "D) Claws"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Differences in beak shapes reflect adaptation to diverse food sources.",
+      "topic": "Evolution",
+      "topicID": "5DD0A766-53F4-492B-BD3C-8DCB40871A1E",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "What is the main function of the large intestine?",
+      "options": [
+        "A) Absorption of nutrients",
+        "B) Production of insulin",
+        "C) Water reabsorption",
+        "D) Digestion of proteins"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The large intestine absorbs water and forms feces.",
+      "topic": "Anatomy & Physiology",
+      "topicID": "1B70E68E-0EC4-4F2D-A4D7-3B7D8EF934DE",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "Which phase of meiosis results in the separation of homologous chromosomes?",
+      "options": [
+        "A) Prophase I",
+        "B) Metaphase I",
+        "C) Anaphase I",
+        "D) Telophase II"
+      ],
+      "correctAnswer": "C",
+      "explanation": "During anaphase I, homologous chromosomes are pulled apart.",
+      "topic": "Cell Biology",
+      "topicID": "731F5E0C-824E-40C5-B714-BD51E7CB4475",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "What is the main role of helicase in DNA replication?",
+      "options": [
+        "A) Joins fragments",
+        "B) Adds nucleotides",
+        "C) Unwinds DNA",
+        "D) Repairs damage"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Helicase unwinds the DNA double helix at the replication fork.",
+      "topic": "Molecular Biology",
+      "topicID": "0FD4D9DF-2BA5-4126-ABF7-C99538EB24CA",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "Which plant structure is responsible for absorbing water and minerals?",
+      "options": [
+        "A) Leaf",
+        "B) Stem",
+        "C) Root hairs",
+        "D) Stomata"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Root hairs increase surface area for water and mineral absorption.",
+      "topic": "Botany",
+      "topicID": "8C7DEF16-25AB-4AA0-BE24-A4AF9335C63D",
+      "difficulty": "Advanced"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 1000,
+      "description": "Earn 1000 XP for conquering this SAT Biology set!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Badge Unlocked: Unique Biology Master"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-06-23T01:11:24.756381Z",
+  "updatedAt": "2025-06-23T01:11:24.756385Z"
+}

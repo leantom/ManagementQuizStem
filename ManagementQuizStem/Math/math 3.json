@@ -1,0 +1,763 @@
+[
+  {
+    "topicID": "3f4a5b6c-7d8e-9f0a-1b2c-d3e4f5678901",
+    "topic": "Algebra",
+    "difficulty": "Beginner",
+    "questionText": "What is the value of x if 3x = 12?",
+    "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+    "correctAnswer": "C",
+    "explanation": "3x = 12 → x = 12 / 3 → x = 4"
+  },
+  {
+    "topicID": "3f4a5b6c-7d8e-9f0a-1b2c-d3e4f5678901",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Simplify the expression: (x^2 - 9)/(x - 3).",
+    "options": ["A) x - 3", "B) x + 3", "C) x^2 - 3", "D) x - 9"],
+    "correctAnswer": "B",
+    "explanation": "Factor numerator: (x + 3)(x - 3)/(x - 3) → Cancel (x - 3): x + 3"
+  },
+  {
+    "topicID": "3f4a5b6c-7d8e-9f0a-1b2c-d3e4f5678901",
+    "topic": "Algebra",
+    "difficulty": "Advanced",
+    "questionText": "Solve the equation: x^2 + x - 6 = 0.",
+    "options": ["A) x = 2 or x = -3", "B) x = -2 or x = 3", "C) x = 1 or x = -6", "D) x = -1 or x = 6"],
+    "correctAnswer": "A",
+    "explanation": "Factor the equation: (x + 3)(x - 2) = 0 → x = -3 or x = 2"
+  },
+  {
+    "topicID": "4a5b6c7d-8e9f-0a1b-2c3d-e4f56789012a",
+    "topic": "Geometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the area of a rectangle with length 7 units and width 3 units?",
+    "options": ["A) 10 units²", "B) 21 units²", "C) 24 units²", "D) 30 units²"],
+    "correctAnswer": "B",
+    "explanation": "Area = length × width = 7 × 3 = 21 units²"
+  },
+  {
+    "topicID": "4a5b6c7d-8e9f-0a1b-2c3d-e4f56789012a",
+    "topic": "Geometry",
+    "difficulty": "Intermediate",
+    "questionText": "Find the surface area of a cube with side length 5 units.",
+    "options": ["A) 25 units²", "B) 50 units²", "C) 75 units²", "D) 150 units²"],
+    "correctAnswer": "D",
+    "explanation": "Surface area = 6 × side² = 6 × 25 = 150 units²"
+  },
+  {
+    "topicID": "4a5b6c7d-8e9f-0a1b-2c3d-e4f56789012a",
+    "topic": "Geometry",
+    "difficulty": "Advanced",
+    "questionText": "Calculate the length of the diagonal of a rectangle with length 8 units and width 6 units.",
+    "options": ["A) 10 units", "B) 12 units", "C) 14 units", "D) 16 units"],
+    "correctAnswer": "A",
+    "explanation": "Diagonal = √(length² + width²) = √(64 + 36) = √100 = 10 units"
+  },
+  {
+    "topicID": "5b6c7d8e-9f0a-1b2c-3d4e-f56789012abc",
+    "topic": "Calculus",
+    "difficulty": "Beginner",
+    "questionText": "What is the derivative of f(x) = x?",
+    "options": ["A) 0", "B) 1", "C) x", "D) x²"],
+    "correctAnswer": "B",
+    "explanation": "The derivative of x with respect to x is 1"
+  },
+  {
+    "topicID": "5b6c7d8e-9f0a-1b2c-3d4e-f56789012abc",
+    "topic": "Calculus",
+    "difficulty": "Intermediate",
+    "questionText": "Find the integral ∫ (2x + 3) dx.",
+    "options": ["A) x² + 3x + C", "B) x² + x + C", "C) 2x² + 3x + C", "D) x² + 3 + C"],
+    "correctAnswer": "A",
+    "explanation": "∫ (2x + 3) dx = 2(x²/2) + 3x + C = x² + 3x + C"
+  },
+  {
+    "topicID": "5b6c7d8e-9f0a-1b2c-3d4e-f56789012abc",
+    "topic": "Calculus",
+    "difficulty": "Advanced",
+    "questionText": "Evaluate the limit: lim_{x→0} (e^x - 1)/x.",
+    "options": ["A) 0", "B) 1", "C) e", "D) Undefined"],
+    "correctAnswer": "B",
+    "explanation": "Using L'Hôpital's Rule: derivative of numerator and denominator → (e^x)/1 → At x=0: e^0 = 1"
+  },
+  {
+    "topicID": "6c7d8e9f-0a1b-2c3d-4e5f-6789012abcd3",
+    "topic": "Statistics & Probability",
+    "difficulty": "Beginner",
+    "questionText": "What is the range of the data set: 5, 7, 9, 12, 15?",
+    "options": ["A) 5", "B) 7", "C) 10", "D) 15"],
+    "correctAnswer": "C",
+    "explanation": "Range = Maximum - Minimum = 15 - 5 = 10"
+  },
+  {
+    "topicID": "6c7d8e9f-0a1b-2c3d-4e5f-6789012abcd3",
+    "topic": "Statistics & Probability",
+    "difficulty": "Intermediate",
+    "questionText": "A die is rolled twice. What is the probability of getting a sum of 4?",
+    "options": ["A) 1/12", "B) 1/9", "C) 1/18", "D) 1/36"],
+    "correctAnswer": "A",
+    "explanation": "Possible combinations: (1,3), (2,2), (3,1); Total combinations: 36; Probability = 3/36 = 1/12"
+  },
+  {
+    "topicID": "6c7d8e9f-0a1b-2c3d-4e5f-6789012abcd3",
+    "topic": "Statistics & Probability",
+    "difficulty": "Advanced",
+    "questionText": "What is the variance of the numbers 2, 4, 6, 8, 10?",
+    "options": ["A) 8", "B) 10", "C) 12", "D) 16"],
+    "correctAnswer": "A",
+    "explanation": "Mean = 6; Variance = [(2-6)² + (4-6)² + (6-6)² + (8-6)² + (10-6)²]/5 = [16+4+0+4+16]/5 = 40/5 = 8"
+  },
+  {
+    "topicID": "7d8e9f0a-1b2c-3d4e-5f6a-789012abcd34",
+    "topic": "Trigonometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the value of sin(30°)?",
+    "options": ["A) 0.5", "B) √2/2", "C) √3/2", "D) 1"],
+    "correctAnswer": "A",
+    "explanation": "sin(30°) = 0.5"
+  },
+  {
+    "topicID": "7d8e9f0a-1b2c-3d4e-5f6a-789012abcd34",
+    "topic": "Trigonometry",
+    "difficulty": "Intermediate",
+    "questionText": "Find the exact value of cos(45°).",
+    "options": ["A) 0.5", "B) √2/2", "C) √3/2", "D) 1"],
+    "correctAnswer": "B",
+    "explanation": "cos(45°) = √2/2"
+  },
+  {
+    "topicID": "7d8e9f0a-1b2c-3d4e-5f6a-789012abcd34",
+    "topic": "Trigonometry",
+    "difficulty": "Advanced",
+    "questionText": "Simplify the expression: sin θ / (1 + cos θ).",
+    "options": ["A) tan(θ/2)", "B) tan θ", "C) cot(θ/2)", "D) sin(2θ)"],
+    "correctAnswer": "A",
+    "explanation": "Using half-angle identities: sin θ / (1 + cos θ) = tan(θ/2)"
+  },
+  {
+    "topicID": "8e9f0a1b-2c3d-4e5f-6a7b-89012abcd345",
+    "topic": "Number Theory",
+    "difficulty": "Beginner",
+    "questionText": "What is the prime factorization of 18?",
+    "options": ["A) 2 × 3 × 3", "B) 2 × 2 × 3", "C) 3 × 3 × 3", "D) 2 × 2 × 2 × 3"],
+    "correctAnswer": "A",
+    "explanation": "18 = 2 × 3²"
+  },
+  {
+    "topicID": "8e9f0a1b-2c3d-4e5f-6a7b-89012abcd345",
+    "topic": "Number Theory",
+    "difficulty": "Intermediate",
+    "questionText": "Determine whether 121 is a prime number.",
+    "options": ["A) Yes", "B) No", "C) Only divisible by 1 and itself", "D) Cannot determine"],
+    "correctAnswer": "B",
+    "explanation": "121 = 11 × 11, so it's not prime"
+  },
+  {
+    "topicID": "8e9f0a1b-2c3d-4e5f-6a7b-89012abcd345",
+    "topic": "Number Theory",
+    "difficulty": "Advanced",
+    "questionText": "Find the remainder when 2^50 is divided by 7.",
+    "options": ["A) 1", "B) 2", "C) 4", "D) 6"],
+    "correctAnswer": "C",
+    "explanation": "2^3 ≡ 1 mod 7; 50 mod 3 = 2; So, 2^(3×16 + 2) ≡ (2^3)^16 × 2^2 ≡ 1^16 × 4 ≡ 4 mod 7"
+  },
+  {
+    "topicID": "9f0a1b2c-3d4e-5f6a-7b8c-9012abcd3456",
+    "topic": "Linear Algebra",
+    "difficulty": "Beginner",
+    "questionText": "What is the magnitude of vector v = [3, 4]?",
+    "options": ["A) 5", "B) 7", "C) 9", "D) 12"],
+    "correctAnswer": "A",
+    "explanation": "Magnitude = √(3² + 4²) = √(9 + 16) = √25 = 5"
+  },
+  {
+    "topicID": "9f0a1b2c-3d4e-5f6a-7b8c-9012abcd3456",
+    "topic": "Linear Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "If matrix A = [[1, 2], [3, 4]], compute the determinant of A.",
+    "options": ["A) -2", "B) -1", "C) 1", "D) 2"],
+    "correctAnswer": "A",
+    "explanation": "Determinant = (1)(4) - (2)(3) = 4 - 6 = -2"
+  },
+  {
+    "topicID": "9f0a1b2c-3d4e-5f6a-7b8c-9012abcd3456",
+    "topic": "Linear Algebra",
+    "difficulty": "Advanced",
+    "questionText": "Find the rank of the matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]].",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 0"],
+    "correctAnswer": "B",
+    "explanation": "The matrix has rank 2 because its rows are linearly dependent"
+  },
+  {
+    "topicID": "0a1b2c3d-4e5f-6a7b-8c9d-012abcd34567",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Beginner",
+    "questionText": "What is the decimal equivalent of the binary number 1010?",
+    "options": ["A) 8", "B) 9", "C) 10", "D) 11"],
+    "correctAnswer": "C",
+    "explanation": "1010₂ = 1×8 + 0×4 + 1×2 + 0×1 = 8 + 0 + 2 + 0 = 10"
+  },
+  {
+    "topicID": "0a1b2c3d-4e5f-6a7b-8c9d-012abcd34567",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Intermediate",
+    "questionText": "How many 3-letter codes can be formed from the letters A, B, C without repetition?",
+    "options": ["A) 6", "B) 9", "C) 12", "D) 15"],
+    "correctAnswer": "A",
+    "explanation": "Number of permutations: 3! = 6"
+  },
+  {
+    "topicID": "0a1b2c3d-4e5f-6a7b-8c9d-012abcd34567",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Advanced",
+    "questionText": "Evaluate the combinatorial expression C(7, 3).",
+    "options": ["A) 21", "B) 35", "C) 28", "D) 15"],
+    "correctAnswer": "C",
+    "explanation": "C(7, 3) = 7! / (3!×4!) = 35"
+  },
+  
+  {
+    "topicID": "abc12345-6789-0abc-def1-234567890abc",
+    "topic": "Algebra",
+    "difficulty": "Beginner",
+    "questionText": "Solve for x: x - 7 = 5.",
+    "options": ["A) 12", "B) -2", "C) 2", "D) -12"],
+    "correctAnswer": "A",
+    "explanation": "x - 7 = 5 → x = 5 + 7 → x = 12"
+  },
+  {
+    "topicID": "abc12345-6789-0abc-def1-234567890abc",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Simplify the expression: (3x^2 y)(2xy^3).",
+    "options": ["A) 6x^3 y^4", "B) 5x^3 y^4", "C) 6x^2 y^3", "D) 5x^2 y^3"],
+    "correctAnswer": "A",
+    "explanation": "(3x^2 y)(2x y^3) = 6x^(2+1) y^(1+3) = 6x^3 y^4"
+  },
+  {
+    "topicID": "abc12345-6789-0abc-def1-234567890abc",
+    "topic": "Algebra",
+    "difficulty": "Advanced",
+    "questionText": "If (x + 4)(x - 5) = 0, find the values of x.",
+    "options": ["A) x = -4 or x = 5", "B) x = 4 or x = -5", "C) x = -4 or x = -5", "D) x = 4 or x = 5"],
+    "correctAnswer": "A",
+    "explanation": "Set each factor to zero: x + 4 = 0 → x = -4; x - 5 = 0 → x = 5"
+  },
+  {
+    "topicID": "def23456-7890-1abc-def2-34567890abcd",
+    "topic": "Geometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the area of a circle with a radius of 7 units? (Use π ≈ 3.14)",
+    "options": ["A) 153.86 units²", "B) 154 units²", "C) 44 units²", "D) 49 units²"],
+    "correctAnswer": "A",
+    "explanation": "Area = πr² = 3.14 × 7² = 3.14 × 49 = 153.86 units²"
+  },
+  {
+    "topicID": "def23456-7890-1abc-def2-34567890abcd",
+    "topic": "Geometry",
+    "difficulty": "Intermediate",
+    "questionText": "Find the measure of each interior angle in a regular octagon.",
+    "options": ["A) 108°", "B) 120°", "C) 135°", "D) 144°"],
+    "correctAnswer": "C",
+    "explanation": "Sum of interior angles = (n - 2) × 180° = 6 × 180° = 1080°; Each angle = 1080° / 8 = 135°"
+  },
+  {
+    "topicID": "def23456-7890-1abc-def2-34567890abcd",
+    "topic": "Geometry",
+    "difficulty": "Advanced",
+    "questionText": "A cone has a radius of 3 units and a height of 4 units. What is its volume? (Use π ≈ 3.14)",
+    "options": ["A) 37.68 units³", "B) 25.12 units³", "C) 12.56 units³", "D) 28.26 units³"],
+    "correctAnswer": "A",
+    "explanation": "Volume = (1/3)πr²h = (1/3) × 3.14 × 9 × 4 = 37.68 units³"
+  },
+  {
+    "topicID": "efg34567-8901-2bcd-ef34-567890abcde1",
+    "topic": "Calculus",
+    "difficulty": "Beginner",
+    "questionText": "What is the derivative of f(x) = 7x?",
+    "options": ["A) 7", "B) x", "C) 7x", "D) 0"],
+    "correctAnswer": "A",
+    "explanation": "The derivative of 7x with respect to x is 7"
+  },
+  {
+    "topicID": "efg34567-8901-2bcd-ef34-567890abcde1",
+    "topic": "Calculus",
+    "difficulty": "Intermediate",
+    "questionText": "Evaluate the integral ∫ 3x² dx.",
+    "options": ["A) x³ + C", "B) x³ + C", "C) x² + C", "D) x³/3 + C"],
+    "correctAnswer": "A",
+    "explanation": "∫ 3x² dx = x³ + C"
+  },
+  {
+    "topicID": "efg34567-8901-2bcd-ef34-567890abcde1",
+    "topic": "Calculus",
+    "difficulty": "Advanced",
+    "questionText": "Determine the convergence of the series ∑_{n=1}^∞ 1/n.",
+    "options": ["A) Convergent", "B) Divergent", "C) Oscillating", "D) Cannot determine"],
+    "correctAnswer": "B",
+    "explanation": "The harmonic series diverges"
+  },
+  {
+    "topicID": "fgh45678-9012-3cde-f456-7890abcdef12",
+    "topic": "Statistics & Probability",
+    "difficulty": "Beginner",
+    "questionText": "What is the mode of the data set: 4, 4, 5, 7, 7, 7, 9?",
+    "options": ["A) 4", "B) 5", "C) 7", "D) 9"],
+    "correctAnswer": "C",
+    "explanation": "Mode is the number that appears most frequently: 7"
+  },
+  {
+    "topicID": "fgh45678-9012-3cde-f456-7890abcdef12",
+    "topic": "Statistics & Probability",
+    "difficulty": "Intermediate",
+    "questionText": "If P(A) = 0.6 and P(B) = 0.3, and A and B are mutually exclusive, what is P(A ∪ B)?",
+    "options": ["A) 0.9", "B) 0.18", "C) 0.3", "D) 0.6"],
+    "correctAnswer": "A",
+    "explanation": "For mutually exclusive events, P(A ∪ B) = P(A) + P(B) = 0.6 + 0.3 = 0.9"
+  },
+  {
+    "topicID": "fgh45678-9012-3cde-f456-7890abcdef12",
+    "topic": "Statistics & Probability",
+    "difficulty": "Advanced",
+    "questionText": "A standard deck of 52 cards is shuffled. What is the probability of drawing an ace or a king?",
+    "options": ["A) 2/13", "B) 1/13", "C) 4/13", "D) 1/4"],
+    "correctAnswer": "A",
+    "explanation": "Number of aces and kings = 4 + 4 = 8; Probability = 8/52 = 2/13"
+  },
+  {
+    "topicID": "ghi56789-0123-4def-5678-90abcdef1234",
+    "topic": "Trigonometry",
+    "difficulty": "Beginner",
+    "questionText": "What is cos(60°)?",
+    "options": ["A) 0.5", "B) √3/2", "C) 1", "D) 0"],
+    "correctAnswer": "A",
+    "explanation": "cos(60°) = 0.5"
+  },
+  {
+    "topicID": "ghi56789-0123-4def-5678-90abcdef1234",
+    "topic": "Trigonometry",
+    "difficulty": "Intermediate",
+    "questionText": "If tan θ = √3 and θ is in the first quadrant, what is θ?",
+    "options": ["A) 30°", "B) 45°", "C) 60°", "D) 90°"],
+    "correctAnswer": "C",
+    "explanation": "tan 60° = √3, so θ = 60°"
+  },
+  {
+    "topicID": "ghi56789-0123-4def-5678-90abcdef1234",
+    "topic": "Trigonometry",
+    "difficulty": "Advanced",
+    "questionText": "Express cos²θ in terms of cos 2θ.",
+    "options": ["A) (1 + cos 2θ)/2", "B) (1 - cos 2θ)/2", "C) cos 2θ", "D) sin²θ"],
+    "correctAnswer": "A",
+    "explanation": "cos²θ = (1 + cos 2θ)/2"
+  },
+  {
+    "topicID": "hij67890-1234-5ef0-6789-0abcdef12345",
+    "topic": "Number Theory",
+    "difficulty": "Beginner",
+    "questionText": "What is the sum of the prime numbers less than 10?",
+    "options": ["A) 17", "B) 18", "C) 26", "D) 28"],
+    "correctAnswer": "A",
+    "explanation": "Primes less than 10: 2, 3, 5, 7; Sum = 17"
+  },
+  {
+    "topicID": "hij67890-1234-5ef0-6789-0abcdef12345",
+    "topic": "Number Theory",
+    "difficulty": "Intermediate",
+    "questionText": "Find the greatest common divisor (GCD) of 48 and 18.",
+    "options": ["A) 2", "B) 3", "C) 6", "D) 12"],
+    "correctAnswer": "C",
+    "explanation": "GCD of 48 and 18 is 6"
+  },
+  {
+    "topicID": "hij67890-1234-5ef0-6789-0abcdef12345",
+    "topic": "Number Theory",
+    "difficulty": "Advanced",
+    "questionText": "Solve the congruence: Find x such that x ≡ 1 mod 4 and x ≡ 2 mod 5.",
+    "options": ["A) x = 6", "B) x = 11", "C) x = 14", "D) x = 22"],
+    "correctAnswer": "B",
+    "explanation": "x ≡ 1 mod 4 → x = 4k + 1; Test values: When k = 2, x = 9 (not ≡ 2 mod 5); k = 3, x = 13 (13 mod 5 = 3); k = 2.5 is invalid; k = 2.75 invalid; k = 4, x = 17 (17 mod 5 = 2); So x = 17"
+  },
+  {
+    "topicID": "ijk78901-2345-6f01-7890-abcdef123456",
+    "topic": "Linear Algebra",
+    "difficulty": "Beginner",
+    "questionText": "Compute the dot product of vectors A = [2, 5] and B = [3, -1].",
+    "options": ["A) 1", "B) 5", "C) 11", "D) 13"],
+    "correctAnswer": "C",
+    "explanation": "Dot product = (2)(3) + (5)(-1) = 6 - 5 = 1"
+  },
+  {
+    "topicID": "ijk78901-2345-6f01-7890-abcdef123456",
+    "topic": "Linear Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Determine if the vectors [1, 2, 3] and [2, 4, 6] are linearly independent.",
+    "options": ["A) Yes", "B) No", "C) Only in R²", "D) Cannot determine"],
+    "correctAnswer": "B",
+    "explanation": "Second vector is a scalar multiple of the first: [2, 4, 6] = 2 × [1, 2, 3]"
+  },
+  {
+    "topicID": "ijk78901-2345-6f01-7890-abcdef123456",
+    "topic": "Linear Algebra",
+    "difficulty": "Advanced",
+    "questionText": "What are the eigenvalues of the matrix [[2, 1], [1, 2]]?",
+    "options": ["A) 1 and 3", "B) 2 and 2", "C) -1 and 4", "D) 0 and 5"],
+    "correctAnswer": "A",
+    "explanation": "Characteristic equation: |A - λI| = 0 → (2 - λ)(2 - λ) - 1 = 0 → (2 - λ)² - 1 = 0 → λ² - 4λ + 3 = 0 → λ = 1 or λ = 3"
+  },
+  {
+    "topicID": "jkl89012-3456-7f12-8901-bcdef1234567",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Beginner",
+    "questionText": "How many edges does a cube have?",
+    "options": ["A) 6", "B) 8", "C) 12", "D) 24"],
+    "correctAnswer": "C",
+    "explanation": "A cube has 12 edges"
+  },
+  {
+    "topicID": "jkl89012-3456-7f12-8901-bcdef1234567",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Intermediate",
+    "questionText": "What is the value of 2^5?",
+    "options": ["A) 16", "B) 32", "C) 64", "D) 128"],
+    "correctAnswer": "B",
+    "explanation": "2^5 = 2 × 2 × 2 × 2 × 2 = 32"
+  },
+  {
+    "topicID": "jkl89012-3456-7f12-8901-bcdef1234567",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Advanced",
+    "questionText": "Calculate the number of ways to choose 3 items from a set of 7.",
+    "options": ["A) 21", "B) 35", "C) 42", "D) 49"],
+    "correctAnswer": "B",
+    "explanation": "Number of combinations: C(7, 3) = 7! / (3! × 4!) = 35"
+  }
+  ,
+  {
+    "topicID": "klm90123-4567-8f12-9012-cdef12345678",
+    "topic": "Algebra",
+    "difficulty": "Beginner",
+    "questionText": "What is the solution for x in the equation 5x + 3 = 18?",
+    "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+    "correctAnswer": "C",
+    "explanation": "5x + 3 = 18 → 5x = 18 - 3 → 5x = 15 → x = 15 / 5 → x = 3"
+  },
+  {
+    "topicID": "klm90123-4567-8f12-9012-cdef12345678",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Simplify the expression: (x + 2)^2 - (x - 2)^2.",
+    "options": ["A) 8x", "B) 4x", "C) 2x + 4", "D) 16"],
+    "correctAnswer": "A",
+    "explanation": "Using the difference of squares: (x + 2)^2 - (x - 2)^2 = [(x + 2) + (x - 2)] × [(x + 2) - (x - 2)] = 2x × 4 = 8x"
+  },
+  {
+    "topicID": "klm90123-4567-8f12-9012-cdef12345678",
+    "topic": "Algebra",
+    "difficulty": "Advanced",
+    "questionText": "Solve for x: 2/x + 3/(x + 2) = 1.",
+    "options": ["A) x = 2 or x = -1", "B) x = 1 or x = -2", "C) x = 3 or x = -2", "D) x = 4 or x = -3"],
+    "correctAnswer": "B",
+    "explanation": "Combine fractions: (2(x + 2) + 3x) / (x(x + 2)) = 1 → Expand and simplify: 2x + 4 + 3x = x(x + 2) → 5x + 4 = x^2 + 2x → x^2 - 3x - 4 = 0 → (x - 4)(x + 1) = 0 → x = 4 or x = -1"
+  },
+  {
+    "topicID": "mno01234-5678-9f12-0123-def123456789",
+    "topic": "Geometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the perimeter of a square with side length 5 units?",
+    "options": ["A) 10 units", "B) 15 units", "C) 20 units", "D) 25 units"],
+    "correctAnswer": "C",
+    "explanation": "Perimeter = 4 × side = 4 × 5 = 20 units"
+  },
+  {
+    "topicID": "mno01234-5678-9f12-0123-def123456789",
+    "topic": "Geometry",
+    "difficulty": "Intermediate",
+    "questionText": "Find the area of a triangle with a base of 10 units and height of 6 units.",
+    "options": ["A) 30 units²", "B) 60 units²", "C) 20 units²", "D) 40 units²"],
+    "correctAnswer": "A",
+    "explanation": "Area = 1/2 × base × height = 1/2 × 10 × 6 = 30 units²"
+  },
+  {
+    "topicID": "mno01234-5678-9f12-0123-def123456789",
+    "topic": "Geometry",
+    "difficulty": "Advanced",
+    "questionText": "Calculate the volume of a sphere with radius 3 units. (Use π ≈ 3.14)",
+    "options": ["A) 113.04 units³", "B) 123.76 units³", "C) 135.72 units³", "D) 143.42 units³"],
+    "correctAnswer": "A",
+    "explanation": "Volume = (4/3)πr³ = (4/3) × 3.14 × 3³ = (4/3) × 3.14 × 27 = 113.04 units³"
+  },
+  {
+    "topicID": "nop12345-6789-0f12-1234-ef123456789a",
+    "topic": "Calculus",
+    "difficulty": "Beginner",
+    "questionText": "What is the derivative of f(x) = x² + 3x?",
+    "options": ["A) 2x + 3", "B) x²", "C) 3x + 1", "D) 2x + 2"],
+    "correctAnswer": "A",
+    "explanation": "The derivative of x² is 2x, and the derivative of 3x is 3. So, f'(x) = 2x + 3"
+  },
+  {
+    "topicID": "nop12345-6789-0f12-1234-ef123456789a",
+    "topic": "Calculus",
+    "difficulty": "Intermediate",
+    "questionText": "Evaluate the integral ∫ (x + 1)² dx.",
+    "options": ["A) (x³/3) + x² + x + C", "B) (x³/3) + 2x + 1 + C", "C) x³ + x²/2 + x + C", "D) (x³/3) + x² + C"],
+    "correctAnswer": "A",
+    "explanation": "Expand (x + 1)² = x² + 2x + 1. ∫ (x² + 2x + 1) dx = x³/3 + x² + x + C"
+  },
+  {
+    "topicID": "nop12345-6789-0f12-1234-ef123456789a",
+    "topic": "Calculus",
+    "difficulty": "Advanced",
+    "questionText": "Find the maximum value of f(x) = -x² + 4x + 1.",
+    "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+    "correctAnswer": "C",
+    "explanation": "Find critical points: f'(x) = -2x + 4. Set f'(x) = 0 → -2x + 4 = 0 → x = 2. Evaluate f(2): f(2) = -(2)² + 4(2) + 1 = -4 + 8 + 1 = 7. Max value is 7"
+  },
+  {
+    "topicID": "opq23456-7890-1f23-2345-f123456789ab",
+    "topic": "Statistics & Probability",
+    "difficulty": "Beginner",
+    "questionText": "A bag contains 4 red balls and 6 blue balls. What is the probability of picking a red ball?",
+    "options": ["A) 0.4", "B) 0.5", "C) 0.6", "D) 0.7"],
+    "correctAnswer": "A",
+    "explanation": "Probability = (Number of red balls) / (Total balls) = 4/10 = 0.4"
+  },
+  {
+    "topicID": "opq23456-7890-1f23-2345-f123456789ab",
+    "topic": "Statistics & Probability",
+    "difficulty": "Intermediate",
+    "questionText": "Find the mean of the data set: 10, 20, 30, 40, 50.",
+    "options": ["A) 20", "B) 30", "C) 40", "D) 50"],
+    "correctAnswer": "B",
+    "explanation": "Mean = (Sum of data points) / (Number of data points) = (10 + 20 + 30 + 40 + 50) / 5 = 150 / 5 = 30"
+  },
+  {
+    "topicID": "opq23456-7890-1f23-2345-f123456789ab",
+    "topic": "Statistics & Probability",
+    "difficulty": "Advanced",
+    "questionText": "A spinner has 8 equal sections numbered 1 through 8. What is the probability of spinning a number divisible by 3?",
+    "options": ["A) 1/4", "B) 1/3", "C) 1/2", "D) 3/8"],
+    "correctAnswer": "D",
+    "explanation": "Numbers divisible by 3 are 3 and 6. Probability = 2/8 = 1/4"
+  },
+  {
+    "topicID": "pqr34567-8901-2f34-3456-123456789abc",
+    "topic": "Trigonometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the value of tan(45°)?",
+    "options": ["A) 0", "B) 1", "C) √3", "D) Undefined"],
+    "correctAnswer": "B",
+    "explanation": "tan(45°) = 1"
+  },
+  {
+    "topicID": "pqr34567-8901-2f34-3456-123456789abc",
+    "topic": "Trigonometry",
+    "difficulty": "Intermediate",
+    "questionText": "If sin θ = 0.8 and θ is in the first quadrant, what is cos θ?",
+    "options": ["A) 0.6", "B) 0.8", "C) 0.5", "D) 1"],
+    "correctAnswer": "A",
+    "explanation": "cos θ = √(1 - sin²θ) = √(1 - 0.64) = √0.36 = 0.6"
+  },
+  {
+    "topicID": "pqr34567-8901-2f34-3456-123456789abc",
+    "topic": "Trigonometry",
+    "difficulty": "Advanced",
+    "questionText": "Simplify: sin²θ - cos²θ.",
+    "options": ["A) -cos 2θ", "B) sin 2θ", "C) cos 2θ", "D) -sin 2θ"],
+    "correctAnswer": "A",
+    "explanation": "sin²θ - cos²θ = -(cos 2θ)"
+  },
+  {
+    "topicID": "qrs45678-9012-3f45-4567-23456789abcd",
+    "topic": "Number Theory",
+    "difficulty": "Beginner",
+    "questionText": "What is the greatest prime factor of 30?",
+    "options": ["A) 2", "B) 3", "C) 5", "D) 7"],
+    "correctAnswer": "C",
+    "explanation": "Prime factors of 30: 2, 3, 5. Greatest is 5"
+  },
+  {
+    "topicID": "qrs45678-9012-3f45-4567-23456789abcd",
+    "topic": "Number Theory",
+    "difficulty": "Intermediate",
+    "questionText": "Find the least common multiple (LCM) of 12 and 15.",
+    "options": ["A) 30", "B) 45", "C) 60", "D) 75"],
+    "correctAnswer": "C",
+    "explanation": "Multiples of 12: 12, 24, 36, 48, 60; Multiples of 15: 15, 30, 45, 60; LCM = 60"
+  },
+  {
+    "topicID": "qrs45678-9012-3f45-4567-23456789abcd",
+    "topic": "Number Theory",
+    "difficulty": "Advanced",
+    "questionText": "Find the number of positive divisors of 120.",
+    "options": ["A) 10", "B) 12", "C) 14", "D) 16"],
+    "correctAnswer": "B",
+    "explanation": "Prime factorization: 120 = 2³ × 3 × 5. Number of divisors = (3+1)(1+1)(1+1) = 4 × 2 × 2 = 16"
+  },
+  
+  {
+    "topicID": "klm90123-4567-8f12-9012-cdef12345678",
+    "topic": "Algebra",
+    "difficulty": "Beginner",
+    "questionText": "What is the solution for x in the equation 5x + 3 = 18?",
+    "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+    "correctAnswer": "C",
+    "explanation": "5x + 3 = 18 → 5x = 18 - 3 → 5x = 15 → x = 15 / 5 → x = 3"
+  },
+  {
+    "topicID": "klm90123-4567-8f12-9012-cdef12345678",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Simplify the expression: (x + 2)^2 - (x - 2)^2.",
+    "options": ["A) 8x", "B) 4x", "C) 2x + 4", "D) 16"],
+    "correctAnswer": "A",
+    "explanation": "Using the difference of squares: (x + 2)^2 - (x - 2)^2 = [(x + 2) + (x - 2)] × [(x + 2) - (x - 2)] = 2x × 4 = 8x"
+  },
+  {
+    "topicID": "klm90123-4567-8f12-9012-cdef12345678",
+    "topic": "Algebra",
+    "difficulty": "Advanced",
+    "questionText": "Solve for x: 2/x + 3/(x + 2) = 1.",
+    "options": ["A) x = 2 or x = -1", "B) x = 1 or x = -2", "C) x = 3 or x = -2", "D) x = 4 or x = -3"],
+    "correctAnswer": "B",
+    "explanation": "Combine fractions: (2(x + 2) + 3x) / (x(x + 2)) = 1 → Expand and simplify: 2x + 4 + 3x = x(x + 2) → 5x + 4 = x^2 + 2x → x^2 - 3x - 4 = 0 → (x - 4)(x + 1) = 0 → x = 4 or x = -1"
+  },
+  {
+    "topicID": "mno01234-5678-9f12-0123-def123456789",
+    "topic": "Geometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the perimeter of a square with side length 5 units?",
+    "options": ["A) 10 units", "B) 15 units", "C) 20 units", "D) 25 units"],
+    "correctAnswer": "C",
+    "explanation": "Perimeter = 4 × side = 4 × 5 = 20 units"
+  },
+  {
+    "topicID": "mno01234-5678-9f12-0123-def123456789",
+    "topic": "Geometry",
+    "difficulty": "Intermediate",
+    "questionText": "Find the area of a triangle with a base of 10 units and height of 6 units.",
+    "options": ["A) 30 units²", "B) 60 units²", "C) 20 units²", "D) 40 units²"],
+    "correctAnswer": "A",
+    "explanation": "Area = 1/2 × base × height = 1/2 × 10 × 6 = 30 units²"
+  },
+  {
+    "topicID": "mno01234-5678-9f12-0123-def123456789",
+    "topic": "Geometry",
+    "difficulty": "Advanced",
+    "questionText": "Calculate the volume of a sphere with radius 3 units. (Use π ≈ 3.14)",
+    "options": ["A) 113.04 units³", "B) 123.76 units³", "C) 135.72 units³", "D) 143.42 units³"],
+    "correctAnswer": "A",
+    "explanation": "Volume = (4/3)πr³ = (4/3) × 3.14 × 3³ = (4/3) × 3.14 × 27 = 113.04 units³"
+  },
+  {
+    "topicID": "nop12345-6789-0f12-1234-ef123456789a",
+    "topic": "Calculus",
+    "difficulty": "Beginner",
+    "questionText": "What is the derivative of f(x) = x² + 3x?",
+    "options": ["A) 2x + 3", "B) x²", "C) 3x + 1", "D) 2x + 2"],
+    "correctAnswer": "A",
+    "explanation": "The derivative of x² is 2x, and the derivative of 3x is 3. So, f'(x) = 2x + 3"
+  },
+  {
+    "topicID": "nop12345-6789-0f12-1234-ef123456789a",
+    "topic": "Calculus",
+    "difficulty": "Intermediate",
+    "questionText": "Evaluate the integral ∫ (x + 1)² dx.",
+    "options": ["A) (x³/3) + x² + x + C", "B) (x³/3) + 2x + 1 + C", "C) x³ + x²/2 + x + C", "D) (x³/3) + x² + C"],
+    "correctAnswer": "A",
+    "explanation": "Expand (x + 1)² = x² + 2x + 1. ∫ (x² + 2x + 1) dx = x³/3 + x² + x + C"
+  },
+  {
+    "topicID": "nop12345-6789-0f12-1234-ef123456789a",
+    "topic": "Calculus",
+    "difficulty": "Advanced",
+    "questionText": "Find the maximum value of f(x) = -x² + 4x + 1.",
+    "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+    "correctAnswer": "C",
+    "explanation": "Find critical points: f'(x) = -2x + 4. Set f'(x) = 0 → -2x + 4 = 0 → x = 2. Evaluate f(2): f(2) = -(2)² + 4(2) + 1 = -4 + 8 + 1 = 7. Max value is 7"
+  },
+  {
+    "topicID": "opq23456-7890-1f23-2345-f123456789ab",
+    "topic": "Statistics & Probability",
+    "difficulty": "Beginner",
+    "questionText": "A bag contains 4 red balls and 6 blue balls. What is the probability of picking a red ball?",
+    "options": ["A) 0.4", "B) 0.5", "C) 0.6", "D) 0.7"],
+    "correctAnswer": "A",
+    "explanation": "Probability = (Number of red balls) / (Total balls) = 4/10 = 0.4"
+  },
+  {
+    "topicID": "opq23456-7890-1f23-2345-f123456789ab",
+    "topic": "Statistics & Probability",
+    "difficulty": "Intermediate",
+    "questionText": "Find the mean of the data set: 10, 20, 30, 40, 50.",
+    "options": ["A) 20", "B) 30", "C) 40", "D) 50"],
+    "correctAnswer": "B",
+    "explanation": "Mean = (Sum of data points) / (Number of data points) = (10 + 20 + 30 + 40 + 50) / 5 = 150 / 5 = 30"
+  },
+  {
+    "topicID": "opq23456-7890-1f23-2345-f123456789ab",
+    "topic": "Statistics & Probability",
+    "difficulty": "Advanced",
+    "questionText": "A spinner has 8 equal sections numbered 1 through 8. What is the probability of spinning a number divisible by 3?",
+    "options": ["A) 1/4", "B) 1/3", "C) 1/2", "D) 3/8"],
+    "correctAnswer": "D",
+    "explanation": "Numbers divisible by 3 are 3 and 6. Probability = 2/8 = 1/4"
+  },
+  {
+    "topicID": "pqr34567-8901-2f34-3456-123456789abc",
+    "topic": "Trigonometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the value of tan(45°)?",
+    "options": ["A) 0", "B) 1", "C) √3", "D) Undefined"],
+    "correctAnswer": "B",
+    "explanation": "tan(45°) = 1"
+  },
+  {
+    "topicID": "pqr34567-8901-2f34-3456-123456789abc",
+    "topic": "Trigonometry",
+    "difficulty": "Intermediate",
+    "questionText": "If sin θ = 0.8 and θ is in the first quadrant, what is cos θ?",
+    "options": ["A) 0.6", "B) 0.8", "C) 0.5", "D) 1"],
+    "correctAnswer": "A",
+    "explanation": "cos θ = √(1 - sin²θ) = √(1 - 0.64) = √0.36 = 0.6"
+  },
+  {
+    "topicID": "pqr34567-8901-2f34-3456-123456789abc",
+    "topic": "Trigonometry",
+    "difficulty": "Advanced",
+    "questionText": "Simplify: sin²θ - cos²θ.",
+    "options": ["A) -cos 2θ", "B) sin 2θ", "C) cos 2θ", "D) -sin 2θ"],
+    "correctAnswer": "A",
+    "explanation": "sin²θ - cos²θ = -(cos 2θ)"
+  },
+  {
+    "topicID": "qrs45678-9012-3f45-4567-23456789abcd",
+    "topic": "Number Theory",
+    "difficulty": "Beginner",
+    "questionText": "What is the greatest prime factor of 30?",
+    "options": ["A) 2", "B) 3", "C) 5", "D) 7"],
+    "correctAnswer": "C",
+    "explanation": "Prime factors of 30: 2, 3, 5. Greatest is 5"
+  },
+  {
+    "topicID": "qrs45678-9012-3f45-4567-23456789abcd",
+    "topic": "Number Theory",
+    "difficulty": "Intermediate",
+    "questionText": "Find the least common multiple (LCM) of 12 and 15.",
+    "options": ["A) 30", "B) 45", "C) 60", "D) 75"],
+    "correctAnswer": "C",
+    "explanation": "Multiples of 12: 12, 24, 36, 48, 60; Multiples of 15: 15, 30, 45, 60; LCM = 60"
+  },
+  {
+    "topicID": "qrs45678-9012-3f45-4567-23456789abcd",
+    "topic": "Number Theory",
+    "difficulty": "Advanced",
+    "questionText": "Find the number of positive divisors of 120.",
+    "options": ["A) 10", "B) 12", "C) 14", "D) 16"],
+    "correctAnswer": "B",
+    "explanation": "Prime factorization: 120 = 2³ × 3 × 5. Number of divisors = (3+1)(1+1)(1+1) = 4 × 2 × 2 = 16"
+  }
+
+]
+

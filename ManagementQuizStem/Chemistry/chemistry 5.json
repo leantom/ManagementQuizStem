@@ -1,0 +1,829 @@
+[
+  {
+    "topicID": 1,
+    "topic": "Organic Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "What is the product when ethanol is oxidized using potassium dichromate under acidic conditions?",
+    "options": [
+      "A) Methanol",
+      "B) Ethene",
+      "C) Acetic acid",
+      "D) Acetone"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Ethanol is oxidized to acetic acid when treated with potassium dichromate under acidic conditions."
+  },
+  {
+    "topicID": 1,
+    "topic": "Organic Chemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which reagent is used in the halogenation of alkanes via a free radical mechanism?",
+    "options": [
+      "A) Chlorine in the presence of UV light",
+      "B) Sodium hydroxide",
+      "C) Hydrogen gas",
+      "D) Potassium permanganate"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Halogenation of alkanes occurs via a free radical mechanism initiated by UV light in the presence of chlorine."
+  },
+  {
+    "topicID": 2,
+    "topic": "Inorganic Chemistry",
+    "difficulty": "Advanced",
+    "questionText": "What is the coordination number of the central metal atom in [Co(NH₃)₆]³⁺?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 10"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The coordination number of cobalt in [Co(NH₃)₆]³⁺ is 6, as there are six ligand molecules coordinated to the central metal atom."
+  },
+  {
+    "topicID": 2,
+    "topic": "Inorganic Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "Which of the following elements is a metalloid?",
+    "options": [
+      "A) Sodium",
+      "B) Silicon",
+      "C) Calcium",
+      "D) Chlorine"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Silicon is a metalloid, exhibiting properties of both metals and non-metals."
+  },
+  {
+    "topicID": 3,
+    "topic": "Physical Chemistry",
+    "difficulty": "Beginner",
+    "questionText": "What is the value of the gas constant (R) in L·atm/(mol·K)?",
+    "options": [
+      "A) 0.0821",
+      "B) 8.31",
+      "C) 62.36",
+      "D) 1.987"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The gas constant (R) is 0.0821 L·atm/(mol·K) when pressure is measured in atmospheres."
+  },
+  {
+    "topicID": 3,
+    "topic": "Physical Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "Which of the following factors does NOT affect the rate of a chemical reaction?",
+    "options": [
+      "A) Temperature",
+      "B) Concentration",
+      "C) Color of reactants",
+      "D) Surface area of reactants"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The color of reactants does not affect the rate of reaction; factors like temperature, concentration, and surface area do."
+  },
+  {
+    "topicID": 4,
+    "topic": "Biochemistry",
+    "difficulty": "Intermediate",
+    "questionText": "What is the primary function of enzymes in biological systems?",
+    "options": [
+      "A) To provide energy",
+      "B) To catalyze reactions",
+      "C) To store genetic information",
+      "D) To regulate osmosis"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Enzymes act as biological catalysts, speeding up chemical reactions in living organisms without being consumed."
+  },
+  {
+    "topicID": 4,
+    "topic": "Biochemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which molecule is commonly referred to as the 'energy currency' of the cell?",
+    "options": [
+      "A) NADH",
+      "B) ATP",
+      "C) DNA",
+      "D) FADH₂"
+    ],
+    "correctAnswer": "B",
+    "explanation": "ATP (adenosine triphosphate) is called the 'energy currency' of the cell because it stores and transfers energy for cellular processes."
+  },
+  {
+    "topicID": 5,
+    "topic": "Analytical Chemistry",
+    "difficulty": "Beginner",
+    "questionText": "What does the pH scale measure?",
+    "options": [
+      "A) Conductivity",
+      "B) Concentration of hydrogen ions",
+      "C) Boiling point",
+      "D) Redox potential"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The pH scale measures the concentration of hydrogen ions in a solution, indicating its acidity or alkalinity."
+  },
+  {
+    "topicID": 5,
+    "topic": "Analytical Chemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which of the following is NOT a chromatographic technique?",
+    "options": [
+      "A) Gas chromatography (GC)",
+      "B) High-performance liquid chromatography (HPLC)",
+      "C) Spectrophotometry",
+      "D) Thin-layer chromatography (TLC)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Spectrophotometry is not a chromatographic technique; it measures the absorbance of light by a sample."
+  },
+  {
+    "topicID": 6,
+    "topic": "Environmental Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "What is the main component of photochemical smog?",
+    "options": [
+      "A) Ozone",
+      "B) Carbon monoxide",
+      "C) Sulfur dioxide",
+      "D) Methane"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Ozone is a major component of photochemical smog, formed by reactions involving sunlight, nitrogen oxides, and volatile organic compounds."
+  },
+  {
+    "topicID": 7,
+    "topic": "Chemical Reactions",
+    "difficulty": "Advanced",
+    "questionText": "What is the balanced equation for the combustion of methane?",
+    "options": [
+      "A) CH₄ + O₂ → CO₂ + H₂O",
+      "B) CH₄ + 2O₂ → CO₂ + 2H₂O",
+      "C) 2CH₄ + O₂ → 2CO + H₂",
+      "D) CH₄ + O₂ → CO + H₂O"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Methane burns in oxygen to produce carbon dioxide and water, balanced as CH₄ + 2O₂ → CO₂ + 2H₂O."
+  },
+  {
+    "topicID": 8,
+    "topic": "Periodic Table & Elements",
+    "difficulty": "Intermediate",
+    "questionText": "Which element is the most abundant in Earth's crust?",
+    "options": [
+      "A) Oxygen",
+      "B) Silicon",
+      "C) Aluminum",
+      "D) Iron"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Oxygen is the most abundant element in Earth's crust, making up about 46.6% of its composition."
+  },
+  {
+    "topicID": 8,
+    "topic": "Periodic Table & Elements",
+    "difficulty": "Beginner",
+    "questionText": "What is the symbol for gold in the periodic table?",
+    "options": [
+      "A) Ag",
+      "B) Au",
+      "C) Pb",
+      "D) Pt"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The symbol for gold is Au, derived from its Latin name 'Aurum.'"
+  },
+  {
+    "topicID": 1,
+    "topic": "Organic Chemistry",
+    "difficulty": "Beginner",
+    "questionText": "Which hydrocarbon is considered the simplest alkane?",
+    "options": [
+      "A) Ethane",
+      "B) Methane",
+      "C) Propane",
+      "D) Butane"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Methane (CH₄) is the simplest alkane with one carbon atom bonded to four hydrogen atoms."
+  },
+  {
+    "topicID": 1,
+    "topic": "Organic Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "What is the IUPAC name of the compound with the formula CH₃-CH₂-COOH?",
+    "options": [
+      "A) Propanoic acid",
+      "B) Acetic acid",
+      "C) Methanoic acid",
+      "D) Butanoic acid"
+    ],
+    "correctAnswer": "A",
+    "explanation": "CH₃-CH₂-COOH is a carboxylic acid with three carbon atoms, named propanoic acid in IUPAC nomenclature."
+  },
+  {
+    "topicID": 2,
+    "topic": "Inorganic Chemistry",
+    "difficulty": "Beginner",
+    "questionText": "Which compound is commonly known as quicklime?",
+    "options": [
+      "A) Calcium carbonate",
+      "B) Calcium hydroxide",
+      "C) Calcium oxide",
+      "D) Calcium chloride"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Calcium oxide (CaO) is commonly referred to as quicklime, widely used in construction and industrial applications."
+  },
+  {
+    "topicID": 2,
+    "topic": "Inorganic Chemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which metal is extracted from its ore using the Bayer process?",
+    "options": [
+      "A) Iron",
+      "B) Aluminum",
+      "C) Copper",
+      "D) Zinc"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Bayer process is used to extract aluminum from bauxite ore by converting it into alumina."
+  },
+  {
+    "topicID": 3,
+    "topic": "Physical Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "What happens to the equilibrium constant (K) of an exothermic reaction when the temperature is increased?",
+    "options": [
+      "A) It increases",
+      "B) It decreases",
+      "C) It remains unchanged",
+      "D) It fluctuates"
+    ],
+    "correctAnswer": "B",
+    "explanation": "For exothermic reactions, increasing temperature shifts equilibrium to the reactants, decreasing the equilibrium constant."
+  },
+  {
+    "topicID": 3,
+    "topic": "Physical Chemistry",
+    "difficulty": "Advanced",
+    "questionText": "What is the unit of rate constant (k) for a second-order reaction?",
+    "options": [
+      "A) mol/L·s",
+      "B) L/mol·s",
+      "C) s⁻¹",
+      "D) L²/mol²·s"
+    ],
+    "correctAnswer": "B",
+    "explanation": "For second-order reactions, the rate constant (k) has units of L/mol·s."
+  },
+  {
+    "topicID": 4,
+    "topic": "Biochemistry",
+    "difficulty": "Intermediate",
+    "questionText": "Which type of biomolecule serves as the main energy storage in animals?",
+    "options": [
+      "A) Proteins",
+      "B) Carbohydrates",
+      "C) Lipids",
+      "D) Nucleic acids"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Lipids, such as fats, serve as the primary energy storage molecules in animals due to their high energy content."
+  },
+  {
+    "topicID": 4,
+    "topic": "Biochemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which enzyme catalyzes the conversion of pyruvate to acetyl-CoA in cellular respiration?",
+    "options": [
+      "A) Hexokinase",
+      "B) Pyruvate dehydrogenase",
+      "C) ATP synthase",
+      "D) Lactate dehydrogenase"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Pyruvate dehydrogenase catalyzes the oxidative decarboxylation of pyruvate to acetyl-CoA in the mitochondria."
+  },
+  {
+    "topicID": 5,
+    "topic": "Analytical Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "Which titration method is used to determine the concentration of a strong acid?",
+    "options": [
+      "A) Complexometric titration",
+      "B) Acid-base titration",
+      "C) Redox titration",
+      "D) Precipitation titration"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Acid-base titration is used to determine the concentration of strong acids by reacting them with a strong base."
+  },
+  {
+    "topicID": 5,
+    "topic": "Analytical Chemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which detector is commonly used in gas chromatography for detecting organic compounds?",
+    "options": [
+      "A) Thermal conductivity detector",
+      "B) Flame ionization detector",
+      "C) UV-Vis detector",
+      "D) Infrared detector"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Flame ionization detectors (FIDs) are widely used in gas chromatography for detecting organic compounds due to their sensitivity."
+  },
+  {
+    "topicID": 6,
+    "topic": "Environmental Chemistry",
+    "difficulty": "Beginner",
+    "questionText": "What is the primary source of sulfur dioxide emissions into the atmosphere?",
+    "options": [
+      "A) Vehicle exhaust",
+      "B) Industrial combustion of fossil fuels",
+      "C) Agricultural practices",
+      "D) Natural gas leaks"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Industrial combustion of fossil fuels, especially coal and oil, is the main source of sulfur dioxide emissions."
+  },
+  {
+    "topicID": 6,
+    "topic": "Environmental Chemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which chemical is commonly used for the process of photochemical water splitting?",
+    "options": [
+      "A) Chlorine",
+      "B) Titanium dioxide",
+      "C) Sulfuric acid",
+      "D) Potassium permanganate"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Titanium dioxide (TiO₂) is a photocatalyst used in photochemical water splitting to produce hydrogen and oxygen gases."
+  },
+  {
+    "topicID": 7,
+    "topic": "Chemical Reactions",
+    "difficulty": "Intermediate",
+    "questionText": "Which of the following is an example of a decomposition reaction?",
+    "options": [
+      "A) H₂ + Cl₂ → 2HCl",
+      "B) 2KClO₃ → 2KCl + 3O₂",
+      "C) NaOH + HCl → NaCl + H₂O",
+      "D) C₃H₈ + 5O₂ → 3CO₂ + 4H₂O"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A decomposition reaction involves a single compound breaking down into two or more simpler substances, as seen in the breakdown of potassium chlorate."
+  },
+  {
+    "topicID": 8,
+    "topic": "Periodic Table & Elements",
+    "difficulty": "Advanced",
+    "questionText": "Which element in the periodic table is named after a famous physicist?",
+    "options": [
+      "A) Curium",
+      "B) Einsteinium",
+      "C) Fermium",
+      "D) Rutherfordium"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Einsteinium (Es) is named after Albert Einstein, reflecting his significant contributions to science."
+  }
+  ,
+  {
+      "topicID": 1,
+      "topic": "Organic Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "What is the major product of the dehydration of ethanol using concentrated sulfuric acid?",
+      "options": [
+          "A) Acetaldehyde",
+          "B) Ethene",
+          "C) Ethane",
+          "D) Diethyl ether"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dehydration of ethanol with concentrated sulfuric acid leads to the formation of ethene, an alkene."
+  },
+  {
+      "topicID": 1,
+      "topic": "Organic Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which reaction mechanism is involved in the nitration of benzene?",
+      "options": [
+          "A) Free radical substitution",
+          "B) Nucleophilic substitution",
+          "C) Electrophilic substitution",
+          "D) Addition-elimination"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The nitration of benzene occurs via an electrophilic substitution mechanism, where a nitronium ion acts as the electrophile."
+  },
+  {
+      "topicID": 2,
+      "topic": "Inorganic Chemistry",
+      "difficulty": "Beginner",
+      "questionText": "What is the color of copper(II) sulfate solution?",
+      "options": [
+          "A) Green",
+          "B) Blue",
+          "C) Yellow",
+          "D) Colorless"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Copper(II) sulfate solution is blue due to the presence of hydrated Cu²⁺ ions."
+  },
+  {
+      "topicID": 2,
+      "topic": "Inorganic Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which compound is formed when ammonia reacts with excess chlorine gas?",
+      "options": [
+          "A) NH₄Cl",
+          "B) NCl₃",
+          "C) NH₂Cl",
+          "D) NH₃Cl"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In the reaction between ammonia and excess chlorine, nitrogen trichloride (NCl₃) is formed as the main product."
+  },
+  {
+      "topicID": 3,
+      "topic": "Physical Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which process is described by a decrease in entropy?",
+      "options": [
+          "A) Melting of ice",
+          "B) Freezing of water",
+          "C) Boiling of water",
+          "D) Dissolution of salt in water"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Freezing of water leads to a decrease in entropy as the molecules become more ordered in the solid state."
+  },
+  {
+      "topicID": 3,
+      "topic": "Physical Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "What is the Van’t Hoff factor (i) for Na₂SO₄ in an aqueous solution?",
+      "options": [
+          "A) 1",
+          "B) 2",
+          "C) 3",
+          "D) 4"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Na₂SO₄ dissociates into 3 particles (2Na⁺ and SO₄²⁻) in an aqueous solution, making the Van’t Hoff factor 3."
+  },
+  {
+      "topicID": 4,
+      "topic": "Biochemistry",
+      "difficulty": "Beginner",
+      "questionText": "Which molecule is the monomer of DNA?",
+      "options": [
+          "A) Nucleotide",
+          "B) Amino acid",
+          "C) Fatty acid",
+          "D) Monosaccharide"
+      ],
+      "correctAnswer": "A",
+      "explanation": "DNA is made up of nucleotide monomers, each consisting of a sugar, a phosphate group, and a nitrogenous base."
+  },
+  {
+      "topicID": 4,
+      "topic": "Biochemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which coenzyme is required for the function of the enzyme pyruvate carboxylase?",
+      "options": [
+          "A) NAD⁺",
+          "B) FAD",
+          "C) Biotin",
+          "D) Coenzyme A"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pyruvate carboxylase requires biotin as a coenzyme for the carboxylation of pyruvate to oxaloacetate."
+  },
+  {
+      "topicID": 5,
+      "topic": "Analytical Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which technique uses a mobile phase and a stationary phase to separate compounds?",
+      "options": [
+          "A) Titration",
+          "B) Chromatography",
+          "C) Spectroscopy",
+          "D) Electrolysis"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Chromatography separates compounds based on their movement through a mobile phase relative to a stationary phase."
+  },
+  {
+      "topicID": 5,
+      "topic": "Analytical Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "What is the principle of atomic absorption spectroscopy?",
+      "options": [
+          "A) Absorption of UV light",
+          "B) Absorption of specific wavelengths by ground-state atoms",
+          "C) Emission of light by excited electrons",
+          "D) Scattering of light"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Atomic absorption spectroscopy measures the absorption of specific wavelengths of light by ground-state atoms to determine element concentrations."
+  },
+  {
+      "topicID": 6,
+      "topic": "Environmental Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which pollutant is most commonly associated with acid rain?",
+      "options": [
+          "A) Ozone",
+          "B) Carbon monoxide",
+          "C) Sulfur dioxide",
+          "D) Methane"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sulfur dioxide reacts with water in the atmosphere to form sulfuric acid, a major component of acid rain."
+  },
+  {
+      "topicID": 6,
+      "topic": "Environmental Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which gas has the highest global warming potential (GWP) among the following?",
+      "options": [
+          "A) Carbon dioxide",
+          "B) Methane",
+          "C) Nitrous oxide",
+          "D) Chlorofluorocarbons (CFCs)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Chlorofluorocarbons (CFCs) have the highest GWP due to their long atmospheric lifetimes and ability to trap heat effectively."
+  },
+  {
+      "topicID": 7,
+      "topic": "Chemical Reactions",
+      "difficulty": "Intermediate",
+      "questionText": "What is the chemical reaction type where a single reactant breaks down into two or more products?",
+      "options": [
+          "A) Synthesis",
+          "B) Decomposition",
+          "C) Displacement",
+          "D) Combustion"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A decomposition reaction involves a single compound breaking down into two or more products."
+  },
+  {
+      "topicID": 8,
+      "topic": "Periodic Table & Elements",
+      "difficulty": "Beginner",
+      "questionText": "What is the atomic number of carbon?",
+      "options": [
+          "A) 6",
+          "B) 12",
+          "C) 8",
+          "D) 16"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The atomic number of carbon is 6, indicating it has six protons in its nucleus."
+  },
+  {
+      "topicID": 8,
+      "topic": "Periodic Table & Elements",
+      "difficulty": "Advanced",
+      "questionText": "Which element has the highest first ionization energy?",
+      "options": [
+          "A) Helium",
+          "B) Fluorine",
+          "C) Neon",
+          "D) Oxygen"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Helium has the highest first ionization energy due to its small size and high effective nuclear charge."
+  },
+  {
+      "topicID": 1,
+      "topic": "Organic Chemistry",
+      "difficulty": "Beginner",
+      "questionText": "What type of bond is present in an alkyne molecule?",
+      "options": [
+          "A) Single bond",
+          "B) Double bond",
+          "C) Triple bond",
+          "D) Ionic bond"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Alkynes are hydrocarbons that contain at least one carbon-carbon triple bond."
+  },
+  {
+      "topicID": 1,
+      "topic": "Organic Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which type of reaction occurs when benzene reacts with bromine in the presence of iron(III) bromide?",
+      "options": [
+          "A) Addition reaction",
+          "B) Elimination reaction",
+          "C) Electrophilic substitution",
+          "D) Nucleophilic substitution"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Benzene reacts with bromine via electrophilic substitution, facilitated by iron(III) bromide, which generates the bromonium ion."
+  },
+  {
+      "topicID": 2,
+      "topic": "Inorganic Chemistry",
+      "difficulty": "Beginner",
+      "questionText": "Which is the chemical formula for gypsum?",
+      "options": [
+          "A) CaSO₄·2H₂O",
+          "B) CaCO₃",
+          "C) CaO",
+          "D) Ca(OH)₂"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Gypsum is calcium sulfate dihydrate with the chemical formula CaSO₄·2H₂O."
+  },
+  {
+      "topicID": 2,
+      "topic": "Inorganic Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "What is the oxidation state of chromium in potassium chromate (K₂CrO₄)?",
+      "options": [
+          "A) +3",
+          "B) +6",
+          "C) +5",
+          "D) +4"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In potassium chromate, the oxidation state of chromium is +6, calculated from the compound's charge balance."
+  },
+  {
+      "topicID": 3,
+      "topic": "Physical Chemistry",
+      "difficulty": "Beginner",
+      "questionText": "Which law relates pressure, volume, and temperature of an ideal gas?",
+      "options": [
+          "A) Boyle’s Law",
+          "B) Charles’s Law",
+          "C) Ideal Gas Law",
+          "D) Dalton’s Law"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The Ideal Gas Law, PV = nRT, relates pressure (P), volume (V), and temperature (T) of an ideal gas."
+  },
+  {
+      "topicID": 3,
+      "topic": "Physical Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "What is the thermodynamic criterion for a reaction to be spontaneous?",
+      "options": [
+          "A) ΔG > 0",
+          "B) ΔG = 0",
+          "C) ΔG < 0",
+          "D) ΔH > 0"
+      ],
+      "correctAnswer": "C",
+      "explanation": "For a reaction to be spontaneous, the Gibbs free energy change (ΔG) must be negative (ΔG < 0)."
+  },
+  {
+      "topicID": 4,
+      "topic": "Biochemistry",
+      "difficulty": "Beginner",
+      "questionText": "Which molecule stores genetic information in most organisms?",
+      "options": [
+          "A) DNA",
+          "B) RNA",
+          "C) Protein",
+          "D) Lipid"
+      ],
+      "correctAnswer": "A",
+      "explanation": "DNA (Deoxyribonucleic acid) is the primary molecule responsible for storing genetic information."
+  },
+  {
+      "topicID": 4,
+      "topic": "Biochemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which process describes the synthesis of RNA from a DNA template?",
+      "options": [
+          "A) Replication",
+          "B) Translation",
+          "C) Transcription",
+          "D) Glycolysis"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Transcription is the process by which RNA is synthesized from a DNA template in cells."
+  },
+  {
+      "topicID": 5,
+      "topic": "Analytical Chemistry",
+      "difficulty": "Beginner",
+      "questionText": "Which device is used to measure the pH of a solution?",
+      "options": [
+          "A) Spectrometer",
+          "B) Colorimeter",
+          "C) pH meter",
+          "D) Refractometer"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A pH meter is used to measure the hydrogen ion concentration and thus the pH of a solution."
+  },
+  {
+      "topicID": 5,
+      "topic": "Analytical Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which analytical technique separates compounds based on their mass-to-charge ratio?",
+      "options": [
+          "A) IR Spectroscopy",
+          "B) NMR Spectroscopy",
+          "C) Mass Spectrometry",
+          "D) Chromatography"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mass spectrometry separates compounds based on their mass-to-charge (m/z) ratio, providing molecular weight information."
+  },
+  {
+      "topicID": 6,
+      "topic": "Environmental Chemistry",
+      "difficulty": "Beginner",
+      "questionText": "What is the main greenhouse gas emitted from burning fossil fuels?",
+      "options": [
+          "A) Nitrogen",
+          "B) Carbon dioxide",
+          "C) Methane",
+          "D) Ozone"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Carbon dioxide (CO₂) is the main greenhouse gas released during the combustion of fossil fuels."
+  },
+  {
+      "topicID": 6,
+      "topic": "Environmental Chemistry",
+      "difficulty": "Advanced",
+      "questionText": "Which process removes nitrogen oxides (NOx) from industrial emissions?",
+      "options": [
+          "A) Catalytic reduction",
+          "B) Adsorption",
+          "C) Precipitation",
+          "D) Electrolysis"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Selective catalytic reduction (SCR) is used to remove nitrogen oxides (NOx) from industrial emissions by converting them to nitrogen and water."
+  },
+  {
+      "topicID": 7,
+      "topic": "Chemical Reactions",
+      "difficulty": "Beginner",
+      "questionText": "Which type of reaction involves the exchange of ions between two compounds?",
+      "options": [
+          "A) Synthesis",
+          "B) Decomposition",
+          "C) Double displacement",
+          "D) Combustion"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Double displacement reactions involve the exchange of ions between two compounds, forming new compounds."
+  },
+  {
+      "topicID": 7,
+      "topic": "Chemical Reactions",
+      "difficulty": "Advanced",
+      "questionText": "What is the order of reaction if doubling the concentration of a reactant quadruples the reaction rate?",
+      "options": [
+          "A) Zero order",
+          "B) First order",
+          "C) Second order",
+          "D) Third order"
+      ],
+      "correctAnswer": "C",
+      "explanation": "If the rate quadruples when the concentration doubles, the reaction is second order with respect to that reactant."
+  },
+  {
+      "topicID": 8,
+      "topic": "Periodic Table & Elements",
+      "difficulty": "Intermediate",
+      "questionText": "Which group in the periodic table is known as the alkali metals?",
+      "options": [
+          "A) Group 1",
+          "B) Group 2",
+          "C) Group 17",
+          "D) Group 18"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Group 1 elements, including lithium, sodium, and potassium, are known as alkali metals due to their reactivity with water."
+  },
+  {
+      "topicID": 8,
+      "topic": "Periodic Table & Elements",
+      "difficulty": "Advanced",
+      "questionText": "Which element is a liquid at room temperature?",
+      "options": [
+          "A) Mercury",
+          "B) Bromine",
+          "C) Both A and B",
+          "D) None"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Both mercury (a metal) and bromine (a non-metal) are liquids at room temperature."
+  }
+]

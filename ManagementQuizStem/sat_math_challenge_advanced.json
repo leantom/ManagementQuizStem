@@ -1,0 +1,307 @@
+{
+  "id": "challenge-math-sat-advanced",
+  "type": "weekly",
+  "title": "SAT Math Challenge \u2013 Intermediate to Advanced",
+  "description": "20 carefully selected SAT-style math questions designed to challenge and sharpen your skills.",
+  "startDate": "2025-06-23T01:15:49.484520Z",
+  "endDate": "2025-06-30T01:15:49.484532Z",
+  "difficultyLevel": "Advanced",
+  "remainTime": 1200,
+  "questions": [
+    {
+      "questionText": "The roots of x\u00b2 - 5x + 6 = 0 are:",
+      "options": [
+        "A) 2 and 3",
+        "B) -2 and -3",
+        "C) 5 and 6",
+        "D) 1 and 6"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Factoring gives (x - 2)(x - 3) = 0",
+      "topic": "Algebra",
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "What is the probability of rolling a sum of 7 with two dice?",
+      "options": [
+        "A) 1/6",
+        "B) 1/8",
+        "C) 1/9",
+        "D) 1/12"
+      ],
+      "correctAnswer": "A",
+      "explanation": "There are 6 favorable outcomes (1+6, 2+5, ...), total 36 \u2192 6/36 = 1/6",
+      "topic": "Statistics & Probability",
+      "topicID": "2E23F496-6F4A-4EE4-9379-8DD8F5A0A0DD",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "What is the volume of a cylinder with radius r and height h?",
+      "options": [
+        "A) 2\u03c0r\u00b2h",
+        "B) \u03c0r\u00b2h",
+        "C) \u03c0r\u00b2h/3",
+        "D) 2\u03c0rh"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Volume of a cylinder = \u03c0r\u00b2h",
+      "topic": "Geometry",
+      "topicID": "5F7C2F18-A02B-43FB-940E-B742C445E3ED",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "If tan(\u03b8) = 3/4 and \u03b8 is in the first quadrant, what is sin(\u03b8)?",
+      "options": [
+        "A) 3/5",
+        "B) 4/5",
+        "C) 5/3",
+        "D) 1"
+      ],
+      "correctAnswer": "A",
+      "explanation": "tan = opposite/adjacent = 3/4, hypotenuse = 5 \u2192 sin = 3/5",
+      "topic": "Trigonometry",
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "If tan(\u03b8) = 3/4 and \u03b8 is in the first quadrant, what is sin(\u03b8)?",
+      "options": [
+        "A) 3/5",
+        "B) 4/5",
+        "C) 5/3",
+        "D) 1"
+      ],
+      "correctAnswer": "A",
+      "explanation": "tan = opposite/adjacent = 3/4, hypotenuse = 5 \u2192 sin = 3/5",
+      "topic": "Trigonometry",
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "The roots of x\u00b2 - 5x + 6 = 0 are:",
+      "options": [
+        "A) 2 and 3",
+        "B) -2 and -3",
+        "C) 5 and 6",
+        "D) 1 and 6"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Factoring gives (x - 2)(x - 3) = 0",
+      "topic": "Algebra",
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "If A \u2229 B = \u2205 and n(A) = 5, n(B) = 7, what is n(A \u222a B)?",
+      "options": [
+        "A) 12",
+        "B) 35",
+        "C) 1",
+        "D) 7"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Since the sets are disjoint: n(A \u222a B) = n(A) + n(B) = 5 + 7 = 12",
+      "topic": "Discrete Mathematics",
+      "topicID": "1AF857AD-DB8A-4872-A1A5-794319320C19",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "Which of the following matrices is invertible?",
+      "options": [
+        "A) [[1, 2], [2, 4]]",
+        "B) [[0, 1], [0, 0]]",
+        "C) [[3, 0], [0, 3]]",
+        "D) [[1, 1], [1, 1]]"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Matrix C is diagonal with non-zero entries, so it is invertible.",
+      "topic": "Linear Algebra",
+      "topicID": "3AA4D6CB-8266-4FC1-9357-9374A53856FF",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "What is the derivative of ln(x\u00b2)?",
+      "options": [
+        "A) 2/x",
+        "B) 1/x",
+        "C) ln(2x)",
+        "D) 2ln(x)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "ln(x\u00b2) = 2ln(x) \u2192 derivative is 2/x",
+      "topic": "Calculus",
+      "topicID": "972708E1-80D8-4D8C-90DD-BA526C8803AE",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "What is the volume of a cylinder with radius r and height h?",
+      "options": [
+        "A) 2\u03c0r\u00b2h",
+        "B) \u03c0r\u00b2h",
+        "C) \u03c0r\u00b2h/3",
+        "D) 2\u03c0rh"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Volume of a cylinder = \u03c0r\u00b2h",
+      "topic": "Geometry",
+      "topicID": "5F7C2F18-A02B-43FB-940E-B742C445E3ED",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "If tan(\u03b8) = 3/4 and \u03b8 is in the first quadrant, what is sin(\u03b8)?",
+      "options": [
+        "A) 3/5",
+        "B) 4/5",
+        "C) 5/3",
+        "D) 1"
+      ],
+      "correctAnswer": "A",
+      "explanation": "tan = opposite/adjacent = 3/4, hypotenuse = 5 \u2192 sin = 3/5",
+      "topic": "Trigonometry",
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "If A \u2229 B = \u2205 and n(A) = 5, n(B) = 7, what is n(A \u222a B)?",
+      "options": [
+        "A) 12",
+        "B) 35",
+        "C) 1",
+        "D) 7"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Since the sets are disjoint: n(A \u222a B) = n(A) + n(B) = 5 + 7 = 12",
+      "topic": "Discrete Mathematics",
+      "topicID": "1AF857AD-DB8A-4872-A1A5-794319320C19",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "What is the probability of rolling a sum of 7 with two dice?",
+      "options": [
+        "A) 1/6",
+        "B) 1/8",
+        "C) 1/9",
+        "D) 1/12"
+      ],
+      "correctAnswer": "A",
+      "explanation": "There are 6 favorable outcomes (1+6, 2+5, ...), total 36 \u2192 6/36 = 1/6",
+      "topic": "Statistics & Probability",
+      "topicID": "2E23F496-6F4A-4EE4-9379-8DD8F5A0A0DD",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "In modular arithmetic, what is 17 mod 5?",
+      "options": [
+        "A) 2",
+        "B) 3",
+        "C) 1",
+        "D) 4"
+      ],
+      "correctAnswer": "C",
+      "explanation": "17 divided by 5 gives remainder 2",
+      "topic": "Number Theory",
+      "topicID": "8110A47A-1C55-4D0E-9339-FB81554991F7",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "If f(x) = 2x\u00b2 - 3x + 5, what is the value of f(4)?",
+      "options": [
+        "A) 21",
+        "B) 25",
+        "C) 29",
+        "D) 31"
+      ],
+      "correctAnswer": "C",
+      "explanation": "f(4) = 2(16) - 3(4) + 5 = 32 - 12 + 5 = 25",
+      "topic": "Algebra",
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "If tan(\u03b8) = 3/4 and \u03b8 is in the first quadrant, what is sin(\u03b8)?",
+      "options": [
+        "A) 3/5",
+        "B) 4/5",
+        "C) 5/3",
+        "D) 1"
+      ],
+      "correctAnswer": "A",
+      "explanation": "tan = opposite/adjacent = 3/4, hypotenuse = 5 \u2192 sin = 3/5",
+      "topic": "Trigonometry",
+      "topicID": "C86E0AD9-FEE6-4142-9676-7A1B3E8F4618",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "What is the derivative of ln(x\u00b2)?",
+      "options": [
+        "A) 2/x",
+        "B) 1/x",
+        "C) ln(2x)",
+        "D) 2ln(x)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "ln(x\u00b2) = 2ln(x) \u2192 derivative is 2/x",
+      "topic": "Calculus",
+      "topicID": "972708E1-80D8-4D8C-90DD-BA526C8803AE",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "If f(x) = 2x\u00b2 - 3x + 5, what is the value of f(4)?",
+      "options": [
+        "A) 21",
+        "B) 25",
+        "C) 29",
+        "D) 31"
+      ],
+      "correctAnswer": "C",
+      "explanation": "f(4) = 2(16) - 3(4) + 5 = 32 - 12 + 5 = 25",
+      "topic": "Algebra",
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "What is the value of the limit lim(x\u21920) (sin x)/x?",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) \u221e",
+        "D) Does not exist"
+      ],
+      "correctAnswer": "B",
+      "explanation": "This is a well-known limit in calculus: lim(x\u21920)(sin x)/x = 1",
+      "topic": "Calculus",
+      "topicID": "972708E1-80D8-4D8C-90DD-BA526C8803AE",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "What is the value of the limit lim(x\u21920) (sin x)/x?",
+      "options": [
+        "A) 0",
+        "B) 1",
+        "C) \u221e",
+        "D) Does not exist"
+      ],
+      "correctAnswer": "B",
+      "explanation": "This is a well-known limit in calculus: lim(x\u21920)(sin x)/x = 1",
+      "topic": "Calculus",
+      "topicID": "972708E1-80D8-4D8C-90DD-BA526C8803AE",
+      "difficulty": "Intermediate"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 1200,
+      "description": "Earn 1200 XP for completing this challenging SAT Math set!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Badge Unlocked: Math Mastery"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-06-23T01:15:49.484541Z",
+  "updatedAt": "2025-06-23T01:15:49.484543Z"
+}

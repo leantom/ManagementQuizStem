@@ -1,0 +1,115 @@
+
+  {
+    "topicID": 1,
+    "topic": "Organic Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "Which type of isomerism is exhibited by 2-butanol and diethyl ether (C₄H₁₀O)?",
+    "options": [
+      "A) Geometric isomerism",
+      "B) Functional group isomerism",
+      "C) Chain isomerism",
+      "D) Optical isomerism"
+    ],
+    "correctAnswer": "B",
+    "explanation": "These compounds have the same molecular formula but different functional groups (alcohol vs. ether), making them functional group isomers."
+  },
+  {
+    "topicID": 2,
+    "topic": "Inorganic Chemistry",
+    "difficulty": "Beginner",
+    "questionText": "Which of the following is the correct oxidation state of chromium in potassium dichromate (K₂Cr₂O₇)?",
+    "options": [
+      "A) +3",
+      "B) +5",
+      "C) +6",
+      "D) +7"
+    ],
+    "correctAnswer": "C",
+    "explanation": "In potassium dichromate, each chromium atom has an oxidation state of +6, as calculated from the compound's overall charge."
+  },
+  {
+    "topicID": 3,
+    "topic": "Physical Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "What is the term for the energy required to remove an electron from a neutral atom in the gas phase?",
+    "options": [
+      "A) Ionization energy",
+      "B) Electron affinity",
+      "C) Lattice energy",
+      "D) Bond dissociation energy"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Ionization energy refers to the energy needed to remove an electron from an isolated atom or ion in its gaseous state."
+  },
+  {
+    "topicID": 4,
+    "topic": "Biochemistry",
+    "difficulty": "Advanced",
+    "questionText": "Which molecule acts as the main carrier of genetic information in most living organisms?",
+    "options": [
+      "A) RNA",
+      "B) DNA",
+      "C) Proteins",
+      "D) Lipids"
+    ],
+    "correctAnswer": "B",
+    "explanation": "DNA (Deoxyribonucleic acid) is the primary molecule responsible for storing and transmitting genetic information in most organisms."
+  },
+  {
+    "topicID": 5,
+    "topic": "Analytical Chemistry",
+    "difficulty": "Intermediate",
+    "questionText": "Which analytical technique is commonly used to identify functional groups in a molecule by analyzing vibrational frequencies?",
+    "options": [
+      "A) NMR spectroscopy",
+      "B) IR spectroscopy",
+      "C) Mass spectrometry",
+      "D) UV-Vis spectroscopy"
+    ],
+    "correctAnswer": "B",
+    "explanation": "IR (Infrared) spectroscopy identifies functional groups based on characteristic vibrational frequencies of bonds."
+  },
+  {
+    "topicID": 6,
+    "topic": "Environmental Chemistry",
+    "difficulty": "Beginner",
+    "questionText": "Which gas is primarily responsible for the greenhouse effect?",
+    "options": [
+      "A) Oxygen",
+      "B) Carbon dioxide",
+      "C) Nitrogen",
+      "D) Argon"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Carbon dioxide (CO₂) is a significant greenhouse gas that traps heat in the atmosphere, contributing to global warming."
+  },
+  {
+    "topicID": 7,
+    "topic": "Chemical Reactions",
+    "difficulty": "Intermediate",
+    "questionText": "In a redox reaction, what happens to the reducing agent?",
+    "options": [
+      "A) It gains electrons and is reduced.",
+      "B) It loses electrons and is oxidized.",
+      "C) It neither gains nor loses electrons.",
+      "D) It is consumed without changing its oxidation state."
+    ],
+    "correctAnswer": "B",
+    "explanation": "The reducing agent donates electrons to another species, thereby losing electrons and undergoing oxidation."
+  },
+  {
+    "topicID": 8,
+    "topic": "Periodic Table & Elements",
+    "difficulty": "Intermediate",
+    "questionText": "Which group in the periodic table is commonly referred to as the 'noble gases'?",
+    "options": [
+      "A) Group 1",
+      "B) Group 2",
+      "C) Group 17",
+      "D) Group 18"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Group 18 elements, such as helium, neon, and argon, are known as noble gases due to their stability and lack of reactivity."
+  }
+
+

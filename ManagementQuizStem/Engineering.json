@@ -1,0 +1,600 @@
+[
+    {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Robotics",
+        "difficulty": "Beginner",
+        "questionText": "What is an actuator in a robot?",
+        "options": [
+            "A) A device that senses changes in the environment",
+            "B) A mechanical component that causes motion",
+            "C) A control system for navigation",
+            "D) A storage unit for energy"
+        ],
+        "correctAnswer": "B",
+        "explanation": "An actuator is a mechanical device that converts energy into motion in robots."
+    },
+    {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Robotics",
+        "difficulty": "Intermediate",
+        "questionText": "Which programming language is most commonly used in robotics?",
+        "options": ["A) Java", "B) Python", "C) C++", "D) Ruby"],
+        "correctAnswer": "C",
+        "explanation": "C++ is commonly used in robotics for real-time applications and performance-critical tasks."
+    },
+    {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Robotics",
+        "difficulty": "Advanced",
+        "questionText": "What is forward kinematics in robotics?",
+        "options": [
+            "A) Calculating joint angles from end-effector position",
+            "B) Determining the position of the end-effector given joint parameters",
+            "C) Controlling the robot's motion trajectory",
+            "D) Planning optimal paths for the robot"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Forward kinematics involves determining the position and orientation of a robot's end-effector based on its joint parameters."
+    },
+    {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Environmental Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary goal of environmental engineering?",
+        "options": [
+            "A) Construct buildings",
+            "B) Protect the environment and public health",
+            "C) Design energy systems",
+            "D) Develop robotic systems"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Environmental engineering focuses on designing solutions to protect the environment and public health."
+    },
+    {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Environmental Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "Which process is used to remove solid waste from water in wastewater treatment?",
+        "options": ["A) Filtration", "B) Sedimentation", "C) Aeration", "D) Chlorination"],
+        "correctAnswer": "B",
+        "explanation": "Sedimentation involves removing suspended solids from water by allowing them to settle."
+    },
+    {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Environmental Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of activated sludge in wastewater treatment?",
+        "options": [
+            "A) Kill harmful microorganisms",
+            "B) Remove dissolved organic matter",
+            "C) Disinfect water",
+            "D) Reduce water hardness"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Activated sludge is used in biological treatment processes to remove dissolved organic matter from wastewater."
+    },
+    {
+        "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+        "topic": "Industrial Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary objective of industrial engineering?",
+        "options": [
+            "A) Designing electrical circuits",
+            "B) Optimizing systems and processes",
+            "C) Building mechanical systems",
+            "D) Developing chemical compounds"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Industrial engineering aims to optimize complex systems and processes for efficiency and productivity."
+    },
+    {
+        "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+        "topic": "Industrial Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "Which tool is commonly used in industrial engineering for process improvement?",
+        "options": ["A) Six Sigma", "B) Neural Networks", "C) Finite Element Analysis", "D) CAD"],
+        "correctAnswer": "A",
+        "explanation": "Six Sigma is a methodology used in industrial engineering to improve processes by identifying and reducing variability."
+    },
+    {
+        "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+        "topic": "Industrial Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the critical path method (CPM) used for in industrial engineering?",
+        "options": [
+            "A) Calculating system reliability",
+            "B) Optimizing production schedules",
+            "C) Identifying the longest path in a project plan",
+            "D) Balancing assembly lines"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The critical path method (CPM) identifies the longest sequence of tasks in a project plan to determine the shortest possible project duration."
+    },
+    {
+        "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+        "topic": "Aerospace Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the term for the force opposing an aircraft's motion through the air?",
+        "options": ["A) Thrust", "B) Drag", "C) Lift", "D) Momentum"],
+        "correctAnswer": "B",
+        "explanation": "Drag is the aerodynamic force that opposes an aircraft's motion through the air."
+    },
+    {
+        "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+        "topic": "Aerospace Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the Mach number used to describe?",
+        "options": [
+            "A) The efficiency of an engine",
+            "B) The speed of an object relative to the speed of sound",
+            "C) The thrust-to-weight ratio",
+            "D) The altitude of a flight"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Mach number is the ratio of the speed of an object to the speed of sound in the surrounding medium."
+    },
+    {
+        "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+        "topic": "Aerospace Engineering",
+        "difficulty": "Advanced",
+        "questionText": "Which phenomenon occurs when an aircraft exceeds the speed of sound?",
+        "options": ["A) Turbulence", "B) Sonic boom", "C) Supersonic lift", "D) Critical drag"],
+        "correctAnswer": "B",
+        "explanation": "A sonic boom is a loud sound generated when an aircraft exceeds the speed of sound, caused by shock waves."
+    }
+    ,
+    
+    {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Robotics",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary purpose of sensors in a robot?",
+        "options": [
+            "A) To provide power to the robot",
+            "B) To detect environmental changes",
+            "C) To store data",
+            "D) To control movement"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Sensors in robots are used to detect changes in the environment and provide data for decision-making."
+    },
+    {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Robotics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the main function of an end effector in a robotic arm?",
+        "options": [
+            "A) Provide power to joints",
+            "B) Perform tasks such as gripping or welding",
+            "C) Transmit signals between components",
+            "D) Measure temperature"
+        ],
+        "correctAnswer": "B",
+        "explanation": "An end effector is the tool attached to the end of a robotic arm, used to interact with objects (e.g., gripping, welding, painting)."
+    },
+    {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Robotics",
+        "difficulty": "Advanced",
+        "questionText": "Which algorithm is commonly used for path planning in robotics?",
+        "options": ["A) Dijkstra's Algorithm", "B) Naive Bayes", "C) K-Means", "D) Quick Sort"],
+        "correctAnswer": "A",
+        "explanation": "Dijkstra's Algorithm is widely used in robotics for path planning to find the shortest path in a graph."
+    },
+    {
+        "topicID": "eng12345-6789-0abc-defg-hijk123456789",
+        "topic": "Environmental Engineering",
+        "difficulty": "Beginner",
+        "questionText": "Which gas is primarily responsible for global warming?",
+        "options": ["A) Nitrogen", "B) Oxygen", "C) Carbon Dioxide", "D) Argon"],
+        "correctAnswer": "C",
+        "explanation": "Carbon dioxide (CO₂) is a greenhouse gas that contributes significantly to global warming by trapping heat in the atmosphere."
+    },
+    {
+        "topicID": "eng12345-6789-0abc-defg-hijk123456789",
+        "topic": "Environmental Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the primary purpose of a scrubber in industrial facilities?",
+        "options": [
+            "A) Filter solid waste",
+            "B) Remove pollutants from exhaust gases",
+            "C) Reduce noise pollution",
+            "D) Monitor emissions"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Scrubbers are devices used in industrial facilities to remove pollutants such as sulfur dioxide from exhaust gases."
+    },
+    {
+        "topicID": "eng12345-6789-0abc-defg-hijk123456789",
+        "topic": "Environmental Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is bioremediation?",
+        "options": [
+            "A) A chemical method to treat waste",
+            "B) A biological process to clean contaminated environments",
+            "C) A mechanical method to separate waste",
+            "D) A thermal process for treating water"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Bioremediation is the use of microorganisms or plants to clean up contaminated soil, water, or air."
+    },
+    {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Industrial Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What does 'Lean Manufacturing' aim to achieve?",
+        "options": [
+            "A) Maximize resource usage",
+            "B) Eliminate waste and increase efficiency",
+            "C) Improve product aesthetics",
+            "D) Minimize automation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Lean manufacturing focuses on eliminating waste, improving efficiency, and adding value to the production process."
+    },
+    {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Industrial Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What does 'Six Sigma' focus on improving in industrial processes?",
+        "options": [
+            "A) Energy efficiency",
+            "B) Process variability and quality",
+            "C) Cost of raw materials",
+            "D) Team collaboration"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Six Sigma improves quality by reducing process variability and eliminating defects in industrial systems."
+    },
+    {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Industrial Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of Kanban in industrial processes?",
+        "options": [
+            "A) Automate production",
+            "B) Control inventory flow and scheduling",
+            "C) Improve worker safety",
+            "D) Manage equipment maintenance"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Kanban is a visual scheduling system used in industrial processes to manage inventory flow and optimize production."
+    },
+    {
+        "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+        "topic": "Aerospace Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary function of a jet engine?",
+        "options": [
+            "A) Generate electricity",
+            "B) Create lift",
+            "C) Provide thrust",
+            "D) Reduce drag"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A jet engine generates thrust by expelling high-speed exhaust gases, propelling the aircraft forward."
+    },
+    {
+        "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+        "topic": "Aerospace Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the purpose of an aileron in an aircraft?",
+        "options": [
+            "A) Control lift",
+            "B) Control yaw",
+            "C) Control roll",
+            "D) Control pitch"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Ailerons control the roll of an aircraft, allowing it to bank or turn."
+    },
+    {
+        "topicID": "eng34567-8901-2abc-defg-hijk345678901",
+        "topic": "Aerospace Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the main advantage of a swept wing design in high-speed aircraft?",
+        "options": [
+            "A) Increases lift",
+            "B) Reduces drag at transonic speeds",
+            "C) Enhances maneuverability",
+            "D) Improves fuel efficiency"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A swept wing design reduces drag at transonic speeds, improving the efficiency of high-speed aircraft."
+    }
+    ,
+    {
+        "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+        "topic": "Electrical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the function of a diode in an electrical circuit?",
+        "options": [
+            "A) Amplify current",
+            "B) Convert AC to DC",
+            "C) Regulate voltage",
+            "D) Allow current to flow in one direction"
+        ],
+        "correctAnswer": "D",
+        "explanation": "A diode allows current to flow in only one direction and blocks it in the opposite direction."
+    },
+    {
+        "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+        "topic": "Electrical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the RMS (Root Mean Square) value of an AC voltage with a peak value of 100 V?",
+        "options": ["A) 50 V", "B) 70.7 V", "C) 100 V", "D) 141.4 V"],
+        "correctAnswer": "B",
+        "explanation": "RMS value = Peak value / √2. For a peak value of 100 V, RMS = 100/√2 ≈ 70.7 V."
+    },
+    {
+        "topicID": "eng45678-9012-3abc-defg-hijk456789012",
+        "topic": "Electrical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary purpose of a MOSFET in electronic circuits?",
+        "options": [
+            "A) Generate oscillations",
+            "B) Amplify or switch electronic signals",
+            "C) Store electrical energy",
+            "D) Filter high-frequency noise"
+        ],
+        "correctAnswer": "B",
+        "explanation": "MOSFETs (Metal-Oxide-Semiconductor Field-Effect Transistors) are widely used for amplifying or switching electronic signals."
+    },
+    {
+        "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "Which property of a material indicates its ability to resist deformation under load?",
+        "options": ["A) Ductility", "B) Strength", "C) Hardness", "D) Elasticity"],
+        "correctAnswer": "C",
+        "explanation": "Hardness is the property of a material that indicates its ability to resist deformation, particularly indentation or scratching."
+    },
+    {
+        "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What type of gear is commonly used to change the direction of motion by 90°?",
+        "options": ["A) Spur gear", "B) Bevel gear", "C) Helical gear", "D) Worm gear"],
+        "correctAnswer": "B",
+        "explanation": "Bevel gears are used to transmit motion between shafts at 90° angles."
+    },
+    {
+        "topicID": "eng56789-0123-4abc-defg-hijk567890123",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the efficiency of a Carnot engine operating between a hot reservoir at 500 K and a cold reservoir at 300 K?",
+        "options": ["A) 20%", "B) 30%", "C) 40%", "D) 60%"],
+        "correctAnswer": "C",
+        "explanation": "Carnot efficiency = 1 - (T_cold/T_hot) = 1 - (300/500) = 0.4 or 40%."
+    },
+    {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Civil Engineering",
+        "difficulty": "Beginner",
+        "questionText": "Which construction material is made by mixing cement, sand, water, and aggregates?",
+        "options": ["A) Concrete", "B) Mortar", "C) Plaster", "D) Asphalt"],
+        "correctAnswer": "A",
+        "explanation": "Concrete is a mixture of cement, sand, water, and aggregates such as gravel or crushed stone."
+    },
+    {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Civil Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the term for the horizontal structural element that supports loads in a building?",
+        "options": ["A) Beam", "B) Column", "C) Slab", "D) Truss"],
+        "correctAnswer": "A",
+        "explanation": "A beam is a horizontal structural element that supports loads applied to it, transferring them to columns or walls."
+    },
+    {
+        "topicID": "eng67890-1234-5abc-defg-hijk678901234",
+        "topic": "Civil Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of prestressing in reinforced concrete?",
+        "options": [
+            "A) Increase the weight of the structure",
+            "B) Reduce deflection under load",
+            "C) Improve thermal conductivity",
+            "D) Enhance aesthetic appeal"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Prestressing increases the load-carrying capacity of reinforced concrete and reduces deflection under load."
+    },
+    {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Chemical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the main purpose of a heat exchanger?",
+        "options": [
+            "A) Increase chemical reaction rates",
+            "B) Transfer heat between two or more fluids",
+            "C) Filter impurities",
+            "D) Reduce pressure"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A heat exchanger is a device used to transfer heat between two or more fluids without mixing them."
+    },
+    {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Chemical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the primary function of a distillation column?",
+        "options": [
+            "A) Heat a chemical mixture",
+            "B) Separate components based on boiling points",
+            "C) Compress gases",
+            "D) Store liquid products"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A distillation column separates components of a chemical mixture based on their boiling points."
+    },
+    {
+        "topicID": "eng78901-2345-6abc-defg-hijk789012345",
+        "topic": "Chemical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "Which equation describes the rate of diffusion in a chemical process?",
+        "options": [
+            "A) Newton's Law",
+            "B) Fick's Law",
+            "C) Fourier's Law",
+            "D) Bernoulli's Equation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Fick's Law describes the rate of diffusion, stating that the diffusion rate is proportional to the concentration gradient."
+    }
+    ,
+    {
+        "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+        "topic": "Electrical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the function of a resistor in an electrical circuit?",
+        "options": [
+            "A) Store energy",
+            "B) Convert AC to DC",
+            "C) Limit current flow",
+            "D) Increase voltage"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A resistor is used to limit the flow of current and divide voltage in a circuit."
+    },
+    {
+        "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+        "topic": "Electrical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "Which component is used to stabilize voltage in a circuit?",
+        "options": ["A) Transistor", "B) Diode", "C) Capacitor", "D) Voltage Regulator"],
+        "correctAnswer": "D",
+        "explanation": "A voltage regulator maintains a constant output voltage, regardless of input voltage variations."
+    },
+    {
+        "topicID": "eng89012-3456-7abc-defg-hijk890123456",
+        "topic": "Electrical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the power factor in an AC circuit?",
+        "options": [
+            "A) Ratio of true power to apparent power",
+            "B) Ratio of reactive power to true power",
+            "C) Ratio of voltage to current",
+            "D) Ratio of resistance to reactance"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The power factor is the ratio of true power (P) to apparent power (S) in an AC circuit, indicating how efficiently power is used."
+    },
+    {
+        "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the unit of torque?",
+        "options": ["A) Newton", "B) Joule", "C) Newton-Meter", "D) Watt"],
+        "correctAnswer": "C",
+        "explanation": "Torque is measured in Newton-Meters (Nm), representing the rotational force applied to an object."
+    },
+    {
+        "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the main purpose of a crankshaft in an engine?",
+        "options": [
+            "A) Store energy",
+            "B) Convert linear motion to rotational motion",
+            "C) Cool the engine",
+            "D) Reduce engine noise"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The crankshaft converts the linear motion of pistons into rotational motion to drive the wheels or machinery."
+    },
+    {
+        "topicID": "eng90123-4567-8abc-defg-hijk901234567",
+        "topic": "Mechanical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "Which law is used to calculate the strain energy in a material under stress?",
+        "options": [
+            "A) Hooke's Law",
+            "B) Bernoulli's Principle",
+            "C) Young's Modulus",
+            "D) Navier-Stokes Equation"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Hooke's Law relates stress and strain in elastic materials and can be used to calculate strain energy."
+    },
+    {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Civil Engineering",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary purpose of a retaining wall?",
+        "options": [
+            "A) Provide support for buildings",
+            "B) Prevent soil erosion",
+            "C) Allow water drainage",
+            "D) Increase aesthetic value"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A retaining wall prevents soil erosion and provides stability to sloped areas."
+    },
+    {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Civil Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the term for the maximum stress a material can withstand without breaking?",
+        "options": ["A) Yield Strength", "B) Tensile Strength", "C) Compressive Strength", "D) Shear Strength"],
+        "correctAnswer": "B",
+        "explanation": "Tensile strength is the maximum stress a material can handle while being stretched or pulled before breaking."
+    },
+    {
+        "topicID": "eng01234-5678-9abc-defg-hijk012345678",
+        "topic": "Civil Engineering",
+        "difficulty": "Advanced",
+        "questionText": "Which method is commonly used to measure the permeability of soil?",
+        "options": [
+            "A) Proctor Test",
+            "B) Permeability Test",
+            "C) Consolidation Test",
+            "D) Triaxial Shear Test"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The permeability test determines how easily water can flow through soil, a critical factor in civil engineering projects."
+    },
+    {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Chemical Engineering",
+        "difficulty": "Beginner",
+        "questionText": "Which law explains the relationship between pressure and volume of a gas at constant temperature?",
+        "options": [
+            "A) Charles' Law",
+            "B) Boyle's Law",
+            "C) Avogadro's Law",
+            "D) Pascal's Law"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Boyle's Law states that the pressure of a gas is inversely proportional to its volume at constant temperature."
+    },
+    {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Chemical Engineering",
+        "difficulty": "Intermediate",
+        "questionText": "What is the primary function of a catalyst in chemical reactions?",
+        "options": [
+            "A) Change the equilibrium point",
+            "B) Increase the reaction rate",
+            "C) Absorb heat from the reaction",
+            "D) Increase reactant concentration"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A catalyst increases the reaction rate by lowering the activation energy without being consumed in the process."
+    },
+    {
+        "topicID": "eng23456-7890-1abc-defg-hijk234567890",
+        "topic": "Chemical Engineering",
+        "difficulty": "Advanced",
+        "questionText": "What is the purpose of a reflux condenser in a distillation process?",
+        "options": [
+            "A) Measure temperature",
+            "B) Increase pressure",
+            "C) Prevent loss of volatile components",
+            "D) Separate immiscible liquids"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A reflux condenser is used to cool and condense vapors back into the distillation system to prevent the loss of volatile components."
+    }
+    
+    
+]

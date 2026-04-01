@@ -1,0 +1,307 @@
+{
+  "id": "challenge-70010",
+  "type": "weekly",
+  "title": "STEAM Mastery Challenge",
+  "description": "Take on these 20 intermediate-level questions covering science, technology, engineering, arts, and mathematics. You have 5 minutes (remainTime = 300) to complete this mega challenge!",
+  "startDate": "2025-04-28T00:00:00Z",
+  "endDate": "2025-05-05T00:00:00Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "4327DB3C-47CC-4CC6-A29F-0D7F328090AA",
+      "topic": "3D Printing",
+      "difficulty": "Intermediate",
+      "questionText": "Which common post-processing step often removes support structures or smooths rough edges in FDM 3D-printed parts?",
+      "options": [
+        "A) Thermoforming",
+        "B) Sanding or filing",
+        "C) Electroplating",
+        "D) Acid etching"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sanding or filing is a standard post-processing method to remove supports and smooth surfaces in FDM prints."
+    },
+    {
+      "topicID": "7283E02C-C82E-4568-B3EB-D273C852037C",
+      "topic": "Acoustics",
+      "difficulty": "Intermediate",
+      "questionText": "Which phenomenon occurs when an object vibrates at a frequency matching another object’s natural frequency, causing the second object to vibrate sympathetically?",
+      "options": [
+        "A) Reflection",
+        "B) Refraction",
+        "C) Diffraction",
+        "D) Resonance"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Resonance happens when an object is driven at its natural frequency, causing large amplitude vibrations."
+    },
+    {
+      "topicID": "7BBF4180-78DF-4BB0-9F49-843B505B89F1",
+      "topic": "Aerospace Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "Which propulsion system in modern rockets combines liquid fuel and oxidizer in a combustion chamber to generate thrust?",
+      "options": [
+        "A) Ion propulsion",
+        "B) Liquid-propellant rocket engine",
+        "C) Solid rocket motor",
+        "D) Air-breathing turbojet"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Liquid-propellant rocket engines mix liquid fuel and a liquid oxidizer under high pressure for combustion and thrust."
+    },
+    {
+      "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Which algebraic property explains why x + y = y + x?",
+      "options": [
+        "A) Commutative Property of Addition",
+        "B) Associative Property of Addition",
+        "C) Distributive Property",
+        "D) Inverse Property"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The commutative property states that x + y = y + x for real numbers x and y."
+    },
+    {
+      "topicID": "694D806F-178C-4865-8E29-E3874212D7FD",
+      "topic": "Analytical Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which separation technique uses a porous membrane to separate substances based on particle size or molecular weight?",
+      "options": [
+        "A) Filtration",
+        "B) Centrifugation",
+        "C) Crystallization",
+        "D) Electrophoresis"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Filtration passes a mixture through a porous material to separate larger particles from smaller or dissolved components."
+    },
+    {
+      "topicID": "8C7DEF16-25AB-4AA0-BE24-A4AF9335C63D",
+      "topic": "Botany",
+      "difficulty": "Intermediate",
+      "questionText": "Which pigment is primarily responsible for absorbing light energy during photosynthesis in plants?",
+      "options": [
+        "A) Chlorophyll",
+        "B) Carotene",
+        "C) Xanthophyll",
+        "D) Anthocyanin"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Chlorophyll absorbs light in the blue and red wavelengths, allowing plants to capture energy for photosynthesis."
+    },
+    {
+      "topicID": "DE35C776-A38D-4ED8-B822-3DFBAAE954F9",
+      "topic": "Artificial Intelligence",
+      "difficulty": "Intermediate",
+      "questionText": "Which machine learning method categorizes data into predefined groups using labeled training examples?",
+      "options": [
+        "A) Classification",
+        "B) Clustering",
+        "C) Regression",
+        "D) Reinforcement Learning"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Classification is a supervised learning task that assigns inputs to one of several predefined classes."
+    },
+    {
+      "topicID": "B2828E2D-DDE7-4E98-9D32-7A66E02934BF",
+      "topic": "Astronomy",
+      "difficulty": "Intermediate",
+      "questionText": "Which term describes the apparent brightness of a star as seen from Earth?",
+      "options": [
+        "A) Luminosity",
+        "B) Absolute magnitude",
+        "C) Apparent magnitude",
+        "D) Radiance factor"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A star’s apparent magnitude measures how bright it appears to an observer on Earth, irrespective of its actual luminosity."
+    },
+    {
+      "topicID": "667AB918-7076-4B31-8A3C-D22619F763AC",
+      "topic": "Chemical Reactions",
+      "difficulty": "Intermediate",
+      "questionText": "Which reaction type occurs when two compounds exchange ions, producing two new compounds?",
+      "options": [
+        "A) Synthesis",
+        "B) Decomposition",
+        "C) Single Displacement",
+        "D) Double Displacement"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A double displacement reaction involves two compounds exchanging ions to form two different compounds."
+    },
+    {
+      "topicID": "800E22A0-4657-413C-89D1-5BBDE87BBBC3",
+      "topic": "Civil Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "Which branch of civil engineering involves studying soil and rock mechanics to ensure stable foundations and earthworks?",
+      "options": [
+        "A) Structural Engineering",
+        "B) Geotechnical Engineering",
+        "C) Water Resources Engineering",
+        "D) Transportation Engineering"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geotechnical Engineering focuses on the behavior of earth materials for safe and stable foundations, slopes, and other geostructures."
+    },
+    {
+      "topicID": "5F7C2F18-A02B-43FB-940E-B742C445E3ED",
+      "topic": "Geometry",
+      "difficulty": "Intermediate",
+      "questionText": "Which type of polygon has all sides of equal length and all interior angles equal?",
+      "options": [
+        "A) Scalene polygon",
+        "B) Convex polygon",
+        "C) Regular polygon",
+        "D) Concave polygon"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A regular polygon is equilateral (all sides equal) and equiangular (all angles equal)."
+    },
+    {
+      "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+      "topic": "Classical Mechanics",
+      "difficulty": "Intermediate",
+      "questionText": "Which quantity is defined as the rate of change of velocity with respect to time?",
+      "options": [
+        "A) Speed",
+        "B) Inertia",
+        "C) Acceleration",
+        "D) Momentum"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Acceleration is dv/dt, the rate at which velocity changes over time."
+    },
+    {
+      "topicID": "62F57DD6-4F4C-43C6-8B82-821032E0DBEB",
+      "topic": "Climate Science",
+      "difficulty": "Intermediate",
+      "questionText": "Which global phenomenon involves a periodic warming of sea-surface temperatures in the central and eastern tropical Pacific Ocean?",
+      "options": [
+        "A) La Niña",
+        "B) El Niño",
+        "C) Monsoon",
+        "D) Atlantic Oscillation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "El Niño is characterized by warmer-than-average sea-surface temperatures in the equatorial Pacific, influencing global climate patterns."
+    },
+    {
+      "topicID": "49AD7C3A-E322-42BF-A8C5-E5E4F5918EDA",
+      "topic": "Computer Networks",
+      "difficulty": "Intermediate",
+      "questionText": "Which protocol ensures reliable data transmission over the internet by handling error checking and retransmission of lost packets?",
+      "options": [
+        "A) TCP (Transmission Control Protocol)",
+        "B) UDP (User Datagram Protocol)",
+        "C) IP (Internet Protocol)",
+        "D) FTP (File Transfer Protocol)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "TCP provides reliable, ordered, and error-checked delivery of data between applications running on hosts communicating over an IP network."
+    },
+    {
+      "topicID": "FD5D8AF6-2AED-4CB7-B2DD-859A0AE1422F",
+      "topic": "Cybersecurity",
+      "difficulty": "Intermediate",
+      "questionText": "Which cybersecurity measure encodes data so only authorized parties can decode and access it?",
+      "options": [
+        "A) Authentication",
+        "B) Encryption",
+        "C) Hashing",
+        "D) Network Address Translation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Encryption encodes data using a key so that only those with the corresponding key can decrypt and read it."
+    },
+    {
+      "topicID": "FACB844A-A670-435D-A23F-9543FC01039A",
+      "topic": "Data Structures & Algorithms",
+      "difficulty": "Intermediate",
+      "questionText": "Which algorithm repeatedly swaps adjacent elements if they are in the wrong order, resulting in O(n²) worst-case complexity?",
+      "options": [
+        "A) Insertion Sort",
+        "B) Bubble Sort",
+        "C) Selection Sort",
+        "D) Merge Sort"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Bubble Sort operates by comparing and swapping adjacent elements, leading to a worst-case of O(n²)."
+    },
+    {
+      "topicID": "35DEC7D8-BAB2-4C2F-9496-B3422E9EFDFC",
+      "topic": "Biochemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which nitrogenous base is found in RNA but not in DNA?",
+      "options": [
+        "A) Adenine",
+        "B) Thymine",
+        "C) Cytosine",
+        "D) Uracil"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Uracil is present in RNA, whereas thymine is found in DNA."
+    },
+    {
+      "topicID": "5CD4B622-0111-45BE-B540-FFF3ED87AEF3",
+      "topic": "Environmental Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which pollutant, primarily from coal combustion, contributes to acid rain when it reacts with water vapor in the atmosphere?",
+      "options": [
+        "A) CO₂",
+        "B) CH₄",
+        "C) SO₂",
+        "D) NO₂"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sulfur dioxide (SO₂) can form sulfuric acid in the atmosphere, leading to acid rain."
+    },
+    {
+      "topicID": "96EDAF1E-2ED9-45A6-BF6B-D790F951BF8B",
+      "topic": "Inorganic Chemistry",
+      "difficulty": "Intermediate",
+      "questionText": "Which element is the lightest alkali metal, located in group 1 of the periodic table?",
+      "options": [
+        "A) Sodium (Na)",
+        "B) Lithium (Li)",
+        "C) Potassium (K)",
+        "D) Rubidium (Rb)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Lithium (Li) is the lightest alkali metal, found at the top of group 1 in the periodic table."
+    },
+    {
+      "topicID": "55630FBD-01D6-4C63-8FE1-BDE4BCE48EA9",
+      "topic": "Renewable Energy",
+      "difficulty": "Intermediate",
+      "questionText": "Which renewable energy source uses organic matter, such as plant or animal waste, to produce energy?",
+      "options": [
+        "A) Solar Power",
+        "B) Wind Power",
+        "C) Hydropower",
+        "D) Biomass Energy"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Biomass energy is derived from organic materials (e.g., wood, crop waste, manure) to generate heat or electricity."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 1000,
+      "description": "Earn 1000 points for conquering 20 STEAM questions!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'STEAM Mastery' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-04-28T00:00:00Z",
+  "updatedAt": "2025-04-28T00:00:00Z"
+}

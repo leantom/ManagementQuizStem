@@ -1,0 +1,553 @@
+[
+    {
+        "topicID": "abc12345-6789-0def-ghij-klm123456789",
+        "topic": "Classical Mechanics",
+        "difficulty": "Beginner",
+        "questionText": "What is the force acting on a 10 kg object accelerating at 2 m/s²?",
+        "options": ["A) 10 N", "B) 20 N", "C) 30 N", "D) 50 N"],
+        "correctAnswer": "B",
+        "explanation": "Using Newton's second law: F = ma = 10 × 2 = 20 N"
+    },
+    {
+        "topicID": "abc12345-6789-0def-ghij-klm123456789",
+        "topic": "Classical Mechanics",
+        "difficulty": "Intermediate",
+        "questionText": "A car accelerates uniformly from rest to 20 m/s in 5 seconds. What is its acceleration?",
+        "options": ["A) 2 m/s²", "B) 3 m/s²", "C) 4 m/s²", "D) 5 m/s²"],
+        "correctAnswer": "C",
+        "explanation": "Acceleration = (final velocity - initial velocity) / time = (20 - 0) / 5 = 4 m/s²"
+    },
+    {
+        "topicID": "abc12345-6789-0def-ghij-klm123456789",
+        "topic": "Classical Mechanics",
+        "difficulty": "Advanced",
+        "questionText": "A 5 kg object is dropped from a height of 10 m. What is its velocity just before hitting the ground? (Assume g = 9.8 m/s²)",
+        "options": ["A) 10 m/s", "B) 14 m/s", "C) 20 m/s", "D) 28 m/s"],
+        "correctAnswer": "B",
+        "explanation": "Using v² = u² + 2gh: v² = 0 + 2 × 9.8 × 10 → v = √196 = 14 m/s"
+    },
+    {
+        "topicID": "def45678-1234-9abc-ghij-klm234567890",
+        "topic": "Quantum Mechanics",
+        "difficulty": "Beginner",
+        "questionText": "What is the name of the fundamental constant associated with quantum mechanics?",
+        "options": ["A) Planck's constant", "B) Gravitational constant", "C) Speed of light", "D) Boltzmann constant"],
+        "correctAnswer": "A",
+        "explanation": "Planck's constant is fundamental in quantum mechanics, denoted as h."
+    },
+    {
+        "topicID": "def45678-1234-9abc-ghij-klm234567890",
+        "topic": "Quantum Mechanics",
+        "difficulty": "Intermediate",
+        "questionText": "Which phenomenon demonstrates the wave-particle duality of light?",
+        "options": ["A) Diffraction", "B) Reflection", "C) Photoelectric effect", "D) Refraction"],
+        "correctAnswer": "C",
+        "explanation": "The photoelectric effect demonstrates wave-particle duality, as light behaves as particles to eject electrons."
+    },
+    {
+        "topicID": "def45678-1234-9abc-ghij-klm234567890",
+        "topic": "Quantum Mechanics",
+        "difficulty": "Advanced",
+        "questionText": "According to Heisenberg's uncertainty principle, which two quantities cannot be simultaneously measured with arbitrary precision?",
+        "options": ["A) Position and momentum", "B) Energy and time", "C) Mass and energy", "D) Charge and mass"],
+        "correctAnswer": "A",
+        "explanation": "Heisenberg's uncertainty principle states that the position and momentum of a particle cannot be precisely measured at the same time."
+    },
+    {
+        "topicID": "ghi67890-1234-5def-klmn-opq345678901",
+        "topic": "Electromagnetism",
+        "difficulty": "Beginner",
+        "questionText": "What is the unit of electric current?",
+        "options": ["A) Volt", "B) Ohm", "C) Ampere", "D) Joule"],
+        "correctAnswer": "C",
+        "explanation": "Electric current is measured in amperes (A)."
+    },
+    {
+        "topicID": "ghi67890-1234-5def-klmn-opq345678901",
+        "topic": "Electromagnetism",
+        "difficulty": "Intermediate",
+        "questionText": "What is the relationship between voltage (V), current (I), and resistance (R)?",
+        "options": ["A) V = IR", "B) V = I/R", "C) V = R/I", "D) V = IR²"],
+        "correctAnswer": "A",
+        "explanation": "Ohm's law states that V = IR."
+    },
+    {
+        "topicID": "ghi67890-1234-5def-klmn-opq345678901",
+        "topic": "Electromagnetism",
+        "difficulty": "Advanced",
+        "questionText": "What is the magnetic field strength at a distance r from a long, straight current-carrying wire?",
+        "options": ["A) μ₀I/2πr", "B) μ₀I²/4πr", "C) μ₀I/4πr²", "D) μ₀I²/2πr"],
+        "correctAnswer": "A",
+        "explanation": "The magnetic field due to a straight current-carrying wire is B = μ₀I/2πr."
+    },
+    {
+        "topicID": "jkl78901-2345-6ghi-mnop-qr4567890123",
+        "topic": "Thermodynamics",
+        "difficulty": "Beginner",
+        "questionText": "What is the first law of thermodynamics?",
+        "options": ["A) Energy cannot be created or destroyed", "B) Entropy always increases", "C) Heat flows from hot to cold", "D) Work done is equal to pressure × volume"],
+        "correctAnswer": "A",
+        "explanation": "The first law of thermodynamics states that energy cannot be created or destroyed, only transferred or transformed."
+    },
+    {
+        "topicID": "jkl78901-2345-6ghi-mnop-qr4567890123",
+        "topic": "Thermodynamics",
+        "difficulty": "Intermediate",
+        "questionText": "If 100 J of heat is added to a system that does 40 J of work, what is the change in internal energy?",
+        "options": ["A) 40 J", "B) 60 J", "C) 100 J", "D) 140 J"],
+        "correctAnswer": "B",
+        "explanation": "ΔU = Q - W → ΔU = 100 J - 40 J = 60 J"
+    },
+    {
+        "topicID": "jkl78901-2345-6ghi-mnop-qr4567890123",
+        "topic": "Thermodynamics",
+        "difficulty": "Advanced",
+        "questionText": "A Carnot engine operates between 300 K and 500 K. What is its efficiency?",
+        "options": ["A) 20%", "B) 30%", "C) 40%", "D) 50%"],
+        "correctAnswer": "C",
+        "explanation": "Efficiency = 1 - (T_c/T_h) = 1 - (300/500) = 1 - 0.6 = 0.4 = 40%"
+    }
+    ,
+    
+    {
+        "topicID": "abc34567-6789-0def-ghij-klmn12345678",
+        "topic": "Optics",
+        "difficulty": "Beginner",
+        "questionText": "What is the speed of light in a vacuum?",
+        "options": ["A) 3 × 10^5 m/s", "B) 3 × 10^6 m/s", "C) 3 × 10^7 m/s", "D) 3 × 10^8 m/s"],
+        "correctAnswer": "D",
+        "explanation": "The speed of light in a vacuum is approximately 3 × 10^8 m/s."
+    },
+    {
+        "topicID": "abc34567-6789-0def-ghij-klmn12345678",
+        "topic": "Optics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the focal length of a convex lens with a power of +5 diopters?",
+        "options": ["A) 5 cm", "B) 10 cm", "C) 20 cm", "D) 25 cm"],
+        "correctAnswer": "C",
+        "explanation": "Focal length (f) = 1/Power (in meters). f = 1/5 = 0.2 m = 20 cm."
+    },
+    {
+        "topicID": "abc34567-6789-0def-ghij-klmn12345678",
+        "topic": "Optics",
+        "difficulty": "Advanced",
+        "questionText": "A beam of white light passes through a glass prism. Which color of light is bent the most?",
+        "options": ["A) Red", "B) Blue", "C) Green", "D) Violet"],
+        "correctAnswer": "D",
+        "explanation": "Violet light is bent the most due to its shorter wavelength and higher refractive index."
+    },
+    {
+        "topicID": "def45678-9012-3ghi-jklm-nop123456789",
+        "topic": "Acoustics",
+        "difficulty": "Beginner",
+        "questionText": "What is the unit of frequency?",
+        "options": ["A) Hertz", "B) Decibel", "C) Joule", "D) Watt"],
+        "correctAnswer": "A",
+        "explanation": "Frequency is measured in Hertz (Hz)."
+    },
+    {
+        "topicID": "def45678-9012-3ghi-jklm-nop123456789",
+        "topic": "Acoustics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the speed of sound in air at room temperature?",
+        "options": ["A) 343 m/s", "B) 300 m/s", "C) 330 m/s", "D) 400 m/s"],
+        "correctAnswer": "A",
+        "explanation": "The speed of sound in air at room temperature (20°C) is approximately 343 m/s."
+    },
+    {
+        "topicID": "def45678-9012-3ghi-jklm-nop123456789",
+        "topic": "Acoustics",
+        "difficulty": "Advanced",
+        "questionText": "A sound wave has a frequency of 500 Hz and a wavelength of 0.68 m. What is its speed?",
+        "options": ["A) 340 m/s", "B) 343 m/s", "C) 345 m/s", "D) 350 m/s"],
+        "correctAnswer": "A",
+        "explanation": "Speed = Frequency × Wavelength → v = 500 × 0.68 = 340 m/s."
+    },
+    {
+        "topicID": "ghi56789-2345-6jkl-mnop-qrs123456789",
+        "topic": "Relativity",
+        "difficulty": "Beginner",
+        "questionText": "Who developed the theory of relativity?",
+        "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Galileo Galilei", "D) Nikola Tesla"],
+        "correctAnswer": "B",
+        "explanation": "The theory of relativity was developed by Albert Einstein."
+    },
+    {
+        "topicID": "ghi56789-2345-6jkl-mnop-qrs123456789",
+        "topic": "Relativity",
+        "difficulty": "Intermediate",
+        "questionText": "What is the equation that represents the equivalence of mass and energy?",
+        "options": ["A) E = mc²", "B) F = ma", "C) E = hf", "D) P = mv"],
+        "correctAnswer": "A",
+        "explanation": "E = mc² is Einstein's equation that relates mass and energy."
+    },
+    {
+        "topicID": "ghi56789-2345-6jkl-mnop-qrs123456789",
+        "topic": "Relativity",
+        "difficulty": "Advanced",
+        "questionText": "An object moves at 0.8c relative to an observer. If its rest mass is 10 kg, what is its relativistic mass?",
+        "options": ["A) 12 kg", "B) 15 kg", "C) 16.7 kg", "D) 18 kg"],
+        "correctAnswer": "C",
+        "explanation": "Relativistic mass m = m₀ / √(1 - v²/c²). Here, m = 10 / √(1 - 0.8²) = 10 / √(0.36) = 16.7 kg."
+    },
+    {
+        "topicID": "jkl67890-3456-7mno-prst-qrs234567890",
+        "topic": "Particle Physics",
+        "difficulty": "Beginner",
+        "questionText": "What is the charge of a proton?",
+        "options": ["A) +1", "B) -1", "C) 0", "D) +2"],
+        "correctAnswer": "A",
+        "explanation": "A proton has a positive charge of +1."
+    },
+    {
+        "topicID": "jkl67890-3456-7mno-prst-qrs234567890",
+        "topic": "Particle Physics",
+        "difficulty": "Intermediate",
+        "questionText": "What particle is the mediator of the electromagnetic force?",
+        "options": ["A) Photon", "B) Electron", "C) Proton", "D) Neutrino"],
+        "correctAnswer": "A",
+        "explanation": "The photon is the force carrier for the electromagnetic force."
+    },
+    {
+        "topicID": "jkl67890-3456-7mno-prst-qrs234567890",
+        "topic": "Particle Physics",
+        "difficulty": "Advanced",
+        "questionText": "Which quarks make up a neutron?",
+        "options": ["A) Up, Up, Down", "B) Up, Down, Down", "C) Down, Down, Down", "D) Up, Up, Up"],
+        "correctAnswer": "B",
+        "explanation": "A neutron consists of one up quark and two down quarks."
+    },
+    
+    {
+        "topicID": "mno78901-2345-6jkl-nopr-qrs123456789",
+        "topic": "Classical Mechanics",
+        "difficulty": "Beginner",
+        "questionText": "What is the unit of force?",
+        "options": ["A) Newton", "B) Joule", "C) Watt", "D) Pascal"],
+        "correctAnswer": "A",
+        "explanation": "Force is measured in newtons (N), named after Sir Isaac Newton."
+    },
+    {
+        "topicID": "mno78901-2345-6jkl-nopr-qrs123456789",
+        "topic": "Classical Mechanics",
+        "difficulty": "Intermediate",
+        "questionText": "A ball is thrown vertically upward with a velocity of 20 m/s. How high does it go? (Assume g = 9.8 m/s²)",
+        "options": ["A) 10 m", "B) 20 m", "C) 30 m", "D) 40 m"],
+        "correctAnswer": "C",
+        "explanation": "Using v² = u² - 2gh → 0 = 20² - 2(9.8)h → 400 = 19.6h → h = 400/19.6 ≈ 20.4 m."
+    },
+    {
+        "topicID": "mno78901-2345-6jkl-nopr-qrs123456789",
+        "topic": "Classical Mechanics",
+        "difficulty": "Advanced",
+        "questionText": "What is the angular momentum of a 5 kg mass rotating in a circle of radius 2 m with a velocity of 3 m/s?",
+        "options": ["A) 10 kg·m²/s", "B) 15 kg·m²/s", "C) 20 kg·m²/s", "D) 30 kg·m²/s"],
+        "correctAnswer": "D",
+        "explanation": "Angular momentum (L) = mvr = 5 × 3 × 2 = 30 kg·m²/s."
+    },
+    {
+        "topicID": "jkl89012-3456-7nop-qrst-uv1234567890",
+        "topic": "Quantum Mechanics",
+        "difficulty": "Beginner",
+        "questionText": "Which scientist is known as the father of quantum mechanics?",
+        "options": ["A) Max Planck", "B) Niels Bohr", "C) Albert Einstein", "D) Erwin Schrödinger"],
+        "correctAnswer": "A",
+        "explanation": "Max Planck is considered the father of quantum mechanics for introducing the quantum theory."
+    },
+    {
+        "topicID": "jkl89012-3456-7nop-qrst-uv1234567890",
+        "topic": "Quantum Mechanics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the wavelength of a photon with energy 3 eV? (Planck's constant h = 4.14 × 10^-15 eV·s, speed of light c = 3 × 10^8 m/s)",
+        "options": ["A) 414 nm", "B) 206 nm", "C) 103 nm", "D) 621 nm"],
+        "correctAnswer": "A",
+        "explanation": "Using λ = hc/E → λ = (4.14 × 10^-15 × 3 × 10^8) / 3 = 414 × 10^-9 m = 414 nm."
+    },
+    {
+        "topicID": "jkl89012-3456-7nop-qrst-uv1234567890",
+        "topic": "Quantum Mechanics",
+        "difficulty": "Advanced",
+        "questionText": "What is the probability density of finding a particle at a given position in a one-dimensional infinite potential well?",
+        "options": ["A) Sine function squared", "B) Cosine function squared", "C) Linear function", "D) Gaussian function"],
+        "correctAnswer": "A",
+        "explanation": "The probability density in a one-dimensional infinite potential well is proportional to the square of the sine wave."
+    },
+    {
+        "topicID": "nop90123-4567-8qrt-uvwx-yz123456789a",
+        "topic": "Thermodynamics",
+        "difficulty": "Beginner",
+        "questionText": "What does entropy measure in a thermodynamic system?",
+        "options": ["A) Energy", "B) Heat", "C) Disorder", "D) Temperature"],
+        "correctAnswer": "C",
+        "explanation": "Entropy measures the level of disorder or randomness in a system."
+    },
+    {
+        "topicID": "nop90123-4567-8qrt-uvwx-yz123456789a",
+        "topic": "Thermodynamics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the efficiency of an ideal Carnot engine operating between 400 K and 600 K?",
+        "options": ["A) 33.3%", "B) 50%", "C) 66.7%", "D) 75%"],
+        "correctAnswer": "A",
+        "explanation": "Efficiency = 1 - (T_c/T_h) → Efficiency = 1 - (400/600) = 1 - 0.6667 = 0.3333 = 33.3%."
+    },
+    {
+        "topicID": "nop90123-4567-8qrt-uvwx-yz123456789a",
+        "topic": "Thermodynamics",
+        "difficulty": "Advanced",
+        "questionText": "A heat engine absorbs 800 J of heat from a hot reservoir and does 300 J of work. How much heat is expelled to the cold reservoir?",
+        "options": ["A) 300 J", "B) 400 J", "C) 500 J", "D) 600 J"],
+        "correctAnswer": "C",
+        "explanation": "Using the first law of thermodynamics: Q_h = W + Q_c → 800 = 300 + Q_c → Q_c = 500 J."
+    },
+    {
+        "topicID": "qrt12345-6789-0uvw-xyz1-ab123456789c",
+        "topic": "Electromagnetism",
+        "difficulty": "Beginner",
+        "questionText": "What is the SI unit of magnetic flux?",
+        "options": ["A) Weber", "B) Tesla", "C) Ampere", "D) Volt"],
+        "correctAnswer": "A",
+        "explanation": "The SI unit of magnetic flux is the Weber (Wb)."
+    },
+    {
+        "topicID": "qrt12345-6789-0uvw-xyz1-ab123456789c",
+        "topic": "Electromagnetism",
+        "difficulty": "Intermediate",
+        "questionText": "A current of 5 A flows through a solenoid with 200 turns and a length of 0.5 m. What is the magnetic field inside the solenoid? (μ₀ = 4π × 10^-7 T·m/A)",
+        "options": ["A) 0.0025 T", "B) 0.004 T", "C) 0.008 T", "D) 0.01 T"],
+        "correctAnswer": "B",
+        "explanation": "Magnetic field (B) = μ₀(nI) = μ₀(N/L)I → B = (4π × 10^-7)(200/0.5)(5) = 0.004 T."
+    },
+    {
+        "topicID": "qrt12345-6789-0uvw-xyz1-ab123456789c",
+        "topic": "Electromagnetism",
+        "difficulty": "Advanced",
+        "questionText": "A square loop of side 0.2 m carries a current of 10 A. What is the magnetic moment of the loop?",
+        "options": ["A) 0.2 A·m²", "B) 0.4 A·m²", "C) 0.8 A·m²", "D) 1.0 A·m²"],
+        "correctAnswer": "B",
+        "explanation": "Magnetic moment (M) = I × A = 10 × (0.2 × 0.2) = 10 × 0.04 = 0.4 A·m²."
+    }
+    ,
+      {
+        "topicID": "stu34567-8901-2xyz-abcd-ef123456789a",
+        "topic": "Relativity",
+        "difficulty": "Beginner",
+        "questionText": "What happens to the length of an object as it approaches the speed of light?",
+        "options": ["A) It increases", "B) It decreases", "C) It remains the same", "D) It becomes infinite"],
+        "correctAnswer": "B",
+        "explanation": "According to special relativity, length contraction occurs as an object approaches the speed of light."
+      },
+      {
+        "topicID": "stu34567-8901-2xyz-abcd-ef123456789a",
+        "topic": "Relativity",
+        "difficulty": "Intermediate",
+        "questionText": "If a spaceship travels at 0.9c relative to Earth, what is the time dilation factor?",
+        "options": ["A) 1.22", "B) 2.29", "C) 3.48", "D) 1.94"],
+        "correctAnswer": "D",
+        "explanation": "Time dilation factor = 1/√(1 - v²/c²) = 1/√(1 - 0.81) = 1/√0.19 ≈ 2.29."
+      },
+      {
+        "topicID": "stu34567-8901-2xyz-abcd-ef123456789a",
+        "topic": "Relativity",
+        "difficulty": "Advanced",
+        "questionText": "What is the relativistic kinetic energy of a particle with mass 1 kg moving at 0.8c? (c = 3 × 10⁸ m/s)",
+        "options": ["A) 2.88 × 10¹⁶ J", "B) 3.56 × 10¹⁶ J", "C) 4.32 × 10¹⁶ J", "D) 5.12 × 10¹⁶ J"],
+        "correctAnswer": "A",
+        "explanation": "Relativistic kinetic energy = [(γ - 1)mc²], where γ = 1/√(1 - v²/c²) = 1/√(1 - 0.64) = 1/0.6 ≈ 1.67. KE = (1.67 - 1)(1)(9 × 10¹⁶) ≈ 6.03 × 10¹⁶."
+      },
+      {
+        "topicID": "vwx45678-9012-3yz-abcd-ef234567890b",
+        "topic": "Particle Physics",
+        "difficulty": "Beginner",
+        "questionText": "Which particle is its own antiparticle?",
+        "options": ["A) Proton", "B) Electron", "C) Photon", "D) Neutron"],
+        "correctAnswer": "C",
+        "explanation": "The photon is its own antiparticle."
+      },
+      {
+        "topicID": "vwx45678-9012-3yz-abcd-ef234567890b",
+        "topic": "Particle Physics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the charge of a down quark?",
+        "options": ["A) -1/3 e", "B) +1/3 e", "C) -2/3 e", "D) +2/3 e"],
+        "correctAnswer": "A",
+        "explanation": "The down quark has a charge of -1/3 e."
+      },
+      {
+        "topicID": "vwx45678-9012-3yz-abcd-ef234567890b",
+        "topic": "Particle Physics",
+        "difficulty": "Advanced",
+        "questionText": "What is the rest energy of an electron with a mass of 9.11 × 10⁻³¹ kg? (c = 3 × 10⁸ m/s)",
+        "options": ["A) 8.19 × 10⁻¹⁴ J", "B) 9.11 × 10⁻¹³ J", "C) 7.11 × 10⁻¹² J", "D) 9.11 × 10⁻¹⁴ J"],
+        "correctAnswer": "A",
+        "explanation": "Rest energy = mc² = (9.11 × 10⁻³¹)(3 × 10⁸)² = 8.19 × 10⁻¹⁴ J."
+      },
+      {
+        "topicID": "yza56789-0123-4abc-defg-345678901234",
+        "topic": "Optics",
+        "difficulty": "Beginner",
+        "questionText": "What is the phenomenon of splitting white light into its component colors called?",
+        "options": ["A) Reflection", "B) Refraction", "C) Dispersion", "D) Diffraction"],
+        "correctAnswer": "C",
+        "explanation": "Dispersion occurs when white light splits into its component colors."
+      },
+      {
+        "topicID": "yza56789-0123-4abc-defg-345678901234",
+        "topic": "Optics",
+        "difficulty": "Intermediate",
+        "questionText": "A lens has a focal length of -10 cm. What type of lens is it?",
+        "options": ["A) Convex", "B) Concave", "C) Cylindrical", "D) Plane"],
+        "correctAnswer": "B",
+        "explanation": "A negative focal length indicates a concave lens."
+      },
+      {
+        "topicID": "yza56789-0123-4abc-defg-345678901234",
+        "topic": "Optics",
+        "difficulty": "Advanced",
+        "questionText": "A beam of monochromatic light passes from air into a medium with an index of refraction of 1.5. If the angle of incidence is 30°, what is the angle of refraction?",
+        "options": ["A) 19.47°", "B) 20°", "C) 21.8°", "D) 25°"],
+        "correctAnswer": "A",
+        "explanation": "Using Snell's Law: n₁sinθ₁ = n₂sinθ₂ → 1sin30° = 1.5sinθ₂ → sinθ₂ = 0.5/1.5 → θ₂ = sin⁻¹(0.333) ≈ 19.47°."
+      },
+      {
+        "topicID": "zab67890-1234-5bcd-efgh-456789012345",
+        "topic": "Acoustics",
+        "difficulty": "Beginner",
+        "questionText": "What is the range of human hearing?",
+        "options": ["A) 20 Hz to 20 kHz", "B) 50 Hz to 10 kHz", "C) 10 Hz to 50 kHz", "D) 100 Hz to 10 kHz"],
+        "correctAnswer": "A",
+        "explanation": "Humans can hear sounds in the range of 20 Hz to 20 kHz."
+      },
+      {
+        "topicID": "zab67890-1234-5bcd-efgh-456789012345",
+        "topic": "Acoustics",
+        "difficulty": "Intermediate",
+        "questionText": "What is the intensity level in decibels of a sound with an intensity of 10⁻⁶ W/m²? (Reference intensity = 10⁻¹² W/m²)",
+        "options": ["A) 40 dB", "B) 50 dB", "C) 60 dB", "D) 70 dB"],
+        "correctAnswer": "C",
+        "explanation": "Intensity level = 10 log₁₀(I/I₀) = 10 log₁₀(10⁻⁶/10⁻¹²) = 10 log₁₀(10⁶) = 60 dB."
+      },
+      {
+        "topicID": "zab67890-1234-5bcd-efgh-456789012345",
+        "topic": "Acoustics",
+        "difficulty": "Advanced",
+        "questionText": "If a sound source moves towards an observer at a speed of 30 m/s, what is the apparent frequency heard if the source emits sound at 500 Hz? (Speed of sound = 343 m/s)",
+        "options": ["A) 530 Hz", "B) 545 Hz", "C) 570 Hz", "D) 600 Hz"],
+        "correctAnswer": "A",
+        "explanation": "Apparent frequency f' = f(v + vo)/(v - vs) = 500(343)/(343 - 30) ≈ 530 Hz."
+      }
+    ,
+      {
+        "topicID": "123abc45-6789-0def-ghij-klmn12345678",
+        "topic": "Relativity",
+        "difficulty": "Beginner",
+        "questionText": "What is the term for the phenomenon where time appears to move slower for an object moving close to the speed of light?",
+        "options": ["A) Time dilation", "B) Length contraction", "C) Gravitational lensing", "D) Special relativity"],
+        "correctAnswer": "A",
+        "explanation": "Time dilation is a phenomenon in special relativity where time slows down for objects moving at relativistic speeds."
+      },
+      {
+        "topicID": "123abc45-6789-0def-ghij-klmn12345678",
+        "topic": "Relativity",
+        "difficulty": "Intermediate",
+        "questionText": "What happens to the relativistic mass of an object as it approaches the speed of light?",
+        "options": ["A) It decreases", "B) It increases", "C) It remains constant", "D) It becomes zero"],
+        "correctAnswer": "B",
+        "explanation": "Relativistic mass increases as an object's velocity approaches the speed of light."
+      },
+      {
+        "topicID": "123abc45-6789-0def-ghij-klmn12345678",
+        "topic": "Relativity",
+        "difficulty": "Advanced",
+        "questionText": "If a spaceship moves at 0.6c relative to Earth, what is its Lorentz factor?",
+        "options": ["A) 1.00", "B) 1.25", "C) 1.33", "D) 1.67"],
+        "correctAnswer": "B",
+        "explanation": "Lorentz factor γ = 1/√(1 - v²/c²) = 1/√(1 - 0.36) = 1/√0.64 = 1.25."
+      },
+      {
+        "topicID": "234def56-7890-1ghi-jklm-nop123456789",
+        "topic": "Particle Physics",
+        "difficulty": "Beginner",
+        "questionText": "What are the three types of charged particles in an atom?",
+        "options": ["A) Protons, neutrons, electrons", "B) Electrons, photons, neutrinos", "C) Protons, electrons, positrons", "D) Protons, neutrons, mesons"],
+        "correctAnswer": "A",
+        "explanation": "The atom consists of positively charged protons, negatively charged electrons, and neutral neutrons."
+      },
+      {
+        "topicID": "234def56-7890-1ghi-jklm-nop123456789",
+        "topic": "Particle Physics",
+        "difficulty": "Intermediate",
+        "questionText": "What type of interaction holds quarks together in a proton?",
+        "options": ["A) Weak interaction", "B) Electromagnetic interaction", "C) Gravitational interaction", "D) Strong interaction"],
+        "correctAnswer": "D",
+        "explanation": "The strong interaction, mediated by gluons, binds quarks together inside protons and neutrons."
+      },
+      {
+        "topicID": "234def56-7890-1ghi-jklm-nop123456789",
+        "topic": "Particle Physics",
+        "difficulty": "Advanced",
+        "questionText": "What is the energy of a photon with a frequency of 6 × 10¹⁴ Hz? (Planck's constant h = 6.63 × 10⁻³⁴ J·s)",
+        "options": ["A) 3.98 × 10⁻¹⁹ J", "B) 4.98 × 10⁻¹⁹ J", "C) 5.98 × 10⁻¹⁹ J", "D) 6.98 × 10⁻¹⁹ J"],
+        "correctAnswer": "B",
+        "explanation": "Energy of a photon E = hf = (6.63 × 10⁻³⁴)(6 × 10¹⁴) = 3.98 × 10⁻¹⁹ J."
+      },
+      {
+        "topicID": "345ghi67-8901-2jkl-mnop-qrt123456789",
+        "topic": "Thermodynamics",
+        "difficulty": "Beginner",
+        "questionText": "What does the Zeroth Law of Thermodynamics state?",
+        "options": [
+          "A) Energy cannot be created or destroyed",
+          "B) If two systems are in thermal equilibrium with a third, they are in thermal equilibrium with each other",
+          "C) Entropy of a system always increases",
+          "D) Heat flows from hot to cold"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Zeroth Law establishes the concept of temperature and thermal equilibrium."
+      },
+      {
+        "topicID": "345ghi67-8901-2jkl-mnop-qrt123456789",
+        "topic": "Thermodynamics",
+        "difficulty": "Intermediate",
+        "questionText": "If 200 J of work is done on a system and it loses 100 J of heat, what is the change in its internal energy?",
+        "options": ["A) -100 J", "B) 100 J", "C) 200 J", "D) 300 J"],
+        "correctAnswer": "B",
+        "explanation": "Change in internal energy ΔU = Q - W = -100 J + 200 J = 100 J."
+      },
+      {
+        "topicID": "345ghi67-8901-2jkl-mnop-qrt123456789",
+        "topic": "Thermodynamics",
+        "difficulty": "Advanced",
+        "questionText": "A Carnot engine operates between temperatures of 400 K and 600 K. How much work does it perform if 1000 J of heat is absorbed?",
+        "options": ["A) 333 J", "B) 400 J", "C) 500 J", "D) 600 J"],
+        "correctAnswer": "A",
+        "explanation": "Efficiency = 1 - T_c/T_h = 1 - 400/600 = 1 - 0.6667 = 0.3333. Work = Efficiency × Heat absorbed = 0.3333 × 1000 = 333 J."
+      },
+      {
+        "topicID": "456jkl78-9012-3mno-pqrt-stu123456789",
+        "topic": "Electromagnetism",
+        "difficulty": "Beginner",
+        "questionText": "What is the formula for magnetic flux?",
+        "options": ["A) B/A", "B) B × A", "C) B · A", "D) B/A²"],
+        "correctAnswer": "C",
+        "explanation": "Magnetic flux Φ = B · A, where B is the magnetic field and A is the area perpendicular to the field."
+      },
+      {
+        "topicID": "456jkl78-9012-3mno-pqrt-stu123456789",
+        "topic": "Electromagnetism",
+        "difficulty": "Intermediate",
+        "questionText": "A coil with 10 turns has a magnetic flux of 0.05 Wb passing through it. What is the total flux linkage?",
+        "options": ["A) 0.5 Wb", "B) 0.005 Wb", "C) 0.25 Wb", "D) 0.05 Wb"],
+        "correctAnswer": "A",
+        "explanation": "Flux linkage = Number of turns × Magnetic flux = 10 × 0.05 = 0.5 Wb."
+      },
+      {
+        "topicID": "456jkl78-9012-3mno-pqrt-stu123456789",
+        "topic": "Electromagnetism",
+        "difficulty": "Advanced",
+        "questionText": "What is the inductance of a solenoid with 500 turns, length 0.2 m, area 0.01 m², and μ₀ = 4π × 10⁻⁷ H/m?",
+        "options": ["A) 0.05 H", "B) 0.08 H", "C) 0.12 H", "D) 0.2 H"],
+        "correctAnswer": "B",
+        "explanation": "Inductance L = μ₀(N²A)/l = (4π × 10⁻⁷)(500² × 0.01)/0.2 = 0.08 H."
+      }
+
+]

@@ -1,0 +1,307 @@
+{
+  "id": "challenge-api-gateway-20",
+  "type": "weekly",
+  "title": "API Gateway Mastery Challenge",
+  "description": "20 realistic scenario-based questions focusing on API Gateway design, security, integration, and performance.",
+  "startDate": "2025-05-27T05:51:16.955078Z",
+  "endDate": "2025-06-03T05:51:16.955092Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 900,
+  "questions": [
+    {
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate",
+      "questionText": "Your team is creating a REST API using API Gateway and Lambda. You want to protect endpoints from being overwhelmed by high-frequency calls. What should you configure?",
+      "options": [
+        "A) CloudFront caching",
+        "B) Usage plans and throttling",
+        "C) WAF IP allow list",
+        "D) Lambda reserved concurrency"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Usage plans and throttling protect APIs by limiting call frequency per API key."
+    },
+    {
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate",
+      "questionText": "A developer needs to ensure all incoming requests to API Gateway come through HTTPS only. What setting should they enforce?",
+      "options": [
+        "A) Enable mutual TLS authentication",
+        "B) Enable CORS",
+        "C) Set up an AWS WAF rule",
+        "D) Require TLS in the endpoint configuration"
+      ],
+      "correctAnswer": "D",
+      "explanation": "API Gateway requires HTTPS for secure communication; this is enforced in the endpoint settings."
+    },
+    {
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate",
+      "questionText": "Your backend Lambda returns HTTP status codes in the response body, but your API Gateway endpoint always returns 200. How can you fix this?",
+      "options": [
+        "A) Enable CORS on API Gateway",
+        "B) Use Lambda proxy integration",
+        "C) Add response mapping templates",
+        "D) Use a VPC link"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Lambda proxy integration forwards full HTTP responses from Lambda to the client."
+    },
+    {
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Advanced",
+      "questionText": "Your team is using API Gateway with a VPC link to access services in a private subnet. The API Gateway endpoint is returning 504 errors. What is the likely cause?",
+      "options": [
+        "A) The VPC endpoint is not associated with a subnet",
+        "B) The Lambda function timed out",
+        "C) The Network Load Balancer is not configured correctly",
+        "D) API Gateway does not support VPC links"
+      ],
+      "correctAnswer": "C",
+      "explanation": "504 errors usually indicate the NLB is not responding properly to the VPC link traffic."
+    },
+    {
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Advanced",
+      "questionText": "You are required to validate incoming JSON payloads for an API. What is the best way to enforce schema validation at the API Gateway level?",
+      "options": [
+        "A) Use Lambda to validate requests",
+        "B) Add AWS WAF with regex rules",
+        "C) Configure request models with JSON schema and enable validation",
+        "D) Enable authorization caching"
+      ],
+      "correctAnswer": "C",
+      "explanation": "API Gateway allows JSON schema validation by defining models and enabling request validation."
+    },
+    {
+      "questionText": "You're using API Gateway to trigger a Lambda function, but you need custom response formatting before sending it to the client. What should you use? (Scenario ID: 6)",
+      "options": [
+        "A) Lambda proxy integration",
+        "B) Integration response with mapping templates",
+        "C) Enable CloudFront compression",
+        "D) Add query string parameters"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mapping templates allow customization of the integration response to the client.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "A mobile app consumes your API Gateway endpoint. You need to enable third-party web clients to access it. What should you configure? (Scenario ID: 7)",
+      "options": [
+        "A) Enable CORS in API Gateway",
+        "B) Add a CloudFront distribution",
+        "C) Enable usage plans",
+        "D) Use AWS AppSync"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CORS is required for cross-origin browser access to APIs.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "You're using API Gateway to trigger a Lambda function, but you need custom response formatting before sending it to the client. What should you use? (Scenario ID: 8)",
+      "options": [
+        "A) Lambda proxy integration",
+        "B) Integration response with mapping templates",
+        "C) Enable CloudFront compression",
+        "D) Add query string parameters"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mapping templates allow customization of the integration response to the client.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "A mobile app consumes your API Gateway endpoint. You need to enable third-party web clients to access it. What should you configure? (Scenario ID: 9)",
+      "options": [
+        "A) Enable CORS in API Gateway",
+        "B) Add a CloudFront distribution",
+        "C) Enable usage plans",
+        "D) Use AWS AppSync"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CORS is required for cross-origin browser access to APIs.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "You're using API Gateway to trigger a Lambda function, but you need custom response formatting before sending it to the client. What should you use? (Scenario ID: 10)",
+      "options": [
+        "A) Lambda proxy integration",
+        "B) Integration response with mapping templates",
+        "C) Enable CloudFront compression",
+        "D) Add query string parameters"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mapping templates allow customization of the integration response to the client.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Your company wants to monitor API key usage across multiple clients. Which feature of API Gateway helps? (Scenario ID: 11)",
+      "options": [
+        "A) Custom domain names",
+        "B) Usage plans and API keys",
+        "C) AWS Certificate Manager",
+        "D) Stage variables"
+      ],
+      "correctAnswer": "B",
+      "explanation": "API keys linked to usage plans let you monitor and throttle individual client usage.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "You want to log the full HTTP request and response from API Gateway to CloudWatch for debugging. What should you enable? (Scenario ID: 12)",
+      "options": [
+        "A) Enable execution logging in stage settings",
+        "B) Use Lambda custom logs",
+        "C) Enable AWS Config",
+        "D) Use a request model"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Execution logging captures request and response metadata in CloudWatch logs.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "A mobile app consumes your API Gateway endpoint. You need to enable third-party web clients to access it. What should you configure? (Scenario ID: 13)",
+      "options": [
+        "A) Enable CORS in API Gateway",
+        "B) Add a CloudFront distribution",
+        "C) Enable usage plans",
+        "D) Use AWS AppSync"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CORS is required for cross-origin browser access to APIs.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "Your company wants to monitor API key usage across multiple clients. Which feature of API Gateway helps? (Scenario ID: 14)",
+      "options": [
+        "A) Custom domain names",
+        "B) Usage plans and API keys",
+        "C) AWS Certificate Manager",
+        "D) Stage variables"
+      ],
+      "correctAnswer": "B",
+      "explanation": "API keys linked to usage plans let you monitor and throttle individual client usage.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "A mobile app consumes your API Gateway endpoint. You need to enable third-party web clients to access it. What should you configure? (Scenario ID: 15)",
+      "options": [
+        "A) Enable CORS in API Gateway",
+        "B) Add a CloudFront distribution",
+        "C) Enable usage plans",
+        "D) Use AWS AppSync"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CORS is required for cross-origin browser access to APIs.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Your company wants to monitor API key usage across multiple clients. Which feature of API Gateway helps? (Scenario ID: 16)",
+      "options": [
+        "A) Custom domain names",
+        "B) Usage plans and API keys",
+        "C) AWS Certificate Manager",
+        "D) Stage variables"
+      ],
+      "correctAnswer": "B",
+      "explanation": "API keys linked to usage plans let you monitor and throttle individual client usage.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "A developer wants to pass environment-specific variables (like stage name) to the backend from API Gateway. What should they use? (Scenario ID: 17)",
+      "options": [
+        "A) API keys",
+        "B) Mapping templates",
+        "C) Stage variables",
+        "D) CORS settings"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Stage variables let you inject config values into integration requests or headers.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "A mobile app consumes your API Gateway endpoint. You need to enable third-party web clients to access it. What should you configure? (Scenario ID: 18)",
+      "options": [
+        "A) Enable CORS in API Gateway",
+        "B) Add a CloudFront distribution",
+        "C) Enable usage plans",
+        "D) Use AWS AppSync"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CORS is required for cross-origin browser access to APIs.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    },
+    {
+      "questionText": "Your company wants to monitor API key usage across multiple clients. Which feature of API Gateway helps? (Scenario ID: 19)",
+      "options": [
+        "A) Custom domain names",
+        "B) Usage plans and API keys",
+        "C) AWS Certificate Manager",
+        "D) Stage variables"
+      ],
+      "correctAnswer": "B",
+      "explanation": "API keys linked to usage plans let you monitor and throttle individual client usage.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Advanced"
+    },
+    {
+      "questionText": "A developer wants to pass environment-specific variables (like stage name) to the backend from API Gateway. What should they use? (Scenario ID: 20)",
+      "options": [
+        "A) API keys",
+        "B) Mapping templates",
+        "C) Stage variables",
+        "D) CORS settings"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Stage variables let you inject config values into integration requests or headers.",
+      "topicID": "F628A53D-4883-43E6-B39F-F4DF4839D3BE",
+      "topic": "API Gateway",
+      "difficulty": "Intermediate"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 1500,
+      "description": "Earn 1500 XP for demonstrating API Gateway expertise!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Badge Unlocked: API Gateway Specialist"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2025-05-27T05:51:16.955113Z",
+  "updatedAt": "2025-05-27T05:51:16.955116Z"
+}

@@ -1,0 +1,677 @@
+[
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Beginner",
+        "questionText": "What is the term for the physical and observable traits of an organism?",
+        "options": [
+            "A) Genotype",
+            "B) Phenotype",
+            "C) Allele",
+            "D) Genome"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Phenotype refers to the physical and observable traits of an organism, such as height or eye color."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "Which type of mutation involves the insertion or deletion of a nucleotide, altering the reading frame of a gene?",
+        "options": [
+            "A) Point mutation",
+            "B) Frameshift mutation",
+            "C) Silent mutation",
+            "D) Missense mutation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Frameshift mutations occur when insertions or deletions change the reading frame of a gene, potentially altering protein production."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Beginner",
+        "questionText": "Who proposed the theory of natural selection?",
+        "options": [
+            "A) Gregor Mendel",
+            "B) Charles Darwin",
+            "C) Jean-Baptiste Lamarck",
+            "D) Alfred Wallace"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Charles Darwin proposed the theory of natural selection, which describes how organisms better adapted to their environment survive and reproduce."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for the evolutionary process by which two unrelated species develop similar traits due to similar environmental pressures?",
+        "options": [
+            "A) Divergent evolution",
+            "B) Convergent evolution",
+            "C) Adaptive radiation",
+            "D) Coevolution"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Convergent evolution occurs when unrelated species develop similar traits due to adapting to similar environments or ecological niches."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Beginner",
+        "questionText": "What is the term for the role an organism plays in its ecosystem?",
+        "options": [
+            "A) Habitat",
+            "B) Niche",
+            "C) Population",
+            "D) Community"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A niche refers to the role an organism plays in its ecosystem, including its interactions with other species and its environment."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "Which type of ecological interaction occurs when both species benefit?",
+        "options": [
+            "A) Predation",
+            "B) Parasitism",
+            "C) Mutualism",
+            "D) Competition"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Mutualism is an ecological interaction where both species involved benefit from the relationship."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Beginner",
+        "questionText": "Which organelle is known as the powerhouse of the cell?",
+        "options": [
+            "A) Nucleus",
+            "B) Mitochondria",
+            "C) Ribosome",
+            "D) Golgi apparatus"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Mitochondria are known as the powerhouse of the cell because they generate ATP, the energy currency of the cell."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for programmed cell death that is a normal part of development and maintenance in multicellular organisms?",
+        "options": [
+            "A) Necrosis",
+            "B) Apoptosis",
+            "C) Phagocytosis",
+            "D) Autophagy"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Apoptosis is the process of programmed cell death that helps regulate development and remove damaged cells."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Beginner",
+        "questionText": "Which system in the human body is responsible for transporting oxygen and nutrients?",
+        "options": [
+            "A) Digestive system",
+            "B) Respiratory system",
+            "C) Circulatory system",
+            "D) Nervous system"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The circulatory system, consisting of the heart and blood vessels, transports oxygen, nutrients, and waste throughout the body."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary function of the renal glomerulus in the kidney?",
+        "options": [
+            "A) Filtration of blood",
+            "B) Reabsorption of nutrients",
+            "C) Regulation of pH",
+            "D) Concentration of urine"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The glomerulus filters blood, allowing water and small solutes to enter the renal tubule while retaining larger molecules and blood cells."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Beginner",
+        "questionText": "Which type of microorganism is responsible for fermentation in bread and beer production?",
+        "options": [
+            "A) Bacteria",
+            "B) Viruses",
+            "C) Fungi",
+            "D) Algae"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Fungi, specifically yeast, are responsible for fermentation processes used in bread and beer production."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "Which type of virus specifically infects bacteria?",
+        "options": [
+            "A) Retrovirus",
+            "B) Phage",
+            "C) Adenovirus",
+            "D) Orthomyxovirus"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Bacteriophages (or phages) are viruses that infect and replicate within bacterial cells."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Beginner",
+        "questionText": "What is the central dogma of molecular biology?",
+        "options": [
+            "A) RNA → DNA → Protein",
+            "B) DNA → RNA → Protein",
+            "C) Protein → RNA → DNA",
+            "D) DNA → Protein → RNA"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The central dogma of molecular biology describes the flow of genetic information: DNA is transcribed into RNA, which is then translated into protein."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which enzyme is responsible for unwinding DNA during replication?",
+        "options": [
+            "A) DNA polymerase",
+            "B) Helicase",
+            "C) Ligase",
+            "D) Primase"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Helicase unwinds the DNA double helix at the replication fork, allowing DNA polymerase to synthesize new strands."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Beginner",
+        "questionText": "What pigment is primarily responsible for photosynthesis in plants?",
+        "options": [
+            "A) Carotenoid",
+            "B) Chlorophyll",
+            "C) Xanthophyll",
+            "D) Anthocyanin"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Chlorophyll is the primary pigment involved in photosynthesis, capturing light energy for converting carbon dioxide and water into glucose."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for the process by which plants lose water vapor through their leaves?",
+        "options": [
+            "A) Translocation",
+            "B) Transpiration",
+            "C) Photosynthesis",
+            "D) Respiration"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Transpiration is the process by which plants lose water vapor through small pores called stomata on their leaves."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Intermediate",
+        "questionText": "Which law states that alleles for a trait separate during gamete formation?",
+        "options": [
+            "A) Law of Segregation",
+            "B) Law of Independent Assortment",
+            "C) Law of Dominance",
+            "D) Hardy-Weinberg Principle"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The Law of Segregation states that during the formation of gametes, alleles for a trait separate so each gamete receives one allele."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for a genetic cross used to determine the genotype of an individual expressing a dominant trait?",
+        "options": [
+            "A) Monohybrid cross",
+            "B) Test cross",
+            "C) Dihybrid cross",
+            "D) Back cross"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A test cross is used to determine the genotype of an individual expressing a dominant trait by crossing it with a homozygous recessive individual."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Intermediate",
+        "questionText": "What term describes the evolutionary process where species diverge from a common ancestor?",
+        "options": [
+            "A) Adaptive radiation",
+            "B) Convergent evolution",
+            "C) Divergent evolution",
+            "D) Genetic drift"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Divergent evolution occurs when species evolve in different directions from a common ancestor."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for the random changes in allele frequencies in a population, often significant in small populations?",
+        "options": [
+            "A) Natural selection",
+            "B) Genetic drift",
+            "C) Gene flow",
+            "D) Founder effect"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Genetic drift refers to random changes in allele frequencies, especially in small populations, that can lead to reduced genetic variation."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Intermediate",
+        "questionText": "What type of ecological pyramid shows the flow of energy at different trophic levels?",
+        "options": [
+            "A) Pyramid of Biomass",
+            "B) Pyramid of Numbers",
+            "C) Pyramid of Energy",
+            "D) Pyramid of Productivity"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The Pyramid of Energy illustrates the energy flow through each trophic level in an ecosystem."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "What term describes the maximum population size that an environment can sustain indefinitely?",
+        "options": [
+            "A) Carrying capacity",
+            "B) Ecological niche",
+            "C) Biotic potential",
+            "D) Density dependence"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Carrying capacity refers to the maximum number of individuals of a species that an environment can support sustainably."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the primary function of lysosomes in animal cells?",
+        "options": [
+            "A) Protein synthesis",
+            "B) Intracellular digestion",
+            "C) Energy production",
+            "D) Structural support"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Lysosomes are organelles that contain enzymes for breaking down waste materials and cellular debris."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "What is the function of the rough endoplasmic reticulum (RER)?",
+        "options": [
+            "A) Lipid synthesis",
+            "B) Protein synthesis",
+            "C) Energy production",
+            "D) DNA replication"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rough endoplasmic reticulum is involved in protein synthesis and is studded with ribosomes."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Intermediate",
+        "questionText": "What type of joint allows for movement in all directions, such as the shoulder joint?",
+        "options": [
+            "A) Hinge joint",
+            "B) Ball-and-socket joint",
+            "C) Pivot joint",
+            "D) Saddle joint"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Ball-and-socket joints, like the shoulder joint, allow for movement in multiple directions and rotation."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary role of the sinoatrial (SA) node in the heart?",
+        "options": [
+            "A) Pump blood to the ventricles",
+            "B) Act as the pacemaker of the heart",
+            "C) Deliver oxygen to heart tissue",
+            "D) Prevent backflow of blood"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The sinoatrial (SA) node is known as the pacemaker of the heart, generating electrical impulses that regulate heartbeat."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Intermediate",
+        "questionText": "Which staining technique differentiates bacterial species into Gram-positive and Gram-negative?",
+        "options": [
+            "A) Acid-fast staining",
+            "B) Gram staining",
+            "C) Endospore staining",
+            "D) Capsule staining"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Gram staining differentiates bacteria into Gram-positive (purple) and Gram-negative (pink) based on their cell wall structure."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "Which bacterial structure is responsible for motility?",
+        "options": [
+            "A) Pilus",
+            "B) Flagellum",
+            "C) Capsule",
+            "D) Endospore"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The flagellum is a whip-like structure that provides motility to bacteria, enabling them to move toward or away from stimuli."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Intermediate",
+        "questionText": "Which process synthesizes a complementary RNA strand from a DNA template?",
+        "options": [
+            "A) Replication",
+            "B) Transcription",
+            "C) Translation",
+            "D) Splicing"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Transcription is the process of synthesizing RNA from a DNA template in the nucleus of a cell."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which enzyme is required for the elongation of a new DNA strand during replication?",
+        "options": [
+            "A) Primase",
+            "B) Ligase",
+            "C) DNA polymerase",
+            "D) Helicase"
+        ],
+        "correctAnswer": "C",
+        "explanation": "DNA polymerase adds nucleotides to the growing DNA strand during replication."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Intermediate",
+        "questionText": "What is the name of the vascular tissue that transports water in plants?",
+        "options": [
+            "A) Phloem",
+            "B) Xylem",
+            "C) Cambium",
+            "D) Cortex"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Xylem is the vascular tissue in plants responsible for transporting water and dissolved minerals from roots to other parts of the plant."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "Which hormone is primarily responsible for promoting fruit ripening in plants?",
+        "options": [
+            "A) Auxin",
+            "B) Ethylene",
+            "C) Cytokinin",
+            "D) Gibberellin"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Ethylene is a plant hormone that promotes fruit ripening and responses to stress."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Beginner",
+        "questionText": "What is the term for a segment of DNA that codes for a protein?",
+        "options": [
+            "A) Chromosome",
+            "B) Gene",
+            "C) Allele",
+            "D) Codon"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A gene is a segment of DNA that contains the instructions for making a specific protein."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "What is the name of the process by which RNA is used to make a protein?",
+        "options": [
+            "A) Transcription",
+            "B) Translation",
+            "C) Replication",
+            "D) Splicing"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Translation is the process by which the sequence of an mRNA molecule is used to assemble a corresponding protein."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Beginner",
+        "questionText": "What is the study of fossils called?",
+        "options": [
+            "A) Ecology",
+            "B) Paleontology",
+            "C) Anthropology",
+            "D) Geology"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Paleontology is the study of fossils, which provides evidence of past life and evolutionary history."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for the process in which a small population becomes genetically distinct due to isolation from the main population?",
+        "options": [
+            "A) Genetic drift",
+            "B) Allopatric speciation",
+            "C) Sympatric speciation",
+            "D) Convergent evolution"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Allopatric speciation occurs when geographic isolation leads to genetic divergence and the formation of new species."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Beginner",
+        "questionText": "Which term describes a group of the same species living in the same area?",
+        "options": [
+            "A) Community",
+            "B) Population",
+            "C) Ecosystem",
+            "D) Habitat"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A population is a group of individuals of the same species living and interacting in a specific area."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for a sequence of species through which energy flows in an ecosystem?",
+        "options": [
+            "A) Trophic cascade",
+            "B) Food web",
+            "C) Food chain",
+            "D) Ecological niche"
+        ],
+        "correctAnswer": "C",
+        "explanation": "A food chain is a linear sequence of organisms where energy is transferred through feeding relationships."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Beginner",
+        "questionText": "What structure surrounds and protects animal cells?",
+        "options": [
+            "A) Cell wall",
+            "B) Plasma membrane",
+            "C) Cytoskeleton",
+            "D) Nucleus"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The plasma membrane surrounds animal cells, providing protection and controlling the movement of substances in and out of the cell."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which phase of the cell cycle involves DNA replication?",
+        "options": [
+            "A) G₁ phase",
+            "B) S phase",
+            "C) G₂ phase",
+            "D) M phase"
+        ],
+        "correctAnswer": "B",
+        "explanation": "During the S phase (Synthesis phase) of the cell cycle, DNA replication occurs, resulting in two identical sets of chromosomes."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Beginner",
+        "questionText": "Which organ in the human body is primarily responsible for filtering blood?",
+        "options": [
+            "A) Liver",
+            "B) Kidney",
+            "C) Lungs",
+            "D) Heart"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The kidneys filter blood to remove waste products and excess substances, producing urine as a result."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the name of the structure that connects muscles to bones?",
+        "options": [
+            "A) Ligament",
+            "B) Tendon",
+            "C) Cartilage",
+            "D) Fascia"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Tendons are fibrous connective tissues that attach muscles to bones, enabling movement when muscles contract."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Beginner",
+        "questionText": "Which microorganism causes tuberculosis?",
+        "options": [
+            "A) Escherichia coli",
+            "B) Mycobacterium tuberculosis",
+            "C) Staphylococcus aureus",
+            "D) Salmonella typhi"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Tuberculosis is caused by the bacterium Mycobacterium tuberculosis, which primarily affects the lungs."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "What type of genetic material is found in retroviruses?",
+        "options": [
+            "A) DNA",
+            "B) RNA",
+            "C) Both DNA and RNA",
+            "D) Neither DNA nor RNA"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Retroviruses contain RNA as their genetic material and use reverse transcriptase to convert it into DNA during replication."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Beginner",
+        "questionText": "What type of bond holds the two strands of a DNA molecule together?",
+        "options": [
+            "A) Ionic bonds",
+            "B) Hydrogen bonds",
+            "C) Covalent bonds",
+            "D) Peptide bonds"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Hydrogen bonds between complementary nitrogenous bases hold the two strands of a DNA molecule together."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which process removes introns from pre-mRNA molecules?",
+        "options": [
+            "A) Replication",
+            "B) Splicing",
+            "C) Transcription",
+            "D) Translation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Splicing removes introns (non-coding regions) from pre-mRNA, resulting in mature mRNA that can be translated into a protein."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary photosynthetic organ in most plants?",
+        "options": [
+            "A) Stem",
+            "B) Root",
+            "C) Leaf",
+            "D) Flower"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The leaf is the primary photosynthetic organ in most plants, where chloroplasts convert light energy into chemical energy."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for the movement of water through a plant, from roots to leaves?",
+        "options": [
+            "A) Osmosis",
+            "B) Transpiration",
+            "C) Capillary action",
+            "D) Cohesion-tension mechanism"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The cohesion-tension mechanism explains how water moves through the xylem of plants from roots to leaves, driven by transpiration."
+    }
+    
+]
+ 
+ 

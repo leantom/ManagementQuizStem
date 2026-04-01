@@ -1,0 +1,491 @@
+[
+  {
+    "topicID": "c0b5bd32-1e1f-4f4e-8e0f-3e9f6e23f9b1",
+    "topic": "Algebra",
+    "difficulty": "Beginner",
+    "questionText": "What is the value of y if y/2 = 4?",
+    "options": ["A) 2", "B) 4", "C) 6", "D) 8"],
+    "correctAnswer": "D",
+    "explanation": "y/2 = 4 → y = 4 × 2 → y = 8"
+  },
+  {
+    "topicID": "c0b5bd32-1e1f-4f4e-8e0f-3e9f6e23f9b1",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Solve for x: 5(x - 2) = 15.",
+    "options": ["A) 1", "B) 3", "C) 5", "D) 7"],
+    "correctAnswer": "C",
+    "explanation": "5(x - 2) = 15 → x - 2 = 3 → x = 5"
+  },
+  {
+    "topicID": "c0b5bd32-1e1f-4f4e-8e0f-3e9f6e23f9b1",
+    "topic": "Algebra",
+    "difficulty": "Advanced",
+    "questionText": "If f(x) = 2x + 1 and f(f(x)) = 17, find x.",
+    "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+    "correctAnswer": "C",
+    "explanation": "First, find f(x): f(x) = 2x + 1. Then set up f(f(x)) = 17: f(2x + 1) = 17 → 2(2x + 1) + 1 = 17 → 4x + 2 + 1 = 17 → 4x = 14 → x = 3.5"
+  },
+  {
+    "topicID": "d4e87a7f-5b60-4c1e-9f2b-6c1e0d7f2a39",
+    "topic": "Geometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the circumference of a circle with diameter 10 units? (Use π ≈ 3.14)",
+    "options": ["A) 15.7 units", "B) 20 units", "C) 31.4 units", "D) 62.8 units"],
+    "correctAnswer": "C",
+    "explanation": "Circumference = π × diameter = 3.14 × 10 = 31.4 units"
+  },
+  {
+    "topicID": "d4e87a7f-5b60-4c1e-9f2b-6c1e0d7f2a39",
+    "topic": "Geometry",
+    "difficulty": "Intermediate",
+    "questionText": "Find the length of the hypotenuse of a right-angled triangle with sides of lengths 6 units and 8 units.",
+    "options": ["A) 10 units", "B) 12 units", "C) 14 units", "D) 16 units"],
+    "correctAnswer": "A",
+    "explanation": "Use Pythagoras theorem: hypotenuse² = 6² + 8² → hypotenuse² = 36 + 64 → hypotenuse² = 100 → hypotenuse = 10 units"
+  },
+  {
+    "topicID": "d4e87a7f-5b60-4c1e-9f2b-6c1e0d7f2a39",
+    "topic": "Geometry",
+    "difficulty": "Advanced",
+    "questionText": "Calculate the area of an equilateral triangle with side length 6 units.",
+    "options": ["A) 9√3 units²", "B) 12√3 units²", "C) 18 units²", "D) 36 units²"],
+    "correctAnswer": "A",
+    "explanation": "Area = (√3/4) × side² = (√3/4) × 6² = (√3/4) × 36 = 9√3 units²"
+  },
+  {
+    "topicID": "e6f9b2c3-0a5b-4d7f-9b7a-8c0e1d2f3a4b",
+    "topic": "Calculus",
+    "difficulty": "Beginner",
+    "questionText": "Find the derivative of f(x) = 5x.",
+    "options": ["A) 5", "B) x", "C) 5x", "D) 0"],
+    "correctAnswer": "A",
+    "explanation": "The derivative of 5x with respect to x is 5"
+  },
+  {
+    "topicID": "e6f9b2c3-0a5b-4d7f-9b7a-8c0e1d2f3a4b",
+    "topic": "Calculus",
+    "difficulty": "Intermediate",
+    "questionText": "Evaluate the integral ∫ x dx.",
+    "options": ["A) x² + C", "B) x²/2 + C", "C) 2x + C", "D) ln x + C"],
+    "correctAnswer": "B",
+    "explanation": "∫ x dx = x²/2 + C"
+  },
+  {
+    "topicID": "e6f9b2c3-0a5b-4d7f-9b7a-8c0e1d2f3a4b",
+    "topic": "Calculus",
+    "difficulty": "Advanced",
+    "questionText": "Determine the convergence of the series ∑_{n=1}^∞ 1/n².",
+    "options": ["A) Convergent", "B) Divergent", "C) Oscillating", "D) Cannot determine"],
+    "correctAnswer": "A",
+    "explanation": "The p-series with p = 2 converges since p > 1"
+  },
+  {
+    "topicID": "f7a8b9c0-1d2e-3f4a-5b6c-7d8e9f0a1b2c",
+    "topic": "Statistics & Probability",
+    "difficulty": "Beginner",
+    "questionText": "What is the median of the data set: 3, 7, 9, 15, 21?",
+    "options": ["A) 7", "B) 9", "C) 15", "D) 21"],
+    "correctAnswer": "B",
+    "explanation": "Median is the middle value when data is ordered: median = 9"
+  },
+  {
+    "topicID": "f7a8b9c0-1d2e-3f4a-5b6c-7d8e9f0a1b2c",
+    "topic": "Statistics & Probability",
+    "difficulty": "Intermediate",
+    "questionText": "If events A and B are independent, and P(A) = 0.5 and P(B) = 0.4, what is P(A ∩ B)?",
+    "options": ["A) 0.1", "B) 0.2", "C) 0.4", "D) 0.9"],
+    "correctAnswer": "B",
+    "explanation": "For independent events, P(A ∩ B) = P(A) × P(B) = 0.5 × 0.4 = 0.2"
+  },
+  {
+    "topicID": "f7a8b9c0-1d2e-3f4a-5b6c-7d8e9f0a1b2c",
+    "topic": "Statistics & Probability",
+    "difficulty": "Advanced",
+    "questionText": "A dataset has a mean of 50 and a standard deviation of 5. What is the z-score of a data point at 60?",
+    "options": ["A) 1", "B) 2", "C) -1", "D) -2"],
+    "correctAnswer": "B",
+    "explanation": "Z = (X - μ)/σ = (60 - 50)/5 = 10/5 = 2"
+  },
+  {
+    "topicID": "0a1b2c3d-4e5f-6789-0abc-def123456789",
+    "topic": "Trigonometry",
+    "difficulty": "Beginner",
+    "questionText": "What is tan(45°)?",
+    "options": ["A) 0", "B) 1", "C) √2", "D) Undefined"],
+    "correctAnswer": "B",
+    "explanation": "tan(45°) = 1"
+  },
+  {
+    "topicID": "0a1b2c3d-4e5f-6789-0abc-def123456789",
+    "topic": "Trigonometry",
+    "difficulty": "Intermediate",
+    "questionText": "If sin θ = 0.6 and θ is in the first quadrant, what is cos θ?",
+    "options": ["A) 0.6", "B) 0.8", "C) 1", "D) 0.5"],
+    "correctAnswer": "B",
+    "explanation": "cos θ = √(1 - sin²θ) = √(1 - 0.36) = √0.64 = 0.8"
+  },
+  {
+    "topicID": "0a1b2c3d-4e5f-6789-0abc-def123456789",
+    "topic": "Trigonometry",
+    "difficulty": "Advanced",
+    "questionText": "Prove the identity: 1 + tan²θ = sec²θ.",
+    "options": ["A) True", "B) False", "C) Only for specific θ", "D) Cannot be proven"],
+    "correctAnswer": "A",
+    "explanation": "It's a fundamental trigonometric identity derived from dividing both sides of sin²θ + cos²θ = 1 by cos²θ"
+  },
+  {
+    "topicID": "1b2c3d4e-5f6a-789b-0cde-f123456789ab",
+    "topic": "Number Theory",
+    "difficulty": "Beginner",
+    "questionText": "Is 51 a prime number?",
+    "options": ["A) Yes", "B) No", "C) Only divisible by 1 and itself", "D) Cannot determine"],
+    "correctAnswer": "B",
+    "explanation": "51 is divisible by 3 and 17, so it's not prime"
+  },
+  {
+    "topicID": "1b2c3d4e-5f6a-789b-0cde-f123456789ab",
+    "topic": "Number Theory",
+    "difficulty": "Intermediate",
+    "questionText": "Find the sum of the first 5 prime numbers.",
+    "options": ["A) 18", "B) 26", "C) 28", "D) 30"],
+    "correctAnswer": "C",
+    "explanation": "First 5 primes: 2, 3, 5, 7, 11; Sum = 28"
+  },
+  {
+    "topicID": "1b2c3d4e-5f6a-789b-0cde-f123456789ab",
+    "topic": "Number Theory",
+    "difficulty": "Advanced",
+    "questionText": "If p and q are prime numbers greater than 2, which of the following is always even?",
+    "options": ["A) p + q", "B) p × q", "C) p - q", "D) p/q"],
+    "correctAnswer": "A",
+    "explanation": "All primes >2 are odd, and the sum of two odd numbers is even"
+  },
+  {
+    "topicID": "2c3d4e5f-6a7b-8c9d-0def-123456789abc",
+    "topic": "Linear Algebra",
+    "difficulty": "Beginner",
+    "questionText": "What is the solution to the system: x + y = 5 and x - y = 1?",
+    "options": ["A) x=3, y=2", "B) x=2, y=3", "C) x=4, y=1", "D) x=1, y=4"],
+    "correctAnswer": "A",
+    "explanation": "Add equations: (x + y) + (x - y) = 5 + 1 → 2x = 6 → x = 3; Then y = 5 - x = 2"
+  },
+  {
+    "topicID": "2c3d4e5f-6a7b-8c9d-0def-123456789abc",
+    "topic": "Linear Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Calculate the eigenvalues of matrix [[2, 0], [0, 3]].",
+    "options": ["A) 2 and 3", "B) 1 and 0", "C) 5 and -1", "D) 0 and 0"],
+    "correctAnswer": "A",
+    "explanation": "Eigenvalues are the diagonal elements for a diagonal matrix: λ₁=2, λ₂=3"
+  },
+  {
+    "topicID": "2c3d4e5f-6a7b-8c9d-0def-123456789abc",
+    "topic": "Linear Algebra",
+    "difficulty": "Advanced",
+    "questionText": "Determine if the set of vectors {[1, 0, 0], [0, 1, 0], [1, 1, 0]} is linearly independent.",
+    "options": ["A) Yes", "B) No", "C) Only if in R²", "D) Cannot determine"],
+    "correctAnswer": "B",
+    "explanation": "The third vector is a linear combination of the first two: [1, 1, 0] = [1, 0, 0] + [0, 1, 0]"
+  },
+  {
+    "topicID": "3d4e5f6a-7b8c-9d0e-f123-456789abcd0e",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Beginner",
+    "questionText": "What is the binary equivalent of decimal number 5?",
+    "options": ["A) 101", "B) 110", "C) 111", "D) 100"],
+    "correctAnswer": "A",
+    "explanation": "5 in binary is 101"
+  },
+  {
+    "topicID": "3d4e5f6a-7b8c-9d0e-f123-456789abcd0e",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Intermediate",
+    "questionText": "In a group of 10 people, how many handshakes occur if each person shakes hands with every other person exactly once?",
+    "options": ["A) 20", "B) 45", "C) 50", "D) 90"],
+    "correctAnswer": "B",
+    "explanation": "Number of handshakes = n(n - 1)/2 = 10×9/2 = 45"
+  },
+  {
+    "topicID": "3d4e5f6a-7b8c-9d0e-f123-456789abcd0e",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Advanced",
+    "questionText": "How many permutations are there of the letters in the word 'MISSISSIPPI'?",
+    "options": ["A) 34650", "B) 34660", "C) 34690", "D) 34700"],
+    "correctAnswer": "A",
+    "explanation": "Total letters = 11; M=1, I=4, S=4, P=2; Permutations = 11! / (1!×4!×4!×2!) = 34650"
+  },
+  {
+    "topicID": "4e5f6a7b-8c9d-0e1f-1234-56789abcdef0",
+    "topic": "Algebra",
+    "difficulty": "Beginner",
+    "questionText": "If 4x = 20, what is the value of x?",
+    "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+    "correctAnswer": "B",
+    "explanation": "4x = 20 → x = 20 / 4 → x = 5"
+  },
+  {
+    "topicID": "4e5f6a7b-8c9d-0e1f-1234-56789abcdef0",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Solve for y: 2(y - 3) = y + 5.",
+    "options": ["A) 11", "B) 8", "C) 5", "D) 1"],
+    "correctAnswer": "C",
+    "explanation": "2y - 6 = y + 5 → 2y - y = 5 + 6 → y = 11"
+  },
+  {
+    "topicID": "4e5f6a7b-8c9d-0e1f-1234-56789abcdef0",
+    "topic": "Algebra",
+    "difficulty": "Advanced",
+    "questionText": "Factor completely: x³ - x² - 6x.",
+    "options": ["A) x(x - 3)(x + 2)", "B) x(x + 3)(x - 2)", "C) x(x - 2)(x + 3)", "D) x(x + 2)(x + 3)"],
+    "correctAnswer": "C",
+    "explanation": "Factor out x: x(x² - x - 6) → x(x - 3)(x + 2)"
+  },
+  {
+    "topicID": "5f6a7b8c-9d0e-1f2a-3456-789abcdef012",
+    "topic": "Geometry",
+    "difficulty": "Beginner",
+    "questionText": "A rectangle has a length of 10 units and a width of 5 units. What is its area?",
+    "options": ["A) 15 units²", "B) 30 units²", "C) 50 units²", "D) 100 units²"],
+    "correctAnswer": "C",
+    "explanation": "Area = length × width = 10 × 5 = 50 units²"
+  },
+  {
+    "topicID": "5f6a7b8c-9d0e-1f2a-3456-789abcdef012",
+    "topic": "Geometry",
+    "difficulty": "Intermediate",
+    "questionText": "What is the volume of a cube with sides of length 4 units?",
+    "options": ["A) 16 units³", "B) 32 units³", "C) 64 units³", "D) 128 units³"],
+    "correctAnswer": "C",
+    "explanation": "Volume = side³ = 4³ = 64 units³"
+  },
+  {
+    "topicID": "5f6a7b8c-9d0e-1f2a-3456-789abcdef012",
+    "topic": "Geometry",
+    "difficulty": "Advanced",
+    "questionText": "A cylinder has a radius of r and a height of h. What is its surface area?",
+    "options": ["A) 2πr² + 2πrh", "B) πr²h", "C) 2πr(h + r)", "D) πr(h + r)"],
+    "correctAnswer": "C",
+    "explanation": "Surface Area = 2πr² + 2πrh = 2πr(r + h)"
+  },
+  {
+    "topicID": "6a7b8c9d-0e1f-2a3b-4567-89abcdef0123",
+    "topic": "Calculus",
+    "difficulty": "Beginner",
+    "questionText": "What is the derivative of f(x) = x²?",
+    "options": ["A) x", "B) 2x", "C) x²", "D) 2"],
+    "correctAnswer": "B",
+    "explanation": "The derivative of x² with respect to x is 2x"
+  },
+  {
+    "topicID": "6a7b8c9d-0e1f-2a3b-4567-89abcdef0123",
+    "topic": "Calculus",
+    "difficulty": "Intermediate",
+    "questionText": "Find the integral ∫ (1/x) dx.",
+    "options": ["A) ln x + C", "B) x + C", "C) 1/x + C", "D) ln(x²) + C"],
+    "correctAnswer": "A",
+    "explanation": "∫ (1/x) dx = ln x + C"
+  },
+  {
+    "topicID": "6a7b8c9d-0e1f-2a3b-4567-89abcdef0123",
+    "topic": "Calculus",
+    "difficulty": "Advanced",
+    "questionText": "Evaluate the limit: lim_{x→∞} (2x² + 3x)/(x² - x).",
+    "options": ["A) 2", "B) 0", "C) ∞", "D) 1"],
+    "correctAnswer": "A",
+    "explanation": "Divide numerator and denominator by x²: (2 + 3/x)/(1 - 1/x) → As x→∞, terms with 1/x → 0, so limit = 2/1 = 2"
+  },
+  {
+    "topicID": "7b8c9d0e-1f2a-3b4c-5678-9abcdef01234",
+    "topic": "Statistics & Probability",
+    "difficulty": "Beginner",
+    "questionText": "What is the mode of the data set: 1, 2, 2, 3, 4?",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+    "correctAnswer": "B",
+    "explanation": "Mode is the number that appears most frequently: 2"
+  },
+  {
+    "topicID": "7b8c9d0e-1f2a-3b4c-5678-9abcdef01234",
+    "topic": "Statistics & Probability",
+    "difficulty": "Intermediate",
+    "questionText": "A bag contains 5 red balls and 3 blue balls. What is the probability of drawing a red ball?",
+    "options": ["A) 1/2", "B) 5/8", "C) 3/8", "D) 2/3"],
+    "correctAnswer": "B",
+    "explanation": "Probability = Number of red balls / Total balls = 5/8"
+  },
+  {
+    "topicID": "7b8c9d0e-1f2a-3b4c-5678-9abcdef01234",
+    "topic": "Statistics & Probability",
+    "difficulty": "Advanced",
+    "questionText": "What is the expected value of rolling a fair six-sided die?",
+    "options": ["A) 3", "B) 3.5", "C) 4", "D) 3.33"],
+    "correctAnswer": "B",
+    "explanation": "Expected value = (1+2+3+4+5+6)/6 = 21/6 = 3.5"
+  },
+  {
+    "topicID": "8c9d0e1f-2a3b-4c5d-6789-abcdef012345",
+    "topic": "Trigonometry",
+    "difficulty": "Beginner",
+    "questionText": "What is the value of cos(180°)?",
+    "options": ["A) 1", "B) 0", "C) -1", "D) Undefined"],
+    "correctAnswer": "C",
+    "explanation": "cos(180°) = -1"
+  },
+  {
+    "topicID": "8c9d0e1f-2a3b-4c5d-6789-abcdef012345",
+    "topic": "Trigonometry",
+    "difficulty": "Intermediate",
+    "questionText": "Simplify the expression: sin²θ + cos²θ.",
+    "options": ["A) 0", "B) 1", "C) 2", "D) sin θ cos θ"],
+    "correctAnswer": "B",
+    "explanation": "Fundamental identity: sin²θ + cos²θ = 1"
+  },
+  {
+    "topicID": "8c9d0e1f-2a3b-4c5d-6789-abcdef012345",
+    "topic": "Trigonometry",
+    "difficulty": "Advanced",
+    "questionText": "Find the general solution for sin x = 0.",
+    "options": ["A) x = nπ", "B) x = (2n + 1)π", "C) x = nπ/2", "D) x = 2nπ"],
+    "correctAnswer": "A",
+    "explanation": "sin x = 0 when x = nπ, where n is any integer"
+  },
+  {
+    "topicID": "9d0e1f2a-3b4c-5d6e-789a-bcdef0123456",
+    "topic": "Number Theory",
+    "difficulty": "Beginner",
+    "questionText": "What is the smallest prime number?",
+    "options": ["A) 0", "B) 1", "C) 2", "D) 3"],
+    "correctAnswer": "C",
+    "explanation": "2 is the smallest prime number"
+  },
+  {
+    "topicID": "9d0e1f2a-3b4c-5d6e-789a-bcdef0123456",
+    "topic": "Number Theory",
+    "difficulty": "Intermediate",
+    "questionText": "Find the number of positive divisors of 28.",
+    "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+    "correctAnswer": "C",
+    "explanation": "Divisors are 1, 2, 4, 7, 14, 28; Total = 6"
+  },
+  {
+    "topicID": "9d0e1f2a-3b4c-5d6e-789a-bcdef0123456",
+    "topic": "Number Theory",
+    "difficulty": "Advanced",
+    "questionText": "Prove that there are infinitely many prime numbers.",
+    "options": ["A) True", "B) False", "C) Only up to a certain number", "D) Cannot be proven"],
+    "correctAnswer": "A",
+    "explanation": "Euclid's proof demonstrates the infinitude of primes"
+  },
+  {
+    "topicID": "0e1f2a3b-4c5d-6e7f-89ab-cdef01234567",
+    "topic": "Linear Algebra",
+    "difficulty": "Beginner",
+    "questionText": "If vector A = [2, 3] and vector B = [4, 1], what is A + B?",
+    "options": ["A) [6, 4]", "B) [6, 3]", "C) [2, 4]", "D) [2, 2]"],
+    "correctAnswer": "A",
+    "explanation": "Add corresponding components: [2+4, 3+1] = [6, 4]"
+  },
+  {
+    "topicID": "0e1f2a3b-4c5d-6e7f-89ab-cdef01234567",
+    "topic": "Linear Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Find the inverse of the matrix [[1, 2], [3, 4]].",
+    "options": ["A) [[-2, 1], [1.5, -0.5]]", "B) [[-4, 3], [2, -1]]", "C) [[-2, 1], [1, -0.5]]", "D) Does not exist"],
+    "correctAnswer": "A",
+    "explanation": "Inverse = (1/det) × adjugate matrix; det = -2"
+  },
+  {
+    "topicID": "0e1f2a3b-4c5d-6e7f-89ab-cdef01234567",
+    "topic": "Linear Algebra",
+    "difficulty": "Advanced",
+    "questionText": "Determine the rank of the matrix [[1, 2, 3], [2, 4, 6], [3, 6, 9]].",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 0"],
+    "correctAnswer": "A",
+    "explanation": "Rows are linearly dependent; rank is 1"
+  },
+  {
+    "topicID": "1f2a3b4c-5d6e-7f8a-9bcd-ef0123456789",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Beginner",
+    "questionText": "What is 2 to the power of 3?",
+    "options": ["A) 6", "B) 8", "C) 9", "D) 12"],
+    "correctAnswer": "B",
+    "explanation": "2³ = 2 × 2 × 2 = 8"
+  },
+  {
+    "topicID": "1f2a3b4c-5d6e-7f8a-9bcd-ef0123456789",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Intermediate",
+    "questionText": "How many ways can you arrange the letters in the word 'APPLE'?",
+    "options": ["A) 60", "B) 120", "C) 240", "D) 360"],
+    "correctAnswer": "A",
+    "explanation": "Total letters = 5; P=2 times; Arrangements = 5! / 2! = 120 / 2 = 60"
+  },
+  {
+    "topicID": "1f2a3b4c-5d6e-7f8a-9bcd-ef0123456789",
+    "topic": "Discrete Mathematics",
+    "difficulty": "Advanced",
+    "questionText": "What is the sum of the infinite geometric series with first term 3 and common ratio 1/2?",
+    "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+    "correctAnswer": "C",
+    "explanation": "Sum = a₁ / (1 - r) = 3 / (1 - 0.5) = 3 / 0.5 = 6"
+  },
+  {
+    "topicID": "2a3b4c5d-6e7f-8a9b-0cde-f1234567890a",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "Solve the inequality: 2x - 5 > 7.",
+    "options": ["A) x > 1", "B) x > 6", "C) x > -1", "D) x < 6"],
+    "correctAnswer": "B",
+    "explanation": "2x - 5 > 7 → 2x > 12 → x > 6"
+  },
+  {
+    "topicID": "2a3b4c5d-6e7f-8a9b-0cde-f1234567890a",
+    "topic": "Algebra",
+    "difficulty": "Advanced",
+    "questionText": "If (x - 1)(x + 2) = 0, what are the possible values of x?",
+    "options": ["A) x = 1 or x = -2", "B) x = -1 or x = 2", "C) x = 1", "D) x = -2"],
+    "correctAnswer": "A",
+    "explanation": "Set each factor to zero: x - 1 = 0 → x = 1; x + 2 = 0 → x = -2"
+  },
+  {
+    "topicID": "3b4c5d6e-7f8a-9b0c-def1-234567890abc",
+    "topic": "Geometry",
+    "difficulty": "Intermediate",
+    "questionText": "What is the measure of each exterior angle of a regular pentagon?",
+    "options": ["A) 60°", "B) 72°", "C) 90°", "D) 108°"],
+    "correctAnswer": "B",
+    "explanation": "Exterior angle = 360° / n = 360° / 5 = 72°"
+  },
+  {
+    "topicID": "3b4c5d6e-7f8a-9b0c-def1-234567890abc",
+    "topic": "Geometry",
+    "difficulty": "Advanced",
+    "questionText": "Find the area of a trapezoid with bases of lengths 10 units and 6 units, and a height of 4 units.",
+    "options": ["A) 32 units²", "B) 40 units²", "C) 64 units²", "D) 80 units²"],
+    "correctAnswer": "A",
+    "explanation": "Area = (1/2)(base1 + base2) × height = (1/2)(10 + 6) × 4 = 32 units²"
+  },
+  {
+    "topicID": "4c5d6e7f-8a9b-0c1d-ef23-4567890abcde",
+    "topic": "Calculus",
+    "difficulty": "Intermediate",
+    "questionText": "If y = x^5, what is dy/dx at x = 1?",
+    "options": ["A) 1", "B) 5", "C) 25", "D) 125"],
+    "correctAnswer": "B",
+    "explanation": "dy/dx = 5x⁴; At x = 1, dy/dx = 5(1)⁴ = 5"
+  },
+  {
+    "topicID": "4c5d6e7f-8a9b-0c1d-ef23-4567890abcde",
+    "topic": "Calculus",
+    "difficulty": "Advanced",
+    "questionText": "Compute the definite integral ∫₀¹ (3x²) dx.",
+    "options": ["A) 1", "B) 1.5", "C) 2", "D) 3"],
+    "correctAnswer": "C",
+    "explanation": "∫₀¹ 3x² dx = [x³]₀¹ = 1³ - 0³ = 1 - 0 = 1; Multiply by 3: 3 × 1 = 3"
+  }
+
+]
+
+

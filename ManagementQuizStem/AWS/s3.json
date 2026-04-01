@@ -1,0 +1,702 @@
+[
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A media company stores image assets on S3. Some images are rarely accessed after a few weeks but must be available immediately if needed. They want to minimize cost for older images without sacrificing quick access. Which S3 storage class should a developer use for images older than a month?",
+    "options": [
+      "A. S3 Standard",
+      "B. S3 Standard-Infrequent Access (Standard-IA)",
+      "C. S3 Glacier Deep Archive",
+      "D. S3 Intelligent-Tiering"
+    ],
+    "correctAnswer": "B",
+    "explanation": "S3 Standard-IA offers the same high durability and immediate retrieval as Standard, but at lower storage cost for infrequently accessed data (with a retrieval fee and 30-day minimum storage duration)."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A startup is storing processed log files that can be easily regenerated if lost. They want to cut storage costs and do not need multi-AZ redundancy for these logs. What is the most cost-effective S3 storage class for this use case?",
+    "options": [
+      "A. S3 Standard",
+      "B. S3 Standard-Infrequent Access",
+      "C. S3 One Zone-Infrequent Access",
+      "D. S3 Glacier Flexible Retrieval"
+    ],
+    "correctAnswer": "C",
+    "explanation": "S3 One Zone-IA stores data in a single Availability Zone, making it cheaper than Standard or Standard-IA, and is ideal for non-critical, reproducible data."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A company archives financial records to S3 Glacier Deep Archive for compliance. Once a year, auditors need prompt access to the last year’s records. How can developers ensure the needed objects are accessible quickly when required, without incurring high retrieval fees?",
+    "options": [
+      "A. Store the last year’s records in S3 Glacier Instant Retrieval instead of Deep Archive.",
+      "B. Use S3 Standard-IA for all records to avoid retrieval delays.",
+      "C. Initiate a bulk restore from S3 Glacier Deep Archive a day or two before the audit and temporarily store the data for access.",
+      "D. Use S3 Intelligent-Tiering to automatically move data to a faster tier before the audit."
+    ],
+    "correctAnswer": "C",
+    "explanation": "With S3 Glacier Deep Archive, retrieval can take up to 48 hours using bulk retrieval. Initiating a bulk restore shortly before the audit ensures the data is available when needed without expensive expedited fees."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "An S3 bucket contains millions of small objects (each less than 100 KB) with unpredictable access patterns. The team is considering S3 Intelligent-Tiering to optimize costs. What is a potential drawback in this scenario?",
+    "options": [
+      "A. Objects under 128 KB are always charged at the frequent access tier rate in Intelligent-Tiering, making cost savings negligible for very small objects.",
+      "B. Intelligent-Tiering requires a minimum of 30 days before moving an object to a cheaper tier.",
+      "C. Intelligent-Tiering does not support more than 100,000 objects in a single bucket.",
+      "D. Retrieval from the infrequent access tier of Intelligent-Tiering has a substantial delay."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Objects smaller than 128 KB in Intelligent-Tiering remain in the frequent access tier, which means the cost benefits for very small objects are negligible."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "An application stores sensitive user data in S3. Company policy mandates using AWS Key Management Service (KMS) keys for at-rest encryption and tracking key usage. How can a developer meet these requirements?",
+    "options": [
+      "A. Enable bucket default encryption with server-side encryption using a KMS customer-managed CMK (SSE-KMS) for that bucket.",
+      "B. Use client-side encryption in the application before uploading data to S3.",
+      "C. Set bucket default encryption to SSE-S3 (AES-256).",
+      "D. Use SSE-C (server-side encryption with customer-provided keys)."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Enabling default encryption with SSE-KMS using a customer-managed CMK ensures data is encrypted at rest with key tracking via CloudTrail."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "After enabling server-side encryption with a KMS CMK (SSE-KMS) on an S3 bucket, a developer notices that uploads of thousands of objects per second are experiencing increased latency and occasional errors. What is the likely cause?",
+    "options": [
+      "A. AWS KMS is throttling the high rate of encryption requests, hitting KMS API limits.",
+      "B. The S3 bucket is now single-threaded due to encryption overhead.",
+      "C. The objects are too large to encrypt on the fly, causing delays.",
+      "D. The KMS CMK is in a different region than the S3 bucket, causing cross-region latency."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Each upload using SSE-KMS involves a call to KMS. High request rates can exceed KMS API limits, leading to throttling and increased latency."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A company wants to manage their own encryption keys on-premises and use them for encrypting data in S3, ensuring AWS never stores or has access to the encryption keys. Which S3 encryption option should be used?",
+    "options": [
+      "A. Server-side encryption with Amazon S3 managed keys (SSE-S3)",
+      "B. Server-side encryption with AWS KMS managed keys (SSE-KMS)",
+      "C. Server-side encryption with customer-provided keys (SSE-C)",
+      "D. Client-side encryption using an AWS SDK"
+    ],
+    "correctAnswer": "C",
+    "explanation": "SSE-C allows the client to supply the encryption key for each operation, ensuring AWS never retains the key."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer needs to ensure that an S3 bucket is only accessed by an application running on a specific EC2 instance in a VPC. What is a secure way to enforce this?",
+    "options": [
+      "A. Apply a bucket policy with a condition that allows access only from the EC2 instance’s IAM role or a specific VPC endpoint (source VPC or VPC Endpoint ID condition).",
+      "B. Attach an IAM policy to the bucket resource specifying the EC2 instance’s ID.",
+      "C. Use a security group on the S3 bucket to allow access only from the EC2 instance’s security group.",
+      "D. Enable S3 Block Public Access and ACLs to restrict access to the instance."
+    ],
+    "correctAnswer": "A",
+    "explanation": "A bucket policy using conditions like aws:SourceVpce or limiting the IAM role ensures that only the designated EC2 instance can access the bucket."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer added a bucket policy to allow public read access to objects in an S3 bucket (with \"Principal\": \"*\" and s3:GetObject permission). However, when testing, the objects are still not accessible publicly. What might be the cause?",
+    "options": [
+      "A. The bucket’s default encryption setting is preventing public access.",
+      "B. The AWS S3 Block Public Access settings are enabled for the bucket or the account, overriding the policy.",
+      "C. The objects are not publicly accessible because their individual ACLs were not set to public-read.",
+      "D. S3 bucket policies cannot make objects public."
+    ],
+    "correctAnswer": "B",
+    "explanation": "S3 Block Public Access settings override bucket policies and prevent public access even if the policy allows it."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "How can a developer enforce that all objects uploaded to a specific S3 bucket are encrypted with a particular KMS customer-managed key?",
+    "options": [
+      "A. Attach an IAM policy to all users that denies PutObject if the objects are not encrypted with that KMS key.",
+      "B. Use an S3 bucket policy with a condition to deny any PutObject that doesn’t include the correct server-side encryption header for the KMS key.",
+      "C. Enable default encryption on the bucket with SSE-KMS and assume this will reject non-encrypted objects.",
+      "D. Enable Object Lock in compliance mode to ensure all objects are encrypted."
+    ],
+    "correctAnswer": "B",
+    "explanation": "A bucket policy with conditions that check for the correct encryption headers can enforce the use of a specific KMS key on all uploads."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A user needs to download a private object from S3 via a web application, but the download link should only work for a limited time. What is the simplest way for a developer to accomplish this?",
+    "options": [
+      "A. Make the object public, let the user download it, then immediately remove public access.",
+      "B. Generate a pre-signed URL for the S3 object with an expiration time and provide that URL to the user.",
+      "C. Create a temporary IAM user with access to the object and give the credentials to the user.",
+      "D. Use CloudFront with signed URLs to distribute the content."
+    ],
+    "correctAnswer": "B",
+    "explanation": "Pre-signed URLs grant time-limited access to private objects without exposing AWS credentials."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A global web application needs to serve images stored in an S3 bucket to users around the world with low latency. The images should not be publicly accessible directly from S3. What solution should a developer implement?",
+    "options": [
+      "A. Set up an Amazon CloudFront distribution with the S3 bucket as an origin, and use an Origin Access Identity (OAI) or Origin Access Control to restrict S3 access through CloudFront.",
+      "B. Enable S3 Transfer Acceleration on the bucket for faster global delivery.",
+      "C. Use Cross-Region Replication to create copies of the bucket in regions closer to users.",
+      "D. Use an AWS Global Accelerator endpoint for the S3 bucket."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using CloudFront with an OAI/OAC restricts direct S3 access while delivering content globally with low latency."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer is uploading large video files (~10 GB each) to S3, but the uploads sometimes fail or time out over unreliable connections. What is the best practice to improve the reliability and performance of these uploads?",
+    "options": [
+      "A. Use S3 Multipart Upload to split the file into parts and upload the parts in parallel, then complete the upload.",
+      "B. Increase the client timeout and retry logic for the upload operation.",
+      "C. Compress the video files before upload to reduce their size.",
+      "D. Use AWS Snowball to transfer the files to S3."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 Multipart Upload allows large files to be split into parts that can be uploaded in parallel, improving reliability and performance."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A multi-part upload to S3 was initiated from an application, but the application crashed before completing it. What happens to the uploaded parts and how can the developer avoid unnecessary storage costs?",
+    "options": [
+      "A. The uploaded parts remain stored in S3 and will incur storage charges until they are explicitly aborted or cleaned up (for example, via a lifecycle rule).",
+      "B. S3 automatically discards any incomplete multipart upload parts after 24 hours.",
+      "C. The parts are not stored at all unless the upload is completed.",
+      "D. The incomplete upload is moved to Glacier after a day to save cost."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Uploaded parts from an incomplete multipart upload remain in S3 and incur storage charges until the upload is either completed or aborted."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer writes a new object to S3 and immediately reads it back, then updates (overwrites) the object with new data and reads it again. What consistency behavior should they expect from S3?",
+    "options": [
+      "A. Read-after-write consistency for new object uploads, and eventual consistency for overwrite updates.",
+      "B. Strong read-after-write consistency for both new uploads and overwrites (as well as deletes).",
+      "C. Eventual consistency for both new writes and updates.",
+      "D. Strong consistency only if versioning is enabled on the bucket."
+    ],
+    "correctAnswer": "B",
+    "explanation": "Amazon S3 now provides strong read-after-write consistency for all object operations in all regions."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "MFA Delete is enabled on an S3 bucket. How does this affect a developer’s ability to perform versioning or deletion operations on the bucket?",
+    "options": [
+      "A. It requires the user (generally the root user or IAM user with MFA) to provide a multi-factor authentication code to delete object versions or to disable/suspend versioning on the bucket.",
+      "B. It prevents anyone from deleting objects or versions in the bucket until MFA Delete is disabled.",
+      "C. It only allows deletion via the AWS CLI. Console deletions are blocked.",
+      "D. It applies to all bucket operations, including reads, requiring MFA for access."
+    ],
+    "correctAnswer": "A",
+    "explanation": "MFA Delete requires that an MFA code be provided when deleting object versions or changing the bucket's versioning state, adding an extra layer of security."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer configured an S3 event notification on a bucket to trigger an AWS Lambda function whenever a new object is created. However, testing shows that the Lambda function never executes upon uploads. What is a likely cause?",
+    "options": [
+      "A. The Lambda function’s resource policy does not grant S3 permission to invoke the function.",
+      "B. The S3 bucket does not have versioning enabled, so events won’t trigger.",
+      "C. S3 event notifications can only send events to Amazon SNS or SQS, not directly to Lambda.",
+      "D. The object uploads are happening via AWS CLI, which doesn’t trigger S3 events."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Lambda function must have a resource policy that allows S3 to invoke it; without this permission, the event trigger will fail."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "What is one benefit of using Amazon EventBridge (formerly CloudWatch Events) to monitor S3 events instead of S3’s built-in event notification feature?",
+    "options": [
+      "A. EventBridge can provide more advanced filtering (beyond just prefix/suffix) and route events to many different targets (such as Lambda, Step Functions, etc.), enabling complex event-driven workflows.",
+      "B. EventBridge guarantees ordered, exactly-once delivery of S3 events.",
+      "C. S3 event notifications cannot send events to SQS or SNS.",
+      "D. EventBridge is required to trigger a Lambda function from S3 events."
+    ],
+    "correctAnswer": "A",
+    "explanation": "EventBridge offers advanced content-based filtering and can route events to a wider variety of targets, making it more flexible than S3’s native notifications."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer needs to trigger multiple processing workflows when a new object is uploaded to an S3 bucket. One workflow is a Lambda function; another is a legacy application that polls messages from an SQS queue. What is a scalable way to fan-out S3 events to both systems?",
+    "options": [
+      "A. Configure the S3 bucket to send an event notification to an SNS topic on object creation. Subscribe the Lambda function to the topic, and subscribe an SQS queue to the same topic for the legacy application.",
+      "B. Configure two separate event notifications on the S3 bucket: one directly to Lambda and another directly to the SQS queue.",
+      "C. Use AWS Lambda to poll the S3 bucket for new objects and then manually invoke the other Lambda and send a message to SQS.",
+      "D. Enable cross-region replication on the bucket to duplicate objects to a second bucket that triggers the second workflow."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using SNS to fan out events allows multiple subscribers (Lambda and SQS) to receive notifications from a single S3 event."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "Users upload profile pictures to an S3 bucket. The application needs to automatically create thumbnail images for each upload. What architecture should the developer use?",
+    "options": [
+      "A. Configure an S3 event notification for ObjectCreated events to invoke an AWS Lambda function. The Lambda function reads the uploaded image, generates a thumbnail, and stores the thumbnail back in S3.",
+      "B. Run a dedicated EC2 instance that periodically lists the bucket for new images and generates thumbnails.",
+      "C. Use AWS Data Pipeline to detect new files in S3 and trigger a processing step.",
+      "D. Require users to upload two images (original and thumbnail) to reduce processing."
+    ],
+    "correctAnswer": "A",
+    "explanation": "An event-driven architecture using Lambda is the most efficient and scalable method for generating thumbnails on image upload."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer is tasked with hosting a static website for a custom domain using S3. The site must be accessible via HTTPS. What configuration is needed to meet these requirements?",
+    "options": [
+      "A. Enable static website hosting on the S3 bucket and use Amazon CloudFront in front of the bucket with a custom domain and an ACM-provided SSL certificate.",
+      "B. Enable static website hosting and upload an SSL certificate directly to the S3 bucket.",
+      "C. Use S3 Transfer Acceleration with the static website endpoint for HTTPS.",
+      "D. Configure an Application Load Balancer in front of the S3 bucket to serve HTTPS traffic."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Since S3 website endpoints do not support HTTPS, CloudFront is used in front of S3 to serve content over HTTPS with a custom domain and SSL certificate."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "An application running on EC2 in the us-east-1 region frequently reads and writes to an S3 bucket in the same region. What are the data transfer costs in this scenario?",
+    "options": [
+      "A. Data transfer between EC2 and S3 in the same region is free (no charge for inbound or outbound).",
+      "B. Standard S3 data transfer rates apply for each GET and PUT request.",
+      "C. EC2 to S3 data transfer is free only if they are in the same Availability Zone; otherwise, it’s charged.",
+      "D. Outbound data from S3 to EC2 is charged as Internet data transfer."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Data transferred between EC2 and S3 in the same region is free, aside from request and storage costs."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "Which S3 storage class offers lower storage costs for infrequently accessed data but has higher data retrieval costs and minimum storage duration charges?",
+    "options": [
+      "A. S3 Standard",
+      "B. S3 Standard-Infrequent Access (Standard-IA)",
+      "C. S3 Intelligent-Tiering (Frequent Access tier)",
+      "D. Amazon EFS Standard"
+    ],
+    "correctAnswer": "B",
+    "explanation": "S3 Standard-IA is designed for infrequently accessed data, with lower storage costs offset by higher retrieval fees and a minimum storage duration of 30 days."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer wants to automatically delete objects from an S3 bucket one year after they are created to comply with data retention policies. Which feature should be used?",
+    "options": [
+      "A. S3 Lifecycle configuration with an expiration rule set to 365 days.",
+      "B. S3 Object Lock with a one-year retention mode.",
+      "C. AWS Lambda scheduled to clean up old objects.",
+      "D. S3 Intelligent-Tiering with automatic deletion."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 Lifecycle rules allow you to set expiration policies to automatically delete objects after a specified period (e.g., 365 days)."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "An application generates daily data files which are stored in S3. After 30 days, these files are rarely accessed, but the company must retain them for 7 years for compliance. The files must remain retrievable within a few hours if needed. What is a cost-effective way to manage this in S3?",
+    "options": [
+      "A. Use an S3 Lifecycle policy: keep data in S3 Standard for 30 days, then transition to S3 Glacier Flexible Retrieval for the remaining retention period. Delete after 7 years.",
+      "B. Immediately store all data in S3 Glacier Deep Archive to maximize savings.",
+      "C. Move files older than 30 days to EBS or EFS since they are rarely accessed.",
+      "D. Use S3 Intelligent-Tiering to handle this automatically."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transitioning from S3 Standard to Glacier Flexible Retrieval after 30 days meets both cost and retrieval time requirements while allowing expiration after 7 years."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer is setting up Cross-Region Replication (CRR) from a bucket in Account A (source) to a bucket in Account B (destination). The source bucket encrypts objects with a customer-managed KMS key (SSE-KMS). What must be done to ensure replication will work?",
+    "options": [
+      "A. Update the KMS key policy to allow the S3 replication role (and destination account) to use the key for decryption and encryption.",
+      "B. Disable encryption on the source bucket during replication.",
+      "C. Use the default AWS-managed S3 KMS key, because CMKs cannot be used with CRR.",
+      "D. Enable Object Lock on the destination bucket."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The KMS key policy must grant permission to the replication role (or destination account) so that encrypted objects can be properly replicated."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer wants to set up cross-region replication for an S3 bucket. Which of the following is required for CRR to function?",
+    "options": [
+      "A. Enable versioning on both the source and destination buckets.",
+      "B. The source and destination buckets must have the same name.",
+      "C. The source bucket must have public access disabled.",
+      "D. Enable Transfer Acceleration on the source bucket."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Cross-Region Replication requires that versioning be enabled on both the source and destination buckets."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A security team needs to audit access to certain sensitive data in S3. They want to know exactly which IAM users or roles are accessing and retrieving specific objects. Which service or feature should a developer enable to meet this requirement?",
+    "options": [
+      "A. AWS CloudTrail Data Events for S3.",
+      "B. S3 Server Access Logging.",
+      "C. AWS Config for S3.",
+      "D. Amazon Macie."
+    ],
+    "correctAnswer": "A",
+    "explanation": "CloudTrail Data Events for S3 logs detailed API-level access, including the IAM principal, which is essential for auditing."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer has large CSV files stored in S3. The application often needs to retrieve only a small subset of data (a few columns) from these files, rather than downloading the entire file. Which S3 feature can help optimize this use case?",
+    "options": [
+      "A. S3 Select",
+      "B. AWS Athena",
+      "C. S3 Byte-Range GET",
+      "D. Amazon Redshift Spectrum"
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 Select allows you to query a subset of data from within an object using SQL expressions, thereby reducing data transfer."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer needs to download a 1 GB object from S3 to an application as fast as possible. What can they do to maximize the download throughput?",
+    "options": [
+      "A. Use multiple concurrent GET requests with different byte-range intervals to download the object in parallel segments.",
+      "B. Use S3 Transfer Acceleration for the download.",
+      "C. Increase the instance’s CPU to speed up the decryption of S3’s SSL.",
+      "D. Enable S3 byte-range caching on the bucket."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Downloading in parallel using byte-range GET requests can significantly increase throughput by leveraging concurrent network streams."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "Which statement is true about Amazon S3 event notification delivery to AWS Lambda functions?",
+    "options": [
+      "A. S3 event notifications are delivered on a best-effort basis and may be delivered more than once (duplicates can occur).",
+      "B. S3 events to Lambda are guaranteed to be delivered exactly once.",
+      "C. If a Lambda invocation fails, S3 will retry indefinitely until success.",
+      "D. S3 events are strictly ordered by object key."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 event notifications follow an at-least-once delivery model, meaning that duplicates can occur and ordering is not guaranteed."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "What is the maximum size of a single object in S3, and what method must be used to upload objects larger than 5 GB?",
+    "options": [
+      "A. 5 TB, and use the Multipart Upload API for any object over 5 GB in size.",
+      "B. 5 GB, and use AWS DataSync for larger files.",
+      "C. 1 TB, and use S3 Transfer Acceleration for larger files.",
+      "D. Unlimited, as long as you use multipart upload."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 supports objects up to 5 TB. For objects over 5 GB, the Multipart Upload API is required."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A web application allows users to upload files directly from their browser to S3. How can this be implemented securely so that no AWS credentials are exposed and the app controls the upload permissions?",
+    "options": [
+      "A. Use pre-signed URLs (or a pre-signed POST form) for S3, generated by the backend, to permit the user’s browser to upload directly to the S3 bucket.",
+      "B. Have the users upload to the web server which then immediately forwards the file to S3 using the server’s IAM credentials.",
+      "C. Embed AWS access key and secret key in the client-side code to allow direct S3 upload.",
+      "D. Open the S3 bucket to public writes during the upload window, then close it."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Pre-signed URLs allow secure, time-limited access for direct uploads to S3 without exposing AWS credentials."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "An application is experiencing S3 throttling (HTTP 503 SlowDown errors) when making a high volume of PUT requests to a single S3 bucket with sequential key names (e.g., timestamp-based keys). How can the developer improve the write throughput and avoid throttling?",
+    "options": [
+      "A. Introduce randomness or hash prefixes to the object keys to distribute writes across S3 partitions.",
+      "B. Use exponential backoff on retries without changing key patterns.",
+      "C. Request an S3 provisioned throughput increase.",
+      "D. Use a single multipart upload for all small objects to combine them into one large object."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Adding randomness or hash prefixes to object keys helps distribute the load across S3 partitions, reducing throttling issues associated with sequential keys."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A company is serving private video content stored in S3 to paying customers. They use CloudFront to distribute the content. How can the developer ensure that only authorized users can download the videos?",
+    "options": [
+      "A. Use CloudFront signed URLs (or signed cookies) for the distribution, and configure the S3 bucket with an Origin Access Identity (OAI) or Origin Access Control so that only CloudFront can fetch the content from S3.",
+      "B. Use S3 pre-signed URLs directly from the web server and have users download from S3.",
+      "C. Store the videos encrypted in S3 and only give decryption keys to authorized users.",
+      "D. Add a CloudFront WAF rule to check user authorization before serving content."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using CloudFront signed URLs along with restricting S3 access via OAI/OAC ensures that only authorized users can access the private video content."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "Two users of an application simultaneously upload different versions of a file with the same key to an S3 bucket that does not have versioning enabled. What will be the result in the bucket?",
+    "options": [
+      "A. The object will reflect the data from the last write; the earlier upload will be overwritten and lost.",
+      "B. Both versions of the file will be stored, and the most recent one will have a higher version ID.",
+      "C. The second upload will be rejected because the key already exists.",
+      "D. S3 will merge the changes from both uploads into a single object."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Without versioning, the last write wins and any previous version is overwritten and lost."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer wants to label objects in an S3 bucket with project and environment information (e.g., Project=A, Env=Test) to later analyze storage costs per project. What is the best way to do this?",
+    "options": [
+      "A. Use S3 Object Tags to tag each object with project and environment metadata.",
+      "B. Include the project and environment in each object’s key name (prefix).",
+      "C. Maintain a separate metadata database mapping object keys to project/environment.",
+      "D. Store objects in separate buckets for each project and environment."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 Object Tags allow you to attach metadata to objects, which is useful for cost allocation and filtering."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "Account A has an application that uploads objects to an S3 bucket owned by Account B. The developer notices that Account B’s users cannot access objects uploaded by Account A, even though they have access to the bucket. What is the probable cause, and how can it be fixed?",
+    "options": [
+      "A. By default, the uploading account (Account A) owns the object. Account B (bucket owner) doesn’t automatically get access. The fix is to have Account A include the bucket-owner-full-control ACL on uploads or enable the bucket owner enforced setting to ensure Account B becomes the owner.",
+      "B. S3 buckets cannot receive objects from a different AWS account.",
+      "C. The objects are encrypted with a KMS key from Account A that Account B doesn’t have access to.",
+      "D. Account B needs to assume a role in Account A to access the objects."
+    ],
+    "correctAnswer": "A",
+    "explanation": "In cross-account uploads, the uploader retains object ownership by default. Granting bucket-owner-full-control via ACL or using bucket owner enforced settings ensures the bucket owner has access."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A company has users in Europe and Asia uploading large media files to a central S3 bucket in us-east-1. Users in those regions report slow upload speeds. What feature can help improve upload performance for these geographically distant users without deploying new servers?",
+    "options": [
+      "A. Enable Amazon S3 Transfer Acceleration on the bucket.",
+      "B. Implement Cross-Region Replication to buckets in Europe and Asia.",
+      "C. Set up an FTP server closer to those users to collect files and push to S3.",
+      "D. Increase the S3 bucket I/O capacity."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 Transfer Acceleration uses AWS edge locations to speed up uploads from geographically distant users."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "When uploading data to S3, how can a developer ensure that data is encrypted in transit between the client application and S3?",
+    "options": [
+      "A. Always use HTTPS (SSL/TLS) for S3 service endpoints when making requests.",
+      "B. Enable S3 default encryption on the bucket.",
+      "C. Use a VPC Endpoint to connect to S3.",
+      "D. Encrypt the files locally before uploading."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using HTTPS ensures that the data is encrypted in transit between the client and S3."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer updated a file stored on S3 that is served via CloudFront, but users still see the old version of the file. What is the best way to ensure users get the updated file immediately?",
+    "options": [
+      "A. Invalidate the file (object) in the CloudFront distribution cache.",
+      "B. Remove and re-create the CloudFront distribution.",
+      "C. Rename the object in S3 (change the URL) so CloudFront treats it as a new object.",
+      "D. Reduce the CloudFront TTL to zero for the distribution."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Issuing a cache invalidation in CloudFront forces edge locations to retrieve the updated file from S3."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "An application in Account A needs to read an object from an S3 bucket in Account B. The object is encrypted with an SSE-KMS CMK owned by Account B. What must be done to allow this cross-account access?",
+    "options": [
+      "A. Account B must add a policy on the CMK to allow decryption by the IAM role or principal from Account A, in addition to the S3 bucket policy allowing access.",
+      "B. Disable KMS encryption on the object.",
+      "C. Account A must use the root account to access the object due to encryption.",
+      "D. It is not possible to share KMS-encrypted S3 objects across accounts."
+    ],
+    "correctAnswer": "A",
+    "explanation": "For cross-account access to a KMS-encrypted object, the KMS key policy must grant permission to the IAM principal from Account A to decrypt the object."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer wants to receive a notification or trigger when objects are deleted from an S3 bucket (including deletions from lifecycle expiration). What is a simple way to achieve this?",
+    "options": [
+      "A. Configure Amazon S3 Event Notifications for the bucket with the event type “ObjectRemoved” and send it to an SNS topic or Lambda function.",
+      "B. Use CloudTrail logs and create an EventBridge rule to detect DeleteObject API calls.",
+      "C. Enable AWS Config rules for S3 object deletions.",
+      "D. Use S3 Analytics to report object deletions."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 Event Notifications can be configured to trigger on object removal events, which can then be sent to SNS or Lambda for processing."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "You are hosting a static website out of an S3 bucket and want a custom error page for 404 (Not Found) errors. How can you configure this?",
+    "options": [
+      "A. Enable static website hosting on the bucket and specify the error document (e.g., error404.html) in the static website hosting configuration.",
+      "B. Upload a file named 404.html to the root of the bucket and S3 will automatically serve it on 404 errors.",
+      "C. Use a Lambda@Edge function with CloudFront to replace 404 responses.",
+      "D. S3 does not support custom error pages for static websites."
+    ],
+    "correctAnswer": "A",
+    "explanation": "When static website hosting is enabled on an S3 bucket, you can configure a custom error document (like error404.html) for 404 errors."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer needs to retrieve an object that has been archived to S3 Glacier via a lifecycle rule. What is the correct process to access this object?",
+    "options": [
+      "A. Initiate a restore request for the object from Glacier (using RestoreObject API or in the console), wait for the restore to complete, then access the object (which will be temporarily available in S3).",
+      "B. Change the object’s storage class to Standard to immediately restore it.",
+      "C. Use the AWS Glacier service directly to retrieve the object by its archive ID.",
+      "D. Access the object normally; S3 will retrieve it from Glacier behind the scenes on the fly."
+    ],
+    "correctAnswer": "A",
+    "explanation": "To access an object archived in Glacier storage classes, you must initiate a restore request, wait for the object to be restored, and then download it."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer needs to grant an external business partner access to a specific object in their S3 bucket. The partner should be able to use their own AWS account to access the object via API. What is a secure way to achieve this?",
+    "options": [
+      "A. Use an S3 bucket policy to grant read access to the object to the partner’s AWS account (by specifying their AWS Account ID or IAM role as principal).",
+      "B. Make the object public and share the URL.",
+      "C. Create an IAM user in your account for the partner and share the access key securely.",
+      "D. Enable static website hosting and give them the endpoint."
+    ],
+    "correctAnswer": "A",
+    "explanation": "A cross-account bucket policy granting read access to the partner’s AWS account is a secure and manageable way to share specific objects."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer in Account A needs to regularly access an S3 bucket in Account B. Account B’s administrator does not want to manage separate IAM users or keys for Account A’s developer. What is the best way to allow this access?",
+    "options": [
+      "A. Set up an IAM Role in Account B that grants the necessary S3 permissions, and allow Account A to assume that role (using IAM trust policy). The developer in Account A can then use STS to assume the role when needed.",
+      "B. Account B should create an IAM user for the developer and share the access key and secret.",
+      "C. Use Amazon Cognito to grant temporary access to the bucket.",
+      "D. Copy the objects to a bucket in Account A instead, to avoid cross-account issues."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using an IAM role with cross-account trust is the best practice to allow secure access without managing separate IAM credentials."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "A developer needs to change the storage class of tens of thousands of objects in a bucket (from Standard to Standard-IA) and move them to a different bucket for archival. Doing this via a script with individual copy operations would take too long. What feature can help automate this batch operation?",
+    "options": [
+      "A. Amazon S3 Batch Operations with a job to copy objects (with the new storage class) to the target bucket.",
+      "B. Use AWS DataSync to move the data between buckets and change storage class in transit.",
+      "C. Use the AWS CLI with --recursive and --storage-class flags in one command.",
+      "D. Create a lifecycle rule to transition all objects to Standard-IA and then another to move to the new bucket."
+    ],
+    "correctAnswer": "A",
+    "explanation": "Amazon S3 Batch Operations allows you to perform bulk actions on many objects, making it ideal for changing storage classes and copying objects between buckets."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "Amazon S3 Event Notifications support filtering so that you only trigger events for certain objects. What filters can be applied in an S3 Event Notification configuration?",
+    "options": [
+      "A. Prefix and/or suffix of the object key name (e.g., only objects under “photos/” or only “.jpg” files).",
+      "B. Object size (e.g., only >1 MB objects) and file type.",
+      "C. Object tags.",
+      "D. MIME type of the object content."
+    ],
+    "correctAnswer": "A",
+    "explanation": "S3 Event Notifications support filtering based on the object key’s prefix and/or suffix."
+  },
+  {
+    "topicID": "712ABEB8-DF64-4F99-8790-1DD825A43304",
+    "topic": "S3 & Storage Solutions",
+    "difficulty": "Beginner",
+    "questionText": "An application running in a private subnet (no internet access) of a VPC needs to read and write to an S3 bucket. What is the recommended solution to allow the application to access S3 without exposing it to the internet?",
+    "options": [
+      "A. Create a VPC Endpoint (Gateway Endpoint for S3) in the VPC.",
+      "B. Use a NAT Gateway to route S3 traffic through the internet.",
+      "C. Use AWS Direct Connect to connect the VPC to S3.",
+      "D. It’s not possible to access S3 from a VPC without internet access."
+    ],
+    "correctAnswer": "A",
+    "explanation": "A VPC Gateway Endpoint for S3 allows instances in a private subnet to access S3 without using the public internet."
+  }
+]

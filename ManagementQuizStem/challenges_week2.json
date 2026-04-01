@@ -1,0 +1,122 @@
+{
+  "id": "challenge-90234",
+  "type": "daily",
+  "title": "Intermediate Algebra Challenge",
+  "description": "Test your algebra skills with this intermediate-level challenge. Solve quadratic equations, systems of equations, and more!",
+  "startDate": "2024-11-27T00:00:00Z",
+  "endDate": "2024-12-04T00:00:00Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "001-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Solve for x: 3x² - 12 = 0",
+      "options": ["A) ±2", "B) ±3", "C) ±4", "D) ±6"],
+      "correctAnswer": "A",
+      "explanation": "Factorize 3x² - 12 = 3(x² - 4). Solving x² - 4 = 0 gives x = ±2."
+    },
+    {
+      "topicID": "002-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Solve for x: 2x - 3 = 7 and y: y + 2x = 10",
+      "options": [
+        "A) x = 5, y = 0",
+        "B) x = 3, y = 4",
+        "C) x = 2, y = 6",
+        "D) x = 4, y = 2"
+      ],
+      "correctAnswer": "A",
+      "explanation": "From 2x - 3 = 7, x = 5. Substituting into y + 2(5) = 10 gives y = 0."
+    },
+    {
+      "topicID": "003-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Simplify: (3x + 4)(2x - 5) - x²",
+      "options": ["A) 6x² - 7x - 20", "B) 5x² - 7x - 20", "C) 6x² - 8x - 20", "D) 5x² - 8x - 20"],
+      "correctAnswer": "B",
+      "explanation": "Expand (3x + 4)(2x - 5) = 6x² - 7x - 20. Subtract x²: 6x² - 7x - 20 - x² = 5x² - 7x - 20."
+    },
+    {
+      "topicID": "004-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Solve for x: 4x² + 12x + 9 = 0",
+      "options": ["A) -3/2", "B) ±3/2", "C) -3", "D) 3"],
+      "correctAnswer": "A",
+      "explanation": "Factorize 4x² + 12x + 9 = (2x + 3)². Solving 2x + 3 = 0 gives x = -3/2."
+    },
+    {
+      "topicID": "005-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Solve for x in the inequality: 2x - 5 < 9",
+      "options": ["A) x < 7", "B) x > 7", "C) x < 2", "D) x > 2"],
+      "correctAnswer": "A",
+      "explanation": "Add 5 to both sides: 2x < 14. Divide by 2: x < 7."
+    },
+    {
+      "topicID": "006-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "If 2x + y = 10 and x - y = 2, what is x?",
+      "options": ["A) 4", "B) 6", "C) 5", "D) 3"],
+      "correctAnswer": "C",
+      "explanation": "Add the two equations: (2x + y) + (x - y) = 10 + 2. Simplify to 3x = 12. Solve x = 4."
+    },
+    {
+      "topicID": "007-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Simplify: (x² + 2x + 1) ÷ (x + 1)",
+      "options": ["A) x", "B) x + 1", "C) x - 1", "D) x² + 2"],
+      "correctAnswer": "B",
+      "explanation": "x² + 2x + 1 is the expansion of (x + 1)². Divide by (x + 1) to get x + 1."
+    },
+    {
+      "topicID": "008-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Solve for x: |2x - 3| = 7",
+      "options": ["A) x = 5 or x = -2", "B) x = 5 or x = 2", "C) x = 4 or x = -4", "D) x = 3 or x = -3"],
+      "correctAnswer": "A",
+      "explanation": "Solve 2x - 3 = 7 to get x = 5. Solve 2x - 3 = -7 to get x = -2."
+    },
+    {
+      "topicID": "009-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "If x² + 4x - 21 = 0, what are the solutions?",
+      "options": ["A) 3 and -7", "B) 7 and -3", "C) 3 and -3", "D) 7 and 7"],
+      "correctAnswer": "A",
+      "explanation": "Factorize x² + 4x - 21 = (x + 7)(x - 3). Solutions are x = 3 and x = -7."
+    },
+    {
+      "topicID": "010-algebra",
+      "topic": "Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "Simplify: 4x³ ÷ 2x",
+      "options": ["A) 2x²", "B) 2x", "C) 4x²", "D) 8x"],
+      "correctAnswer": "A",
+      "explanation": "Simplify the coefficients and subtract exponents: 4x³ ÷ 2x = 2x²."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 300,
+      "description": "Earn 300 points for completing this challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'Algebra Solver' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2024-11-27T00:00:00Z",
+  "updatedAt": "2024-11-27T00:00:00Z"
+}

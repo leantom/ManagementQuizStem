@@ -1,0 +1,117 @@
+{
+  "id": "challenge-56791",
+  "type": "daily",
+  "title": "Biology Basics Challenge",
+  "description": "Explore the fundamentals of biology with this beginner-level daily challenge.",
+  "startDate": "2024-11-27T00:00:00Z",
+  "endDate": "2024-12-04T00:00:00Z",
+  "difficultyLevel": "Beginner",
+  "remainTime": 150,
+  "questions": [
+    {
+      "topicID": "001-cell-biology",
+      "topic": "Cell Biology",
+      "difficulty": "Beginner",
+      "questionText": "Which part of the cell contains the genetic material?",
+      "options": ["A) Cytoplasm", "B) Nucleus", "C) Ribosome", "D) Mitochondria"],
+      "correctAnswer": "B",
+      "explanation": "The nucleus houses the cell's genetic material, DNA, which controls cell functions."
+    },
+    {
+      "topicID": "002-anatomy-physiology",
+      "topic": "Anatomy & Physiology",
+      "difficulty": "Beginner",
+      "questionText": "What is the largest organ in the human body?",
+      "options": ["A) Liver", "B) Brain", "C) Skin", "D) Heart"],
+      "correctAnswer": "C",
+      "explanation": "The skin is the largest organ of the human body, providing a protective barrier."
+    },
+    {
+      "topicID": "003-ecology",
+      "topic": "Ecology",
+      "difficulty": "Beginner",
+      "questionText": "What is the term for organisms that produce their own food?",
+      "options": ["A) Consumers", "B) Producers", "C) Decomposers", "D) Scavengers"],
+      "correctAnswer": "B",
+      "explanation": "Producers, like plants, make their own food through photosynthesis."
+    },
+    {
+      "topicID": "004-genetics",
+      "topic": "Genetics",
+      "difficulty": "Beginner",
+      "questionText": "What is a segment of DNA that codes for a specific protein called?",
+      "options": ["A) Chromosome", "B) Gene", "C) RNA", "D) Codon"],
+      "correctAnswer": "B",
+      "explanation": "A gene is a segment of DNA that codes for a specific protein."
+    },
+    {
+      "topicID": "005-botany",
+      "topic": "Botany",
+      "difficulty": "Beginner",
+      "questionText": "What do plants absorb through their roots?",
+      "options": ["A) Sunlight", "B) Water", "C) Carbon dioxide", "D) Oxygen"],
+      "correctAnswer": "B",
+      "explanation": "Plants absorb water and nutrients through their roots to support growth and photosynthesis."
+    },
+    {
+      "topicID": "006-cell-biology",
+      "topic": "Cell Biology",
+      "difficulty": "Beginner",
+      "questionText": "Which of these is found in plant cells but not in animal cells?",
+      "options": ["A) Nucleus", "B) Cell wall", "C) Mitochondria", "D) Ribosome"],
+      "correctAnswer": "B",
+      "explanation": "Plant cells have a cell wall that provides structure and support, which animal cells lack."
+    },
+    {
+      "topicID": "007-microbiology",
+      "topic": "Microbiology",
+      "difficulty": "Beginner",
+      "questionText": "What is the primary role of bacteria in an ecosystem?",
+      "options": ["A) Producers", "B) Consumers", "C) Decomposers", "D) Predators"],
+      "correctAnswer": "C",
+      "explanation": "Bacteria act as decomposers, breaking down dead organisms and recycling nutrients."
+    },
+    {
+      "topicID": "008-anatomy-physiology",
+      "topic": "Anatomy & Physiology",
+      "difficulty": "Beginner",
+      "questionText": "Which system of the human body is responsible for transporting oxygen and nutrients?",
+      "options": ["A) Digestive system", "B) Respiratory system", "C) Circulatory system", "D) Nervous system"],
+      "correctAnswer": "C",
+      "explanation": "The circulatory system transports oxygen and nutrients through blood vessels to the body's tissues."
+    },
+    {
+      "topicID": "009-ecology",
+      "topic": "Ecology",
+      "difficulty": "Beginner",
+      "questionText": "What is the term for a close relationship between two organisms where at least one benefits?",
+      "options": ["A) Competition", "B) Predation", "C) Symbiosis", "D) Parasitism"],
+      "correctAnswer": "C",
+      "explanation": "Symbiosis refers to a close relationship between two organisms, such as mutualism, commensalism, or parasitism."
+    },
+    {
+      "topicID": "010-botany",
+      "topic": "Botany",
+      "difficulty": "Beginner",
+      "questionText": "What pigment gives plants their green color?",
+      "options": ["A) Chlorophyll", "B) Carotene", "C) Hemoglobin", "D) Melanin"],
+      "correctAnswer": "A",
+      "explanation": "Chlorophyll is the pigment in plants that absorbs sunlight and gives them their green color."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 150,
+      "description": "Earn 150 points for completing this beginner-level challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'Biology Explorer' badge for completing this challenge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2024-11-27T00:00:00Z",
+  "updatedAt": "2024-11-27T00:00:00Z"
+}

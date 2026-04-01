@@ -1,0 +1,904 @@
+[
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Beginner",
+        "questionText": "What is the purpose of a Punnett square?",
+        "options": [
+            "A) To determine the probability of a trait being expressed",
+            "B) To measure DNA sequences",
+            "C) To calculate mutation rates",
+            "D) To track evolutionary changes"
+        ],
+        "correctAnswer": "A",
+        "explanation": "A Punnett square is a tool used to predict the probability of offspring inheriting certain traits based on parental genotypes."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for a genetic condition where a single defective allele causes the disorder in males but not females?",
+        "options": [
+            "A) X-linked dominant",
+            "B) X-linked recessive",
+            "C) Y-linked",
+            "D) Autosomal recessive"
+        ],
+        "correctAnswer": "B",
+        "explanation": "X-linked recessive disorders are more common in males because they have only one X chromosome, so a single defective allele is sufficient to express the trait."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Intermediate",
+        "questionText": "What term describes the process by which organisms better adapted to their environment survive and reproduce?",
+        "options": [
+            "A) Genetic drift",
+            "B) Mutation",
+            "C) Natural selection",
+            "D) Speciation"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Natural selection is the mechanism by which organisms with advantageous traits are more likely to survive and reproduce."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "What is the Hardy-Weinberg equation used for?",
+        "options": [
+            "A) Predicting speciation rates",
+            "B) Determining allele frequencies in a population",
+            "C) Measuring mutation rates",
+            "D) Calculating evolutionary fitness"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Hardy-Weinberg equation is used to calculate the expected frequencies of alleles and genotypes in a population under no evolutionary forces."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Intermediate",
+        "questionText": "Which term refers to the non-living components of an ecosystem?",
+        "options": [
+            "A) Biotic factors",
+            "B) Abiotic factors",
+            "C) Trophic levels",
+            "D) Populations"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Abiotic factors are the non-living components of an ecosystem, such as temperature, sunlight, and soil."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "What type of succession occurs in an area that previously supported life but has been disturbed?",
+        "options": [
+            "A) Primary succession",
+            "B) Secondary succession",
+            "C) Tertiary succession",
+            "D) Climax succession"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Secondary succession occurs in areas where life previously existed but was removed due to disturbances like fires or floods."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the role of ribosomes in a cell?",
+        "options": [
+            "A) ATP production",
+            "B) Protein synthesis",
+            "C) DNA replication",
+            "D) Lipid storage"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Ribosomes are responsible for synthesizing proteins by translating messenger RNA (mRNA)."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which protein complex is responsible for the degradation of unneeded or damaged proteins in a cell?",
+        "options": [
+            "A) Proteasome",
+            "B) Lysosome",
+            "C) Ribosome",
+            "D) Golgi apparatus"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The proteasome is a protein complex that degrades unneeded or damaged proteins marked with ubiquitin."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Intermediate",
+        "questionText": "Which part of the human brain controls voluntary movements?",
+        "options": [
+            "A) Cerebellum",
+            "B) Cerebrum",
+            "C) Brainstem",
+            "D) Hypothalamus"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The cerebrum is responsible for voluntary movements, as well as other higher brain functions like memory and reasoning."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the functional unit of the kidney called?",
+        "options": [
+            "A) Alveolus",
+            "B) Glomerulus",
+            "C) Nephron",
+            "D) Loop of Henle"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The nephron is the functional unit of the kidney, responsible for filtering blood and forming urine."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the role of a bacterial capsule?",
+        "options": [
+            "A) Motility",
+            "B) Protection against phagocytosis",
+            "C) Genetic material transfer",
+            "D) Antibiotic resistance"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A bacterial capsule protects against phagocytosis by host immune cells, enhancing the bacterium's survival."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "Which component of bacterial cell walls is targeted by antibiotics like penicillin?",
+        "options": [
+            "A) Lipopolysaccharides",
+            "B) Peptidoglycan",
+            "C) Flagella",
+            "D) Plasmids"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Peptidoglycan is a key component of bacterial cell walls targeted by antibiotics such as penicillin, disrupting cell wall synthesis."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the function of restriction enzymes in molecular biology?",
+        "options": [
+            "A) Synthesizing RNA",
+            "B) Cutting DNA at specific sequences",
+            "C) Repairing DNA strands",
+            "D) Replicating DNA"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Restriction enzymes recognize specific DNA sequences and cut the DNA, which is useful in genetic engineering and analysis."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which RNA molecule is involved in splicing introns out of pre-mRNA?",
+        "options": [
+            "A) mRNA",
+            "B) tRNA",
+            "C) rRNA",
+            "D) snRNA"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Small nuclear RNA (snRNA) is involved in splicing introns out of pre-mRNA as part of the spliceosome complex."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Intermediate",
+        "questionText": "What is the function of stomata in plant leaves?",
+        "options": [
+            "A) Absorption of water",
+            "B) Transport of nutrients",
+            "C) Gas exchange",
+            "D) Photosynthesis"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Stomata are small openings on leaves that regulate gas exchange, including the uptake of carbon dioxide and release of oxygen."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "Which layer of a leaf contains the most chloroplasts?",
+        "options": [
+            "A) Cuticle",
+            "B) Epidermis",
+            "C) Palisade mesophyll",
+            "D) Spongy mesophyll"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The palisade mesophyll contains the highest concentration of chloroplasts, making it the primary site of photosynthesis."
+    },
+    
+    
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Beginner",
+        "questionText": "Which molecule is the carrier of genetic information in most living organisms?",
+        "options": [
+            "A) RNA",
+            "B) DNA",
+            "C) Protein",
+            "D) Lipid"
+        ],
+        "correctAnswer": "B",
+        "explanation": "DNA (deoxyribonucleic acid) is the molecule that carries genetic information in most living organisms."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "What is the name of the process by which homologous chromosomes exchange genetic material during meiosis?",
+        "options": [
+            "A) Independent assortment",
+            "B) Crossing over",
+            "C) Mutation",
+            "D) Recombination"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Crossing over occurs during meiosis when homologous chromosomes exchange genetic material, increasing genetic diversity."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Beginner",
+        "questionText": "What is the study of the distribution of species and ecosystems in geographic space and through time?",
+        "options": [
+            "A) Biogeography",
+            "B) Ecology",
+            "C) Paleontology",
+            "D) Evolutionary biology"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Biogeography is the study of the distribution of species and ecosystems over space and time."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "What type of speciation occurs without geographic isolation?",
+        "options": [
+            "A) Allopatric speciation",
+            "B) Sympatric speciation",
+            "C) Parapatric speciation",
+            "D) Peripatric speciation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Sympatric speciation occurs when new species evolve from a single ancestral species while inhabiting the same geographic region."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Beginner",
+        "questionText": "What is the term for a group of different species that live together in a defined area?",
+        "options": [
+            "A) Ecosystem",
+            "B) Community",
+            "C) Population",
+            "D) Biome"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A community consists of different species living together in the same area and interacting with one another."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "Which term describes the flow of nutrients between biotic and abiotic components of an ecosystem?",
+        "options": [
+            "A) Trophic cycle",
+            "B) Energy flow",
+            "C) Biogeochemical cycle",
+            "D) Food web"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Biogeochemical cycles describe the flow of nutrients like carbon, nitrogen, and phosphorus between living and non-living components of an ecosystem."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Beginner",
+        "questionText": "What is the liquid component inside a cell where organelles are suspended?",
+        "options": [
+            "A) Cytoplasm",
+            "B) Nucleus",
+            "C) Vacuole",
+            "D) Endoplasmic reticulum"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The cytoplasm is the gel-like substance inside a cell, excluding the nucleus, where organelles are suspended."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "What is the role of the peroxisome in eukaryotic cells?",
+        "options": [
+            "A) Energy production",
+            "B) Protein synthesis",
+            "C) Breakdown of hydrogen peroxide",
+            "D) DNA replication"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Peroxisomes contain enzymes that break down hydrogen peroxide, a byproduct of metabolic reactions, into water and oxygen."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Beginner",
+        "questionText": "What is the largest organ in the human body?",
+        "options": [
+            "A) Liver",
+            "B) Skin",
+            "C) Heart",
+            "D) Lungs"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The skin is the largest organ in the human body, covering the entire surface and providing protection and regulation."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the primary function of the myelin sheath in the nervous system?",
+        "options": [
+            "A) Insulating axons to speed up nerve impulses",
+            "B) Protecting the brain from injury",
+            "C) Regulating neurotransmitter release",
+            "D) Generating electrical signals"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The myelin sheath insulates axons, allowing electrical impulses to travel more quickly along nerve cells."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Beginner",
+        "questionText": "Which microorganism is used in the production of yogurt?",
+        "options": [
+            "A) Saccharomyces cerevisiae",
+            "B) Lactobacillus",
+            "C) Escherichia coli",
+            "D) Penicillium"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Lactobacillus bacteria are used in yogurt production, converting lactose into lactic acid and giving yogurt its tangy flavor."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the name of the genetic material exchange between bacteria through direct contact?",
+        "options": [
+            "A) Transformation",
+            "B) Conjugation",
+            "C) Transduction",
+            "D) Binary fission"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Conjugation is the process where bacteria exchange genetic material through direct contact, often mediated by a pilus."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Beginner",
+        "questionText": "What is the role of mRNA in protein synthesis?",
+        "options": [
+            "A) Catalyzing reactions",
+            "B) Carrying genetic information to ribosomes",
+            "C) Binding amino acids",
+            "D) Transferring DNA to the cytoplasm"
+        ],
+        "correctAnswer": "B",
+        "explanation": "mRNA carries genetic information from DNA to ribosomes, where it is used as a template for protein synthesis."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which process is responsible for repairing mismatched bases during DNA replication?",
+        "options": [
+            "A) Base excision repair",
+            "B) Mismatch repair",
+            "C) Nucleotide excision repair",
+            "D) Non-homologous end joining"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Mismatch repair corrects mismatched base pairs that are accidentally incorporated during DNA replication."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Beginner",
+        "questionText": "What is the main function of roots in a plant?",
+        "options": [
+            "A) Photosynthesis",
+            "B) Absorption of water and nutrients",
+            "C) Reproduction",
+            "D) Transport of food"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Roots absorb water and nutrients from the soil and anchor the plant in place."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "Which type of plant tissue is responsible for transporting sugars throughout the plant?",
+        "options": [
+            "A) Xylem",
+            "B) Phloem",
+            "C) Cambium",
+            "D) Collenchyma"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Phloem is responsible for transporting sugars produced during photosynthesis from leaves to other parts of the plant."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Intermediate",
+        "questionText": "What term describes alternative forms of a gene?",
+        "options": [
+            "A) Chromosomes",
+            "B) Alleles",
+            "C) Loci",
+            "D) Traits"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Alleles are alternative forms of a gene found at the same locus on homologous chromosomes."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "What is the phenomenon where the expression of one gene is suppressed by another non-allelic gene?",
+        "options": [
+            "A) Codominance",
+            "B) Epistasis",
+            "C) Pleiotropy",
+            "D) Polygenic inheritance"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Epistasis occurs when one gene interferes with or suppresses the expression of another non-allelic gene."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Intermediate",
+        "questionText": "What is the term for a change in allele frequency in a population due to random events?",
+        "options": [
+            "A) Natural selection",
+            "B) Genetic drift",
+            "C) Gene flow",
+            "D) Bottleneck effect"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Genetic drift refers to random changes in allele frequencies in a population, especially significant in small populations."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "Which scientist proposed the theory of inheritance of acquired characteristics?",
+        "options": [
+            "A) Charles Darwin",
+            "B) Alfred Wallace",
+            "C) Jean-Baptiste Lamarck",
+            "D) Gregor Mendel"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Jean-Baptiste Lamarck proposed that organisms acquire traits during their lifetime and pass them to their offspring, though this theory is not supported by modern genetics."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Intermediate",
+        "questionText": "What term describes the interdependent evolution of two interacting species?",
+        "options": [
+            "A) Convergent evolution",
+            "B) Divergent evolution",
+            "C) Coevolution",
+            "D) Speciation"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Coevolution occurs when two species influence each other's evolution due to close ecological interactions."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "Which term describes the movement of individuals out of a population?",
+        "options": [
+            "A) Immigration",
+            "B) Emigration",
+            "C) Migration",
+            "D) Dispersion"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Emigration is the movement of individuals out of a population, potentially reducing population size and genetic diversity."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the primary function of mitochondria?",
+        "options": [
+            "A) Protein synthesis",
+            "B) ATP production",
+            "C) Photosynthesis",
+            "D) DNA replication"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Mitochondria are known as the powerhouse of the cell because they produce ATP through cellular respiration."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "What is the role of the nucleolus within the nucleus?",
+        "options": [
+            "A) DNA storage",
+            "B) Ribosome synthesis",
+            "C) RNA splicing",
+            "D) Chromosome separation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The nucleolus is responsible for synthesizing ribosomal RNA (rRNA) and assembling ribosome subunits."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Intermediate",
+        "questionText": "Which system in the human body is responsible for producing hormones?",
+        "options": [
+            "A) Nervous system",
+            "B) Digestive system",
+            "C) Endocrine system",
+            "D) Circulatory system"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The endocrine system consists of glands that produce hormones to regulate bodily functions such as growth, metabolism, and reproduction."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "Which structure in the heart prevents backflow of blood from the left ventricle into the left atrium?",
+        "options": [
+            "A) Aortic valve",
+            "B) Mitral valve",
+            "C) Tricuspid valve",
+            "D) Pulmonary valve"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The mitral valve, also known as the bicuspid valve, prevents the backflow of blood from the left ventricle into the left atrium."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Intermediate",
+        "questionText": "What is the main structural component of fungal cell walls?",
+        "options": [
+            "A) Cellulose",
+            "B) Chitin",
+            "C) Peptidoglycan",
+            "D) Glycogen"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Fungal cell walls are primarily composed of chitin, a strong polysaccharide also found in arthropod exoskeletons."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "Which phase of bacterial growth is characterized by rapid cell division?",
+        "options": [
+            "A) Lag phase",
+            "B) Log phase",
+            "C) Stationary phase",
+            "D) Death phase"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The log phase, or exponential phase, is when bacteria divide rapidly, leading to an exponential increase in population size."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Intermediate",
+        "questionText": "Which enzyme is responsible for synthesizing the RNA strand during transcription?",
+        "options": [
+            "A) DNA polymerase",
+            "B) RNA polymerase",
+            "C) Helicase",
+            "D) Ligase"
+        ],
+        "correctAnswer": "B",
+        "explanation": "RNA polymerase synthesizes an RNA strand complementary to the DNA template during transcription."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which molecular process allows for the cutting and rearrangement of DNA sequences in genetic engineering?",
+        "options": [
+            "A) PCR",
+            "B) Gel electrophoresis",
+            "C) CRISPR-Cas9",
+            "D) Southern blotting"
+        ],
+        "correctAnswer": "C",
+        "explanation": "CRISPR-Cas9 is a gene-editing tool that allows for precise cutting and modification of DNA sequences in genetic engineering."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Intermediate",
+        "questionText": "What is the main function of guard cells in a plant leaf?",
+        "options": [
+            "A) Transport nutrients",
+            "B) Control gas exchange",
+            "C) Store water",
+            "D) Protect against pathogens"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Guard cells control the opening and closing of stomata, regulating gas exchange and water loss in plants."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "Which plant hormone is primarily responsible for stimulating cell elongation?",
+        "options": [
+            "A) Cytokinin",
+            "B) Auxin",
+            "C) Gibberellin",
+            "D) Ethylene"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Auxin stimulates cell elongation, plays a role in phototropism, and regulates other aspects of plant growth and development."
+    }
+    ,
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Beginner",
+        "questionText": "What is the basic unit of heredity?",
+        "options": [
+            "A) Chromosome",
+            "B) Gene",
+            "C) Allele",
+            "D) DNA"
+        ],
+        "correctAnswer": "B",
+        "explanation": "A gene is the basic unit of heredity, encoding the information needed to produce a protein or RNA molecule."
+    },
+    {
+        "topicID": 1,
+        "topic": "Genetics",
+        "difficulty": "Advanced",
+        "questionText": "What is the process called when segments of DNA are exchanged between homologous chromosomes during meiosis?",
+        "options": [
+            "A) Independent assortment",
+            "B) Gene duplication",
+            "C) Crossing over",
+            "D) Translocation"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Crossing over is the exchange of genetic material between homologous chromosomes during meiosis, contributing to genetic diversity."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Beginner",
+        "questionText": "Which term describes the variety of life in an ecosystem?",
+        "options": [
+            "A) Biogeography",
+            "B) Biodiversity",
+            "C) Speciation",
+            "D) Symbiosis"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Biodiversity refers to the variety of life in an ecosystem, including species richness, genetic diversity, and ecosystem variety."
+    },
+    {
+        "topicID": 2,
+        "topic": "Evolution",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for evolutionary changes that occur at or above the species level?",
+        "options": [
+            "A) Microevolution",
+            "B) Macroevolution",
+            "C) Genetic drift",
+            "D) Phylogenetics"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Macroevolution refers to large-scale evolutionary changes, such as the formation of new species or groups of species."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Beginner",
+        "questionText": "What is the primary source of energy for most ecosystems?",
+        "options": [
+            "A) Water",
+            "B) Sunlight",
+            "C) Soil",
+            "D) Decomposers"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Sunlight is the primary source of energy for most ecosystems, driving photosynthesis and supporting food webs."
+    },
+    {
+        "topicID": 3,
+        "topic": "Ecology",
+        "difficulty": "Advanced",
+        "questionText": "Which term describes the maximum number of individuals an ecosystem can sustain?",
+        "options": [
+            "A) Population size",
+            "B) Carrying capacity",
+            "C) Biotic potential",
+            "D) Logistic growth"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Carrying capacity is the maximum number of individuals that an ecosystem can sustain based on resource availability."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Beginner",
+        "questionText": "What is the function of the Golgi apparatus?",
+        "options": [
+            "A) Synthesizing proteins",
+            "B) Packaging and modifying proteins",
+            "C) Producing energy",
+            "D) Breaking down waste"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The Golgi apparatus packages, modifies, and ships proteins and lipids produced in the endoplasmic reticulum."
+    },
+    {
+        "topicID": 4,
+        "topic": "Cell Biology",
+        "difficulty": "Advanced",
+        "questionText": "What is the role of microtubules in eukaryotic cells?",
+        "options": [
+            "A) Transporting vesicles",
+            "B) Maintaining cell shape",
+            "C) Facilitating cell division",
+            "D) All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Microtubules are part of the cytoskeleton and are involved in vesicle transport, maintaining cell shape, and facilitating cell division."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Beginner",
+        "questionText": "Which organ is responsible for filtering blood and producing urine?",
+        "options": [
+            "A) Liver",
+            "B) Kidney",
+            "C) Pancreas",
+            "D) Spleen"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The kidneys filter blood, remove waste, and produce urine as part of the excretory system."
+    },
+    {
+        "topicID": 5,
+        "topic": "Anatomy & Physiology",
+        "difficulty": "Advanced",
+        "questionText": "Which neurotransmitter is primarily associated with muscle contraction?",
+        "options": [
+            "A) Dopamine",
+            "B) Acetylcholine",
+            "C) Serotonin",
+            "D) GABA"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Acetylcholine is the neurotransmitter that stimulates muscle contraction by transmitting signals at neuromuscular junctions."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Beginner",
+        "questionText": "Which microorganism is used in bread-making?",
+        "options": [
+            "A) Lactobacillus",
+            "B) Saccharomyces cerevisiae",
+            "C) Escherichia coli",
+            "D) Bacillus subtilis"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Saccharomyces cerevisiae, commonly known as baker's yeast, is used in bread-making to ferment sugars and produce carbon dioxide."
+    },
+    {
+        "topicID": 6,
+        "topic": "Microbiology",
+        "difficulty": "Advanced",
+        "questionText": "What is the term for viruses that infect bacteria?",
+        "options": [
+            "A) Retroviruses",
+            "B) Bacteriophages",
+            "C) Prions",
+            "D) Viroids"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Bacteriophages are viruses that infect bacteria, often used as tools in molecular biology and genetic research."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Beginner",
+        "questionText": "What does DNA stand for?",
+        "options": [
+            "A) Deoxyribonucleic acid",
+            "B) Deoxyribose nucleotide acid",
+            "C) Double nucleotide acid",
+            "D) Duplex nucleic acid"
+        ],
+        "correctAnswer": "A",
+        "explanation": "DNA stands for deoxyribonucleic acid, the molecule that carries genetic information in cells."
+    },
+    {
+        "topicID": 7,
+        "topic": "Molecular Biology",
+        "difficulty": "Advanced",
+        "questionText": "Which type of RNA carries amino acids to ribosomes during translation?",
+        "options": [
+            "A) mRNA",
+            "B) tRNA",
+            "C) rRNA",
+            "D) snRNA"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Transfer RNA (tRNA) carries amino acids to ribosomes during translation to assemble polypeptides based on mRNA codons."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Beginner",
+        "questionText": "Which pigment gives plants their green color?",
+        "options": [
+            "A) Carotenoids",
+            "B) Chlorophyll",
+            "C) Anthocyanins",
+            "D) Xanthophyll"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Chlorophyll is the green pigment in plants that absorbs light for photosynthesis."
+    },
+    {
+        "topicID": 8,
+        "topic": "Botany",
+        "difficulty": "Advanced",
+        "questionText": "Which process involves the transfer of pollen from anther to stigma?",
+        "options": [
+            "A) Fertilization",
+            "B) Pollination",
+            "C) Germination",
+            "D) Propagation"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Pollination is the process by which pollen is transferred from the anther to the stigma, allowing fertilization to occur."
+    }
+    
+    
+]
+ 

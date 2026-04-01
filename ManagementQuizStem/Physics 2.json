@@ -1,0 +1,221 @@
+
+[
+  {
+    "topicID": "567mno89-0123-4pqr-stuv-wxy123456789",
+    "topic": "Relativity",
+    "difficulty": "Beginner",
+    "questionText": "What is the speed of light in a vacuum?",
+    "options": ["A) 3 × 10^6 m/s", "B) 3 × 10^7 m/s", "C) 3 × 10^8 m/s", "D) 3 × 10^9 m/s"],
+    "correctAnswer": "C",
+    "explanation": "The speed of light in a vacuum is 3 × 10^8 m/s."
+  },
+  {
+    "topicID": "567mno89-0123-4pqr-stuv-wxy123456789",
+    "topic": "Relativity",
+    "difficulty": "Intermediate",
+    "questionText": "Which principle states that the laws of physics are the same in all inertial reference frames?",
+    "options": ["A) Principle of Invariance", "B) Principle of Relativity", "C) Lorentz Transformation", "D) Special Theory of Relativity"],
+    "correctAnswer": "B",
+    "explanation": "The Principle of Relativity states that the laws of physics are identical in all inertial reference frames."
+  },
+  {
+    "topicID": "567mno89-0123-4pqr-stuv-wxy123456789",
+    "topic": "Relativity",
+    "difficulty": "Advanced",
+    "questionText": "An observer measures the length of a moving rod as 2 m, while its rest length is 3 m. What is the speed of the rod relative to the observer? (c = 3 × 10^8 m/s)",
+    "options": ["A) 0.33c", "B) 0.5c", "C) 0.66c", "D) 0.75c"],
+    "correctAnswer": "D",
+    "explanation": "Length contraction formula: L = L₀√(1 - v²/c²) → 2 = 3√(1 - v²/c²) → (2/3)² = 1 - v²/c² → v/c = √(1 - (4/9)) = √(5/9) = 0.75c."
+  },
+  {
+    "topicID": "678pqr90-1234-5stu-vwxy-z123456789ab",
+    "topic": "Optics",
+    "difficulty": "Beginner",
+    "questionText": "What is the angle of incidence if the angle of reflection is 45°?",
+    "options": ["A) 30°", "B) 45°", "C) 60°", "D) 90°"],
+    "correctAnswer": "B",
+    "explanation": "According to the law of reflection, the angle of incidence equals the angle of reflection, so the angle of incidence is 45°."
+  },
+  {
+    "topicID": "678pqr90-1234-5stu-vwxy-z123456789ab",
+    "topic": "Optics",
+    "difficulty": "Intermediate",
+    "questionText": "A beam of light passes from water (n = 1.33) into glass (n = 1.5) at an angle of 30°. What is the angle of refraction?",
+    "options": ["A) 19.3°", "B) 25.4°", "C) 27.6°", "D) 32.1°"],
+    "correctAnswer": "B",
+    "explanation": "Using Snell's Law: n₁sinθ₁ = n₂sinθ₂ → 1.33sin30° = 1.5sinθ₂ → sinθ₂ = (1.33 × 0.5)/1.5 → θ₂ = sin⁻¹(0.443) ≈ 25.4°."
+  },
+  {
+    "topicID": "678pqr90-1234-5stu-vwxy-z123456789ab",
+    "topic": "Optics",
+    "difficulty": "Advanced",
+    "questionText": "A concave mirror has a focal length of 10 cm. An object is placed 15 cm from the mirror. What is the image distance?",
+    "options": ["A) 30 cm", "B) 20 cm", "C) 15 cm", "D) 10 cm"],
+    "correctAnswer": "A",
+    "explanation": "Using the mirror formula: 1/f = 1/v + 1/u → 1/10 = 1/v + 1/15 → 1/v = (3 - 2)/30 → v = 30 cm."
+  },
+  {
+    "topicID": "789stu01-2345-6vwxy-z123-abcdef456789",
+    "topic": "Electromagnetism",
+    "difficulty": "Beginner",
+    "questionText": "What happens to the resistance of a conductor when its length is doubled?",
+    "options": ["A) It halves", "B) It doubles", "C) It remains the same", "D) It quadruples"],
+    "correctAnswer": "B",
+    "explanation": "Resistance R = ρL/A. If the length L doubles, the resistance also doubles."
+  },
+  {
+    "topicID": "789stu01-2345-6vwxy-z123-abcdef456789",
+    "topic": "Electromagnetism",
+    "difficulty": "Intermediate",
+    "questionText": "A wire carries a current of 2 A and is placed in a magnetic field of 0.5 T. If the wire is 0.3 m long and perpendicular to the field, what is the force on the wire?",
+    "options": ["A) 0.15 N", "B) 0.3 N", "C) 0.6 N", "D) 1.0 N"],
+    "correctAnswer": "C",
+    "explanation": "Magnetic force F = BILsinθ → F = 0.5 × 2 × 0.3 × sin90° = 0.6 N."
+  },
+  {
+    "topicID": "789stu01-2345-6vwxy-z123-abcdef456789",
+    "topic": "Electromagnetism",
+    "difficulty": "Advanced",
+    "questionText": "A capacitor is connected to a 100 V battery and has a capacitance of 5 µF. What is the energy stored in the capacitor?",
+    "options": ["A) 0.025 J", "B) 0.05 J", "C) 0.25 J", "D) 0.5 J"],
+    "correctAnswer": "C",
+    "explanation": "Energy stored = (1/2)CV² → E = (1/2)(5 × 10⁻⁶)(100)² = 0.25 J."
+  },
+  {
+    "topicID": "890vwx12-3456-7yzab-cdef-ghijkl123456",
+    "topic": "Thermodynamics",
+    "difficulty": "Beginner",
+    "questionText": "Which law states that energy cannot be created or destroyed, only transformed?",
+    "options": ["A) Zeroth Law", "B) First Law", "C) Second Law", "D) Third Law"],
+    "correctAnswer": "B",
+    "explanation": "The First Law of Thermodynamics states that energy is conserved and cannot be created or destroyed."
+  },
+  {
+    "topicID": "890vwx12-3456-7yzab-cdef-ghijkl123456",
+    "topic": "Thermodynamics",
+    "difficulty": "Intermediate",
+    "questionText": "A gas absorbs 500 J of heat and does 200 J of work. What is the change in its internal energy?",
+    "options": ["A) 200 J", "B) 300 J", "C) 500 J", "D) 700 J"],
+    "correctAnswer": "B",
+    "explanation": "Using the First Law of Thermodynamics: ΔU = Q - W → ΔU = 500 - 200 = 300 J."
+  },
+  {
+    "topicID": "890vwx12-3456-7yzab-cdef-ghijkl123456",
+    "topic": "Thermodynamics",
+    "difficulty": "Advanced",
+    "questionText": "What is the entropy change when 100 J of heat is absorbed reversibly by a system at 300 K?",
+    "options": ["A) 0.3 J/K", "B) 0.33 J/K", "C) 0.35 J/K", "D) 0.4 J/K"],
+    "correctAnswer": "B",
+    "explanation": "Entropy change ΔS = Q/T → ΔS = 100/300 = 0.33 J/K."
+  }
+  ,
+    {
+      "topicID": "901xyz34-5678-9abcd-efgh-ijklmnopqrst",
+      "topic": "Relativity",
+      "difficulty": "Beginner",
+      "questionText": "What is the relationship between energy (E), mass (m), and the speed of light (c) in Einstein's equation?",
+      "options": ["A) E = mc²", "B) E = mv²", "C) E = 1/2 mv²", "D) E = mc"],
+      "correctAnswer": "A",
+      "explanation": "Einstein's equation, E = mc², shows the equivalence of mass and energy."
+    },
+    {
+      "topicID": "901xyz34-5678-9abcd-efgh-ijklmnopqrst",
+      "topic": "Relativity",
+      "difficulty": "Intermediate",
+      "questionText": "A clock on a spaceship moving at 0.9c runs slower than a stationary clock by what factor?",
+      "options": ["A) 0.44", "B) 0.66", "C) 0.77", "D) 0.87"],
+      "correctAnswer": "C",
+      "explanation": "Time dilation factor = √(1 - v²/c²) = √(1 - 0.81) = √0.19 ≈ 0.77."
+    },
+    {
+      "topicID": "901xyz34-5678-9abcd-efgh-ijklmnopqrst",
+      "topic": "Relativity",
+      "difficulty": "Advanced",
+      "questionText": "What is the energy of a 1 kg object moving at 0.9c? (c = 3 × 10⁸ m/s)",
+      "options": ["A) 5 × 10¹⁶ J", "B) 7 × 10¹⁶ J", "C) 1.29 × 10¹⁷ J", "D) 1.81 × 10¹⁷ J"],
+      "correctAnswer": "C",
+      "explanation": "Relativistic energy = γmc², where γ = 1/√(1 - v²/c²). γ = 1/√(1 - 0.81) = 2.294. E = 2.294 × 1 × (3 × 10⁸)² ≈ 1.29 × 10¹⁷ J."
+    },
+    {
+      "topicID": "123abc45-6789-0def-ghij-klmn12345678",
+      "topic": "Optics",
+      "difficulty": "Beginner",
+      "questionText": "Which type of lens is used to correct farsightedness?",
+      "options": ["A) Convex lens", "B) Concave lens", "C) Cylindrical lens", "D) Plane mirror"],
+      "correctAnswer": "A",
+      "explanation": "A convex lens converges light rays and is used to correct farsightedness."
+    },
+    {
+      "topicID": "123abc45-6789-0def-ghij-klmn12345678",
+      "topic": "Optics",
+      "difficulty": "Intermediate",
+      "questionText": "If the focal length of a convex lens is 20 cm, what is its power in diopters?",
+      "options": ["A) 2.5 D", "B) 3 D", "C) 5 D", "D) 10 D"],
+      "correctAnswer": "C",
+      "explanation": "Power (P) = 100/focal length (in cm). P = 100/20 = 5 D."
+    },
+    {
+      "topicID": "123abc45-6789-0def-ghij-klmn12345678",
+      "topic": "Optics",
+      "difficulty": "Advanced",
+      "questionText": "A ray of light passes through a prism with an angle of incidence of 45°. The angle of deviation is 40°. What is the refractive index of the prism if the angle of the prism is 30°?",
+      "options": ["A) 1.33", "B) 1.41", "C) 1.52", "D) 1.62"],
+      "correctAnswer": "C",
+      "explanation": "Using prism formula: n = sin((A + δ)/2)/sin(A/2). Here, n = sin((30 + 40)/2)/sin(30/2) = sin(35)/sin(15) ≈ 1.52."
+    },
+    {
+      "topicID": "345ghi67-8901-2jkl-mnop-qrt123456789",
+      "topic": "Thermodynamics",
+      "difficulty": "Beginner",
+      "questionText": "Which law of thermodynamics states that entropy of an isolated system always increases?",
+      "options": ["A) First Law", "B) Second Law", "C) Third Law", "D) Zeroth Law"],
+      "correctAnswer": "B",
+      "explanation": "The Second Law of Thermodynamics states that entropy of an isolated system always increases over time."
+    },
+    {
+      "topicID": "345ghi67-8901-2jkl-mnop-qrt123456789",
+      "topic": "Thermodynamics",
+      "difficulty": "Intermediate",
+      "questionText": "A heat engine absorbs 600 J of heat from the hot reservoir and expels 400 J to the cold reservoir. What is its efficiency?",
+      "options": ["A) 20%", "B) 33.3%", "C) 40%", "D) 50%"],
+      "correctAnswer": "C",
+      "explanation": "Efficiency = (Work output/Heat input) × 100 = [(600 - 400)/600] × 100 = 200/600 × 100 = 40%."
+    },
+    {
+      "topicID": "345ghi67-8901-2jkl-mnop-qrt123456789",
+      "topic": "Thermodynamics",
+      "difficulty": "Advanced",
+      "questionText": "Calculate the work done in an isothermal expansion of 1 mole of an ideal gas from 1 L to 4 L at 300 K. (R = 8.31 J/mol·K)",
+      "options": ["A) 2765 J", "B) 3457 J", "C) 4153 J", "D) 4981 J"],
+      "correctAnswer": "A",
+      "explanation": "Work done in isothermal expansion: W = nRT ln(V₂/V₁). W = 1 × 8.31 × 300 × ln(4/1) ≈ 2765 J."
+    },
+    {
+      "topicID": "567jkl89-0123-4mno-pqrt-stuv123456789",
+      "topic": "Electromagnetism",
+      "difficulty": "Beginner",
+      "questionText": "What is the unit of electric charge?",
+      "options": ["A) Ampere", "B) Coulomb", "C) Ohm", "D) Volt"],
+      "correctAnswer": "B",
+      "explanation": "The SI unit of electric charge is the Coulomb (C)."
+    },
+    {
+      "topicID": "567jkl89-0123-4mno-pqrt-stuv123456789",
+      "topic": "Electromagnetism",
+      "difficulty": "Intermediate",
+      "questionText": "Two charges of +1 C and -1 C are placed 1 m apart. What is the force between them? (k = 9 × 10⁹ N·m²/C²)",
+      "options": ["A) 9 × 10⁸ N", "B) 9 × 10⁹ N", "C) 9 × 10¹⁰ N", "D) 9 × 10¹¹ N"],
+      "correctAnswer": "B",
+      "explanation": "Force F = k(q₁q₂)/r² = (9 × 10⁹ × 1 × 1)/1² = 9 × 10⁹ N."
+    },
+    {
+      "topicID": "567jkl89-0123-4mno-pqrt-stuv123456789",
+      "topic": "Electromagnetism",
+      "difficulty": "Advanced",
+      "questionText": "What is the magnetic field at the center of a circular loop of radius 0.2 m carrying a current of 5 A? (μ₀ = 4π × 10⁻⁷ T·m/A)",
+      "options": ["A) 5 × 10⁻⁶ T", "B) 1.57 × 10⁻⁵ T", "C) 3.14 × 10⁻⁵ T", "D) 4.71 × 10⁻⁵ T"],
+      "correctAnswer": "C",
+      "explanation": "Magnetic field B = μ₀I/2r = (4π × 10⁻⁷ × 5)/(2 × 0.2) ≈ 3.14 × 10⁻⁵ T."
+    }
+  ]
+

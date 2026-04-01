@@ -1,0 +1,72 @@
+{
+  "id": "challenge-56789",
+  "type": "daily",
+  "title": "Beginner Biology Challenge",
+  "description": "Learn and test your understanding of basic biology concepts with this beginner-level challenge!",
+  "startDate": "2024-11-27T00:00:00Z",
+  "endDate": "2024-12-04T00:00:00Z",
+  "difficultyLevel": "Beginner",
+  "remainTime": 150,
+  "questions": [
+    {
+      "topicID": "001-cell-biology",
+      "topic": "Cell Biology",
+      "difficulty": "Beginner",
+      "questionText": "What is the basic unit of life?",
+      "options": ["A) Atom", "B) Cell", "C) Organ", "D) Tissue"],
+      "correctAnswer": "B",
+      "explanation": "The cell is the smallest unit of life that can perform all life processes."
+    },
+    {
+      "topicID": "002-anatomy-physiology",
+      "topic": "Anatomy & Physiology",
+      "difficulty": "Beginner",
+      "questionText": "Which organ pumps blood throughout the body?",
+      "options": ["A) Brain", "B) Lungs", "C) Heart", "D) Liver"],
+      "correctAnswer": "C",
+      "explanation": "The heart pumps blood throughout the body via the circulatory system."
+    },
+    {
+      "topicID": "003-ecology",
+      "topic": "Ecology",
+      "difficulty": "Beginner",
+      "questionText": "What do we call a group of the same species living in the same area?",
+      "options": ["A) Ecosystem", "B) Community", "C) Population", "D) Habitat"],
+      "correctAnswer": "C",
+      "explanation": "A population is a group of organisms of the same species living in the same area."
+    },
+    {
+      "topicID": "004-genetics",
+      "topic": "Genetics",
+      "difficulty": "Beginner",
+      "questionText": "What molecule carries genetic information?",
+      "options": ["A) RNA", "B) DNA", "C) Protein", "D) Lipid"],
+      "correctAnswer": "B",
+      "explanation": "DNA (deoxyribonucleic acid) is the molecule that carries genetic information."
+    },
+    {
+      "topicID": "005-botany",
+      "topic": "Botany",
+      "difficulty": "Beginner",
+      "questionText": "Which part of a plant is responsible for photosynthesis?",
+      "options": ["A) Root", "B) Stem", "C) Leaf", "D) Flower"],
+      "correctAnswer": "C",
+      "explanation": "The leaf contains chlorophyll, which captures sunlight for photosynthesis."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 150,
+      "description": "Earn 150 points for completing this beginner-level challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'Biology Starter' badge for completing this challenge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2024-11-27T00:00:00Z",
+  "updatedAt": "2024-11-27T00:00:00Z"
+}

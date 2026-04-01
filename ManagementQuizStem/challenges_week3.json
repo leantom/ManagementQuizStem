@@ -1,0 +1,132 @@
+{
+  "id": "challenge-12345",
+  "type": "daily",
+  "title": "Intermediate Biology Challenge",
+  "description": "Test your knowledge of biology with this intermediate-level challenge. Topics include genetics, evolution, ecology, and more!",
+  "startDate": "2024-11-27T00:00:00Z",
+  "endDate": "2024-12-04T00:00:00Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "001-genetics",
+      "topic": "Genetics",
+      "difficulty": "Intermediate",
+      "questionText": "In Mendelian genetics, what is the expected phenotypic ratio in a dihybrid cross of two heterozygous individuals?",
+      "options": ["A) 3:1", "B) 9:3:3:1", "C) 1:2:1", "D) 1:1"],
+      "correctAnswer": "B",
+      "explanation": "In a dihybrid cross of heterozygous individuals, the phenotypic ratio is 9:3:3:1, representing the combinations of two traits."
+    },
+    {
+      "topicID": "002-evolution",
+      "topic": "Evolution",
+      "difficulty": "Intermediate",
+      "questionText": "Which of the following is an example of homologous structures?",
+      "options": [
+        "A) Wings of a bat and wings of a butterfly",
+        "B) Flippers of a whale and wings of a bat",
+        "C) Wings of a bird and wings of a bat",
+        "D) Flippers of a whale and fins of a fish"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Homologous structures, like flippers of a whale and wings of a bat, share a common evolutionary origin."
+    },
+    {
+      "topicID": "003-ecology",
+      "topic": "Ecology",
+      "difficulty": "Intermediate",
+      "questionText": "What term describes the maximum population size that an environment can sustain?",
+      "options": ["A) Carrying capacity", "B) Ecological niche", "C) Biotic potential", "D) Habitat"],
+      "correctAnswer": "A",
+      "explanation": "Carrying capacity is the maximum population size that an environment's resources can sustain over time."
+    },
+    {
+      "topicID": "004-cell-biology",
+      "topic": "Cell Biology",
+      "difficulty": "Intermediate",
+      "questionText": "Which organelle is responsible for protein synthesis?",
+      "options": ["A) Mitochondria", "B) Ribosomes", "C) Golgi apparatus", "D) Nucleus"],
+      "correctAnswer": "B",
+      "explanation": "Ribosomes are the organelles responsible for protein synthesis by translating mRNA."
+    },
+    {
+      "topicID": "005-anatomy-physiology",
+      "topic": "Anatomy & Physiology",
+      "difficulty": "Intermediate",
+      "questionText": "What is the primary function of hemoglobin in the blood?",
+      "options": [
+        "A) Transporting carbon dioxide",
+        "B) Transporting oxygen",
+        "C) Clotting blood",
+        "D) Fighting infections"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hemoglobin is a protein in red blood cells responsible for binding and transporting oxygen to tissues."
+    },
+    {
+      "topicID": "006-microbiology",
+      "topic": "Microbiology",
+      "difficulty": "Intermediate",
+      "questionText": "Which microorganism is used in the production of antibiotics like penicillin?",
+      "options": ["A) Bacteria", "B) Virus", "C) Fungi", "D) Algae"],
+      "correctAnswer": "C",
+      "explanation": "Fungi, particularly the genus Penicillium, are used in the production of antibiotics like penicillin."
+    },
+    {
+      "topicID": "007-molecular-biology",
+      "topic": "Molecular Biology",
+      "difficulty": "Intermediate",
+      "questionText": "What is the complementary sequence of DNA for 5'-ATCGGCTA-3'?",
+      "options": ["A) 5'-TAGCCGAT-3'", "B) 3'-TAGCCGAT-5'", "C) 5'-UAGCCGAU-3'", "D) 3'-UAGCCGAU-5'"],
+      "correctAnswer": "B",
+      "explanation": "In DNA, A pairs with T, and G pairs with C. The complementary sequence is 3'-TAGCCGAT-5'."
+    },
+    {
+      "topicID": "008-botany",
+      "topic": "Botany",
+      "difficulty": "Intermediate",
+      "questionText": "Which plant hormone is responsible for stimulating cell elongation and growth?",
+      "options": ["A) Cytokinin", "B) Auxin", "C) Gibberellin", "D) Ethylene"],
+      "correctAnswer": "B",
+      "explanation": "Auxin is a plant hormone responsible for stimulating cell elongation and regulating growth."
+    },
+    {
+      "topicID": "009-genetics",
+      "topic": "Genetics",
+      "difficulty": "Intermediate",
+      "questionText": "What is the process by which a DNA sequence is copied into mRNA?",
+      "options": ["A) Translation", "B) Transcription", "C) Replication", "D) Splicing"],
+      "correctAnswer": "B",
+      "explanation": "Transcription is the process by which a DNA sequence is copied into mRNA for protein synthesis."
+    },
+    {
+      "topicID": "010-evolution",
+      "topic": "Evolution",
+      "difficulty": "Intermediate",
+      "questionText": "What is genetic drift?",
+      "options": [
+        "A) The migration of alleles between populations",
+        "B) Random changes in allele frequency in a population",
+        "C) The non-random survival of certain traits",
+        "D) The accumulation of mutations over time"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Genetic drift refers to random changes in allele frequencies, often significant in small populations."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 300,
+      "description": "Earn 300 points for completing this challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'Biology Explorer' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2024-11-27T00:00:00Z",
+  "updatedAt": "2024-11-27T00:00:00Z"
+}

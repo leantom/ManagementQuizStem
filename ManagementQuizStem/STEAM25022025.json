@@ -1,0 +1,142 @@
+[
+  {
+    "topicID": "4327DB3C-47CC-4CC6-A29F-0D7F328090AA",
+    "topic": "3D Printing",
+    "difficulty": "Intermediate",
+    "questionText": "Which 3D printing method uses a heated nozzle to extrude thermoplastic filament layer by layer?",
+    "options": [
+      "A) Fused Deposition Modeling (FDM)",
+      "B) Selective Laser Melting (SLM)",
+      "C) Binder Jetting",
+      "D) Stereolithography (SLA)"
+    ],
+    "correctAnswer": "A",
+    "explanation": "FDM is a commonly used 3D printing method that heats and extrudes thermoplastic filament to build objects layer by layer."
+  },
+  {
+    "topicID": "7283E02C-C82E-4568-B3EB-D273C852037C",
+    "topic": "Acoustics",
+    "difficulty": "Intermediate",
+    "questionText": "Which acoustic property determines how loud a sound is perceived?",
+    "options": [
+      "A) Frequency",
+      "B) Timbre",
+      "C) Intensity (Amplitude)",
+      "D) Wavelength"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Sound intensity (often related to amplitude) influences how loud a sound is perceived by the human ear."
+  },
+  {
+    "topicID": "8AFE19CE-20F7-4DAA-8B7C-B279DD4E6A87",
+    "topic": "Algebra",
+    "difficulty": "Intermediate",
+    "questionText": "If f(x) = 2x + 1, what is f(–3)?",
+    "options": [
+      "A) –6",
+      "B) –5",
+      "C) –7",
+      "D) –8"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute –3 into f(x): f(–3) = 2(–3) + 1 = –6 + 1 = –5."
+  },
+  {
+    "topicID": "731F5E0C-824E-40C5-B714-BD51E7CB4475",
+    "topic": "Cell Biology",
+    "difficulty": "Intermediate",
+    "questionText": "Which organelle is often referred to as the 'powerhouse of the cell' due to its role in ATP production?",
+    "options": [
+      "A) Nucleus",
+      "B) Golgi Apparatus",
+      "C) Mitochondrion",
+      "D) Endoplasmic Reticulum"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mitochondria generate ATP through cellular respiration, earning them the nickname 'powerhouse of the cell.'"
+  },
+  {
+    "topicID": "DE35C776-A38D-4ED8-B822-3DFBAAE954F9",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Intermediate",
+    "questionText": "Which subset of AI focuses on algorithms that enable computers to learn from data?",
+    "options": [
+      "A) Symbolic AI",
+      "B) Machine Learning",
+      "C) Fuzzy Logic",
+      "D) Expert Systems"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Machine Learning algorithms learn from data and improve over time without being explicitly programmed for every scenario."
+  },
+  {
+    "topicID": "B2828E2D-DDE7-4E98-9D32-7A66E02934BF",
+    "topic": "Astronomy",
+    "difficulty": "Intermediate",
+    "questionText": "What is the phenomenon called when a celestial object appears to move backward (east to west) relative to the stars?",
+    "options": [
+      "A) Retrograde motion",
+      "B) Redshift",
+      "C) Celestial parallax",
+      "D) Doppler drift"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Retrograde motion is the apparent backward movement of a planet against the star field, typically observed in Earth's sky due to orbital resonances."
+  },
+  {
+    "topicID": "DA100D00-8C7A-4E1E-9959-6D236B415C3B",
+    "topic": "Chemical Engineering",
+    "difficulty": "Intermediate",
+    "questionText": "Which principle explains why the total mass remains the same in a chemical reaction, despite chemical changes?",
+    "options": [
+      "A) Avogadro's law",
+      "B) Law of Conservation of Mass",
+      "C) Henry's law",
+      "D) Raoult's law"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Law of Conservation of Mass states that matter is neither created nor destroyed, so total mass remains constant in a chemical reaction."
+  },
+  {
+    "topicID": "3F01BF50-7B4B-436A-AA29-D90267DE6759",
+    "topic": "Classical Mechanics",
+    "difficulty": "Intermediate",
+    "questionText": "Which of Newton’s laws states that for every action, there is an equal and opposite reaction?",
+    "options": [
+      "A) Newton's First Law",
+      "B) Newton's Second Law",
+      "C) Newton's Third Law",
+      "D) Universal Law of Gravitation"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Newton’s Third Law of Motion: if a body exerts a force on another, the second body exerts a force of equal magnitude and opposite direction on the first."
+  },
+  {
+    "topicID": "0FFC213A-48BA-4D4F-A4A6-B81B15BE23A6",
+    "topic": "Environmental Engineering",
+    "difficulty": "Intermediate",
+    "questionText": "Which of the following is a primary goal of environmental engineering?",
+    "options": [
+      "A) Maximizing resource extraction",
+      "B) Designing polluting industrial processes",
+      "C) Minimizing environmental impact and protecting public health",
+      "D) Measuring atmospheric pressure changes"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Environmental engineering aims to protect public health and the environment by minimizing pollution and improving sustainability practices."
+  },
+  {
+    "topicID": "0FD4D9DF-2BA5-4126-ABF7-C99538EB24CA",
+    "topic": "Molecular Biology",
+    "difficulty": "Intermediate",
+    "questionText": "Which molecule serves as the primary carrier of genetic information in most living organisms?",
+    "options": [
+      "A) DNA",
+      "B) RNA",
+      "C) Proteins",
+      "D) Lipids"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Deoxyribonucleic acid (DNA) encodes the genetic instructions used in the growth, development, functioning, and reproduction of organisms."
+  }
+]

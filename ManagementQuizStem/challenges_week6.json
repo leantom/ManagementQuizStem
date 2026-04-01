@@ -1,0 +1,196 @@
+{
+  "id": "challenge-78906",
+  "type": "daily",
+  "title": "STEM Pro Challenge",
+  "description": "Take on 20 intermediate-level questions spanning various STEM disciplines to challenge your knowledge.",
+  "startDate": "2024-11-27T00:00:00Z",
+  "endDate": "2024-12-04T00:00:00Z",
+  "difficultyLevel": "Intermediate",
+  "remainTime": 300,
+  "questions": [
+    {
+      "topicID": "001-number-theory",
+      "topic": "Number Theory",
+      "difficulty": "Intermediate",
+      "questionText": "What is the greatest common divisor (GCD) of 36 and 48?",
+      "options": ["A) 6", "B) 8", "C) 12", "D) 18"],
+      "correctAnswer": "C",
+      "explanation": "The GCD of 36 and 48 is 12, as it is the largest number that divides both."
+    },
+    {
+      "topicID": "002-number-theory",
+      "topic": "Number Theory",
+      "difficulty": "Intermediate",
+      "questionText": "What is the remainder when 19² is divided by 6?",
+      "options": ["A) 0", "B) 1", "C) 3", "D) 5"],
+      "correctAnswer": "B",
+      "explanation": "19² = 361. Dividing 361 by 6 gives a remainder of 1."
+    },
+    {
+      "topicID": "003-statistics-probability",
+      "topic": "Statistics & Probability",
+      "difficulty": "Intermediate",
+      "questionText": "A coin is tossed 3 times. What is the probability of getting exactly 2 heads?",
+      "options": ["A) 1/8", "B) 3/8", "C) 3/4", "D) 1/2"],
+      "correctAnswer": "B",
+      "explanation": "The probability is given by 3C2 × (1/2)³ = 3/8."
+    },
+    {
+      "topicID": "004-statistics-probability",
+      "topic": "Statistics & Probability",
+      "difficulty": "Intermediate",
+      "questionText": "If the mean of a data set is 10 and the sum of the data is 200, how many data points are there?",
+      "options": ["A) 10", "B) 20", "C) 15", "D) 25"],
+      "correctAnswer": "B",
+      "explanation": "Mean = Sum of data / Number of data points. Here, 10 = 200 / N, so N = 20."
+    },
+    {
+      "topicID": "005-cybersecurity",
+      "topic": "Cybersecurity",
+      "difficulty": "Intermediate",
+      "questionText": "What does a firewall primarily do?",
+      "options": [
+        "A) Encrypt data",
+        "B) Protect against unauthorized access",
+        "C) Monitor network speed",
+        "D) Analyze malware"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A firewall protects a network by filtering unauthorized access."
+    },
+    {
+      "topicID": "006-cybersecurity",
+      "topic": "Cybersecurity",
+      "difficulty": "Intermediate",
+      "questionText": "What is the purpose of two-factor authentication?",
+      "options": [
+        "A) Simplify login",
+        "B) Increase security by requiring two forms of verification",
+        "C) Prevent data breaches",
+        "D) Encrypt communication"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Two-factor authentication increases security by requiring two forms of verification."
+    },
+    {
+      "topicID": "007-linear-algebra",
+      "topic": "Linear Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "What is the inverse of the matrix [[1, 2], [3, 4]]?",
+      "options": [
+        "A) [[-2, 1], [1.5, -0.5]]",
+        "B) [[2, -1], [-1.5, 0.5]]",
+        "C) [[-2, 1.5], [1, -0.5]]",
+        "D) [[0.5, -1], [1.5, -0.5]]"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Using the formula for 2×2 matrix inverse: (1/det(A)) * adj(A), det(A) = -2, and adj(A) = [[4, -2], [-3, 1]]."
+    },
+    {
+      "topicID": "008-linear-algebra",
+      "topic": "Linear Algebra",
+      "difficulty": "Intermediate",
+      "questionText": "What is the trace of the matrix [[3, 5], [7, 2]]?",
+      "options": ["A) 5", "B) 8", "C) 10", "D) 12"],
+      "correctAnswer": "C",
+      "explanation": "The trace of a matrix is the sum of its diagonal elements. Trace = 3 + 7 = 10."
+    },
+    {
+      "topicID": "009-mechanical-engineering",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "Which thermodynamic process occurs at constant pressure?",
+      "options": ["A) Isothermal", "B) Isobaric", "C) Adiabatic", "D) Isochoric"],
+      "correctAnswer": "B",
+      "explanation": "An isobaric process occurs at constant pressure."
+    },
+    {
+      "topicID": "010-mechanical-engineering",
+      "topic": "Mechanical Engineering",
+      "difficulty": "Intermediate",
+      "questionText": "What is the efficiency of a Carnot engine operating between 400 K and 300 K?",
+      "options": ["A) 0.25", "B) 0.50", "C) 0.75", "D) 1.00"],
+      "correctAnswer": "A",
+      "explanation": "Efficiency = 1 - T₂/T₁. Substituting T₁ = 400 K and T₂ = 300 K: 1 - (300/400) = 0.25."
+    },
+    {
+      "topicID": "011-astronomy",
+      "topic": "Astronomy",
+      "difficulty": "Intermediate",
+      "questionText": "Which type of galaxy is the Milky Way?",
+      "options": ["A) Elliptical", "B) Irregular", "C) Spiral", "D) Lenticular"],
+      "correctAnswer": "C",
+      "explanation": "The Milky Way is a barred spiral galaxy."
+    },
+    {
+      "topicID": "012-astronomy",
+      "topic": "Astronomy",
+      "difficulty": "Intermediate",
+      "questionText": "What is the approximate age of the universe?",
+      "options": ["A) 4.5 billion years", "B) 10 billion years", "C) 13.8 billion years", "D) 20 billion years"],
+      "correctAnswer": "C",
+      "explanation": "The universe is approximately 13.8 billion years old according to current cosmological measurements."
+    },
+    {
+      "topicID": "013-programming-fundamentals",
+      "topic": "Programming Fundamentals",
+      "difficulty": "Intermediate",
+      "questionText": "What is the output of the Python code: print(2 ** 3 ** 2)?",
+      "options": ["A) 64", "B) 512", "C) 729", "D) 8"],
+      "correctAnswer": "B",
+      "explanation": "Exponentiation is evaluated right-to-left. 3² = 9, then 2⁹ = 512."
+    },
+    {
+      "topicID": "014-programming-fundamentals",
+      "topic": "Programming Fundamentals",
+      "difficulty": "Intermediate",
+      "questionText": "What does O(n log n) represent in computational complexity?",
+      "options": [
+        "A) Linear complexity",
+        "B) Logarithmic complexity",
+        "C) Quasilinear complexity",
+        "D) Quadratic complexity"
+      ],
+      "correctAnswer": "C",
+      "explanation": "O(n log n) is quasilinear complexity, common in efficient sorting algorithms like merge sort."
+    },
+    {
+      "topicID": "015-environmental-science",
+      "topic": "Environmental Science",
+      "difficulty": "Intermediate",
+      "questionText": "Which gas contributes the most to the greenhouse effect?",
+      "options": ["A) Methane", "B) Carbon Dioxide", "C) Nitrous Oxide", "D) Ozone"],
+      "correctAnswer": "B",
+      "explanation": "Carbon dioxide contributes the most to the greenhouse effect due to its high concentration."
+    },
+    {
+      "topicID": "016-environmental-science",
+      "topic": "Environmental Science",
+      "difficulty": "Intermediate",
+      "questionText": "What is eutrophication?",
+      "options": [
+        "A) Excess oxygen in water bodies",
+        "B) Excess nutrients leading to algae blooms",
+        "C) A decrease in water pH",
+        "D) Removal of aquatic vegetation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Eutrophication is caused by nutrient overloading, leading to excessive algae growth."
+    }
+  ],
+  "rewards": [
+    {
+      "type": "points",
+      "value": 500,
+      "description": "Earn 500 points for completing this challenge!"
+    },
+    {
+      "type": "badge",
+      "value": 1,
+      "description": "Unlock the 'STEM Challenger' badge!"
+    }
+  ],
+  "isActive": true,
+  "createdAt": "2024-11-27T00:00:00Z",
+  "updatedAt": "2024-11-27T00:00:00Z"
+}

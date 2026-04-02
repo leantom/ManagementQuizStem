@@ -284,7 +284,7 @@ struct EditTopicView: View {
                     Text("Select Level").tag("")
 
                     ForEach(viewModel.educationLevelOptions, id: \.self) { level in
-                        Text(level).tag(level)
+                        Text(level).foregroundStyle(.blue).tag(level)
                     }
                 }
                 .pickerStyle(.menu)

@@ -1,206 +1,164 @@
 {
-  "id": "challenge-78907",
+  "id": "challenge-67412",
   "type": "daily",
-  "title": "Intermediate Chemistry Challenge",
-  "description": "Test your chemistry knowledge with 20 questions spanning organic chemistry, chemical reactions, and more!",
-  "startDate": "2024-11-27T00:00:00Z",
-  "endDate": "2024-12-04T00:00:00Z",
+  "title": "Intermediate Crystallography Challenge",
+  "startDate": "2026-04-02T00:00:00Z",
+  "endDate": "2026-04-09T00:00:00Z",
   "difficultyLevel": "Intermediate",
   "remainTime": 300,
   "questions": [
     {
-      "topicID": "001-organic-chemistry",
-      "topic": "Organic Chemistry",
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
       "difficulty": "Intermediate",
-      "questionText": "What is the IUPAC name for CH₃CH₂OH?",
-      "options": ["A) Methanol", "B) Ethanol", "C) Propanol", "D) Butanol"],
-      "correctAnswer": "B",
-      "explanation": "CH₃CH₂OH is ethanol, a two-carbon alcohol."
-    },
-    {
-      "topicID": "002-organic-chemistry",
-      "topic": "Organic Chemistry",
-      "difficulty": "Intermediate",
-      "questionText": "Which reaction is used to convert alkenes to alkanes?",
+      "questionText": "What does crystallography primarily study?",
       "options": [
-        "A) Oxidation",
-        "B) Hydrogenation",
-        "C) Hydrolysis",
-        "D) Dehydration"
+        "A) The motion of planets",
+        "B) The atomic arrangement in crystalline solids",
+        "C) The chemistry of gases only",
+        "D) The genetics of living cells"
       ],
       "correctAnswer": "B",
-      "explanation": "Hydrogenation adds hydrogen to alkenes, converting them into alkanes."
+      "explanation": "Crystallography focuses on how atoms, ions, or molecules are arranged in crystalline solids."
     },
     {
-      "topicID": "003-inorganic-chemistry",
-      "topic": "Inorganic Chemistry",
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
       "difficulty": "Intermediate",
-      "questionText": "What is the oxidation state of chromium in K₂Cr₂O₇?",
-      "options": ["A) +6", "B) +3", "C) +7", "D) +5"],
-      "correctAnswer": "A",
-      "explanation": "The oxidation state of Cr in K₂Cr₂O₇ is +6, as calculated using oxidation number rules."
-    },
-    {
-      "topicID": "004-inorganic-chemistry",
-      "topic": "Inorganic Chemistry",
-      "difficulty": "Intermediate",
-      "questionText": "Which of the following is an example of a coordination compound?",
+      "questionText": "Why are X-rays commonly used in crystallography?",
       "options": [
-        "A) NaCl",
-        "B) K₂SO₄",
-        "C) [Fe(CN)₆]³⁻",
-        "D) H₂SO₄"
+        "A) Because X-rays have wavelengths comparable to atomic spacing",
+        "B) Because X-rays make crystals grow faster",
+        "C) Because X-rays change solids into liquids",
+        "D) Because X-rays only interact with metals"
+      ],
+      "correctAnswer": "A",
+      "explanation": "X-rays are ideal because their wavelengths are similar to distances between atoms in crystals, allowing diffraction patterns to reveal structure."
+    },
+    {
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
+      "difficulty": "Intermediate",
+      "questionText": "What happens when X-rays strike a crystal in the correct way?",
+      "options": [
+        "A) The crystal disappears",
+        "B) The X-rays are diffracted into a pattern",
+        "C) The crystal becomes radioactive",
+        "D) The atoms stop vibrating"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The repeating structure of a crystal causes X-rays to diffract, creating a pattern that can be analyzed to determine atomic arrangement."
+    },
+    {
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
+      "difficulty": "Intermediate",
+      "questionText": "In crystallography, what is a unit cell?",
+      "options": [
+        "A) The largest visible crystal sample",
+        "B) The smallest repeating structural unit of a crystal",
+        "C) A damaged region inside a crystal",
+        "D) A tool used to cut crystals"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A unit cell is the smallest repeating three-dimensional pattern that builds the entire crystal lattice."
+    },
+    {
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
+      "difficulty": "Intermediate",
+      "questionText": "Which property best describes a crystal lattice?",
+      "options": [
+        "A) Random atomic arrangement",
+        "B) Repeating and ordered arrangement of particles",
+        "C) A liquid-like structure",
+        "D) A structure with no symmetry"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A crystal lattice is a highly ordered, repeating arrangement of particles in space."
+    },
+    {
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
+      "difficulty": "Intermediate",
+      "questionText": "Which of the following is an important application of crystallography?",
+      "options": [
+        "A) Predicting daily weather",
+        "B) Determining protein structures for medicine",
+        "C) Measuring sound frequency in music",
+        "D) Calculating internet speed"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Crystallography is widely used to determine the structures of proteins and other biomolecules, which is essential in drug design and medical research."
+    },
+    {
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
+      "difficulty": "Intermediate",
+      "questionText": "What information can scientists most directly obtain from a diffraction pattern?",
+      "options": [
+        "A) The exact color of a crystal",
+        "B) The arrangement of atoms inside the crystal",
+        "C) The age of the crystal in years",
+        "D) The crystal's temperature history only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diffraction patterns contain information about atomic spacing and symmetry, which allows scientists to infer internal structure."
+    },
+    {
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
+      "difficulty": "Intermediate",
+      "questionText": "Why is symmetry important in crystallography?",
+      "options": [
+        "A) It helps describe and classify crystal structures",
+        "B) It prevents crystals from breaking",
+        "C) It increases crystal temperature",
+        "D) It makes all crystals transparent"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Symmetry is a key feature used to classify crystals and understand how their atomic structures repeat in space."
+    },
+    {
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
+      "difficulty": "Intermediate",
+      "questionText": "If a solid has no long-range repeating atomic order, it is best described as:",
+      "options": [
+        "A) Crystalline",
+        "B) Metallic",
+        "C) Amorphous",
+        "D) Ionic"
       ],
       "correctAnswer": "C",
-      "explanation": "[Fe(CN)₆]³⁻ is a coordination compound, consisting of a central metal ion and ligands."
+      "explanation": "Amorphous solids, such as glass, do not have the long-range ordered structure found in crystals."
     },
     {
-      "topicID": "005-physical-chemistry",
-      "topic": "Physical Chemistry",
+      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
+      "topic": "Crystallography",
       "difficulty": "Intermediate",
-      "questionText": "What is the value of the gas constant R in L·atm/(mol·K)?",
-      "options": ["A) 8.314", "B) 0.0821", "C) 1.00", "D) 22.4"],
-      "correctAnswer": "B",
-      "explanation": "R = 0.0821 L·atm/(mol·K) in this unit system."
-    },
-    {
-      "topicID": "006-physical-chemistry",
-      "topic": "Physical Chemistry",
-      "difficulty": "Intermediate",
-      "questionText": "What is the relationship between pressure and volume in Boyle's Law?",
+      "questionText": "What is one major challenge in determining crystal structures experimentally?",
       "options": [
-        "A) Directly proportional",
-        "B) Inversely proportional",
-        "C) Exponentially proportional",
-        "D) No relationship"
+        "A) Crystals always melt under light",
+        "B) High-quality crystals are often difficult to grow",
+        "C) X-rays cannot pass through solids",
+        "D) All crystals give the same diffraction pattern"
       ],
       "correctAnswer": "B",
-      "explanation": "Boyle's Law states that pressure and volume are inversely proportional for a fixed temperature and quantity of gas."
-    },
-    {
-      "topicID": "007-biochemistry",
-      "topic": "Biochemistry",
-      "difficulty": "Intermediate",
-      "questionText": "What is the primary structure of a protein?",
-      "options": [
-        "A) Sequence of amino acids",
-        "B) Alpha helices and beta sheets",
-        "C) 3D folding of a single polypeptide",
-        "D) Interaction of multiple polypeptides"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The primary structure of a protein is the linear sequence of amino acids."
-    },
-    {
-      "topicID": "008-biochemistry",
-      "topic": "Biochemistry",
-      "difficulty": "Intermediate",
-      "questionText": "Which of the following is a reducing sugar?",
-      "options": ["A) Sucrose", "B) Lactose", "C) Starch", "D) Cellulose"],
-      "correctAnswer": "B",
-      "explanation": "Lactose is a reducing sugar because it has a free aldehyde or ketone group."
-    },
-    {
-      "topicID": "009-analytical-chemistry",
-      "topic": "Analytical Chemistry",
-      "difficulty": "Intermediate",
-      "questionText": "Which method is used to determine the concentration of a solution by reaction with a known volume of another solution?",
-      "options": ["A) Titration", "B) Chromatography", "C) Spectroscopy", "D) Distillation"],
-      "correctAnswer": "A",
-      "explanation": "Titration is a method used to determine concentration by reacting with a known volume of another solution."
-    },
-    {
-      "topicID": "010-analytical-chemistry",
-      "topic": "Analytical Chemistry",
-      "difficulty": "Intermediate",
-      "questionText": "What is the principle of chromatography?",
-      "options": [
-        "A) Solubility differences",
-        "B) Boiling point differences",
-        "C) Phase transitions",
-        "D) Magnetic separation"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Chromatography separates components based on differences in solubility between stationary and mobile phases."
-    },
-    {
-      "topicID": "011-environmental-chemistry",
-      "topic": "Environmental Chemistry",
-      "difficulty": "Intermediate",
-      "questionText": "Which pollutant causes acid rain?",
-      "options": ["A) CO₂", "B) SO₂", "C) O₃", "D) CH₄"],
-      "correctAnswer": "B",
-      "explanation": "SO₂ reacts with water vapor in the atmosphere to form sulfuric acid, leading to acid rain."
-    },
-    {
-      "topicID": "012-environmental-chemistry",
-      "topic": "Environmental Chemistry",
-      "difficulty": "Intermediate",
-      "questionText": "Which gas is primarily responsible for ozone layer depletion?",
-      "options": ["A) CO₂", "B) CFCs", "C) SO₂", "D) NO₂"],
-      "correctAnswer": "B",
-      "explanation": "Chlorofluorocarbons (CFCs) release chlorine atoms, which destroy ozone molecules."
-    },
-    {
-      "topicID": "013-chemical-reactions",
-      "topic": "Chemical Reactions",
-      "difficulty": "Intermediate",
-      "questionText": "What type of reaction is 2H₂ + O₂ → 2H₂O?",
-      "options": [
-        "A) Decomposition",
-        "B) Combustion",
-        "C) Redox",
-        "D) Precipitation"
-      ],
-      "correctAnswer": "C",
-      "explanation": "This is a redox reaction, as hydrogen is oxidized and oxygen is reduced."
-    },
-    {
-      "topicID": "014-chemical-reactions",
-      "topic": "Chemical Reactions",
-      "difficulty": "Intermediate",
-      "questionText": "Which of the following is a double displacement reaction?",
-      "options": [
-        "A) NaCl + AgNO₃ → NaNO₃ + AgCl",
-        "B) 2H₂ + O₂ → 2H₂O",
-        "C) CH₄ + 2O₂ → CO₂ + 2H₂O",
-        "D) Zn + 2HCl → ZnCl₂ + H₂"
-      ],
-      "correctAnswer": "A",
-      "explanation": "A double displacement reaction involves the exchange of ions between two compounds."
-    },
-    {
-      "topicID": "015-periodic-table-elements",
-      "topic": "Periodic Table & Elements",
-      "difficulty": "Intermediate",
-      "questionText": "Which element has the highest electronegativity?",
-      "options": ["A) Oxygen", "B) Fluorine", "C) Chlorine", "D) Nitrogen"],
-      "correctAnswer": "B",
-      "explanation": "Fluorine has the highest electronegativity, with a value of 3.98 on the Pauling scale."
-    },
-    {
-      "topicID": "016-periodic-table-elements",
-      "topic": "Periodic Table & Elements",
-      "difficulty": "Intermediate",
-      "questionText": "Which block of the periodic table contains the lanthanides?",
-      "options": ["A) s-block", "B) p-block", "C) d-block", "D) f-block"],
-      "correctAnswer": "D",
-      "explanation": "The lanthanides belong to the f-block of the periodic table."
+      "explanation": "Accurate crystallographic analysis usually requires high-quality crystals, and growing suitable crystals can be difficult for many substances."
     }
   ],
   "rewards": [
     {
       "type": "points",
       "value": 500,
-      "description": "Earn 500 points for completing this challenge!"
+      "description": "Earn 500 points for mastering crystal structure concepts."
     },
     {
       "type": "badge",
       "value": 1,
-      "description": "Unlock the 'Chemistry Pro' badge!"
+      "description": "Unlock the 'Crystal Explorer' badge."
     }
   ],
-  "isActive": true,
-  "createdAt": "2024-11-27T00:00:00Z",
-  "updatedAt": "2024-11-27T00:00:00Z"
+  "isActive": true
 }

@@ -28,6 +28,48 @@ struct ChallengeImport: Codable {
     var isActive: Bool
     var createdAt: String
     var updatedAt: String
+
+    enum CodingKeys: String, CodingKey {
+        case type
+        case title
+        case description
+        case startDate
+        case remainTime
+        case endDate
+        case difficultyLevel
+        case questions
+        case rewards
+        case isActive
+        case createdAt
+        case updatedAt
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let timestamp = ISO8601DateFormatter().string(from: .now)
+
+        type = try container.decode(String.self, forKey: .type)
+        title = try container.decode(String.self, forKey: .title)
+        startDate = try container.decode(String.self, forKey: .startDate)
+        remainTime = try container.decodeIfPresent(Int.self, forKey: .remainTime)
+        endDate = try container.decode(String.self, forKey: .endDate)
+        difficultyLevel = try container.decode(DifficultyLevel.self, forKey: .difficultyLevel)
+        questions = try container.decode([QuestionImport].self, forKey: .questions)
+        rewards = try container.decodeIfPresent([Reward].self, forKey: .rewards)
+        isActive = try container.decodeIfPresent(Bool.self, forKey: .isActive) ?? true
+        createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt) ?? timestamp
+        updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt) ?? timestamp
+
+        let decodedDescription = try container
+            .decodeIfPresent(String.self, forKey: .description)?
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+
+        if let decodedDescription, decodedDescription.isEmpty == false {
+            description = decodedDescription
+        } else {
+            description = "Imported \(questions.count)-question \(difficultyLevel.rawValue.lowercased()) challenge."
+        }
+    }
 }
 
 struct Challenge: Identifiable, Codable {

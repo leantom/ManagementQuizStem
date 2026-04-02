@@ -22,6 +22,9 @@ struct AdminShellView: View {
         }
         .background(AdminShellPalette.canvas)
         .frame(minWidth: 1280, minHeight: 820)
+        .onChange(of: selectedSection) { _ in
+            searchText = ""
+        }
     }
 
     private var sidebar: some View {
@@ -145,7 +148,7 @@ struct AdminShellView: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(.black)
 
-                TextField("Quick search data...", text: $searchText)
+                TextField(searchPlaceholder, text: $searchText)
                     .textFieldStyle(.plain)
                     .font(.system(size: 13, weight: .medium, design: .rounded))
             }
@@ -195,12 +198,21 @@ struct AdminShellView: View {
             }
         default:
             ScrollView(.vertical, showsIndicators: true) {
-                VStack(alignment: .leading, spacing: 20) {
-                    shellSectionHeader(for: selectedSection)
-                    pageView(for: selectedSection)
-                }
+                contentBody(for: selectedSection)
                 .padding(28)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func contentBody(for section: AdminShellSection) -> some View {
+        if section == .rewards {
+            pageView(for: section)
+        } else {
+            VStack(alignment: .leading, spacing: 20) {
+                shellSectionHeader(for: section)
+                pageView(for: section)
             }
         }
     }
@@ -221,9 +233,22 @@ struct AdminShellView: View {
         case .challenges:
             AdminCreateChallengeView()
         case .rewards:
-            CreateBadgeView()
+            CreateBadgeView(searchText: $searchText)
         case .adminTools:
             DeleteQuestionsByTopicView()
+        }
+    }
+
+    private var searchPlaceholder: String {
+        switch selectedSection {
+        case .rewards:
+            return "Search catalog..."
+        case .questions:
+            return "Search questions..."
+        case .topics:
+            return "Search topics..."
+        default:
+            return "Quick search data..."
         }
     }
 

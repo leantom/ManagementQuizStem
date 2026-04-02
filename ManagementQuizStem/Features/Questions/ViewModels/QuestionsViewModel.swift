@@ -486,7 +486,7 @@ class QuestionsViewModel: ObservableObject {
             
             listQuestions.append(contentsOf: questions)
         } catch {
-            self.errorMessage = "Failed to import JSON file: \(error.localizedDescription)"
+            self.errorMessage = jsonImportErrorMessage(for: error)
         }
     }
     
@@ -510,8 +510,27 @@ class QuestionsViewModel: ObservableObject {
             }
             return challenges
         } catch {
-            self.errorMessage = "Failed to import JSON file: \(error.localizedDescription)"
+            self.errorMessage = jsonImportErrorMessage(for: error)
             return nil
+        }
+    }
+
+    private func jsonImportErrorMessage(for error: Error) -> String {
+        switch error {
+        case let DecodingError.keyNotFound(key, context):
+            let path = (context.codingPath + [key]).map(\.stringValue).joined(separator: ".")
+            return "Failed to import JSON file: missing field '\(path)'."
+        case let DecodingError.typeMismatch(_, context),
+             let DecodingError.valueNotFound(_, context):
+            let path = context.codingPath.map(\.stringValue).joined(separator: ".")
+            if path.isEmpty {
+                return "Failed to import JSON file: invalid JSON structure."
+            }
+            return "Failed to import JSON file: invalid value at '\(path)'."
+        case let DecodingError.dataCorrupted(context):
+            return "Failed to import JSON file: \(context.debugDescription)"
+        default:
+            return "Failed to import JSON file: \(error.localizedDescription)"
         }
     }
     

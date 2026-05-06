@@ -532,6 +532,7 @@ private struct ChallengeComposerSheet: View {
                     TextEditor(text: $description)
                         .font(.system(size: 14, weight: .medium, design: .rounded))
                         .scrollContentBackground(.hidden)
+                        .foregroundStyle(.blue)
                         .frame(minHeight: 120)
                         .padding(12)
                         .background(
@@ -1504,6 +1505,7 @@ private struct ChallengeTextField: View {
     var body: some View {
         TextField(title, text: $text)
             .textFieldStyle(.plain)
+            .foregroundStyle(ChallengeScreenPalette.ink)
             .font(.system(size: 14, weight: .medium, design: .rounded))
             .padding(.horizontal, 14)
             .padding(.vertical, 12)

@@ -56,6 +56,7 @@ final class SubjectsViewModel: ObservableObject {
     @Published var shortName = ""
     @Published var description = ""
     @Published var iconURL = ""
+    @Published var colorHex = "FFFFFF"
     @Published var selectedImage: NSImage?
 
     @Published var selectedSubjectID: String?
@@ -189,6 +190,7 @@ final class SubjectsViewModel: ObservableObject {
         shortName = subject.short_name
         description = subject.description
         iconURL = subject.icon_url
+        colorHex = subject.color_hex ?? "fff"
         selectedImage = nil
 
         let linkedTopics = resolvedTopics(for: subject)
@@ -209,6 +211,7 @@ final class SubjectsViewModel: ObservableObject {
         shortName = ""
         description = ""
         iconURL = ""
+        colorHex = "FFFFFF"
         selectedImage = nil
         selectedTopicIDs = []
         selectedCategoryMapping = SubjectCategoryMapping.science.rawValue
@@ -242,6 +245,7 @@ final class SubjectsViewModel: ObservableObject {
         let subjectID = selectedSubjectID ?? UUID().uuidString
         let resolvedShortName = trimmedShortName.isEmpty ? makeSlug(from: trimmedName) : trimmedShortName
         let linkedTopics = resolvedTopicsForCurrentDraft()
+        let resolvedColorHex = normalizedColorHex(colorHex)
 
         let finalizeSave: (String) -> Void = { resolvedIconURL in
             let subject = Subject(
@@ -251,6 +255,7 @@ final class SubjectsViewModel: ObservableObject {
                 description: trimmedDescription,
                 trending: self.selectedSubject?.trending ?? Int(self.selectedPassingRate.rounded()),
                 icon_url: resolvedIconURL,
+                color_hex: resolvedColorHex,
                 topicIds: linkedTopics.map(\.id)
             )
 
@@ -329,6 +334,7 @@ final class SubjectsViewModel: ObservableObject {
                 self.selectedSubjectID = subject.id
                 self.isCreatingNew = false
                 self.iconURL = subject.icon_url
+                self.colorHex = subject.color_hex ?? "ffffff"
                 self.selectedImage = nil
                 self.successMessage = isNew ? "Subject created successfully!" : "Subject updated successfully!"
                 self.refreshQuestionCount(for: linkedTopics.map(\.id))
@@ -362,6 +368,7 @@ final class SubjectsViewModel: ObservableObject {
             FirestoreField.Subject.shortName: subject.short_name,
             FirestoreField.Subject.description: subject.description,
             FirestoreField.Subject.trending: subject.trending,
+            FirestoreField.Subject.colorHex: subject.color_hex,
             FirestoreField.Subject.topicIDs: subject.topicIds ?? []
         ]
 
@@ -491,6 +498,20 @@ final class SubjectsViewModel: ObservableObject {
             .components(separatedBy: CharacterSet.alphanumerics.inverted)
             .filter { $0.isEmpty == false }
             .joined(separator: "-")
+    }
+
+    private func normalizedColorHex(_ rawValue: String) -> String {
+        let sanitized = rawValue
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .trimmingCharacters(in: CharacterSet(charactersIn: "#"))
+            .uppercased()
+
+        guard sanitized.count == 6,
+              sanitized.allSatisfy({ $0.isHexDigit }) else {
+            return "FFFFFF"
+        }
+
+        return sanitized
     }
 
     private static let defaultIconURL = "https://firebasestorage.googleapis.com/v0/b/edu-app-77e5e.appspot.com/o/default-icon.png?alt=media&token=e5e444e4-a45e-4651-a45b-e444e451a45b"

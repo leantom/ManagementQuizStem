@@ -12,54 +12,99 @@ import CryptoKit
 
 struct Question: Identifiable, Codable, Hashable {
     @DocumentID var id: String?
+    var source: String?
+    var externalId: String?
+    var isVerified: Bool?
+    var scientificDomain: String?
+    var didYouKnow: String?
     var difficulty: String
     var questionText: String
     var options: [String]
     var correctAnswer: String
     var topic: String?
     var topicID: String?
+    var cognitiveSkills: [String]?
+    var eloRating: Int?
+    var hints: [String]?
     var explanation: String?
+    var realWorldContext: String?
 }
 
 struct QuestionImport: Identifiable, Codable {
     var id = UUID()
 
+    var source: String?
+    var externalId: String?
+    var isVerified: Bool?
+    var scientificDomain: String?
+    var didYouKnow: String?
     var difficulty: String
     var questionText: String
     var options: [String]
     var correctAnswer: String
     var topic: String?
     var topicID: String?
+    var cognitiveSkills: [String]?
+    var eloRating: Int?
+    var hints: [String]?
     var explanation: String?
+    var realWorldContext: String?
 
     enum CodingKeys: String, CodingKey {
+        case source
+        case externalId
+        case isVerified
+        case scientificDomain
+        case didYouKnow
         case difficulty
         case questionText
         case options
         case correctAnswer
         case topic
         case topicID
+        case cognitiveSkills
+        case eloRating
+        case hints
         case explanation
+        case realWorldContext
     }
 
     init(
         id: UUID = UUID(),
+        source: String? = nil,
+        externalId: String? = nil,
+        isVerified: Bool? = nil,
+        scientificDomain: String? = nil,
+        didYouKnow: String? = nil,
         difficulty: String,
         questionText: String,
         options: [String],
         correctAnswer: String,
         topic: String?,
         topicID: String?,
-        explanation: String?
+        cognitiveSkills: [String]? = nil,
+        eloRating: Int? = nil,
+        hints: [String]? = nil,
+        explanation: String?,
+        realWorldContext: String? = nil
     ) {
         self.id = id
+        self.source = source
+        self.externalId = externalId
+        self.isVerified = isVerified
+        self.scientificDomain = scientificDomain
+        self.didYouKnow = didYouKnow
         self.difficulty = difficulty
         self.questionText = questionText
         self.options = options
         self.correctAnswer = correctAnswer
         self.topic = topic
         self.topicID = topicID
+        self.cognitiveSkills = cognitiveSkills
+        self.eloRating = eloRating
+        self.hints = hints
         self.explanation = explanation
+        self.realWorldContext = realWorldContext
     }
 }
 
@@ -83,7 +128,16 @@ class QuestionsViewModel: ObservableObject {
     @Published var draftOptions: [String] = ["", "", "", ""]
     @Published var draftCorrectAnswer = ""
     @Published var draftTopicID = ""
+    @Published var draftCognitiveSkillsText = "logic"
+    @Published var draftEloRating = "1200"
+    @Published var draftHintsText = ""
     @Published var draftExplanation = ""
+    @Published var draftRealWorldContext = ""
+    @Published var draftSource = ""
+    @Published var draftExternalID = ""
+    @Published var draftIsVerified = false
+    @Published var draftScientificDomain = "Logic"
+    @Published var draftDidYouKnow = ""
 
     private let defaultDifficultyOptions = [
         "Easy",
@@ -92,6 +146,16 @@ class QuestionsViewModel: ObservableObject {
         "Beginner",
         "Intermediate",
         "Advanced"
+    ]
+
+    let scientificDomainOptions = [
+        "Nature",
+        "Space",
+        "Logic",
+        "Health",
+        "Technology",
+        "Data Literacy",
+        "Estimation"
     ]
 
     var selectedQuestion: Question? {
@@ -131,6 +195,14 @@ class QuestionsViewModel: ObservableObject {
 
         if draftTopicID.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             warnings.append("Assign the question to a topic before saving.")
+        }
+
+        if normalizedSkills(from: draftCognitiveSkillsText).isEmpty {
+            warnings.append("Add at least one cognitive skill tag.")
+        }
+
+        if normalizedEloRating() == nil {
+            warnings.append("ELO rating must be a number between 800 and 2500.")
         }
 
         return warnings
@@ -247,7 +319,18 @@ class QuestionsViewModel: ObservableObject {
         draftOptions = normalizedDraftOptions(from: question.options)
         draftCorrectAnswer = question.correctAnswer
         draftTopicID = question.topicID ?? ""
+        draftCognitiveSkillsText = (question.cognitiveSkills?.isEmpty == false)
+            ? (question.cognitiveSkills ?? []).joined(separator: ", ")
+            : "logic"
+        draftEloRating = "\(question.eloRating ?? defaultEloRating(for: question.difficulty))"
+        draftHintsText = (question.hints ?? []).joined(separator: "\n")
         draftExplanation = question.explanation ?? ""
+        draftRealWorldContext = question.realWorldContext ?? ""
+        draftSource = question.source ?? ""
+        draftExternalID = question.externalId ?? ""
+        draftIsVerified = question.isVerified ?? false
+        draftScientificDomain = question.scientificDomain ?? defaultScientificDomain(for: question)
+        draftDidYouKnow = question.didYouKnow ?? ""
     }
 
     func startCreatingNewQuestion() {
@@ -261,7 +344,16 @@ class QuestionsViewModel: ObservableObject {
         draftOptions = ["", "", "", ""]
         draftCorrectAnswer = ""
         draftTopicID = topics.first?.id ?? ""
+        draftCognitiveSkillsText = "logic"
+        draftEloRating = "1200"
+        draftHintsText = ""
         draftExplanation = ""
+        draftRealWorldContext = ""
+        draftSource = ""
+        draftExternalID = ""
+        draftIsVerified = true
+        draftScientificDomain = "Logic"
+        draftDidYouKnow = ""
     }
 
     func discardDraftChanges() {
@@ -277,7 +369,14 @@ class QuestionsViewModel: ObservableObject {
         let difficulty = draftDifficulty.trimmingCharacters(in: .whitespacesAndNewlines)
         let options = trimmedDraftOptions()
         let rawCorrectAnswer = draftCorrectAnswer.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cognitiveSkills = normalizedSkills(from: draftCognitiveSkillsText)
+        let hints = normalizedLines(from: draftHintsText)
+        let realWorldContext = draftRealWorldContext.trimmingCharacters(in: .whitespacesAndNewlines)
         let explanation = draftExplanation.trimmingCharacters(in: .whitespacesAndNewlines)
+        let source = draftSource.trimmingCharacters(in: .whitespacesAndNewlines)
+        let externalID = draftExternalID.trimmingCharacters(in: .whitespacesAndNewlines)
+        let scientificDomain = draftScientificDomain.trimmingCharacters(in: .whitespacesAndNewlines)
+        let didYouKnow = draftDidYouKnow.trimmingCharacters(in: .whitespacesAndNewlines)
 
         guard questionText.isEmpty == false else {
             errorMessage = "Question prompt is required."
@@ -291,6 +390,16 @@ class QuestionsViewModel: ObservableObject {
 
         guard draftTopicID.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false else {
             errorMessage = "Select a topic for this question."
+            return
+        }
+
+        guard cognitiveSkills.isEmpty == false else {
+            errorMessage = "Add at least one cognitive skill tag."
+            return
+        }
+
+        guard let eloRating = normalizedEloRating() else {
+            errorMessage = "ELO rating must be a number between 800 and 2500."
             return
         }
 
@@ -315,12 +424,21 @@ class QuestionsViewModel: ObservableObject {
         let targetQuestionID = selectedQuestion?.id ?? hashedQuestionID(for: questionText)
 
         let data: [String: Any] = [
+            FirestoreField.Question.source: source,
+            FirestoreField.Question.externalID: externalID,
+            FirestoreField.Question.isVerified: draftIsVerified,
+            FirestoreField.Question.scientificDomain: scientificDomain.isEmpty ? "Logic" : scientificDomain,
+            FirestoreField.Question.didYouKnow: didYouKnow,
             FirestoreField.Question.difficulty: difficulty.isEmpty ? "Medium" : difficulty,
             FirestoreField.Question.questionText: questionText,
             FirestoreField.Question.options: options,
             FirestoreField.Question.correctAnswer: canonicalCorrectAnswer,
             FirestoreField.Question.topicID: draftTopicID,
-            FirestoreField.Question.explanation: explanation
+            FirestoreField.Question.cognitiveSkills: cognitiveSkills,
+            FirestoreField.Question.eloRating: eloRating,
+            FirestoreField.Question.hints: hints,
+            FirestoreField.Question.explanation: explanation,
+            FirestoreField.Question.realWorldContext: realWorldContext
         ]
 
         isSavingDraft = true
@@ -403,13 +521,22 @@ class QuestionsViewModel: ObservableObject {
     func exportData(for questions: [Question]) throws -> Data {
         let payload = questions.map { question in
             QuestionImport(
+                source: question.source,
+                externalId: question.externalId,
+                isVerified: question.isVerified,
+                scientificDomain: question.scientificDomain,
+                didYouKnow: question.didYouKnow,
                 difficulty: question.difficulty,
                 questionText: question.questionText,
                 options: question.options,
                 correctAnswer: question.correctAnswer,
                 topic: topics.first(where: { $0.id == question.topicID })?.category ?? question.topic,
                 topicID: question.topicID,
-                explanation: question.explanation
+                cognitiveSkills: question.cognitiveSkills,
+                eloRating: question.eloRating,
+                hints: question.hints,
+                explanation: question.explanation,
+                realWorldContext: question.realWorldContext
             )
         }
 
@@ -601,14 +728,7 @@ class QuestionsViewModel: ObservableObject {
                 to: batch,
                 topicID: topic.id,
                 questionID: questionID,
-                data: [
-                    FirestoreField.Question.topicID: topic.id,
-                    FirestoreField.Question.difficulty: question.difficulty,
-                    FirestoreField.Question.questionText: question.questionText,
-                    FirestoreField.Question.options: question.options,
-                    FirestoreField.Question.correctAnswer: question.correctAnswer,
-                    FirestoreField.Question.explanation: question.explanation ?? ""
-                ]
+                data: importedQuestionData(for: question, topicID: topic.id)
             )
             self.questionIDsImport.append(questionID)
         }
@@ -647,60 +767,67 @@ class QuestionsViewModel: ObservableObject {
         
         // Step 2: Fetch existing questionIDs from Firestore
         fetchExistingQuestionIDs(questionIDs: allQuestionIDs) { existingIDs in
-            // Step 3: Filter out questions that already exist
-            let newQuestionIDs = allQuestionIDs.filter { !existingIDs.contains($0) }
-            let newQuestions = newQuestionIDs.compactMap { questionIDMap[$0] }
-            
-            if newQuestions.isEmpty {
-                DispatchQueue.main.async {
-                    self.successMessage = "No new questions to upload."
+            self.fetchExistingExternalQuestionKeys(for: Array(questionIDMap.values)) { existingExternalKeys in
+                // Step 3: Filter out questions that already exist by document ID or API source key.
+                let newQuestionIDs = allQuestionIDs.filter { questionID in
+                    guard existingIDs.contains(questionID) == false,
+                          let question = questionIDMap[questionID] else {
+                        return false
+                    }
+
+                    if let externalKey = self.externalQuestionKey(for: question),
+                       existingExternalKeys.contains(externalKey) {
+                        return false
+                    }
+
+                    return true
                 }
-                return
-            }
-            
-            // Step 4: Prepare batch upload for new questions
-            let batch = self.questionsRepository.makeBatch()
-            
-            for question in newQuestions {
-                guard let topicCategory = question.topic else {
-                    continue
-                }
-                guard let topic = self.filterTopicsByCategory(by: topicCategory) else {
+                let newQuestions = newQuestionIDs.compactMap { questionIDMap[$0] }
+                
+                if newQuestions.isEmpty {
                     DispatchQueue.main.async {
-                        self.errorMessage = "Topic not found for question: \(question.questionText)"
+                        self.successMessage = "No new questions to upload."
                     }
                     return
                 }
                 
-                let questionID = SHA256.hash(data: Data(question.questionText.utf8))
-                    .compactMap { String(format: "%02x", $0) }
-                    .joined()
+                // Step 4: Prepare batch upload for new questions
+                let batch = self.questionsRepository.makeBatch()
                 
-                self.questionsRepository.addImportedQuestion(
-                    to: batch,
-                    topicID: topic.id,
-                    questionID: questionID,
-                    data: [
-                        FirestoreField.Question.topicID: topic.id,
-                        FirestoreField.Question.difficulty: question.difficulty,
-                        FirestoreField.Question.questionText: question.questionText,
-                        FirestoreField.Question.options: question.options,
-                        FirestoreField.Question.correctAnswer: question.correctAnswer,
-                        FirestoreField.Question.explanation: question.explanation ?? ""
-                    ]
-                )
-                self.questionIDsImport.append(questionID)
-            }
-            
-            // Step 5: Commit the batch
-            self.questionsRepository.commit(batch) { error in
-                DispatchQueue.main.async {
-                    if let error = error {
-                        self.errorMessage = "Failed to upload questions: \(error.localizedDescription)"
-                    } else {
-                        self.successMessage = "\(newQuestions.count) Questions imported successfully!"
-                        self.loadLibrary(force: true)
-                        print(self.successMessage as Any)
+                for question in newQuestions {
+                    guard let topicCategory = question.topic else {
+                        continue
+                    }
+                    guard let topic = self.filterTopicsByCategory(by: topicCategory) else {
+                        DispatchQueue.main.async {
+                            self.errorMessage = "Topic not found for question: \(question.questionText)"
+                        }
+                        return
+                    }
+                    
+                    let questionID = SHA256.hash(data: Data(question.questionText.utf8))
+                        .compactMap { String(format: "%02x", $0) }
+                        .joined()
+                    
+                    self.questionsRepository.addImportedQuestion(
+                        to: batch,
+                        topicID: topic.id,
+                        questionID: questionID,
+                        data: self.importedQuestionData(for: question, topicID: topic.id)
+                    )
+                    self.questionIDsImport.append(questionID)
+                }
+                
+                // Step 5: Commit the batch
+                self.questionsRepository.commit(batch) { error in
+                    DispatchQueue.main.async {
+                        if let error = error {
+                            self.errorMessage = "Failed to upload questions: \(error.localizedDescription)"
+                        } else {
+                            self.successMessage = "\(newQuestions.count) Questions imported successfully!"
+                            self.loadLibrary(force: true)
+                            print(self.successMessage as Any)
+                        }
                     }
                 }
             }
@@ -719,6 +846,32 @@ class QuestionsViewModel: ObservableObject {
                     completion(existingIDs)
                 case .failure(let error):
                     self.errorMessage = "Error checking duplicates: \(error.localizedDescription)"
+                    completion([])
+                }
+            }
+        }
+    }
+
+    private func fetchExistingExternalQuestionKeys(
+        for questions: [QuestionImport],
+        completion: @escaping (Set<String>) -> Void
+    ) {
+        let groupedKeys = questions.reduce(into: [String: Set<String>]()) { result, question in
+            guard let source = normalizedOptionalImportValue(question.source),
+                  let externalID = normalizedOptionalImportValue(question.externalId) else {
+                return
+            }
+
+            result[source, default: []].insert(externalID)
+        }
+
+        questionsRepository.fetchExistingExternalQuestionKeys(groupedKeys) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let existingKeys):
+                    completion(existingKeys)
+                case .failure(let error):
+                    self.errorMessage = "Error checking external duplicates: \(error.localizedDescription)"
                     completion([])
                 }
             }
@@ -768,6 +921,115 @@ class QuestionsViewModel: ObservableObject {
         draftOptions
             .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
             .filter { $0.isEmpty == false }
+    }
+
+    private func normalizedSkills(from rawValue: String) -> [String] {
+        rawValue
+            .components(separatedBy: CharacterSet(charactersIn: ",\n"))
+            .map {
+                $0.trimmingCharacters(in: .whitespacesAndNewlines)
+                    .lowercased()
+                    .replacingOccurrences(of: " ", with: "_")
+            }
+            .filter { $0.isEmpty == false }
+    }
+
+    private func normalizedLines(from rawValue: String) -> [String] {
+        rawValue
+            .components(separatedBy: .newlines)
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { $0.isEmpty == false }
+    }
+
+    private func normalizedEloRating() -> Int? {
+        let trimmedValue = draftEloRating.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard let value = Int(trimmedValue), (800...2500).contains(value) else {
+            return nil
+        }
+
+        return value
+    }
+
+    private func defaultEloRating(for difficulty: String) -> Int {
+        switch difficulty.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() {
+        case "easy", "beginner":
+            return 900
+        case "hard", "advanced":
+            return 1700
+        default:
+            return 1200
+        }
+    }
+
+    private func importedQuestionData(for question: QuestionImport, topicID: String) -> [String: Any] {
+        [
+            FirestoreField.Question.source: normalizedOptionalImportValue(question.source) ?? "",
+            FirestoreField.Question.externalID: normalizedOptionalImportValue(question.externalId) ?? "",
+            FirestoreField.Question.isVerified: question.isVerified ?? false,
+            FirestoreField.Question.scientificDomain: normalizedOptionalImportValue(question.scientificDomain)
+                ?? defaultScientificDomain(for: question),
+            FirestoreField.Question.didYouKnow: normalizedOptionalImportValue(question.didYouKnow) ?? "",
+            FirestoreField.Question.topicID: topicID,
+            FirestoreField.Question.difficulty: question.difficulty,
+            FirestoreField.Question.questionText: question.questionText,
+            FirestoreField.Question.options: question.options,
+            FirestoreField.Question.correctAnswer: question.correctAnswer,
+            FirestoreField.Question.cognitiveSkills: question.cognitiveSkills ?? ["logic"],
+            FirestoreField.Question.eloRating: question.eloRating ?? defaultEloRating(for: question.difficulty),
+            FirestoreField.Question.hints: question.hints ?? [],
+            FirestoreField.Question.explanation: question.explanation ?? "",
+            FirestoreField.Question.realWorldContext: question.realWorldContext ?? ""
+        ]
+    }
+
+    private func normalizedOptionalImportValue(_ value: String?) -> String? {
+        guard let value else { return nil }
+        let trimmedValue = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        return trimmedValue.isEmpty ? nil : trimmedValue
+    }
+
+    private func externalQuestionKey(for question: QuestionImport) -> String? {
+        guard let source = normalizedOptionalImportValue(question.source),
+              let externalID = normalizedOptionalImportValue(question.externalId) else {
+            return nil
+        }
+
+        return "\(source):\(externalID)"
+    }
+
+    private func defaultScientificDomain(for question: Question) -> String {
+        if let skill = question.cognitiveSkills?.first {
+            return scientificDomain(forSkill: skill)
+        }
+
+        return "Logic"
+    }
+
+    private func defaultScientificDomain(for question: QuestionImport) -> String {
+        if let skill = question.cognitiveSkills?.first {
+            return scientificDomain(forSkill: skill)
+        }
+
+        return "Logic"
+    }
+
+    private func scientificDomain(forSkill skill: String) -> String {
+        switch skill.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() {
+        case "data_literacy", "data literacy", "statistics", "probability":
+            return "Data Literacy"
+        case "estimation", "mental_math", "mental math":
+            return "Estimation"
+        case "health", "biology", "medicine":
+            return "Health"
+        case "technology", "computer_science", "computer science", "engineering":
+            return "Technology"
+        case "space", "astronomy", "physics":
+            return "Space"
+        case "nature", "chemistry", "earth_science", "earth science":
+            return "Nature"
+        default:
+            return "Logic"
+        }
     }
 
     private func hashedQuestionID(for questionText: String) -> String {

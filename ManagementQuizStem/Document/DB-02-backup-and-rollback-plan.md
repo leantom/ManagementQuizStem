@@ -26,18 +26,25 @@ Primary production collections and collection groups:
 
 - `Subjects`
 - `Topics`
+- `questions`
 - `Questions`
+- `users`
+- `learningPaths`
+- `dailyChallenges`
 - `challenges`
 - `badges`
+- `satExamQuestions`
 
 Legacy path also covered by the backup:
 
 - `Topics/{topicId}/Questions`
+- `Topics/{topicId}/questions`
 
 Important:
 
 - Firestore export/import uses collection groups, not just root collections.
 - Exporting/importing collection ID `Questions` covers both root `Questions` and nested `Topics/{topicId}/Questions` documents.
+- Exporting/importing collection ID `questions` covers root `questions` and nested `Topics/{topicId}/questions` documents.
 
 ## Backup Strategy
 
@@ -109,6 +116,18 @@ RELEASE_TAG=<migration-or-release-tag> \
 /Users/quangho/Documents/ManagementQuizStem/scripts/firestore_export.sh
 ```
 
+For the brain-training schema, use:
+
+```bash
+PROJECT_ID=brainbolt-281c7 \
+DATABASE_ID=prod-stem-db \
+BACKUP_BUCKET=<gcs-bucket-name> \
+EXPORT_KIND=scoped \
+COLLECTION_IDS=Subjects,Topics,Questions,questions,users,learningPaths,dailyChallenges,challenges,badges,satExamQuestions \
+RELEASE_TAG=<migration-or-release-tag> \
+/Users/quangho/Documents/ManagementQuizStem/scripts/firestore_export.sh
+```
+
 ### Export verification checklist
 
 Do not proceed until all are true:
@@ -124,8 +143,10 @@ Do not proceed until all are true:
 Rollback should start immediately if any of these happen:
 
 - migration writes corrupt `Topics.name` or `Topics.category`
-- question imports produce missing or duplicated root `Questions`
+- question imports produce missing or duplicated root `questions`
 - challenge creation points to missing question IDs
+- learning paths point to missing `questions/{questionId}` documents
+- daily challenges point to missing `questions/{questionId}` references
 - badge or subject writes fail because of schema incompatibility
 - the shipped app can no longer read production data without errors
 
@@ -195,6 +216,18 @@ ACK_IMPORT=YES \
 /Users/quangho/Documents/ManagementQuizStem/scripts/firestore_restore.sh
 ```
 
+Brain-training scoped import example:
+
+```bash
+PROJECT_ID=brainbolt-281c7 \
+DATABASE_ID=prod-stem-db \
+IMPORT_URI_PREFIX=gs://<bucket>/<export-prefix>/ \
+IMPORT_KIND=scoped \
+COLLECTION_IDS=Subjects,Topics,Questions,questions,users,learningPaths,dailyChallenges,challenges,badges,satExamQuestions \
+ACK_IMPORT=YES \
+/Users/quangho/Documents/ManagementQuizStem/scripts/firestore_restore.sh
+```
+
 ## Post-Restore Validation
 
 After rollback, verify:
@@ -202,10 +235,14 @@ After rollback, verify:
 - the admin app launches and authenticates anonymously
 - subjects list loads
 - topics list loads and sort order still works on `category`
-- root `Questions` can be fetched and deleted by `topicID`
+- root `questions` can be fetched and deleted by `topicID`
+- root `Questions` remains available only as legacy migration data
+- learning path counts load on the dashboard
+- daily challenge counts load on the dashboard
+- user profile count loads on the dashboard
 - challenge creation screen loads Topics without decode failures
 - badge seed data shape still decodes
-- a spot-check of `Subjects`, `Topics`, `Questions`, `challenges`, and `badges` matches the pre-migration baseline
+- a spot-check of `Subjects`, `Topics`, `questions`, `users`, `learningPaths`, `dailyChallenges`, `challenges`, `badges`, and `satExamQuestions` matches the pre-migration baseline
 
 ## Recovery Drill Recommendation
 

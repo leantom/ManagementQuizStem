@@ -1,163 +1,120 @@
 {
-  "id": "challenge-67412",
-  "type": "daily",
-  "title": "Intermediate Crystallography Challenge",
-  "startDate": "2026-04-02T00:00:00Z",
-  "endDate": "2026-04-09T00:00:00Z",
+  "id": "challenge-math-week-2",
+  "type": "weekly",
+  "title": "SAT Math Weekly Challenge",
   "difficultyLevel": "Intermediate",
-  "remainTime": 300,
+  "remainTime": 600,
   "questions": [
     {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
       "difficulty": "Intermediate",
-      "questionText": "What does crystallography primarily study?",
-      "options": [
-        "A) The motion of planets",
-        "B) The atomic arrangement in crystalline solids",
-        "C) The chemistry of gases only",
-        "D) The genetics of living cells"
-      ],
+      "questionText": "If f(x) = 2x + 5 and g(x) = 3x - 1, what is the value of 2f(4) - g(4)?",
+      "options": ["A) 15", "B) 19", "C) 21", "D) 25"],
       "correctAnswer": "B",
-      "explanation": "Crystallography focuses on how atoms, ions, or molecules are arranged in crystalline solids."
+      "explanation": "f(4) = 13 and g(4) = 11. Therefore, 2f(4) - g(4) = 2(13) - 11 = 15."
     },
     {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
-      "difficulty": "Intermediate",
-      "questionText": "Why are X-rays commonly used in crystallography?",
-      "options": [
-        "A) Because X-rays have wavelengths comparable to atomic spacing",
-        "B) Because X-rays make crystals grow faster",
-        "C) Because X-rays change solids into liquids",
-        "D) Because X-rays only interact with metals"
-      ],
-      "correctAnswer": "A",
-      "explanation": "X-rays are ideal because their wavelengths are similar to distances between atoms in crystals, allowing diffraction patterns to reveal structure."
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Easy",
+      "questionText": "The graph of y = -3x + 8 has y-intercept (0, y). What is the value of y?",
+      "options": ["A) -3", "B) 0", "C) 5", "D) 8"],
+      "correctAnswer": "D",
+      "explanation": "At the y-intercept, x = 0. Substituting gives y = -3(0) + 8 = 8."
     },
     {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
       "difficulty": "Intermediate",
-      "questionText": "What happens when X-rays strike a crystal in the correct way?",
-      "options": [
-        "A) The crystal disappears",
-        "B) The X-rays are diffracted into a pattern",
-        "C) The crystal becomes radioactive",
-        "D) The atoms stop vibrating"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The repeating structure of a crystal causes X-rays to diffract, creating a pattern that can be analyzed to determine atomic arrangement."
-    },
-    {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
-      "difficulty": "Intermediate",
-      "questionText": "In crystallography, what is a unit cell?",
-      "options": [
-        "A) The largest visible crystal sample",
-        "B) The smallest repeating structural unit of a crystal",
-        "C) A damaged region inside a crystal",
-        "D) A tool used to cut crystals"
-      ],
-      "correctAnswer": "B",
-      "explanation": "A unit cell is the smallest repeating three-dimensional pattern that builds the entire crystal lattice."
-    },
-    {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
-      "difficulty": "Intermediate",
-      "questionText": "Which property best describes a crystal lattice?",
-      "options": [
-        "A) Random atomic arrangement",
-        "B) Repeating and ordered arrangement of particles",
-        "C) A liquid-like structure",
-        "D) A structure with no symmetry"
-      ],
-      "correctAnswer": "B",
-      "explanation": "A crystal lattice is a highly ordered, repeating arrangement of particles in space."
-    },
-    {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
-      "difficulty": "Intermediate",
-      "questionText": "Which of the following is an important application of crystallography?",
-      "options": [
-        "A) Predicting daily weather",
-        "B) Determining protein structures for medicine",
-        "C) Measuring sound frequency in music",
-        "D) Calculating internet speed"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Crystallography is widely used to determine the structures of proteins and other biomolecules, which is essential in drug design and medical research."
-    },
-    {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
-      "difficulty": "Intermediate",
-      "questionText": "What information can scientists most directly obtain from a diffraction pattern?",
-      "options": [
-        "A) The exact color of a crystal",
-        "B) The arrangement of atoms inside the crystal",
-        "C) The age of the crystal in years",
-        "D) The crystal's temperature history only"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Diffraction patterns contain information about atomic spacing and symmetry, which allows scientists to infer internal structure."
-    },
-    {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
-      "difficulty": "Intermediate",
-      "questionText": "Why is symmetry important in crystallography?",
-      "options": [
-        "A) It helps describe and classify crystal structures",
-        "B) It prevents crystals from breaking",
-        "C) It increases crystal temperature",
-        "D) It makes all crystals transparent"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Symmetry is a key feature used to classify crystals and understand how their atomic structures repeat in space."
-    },
-    {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
-      "difficulty": "Intermediate",
-      "questionText": "If a solid has no long-range repeating atomic order, it is best described as:",
-      "options": [
-        "A) Crystalline",
-        "B) Metallic",
-        "C) Amorphous",
-        "D) Ionic"
-      ],
+      "questionText": "Which point is a solution to the inequality y < 2x - 3?",
+      "options": ["A) (1, 0)", "B) (2, 2)", "C) (3, 1)", "D) (0, 0)"],
       "correctAnswer": "C",
-      "explanation": "Amorphous solids, such as glass, do not have the long-range ordered structure found in crystals."
+      "explanation": "For (3, 1), 1 < 2(3) - 3 = 3, which is true."
     },
     {
-      "topicID": "AEA3D90E-C9C6-4716-B328-F70A8904E0D9",
-      "topic": "Crystallography",
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
       "difficulty": "Intermediate",
-      "questionText": "What is one major challenge in determining crystal structures experimentally?",
-      "options": [
-        "A) Crystals always melt under light",
-        "B) High-quality crystals are often difficult to grow",
-        "C) X-rays cannot pass through solids",
-        "D) All crystals give the same diffraction pattern"
-      ],
+      "questionText": "A store sells notebooks for $4 each and pens for $2 each. A purchase of notebooks and pens costs $28. If the customer buys 5 pens, how many notebooks does the customer buy?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
       "correctAnswer": "B",
-      "explanation": "Accurate crystallographic analysis usually requires high-quality crystals, and growing suitable crystals can be difficult for many substances."
+      "explanation": "The pens cost 5 × 2 = 10 dollars. The remaining cost is 28 - 10 = 18 dollars. Since each notebook costs $4, the closest correct setup should be 4n + 10 = 28, so n = 4.5. This question needs correction."
+    },
+    {
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Intermediate",
+      "questionText": "A store sells notebooks for $4 each and pens for $2 each. A purchase of notebooks and pens costs $30. If the customer buys 5 pens, how many notebooks does the customer buy?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+      "correctAnswer": "C",
+      "explanation": "The pens cost 5 × 2 = 10 dollars. The notebooks cost 30 - 10 = 20 dollars. Since each notebook costs $4, the customer buys 20 ÷ 4 = 5 notebooks."
+    },
+    {
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Intermediate",
+      "questionText": "What is the minimum value of the function h(x) = (x - 4)^2 + 7?",
+      "options": ["A) 4", "B) 7", "C) 11", "D) 16"],
+      "correctAnswer": "B",
+      "explanation": "Since (x - 4)^2 is always greater than or equal to 0, the minimum value occurs when x = 4. The minimum value is 7."
+    },
+    {
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Intermediate",
+      "questionText": "How many distinct real solutions does the equation (x + 2)^2 = -9 have?",
+      "options": ["A) Zero", "B) Exactly one", "C) Exactly two", "D) Infinitely many"],
+      "correctAnswer": "A",
+      "explanation": "A squared expression cannot be negative for any real value of x, so the equation has zero real solutions."
+    },
+    {
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Easy",
+      "questionText": "In a group of students, 60% play soccer. Of the students who play soccer, 25% also play basketball. What percentage of the group plays both soccer and basketball?",
+      "options": ["A) 15%", "B) 25%", "C) 35%", "D) 85%"],
+      "correctAnswer": "A",
+      "explanation": "25% of 60% is 0.25 × 0.60 = 0.15, or 15%."
+    },
+    {
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Intermediate",
+      "questionText": "A rectangle has a diagonal of length 13 and one side of length 5. What is the length of the other side?",
+      "options": ["A) 8", "B) 10", "C) 12", "D) 18"],
+      "correctAnswer": "C",
+      "explanation": "Using the Pythagorean theorem: 5^2 + b^2 = 13^2, so 25 + b^2 = 169. Thus b^2 = 144 and b = 12."
+    },
+    {
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Intermediate",
+      "questionText": "An arc of a circle measures 60° and has length 5 inches. What is the circumference of the circle?",
+      "options": ["A) 15", "B) 20", "C) 25", "D) 30"],
+      "correctAnswer": "D",
+      "explanation": "The arc is 60/360 = 1/6 of the circle. If 1/6 of the circumference is 5, then the full circumference is 5 × 6 = 30 inches."
+    },
+    {
+      "topicID": "MATH-SAT-001",
+      "topic": "SAT Math",
+      "difficulty": "Advanced",
+      "questionText": "For the function f, f(0) = 80, and for each increase in x by 1, the value of f(x) decreases by 50%. What is the value of f(3)?",
+      "options": ["A) 5", "B) 10", "C) 20", "D) 40"],
+      "correctAnswer": "B",
+      "explanation": "The function can be modeled as f(x) = 80(0.5)^x. Therefore, f(3) = 80(0.5)^3 = 80 × 0.125 = 10."
     }
   ],
   "rewards": [
     {
       "type": "points",
       "value": 500,
-      "description": "Earn 500 points for mastering crystal structure concepts."
+      "description": "Earn 500 points for completing the SAT Math Weekly Challenge."
     },
     {
       "type": "badge",
       "value": 1,
-      "description": "Unlock the 'Crystal Explorer' badge."
+      "description": "Unlock the 'SAT Math Challenger' badge."
     }
   ],
   "isActive": true

@@ -1,0 +1,120 @@
+[
+  {
+    "source": "opentdb",
+    "externalId": "adult-data-001",
+    "isVerified": false,
+    "scientificDomain": "Data Literacy",
+    "didYouKnow": "Base rates are one reason dashboards can feel persuasive while still being misleading.",
+    "difficulty": "Medium",
+    "questionText": "A health app says a rare condition affects 1 in 1,000 adults. Its alert is 99% sensitive and 95% specific. If an average user receives a positive alert, what is the best first interpretation?",
+    "options": [
+      "The user almost certainly has the condition",
+      "The alert is useful, but false positives may still outnumber true positives",
+      "The test is invalid because the condition is rare",
+      "Specificity no longer matters after a positive alert"
+    ],
+    "correctAnswer": "The alert is useful, but false positives may still outnumber true positives",
+    "topic": "Statistics & Probability",
+    "topicID": "test-statistics-probability",
+    "cognitiveSkills": [
+      "data_literacy",
+      "probability",
+      "base_rate_reasoning"
+    ],
+    "eloRating": 1450,
+    "hints": [
+      "Compare how many true positives and false positives appear in a large sample.",
+      "Try 100,000 adults so the 1 in 1,000 rate becomes easy to count."
+    ],
+    "explanation": "In a large population, a rare condition produces relatively few true cases. Even with strong sensitivity and specificity, the much larger group without the condition can generate many false positives. The alert should be taken seriously, but it is not the same as a diagnosis.",
+    "realWorldContext": "Adults often see risk scores in health apps, credit tools, and workplace dashboards. Base-rate reasoning helps them avoid overreacting to a single signal."
+  },
+  {
+    "source": "opentdb",
+    "externalId": "adult-ai-002",
+    "isVerified": false,
+    "scientificDomain": "Technology",
+    "didYouKnow": "Model confidence usually reflects patterns learned from data, not a human-like understanding of truth.",
+    "difficulty": "Medium",
+    "questionText": "A customer-support AI gives a confident answer about a refund policy, but the policy changed yesterday. Which action best reduces the risk of giving customers outdated information?",
+    "options": [
+      "Increase the model temperature",
+      "Connect the answer flow to the current policy source before responding",
+      "Ask the model to sound less confident",
+      "Use a larger font for the final answer"
+    ],
+    "correctAnswer": "Connect the answer flow to the current policy source before responding",
+    "topic": "Artificial Intelligence",
+    "topicID": "test-artificial-intelligence",
+    "cognitiveSkills": [
+      "logic",
+      "technology",
+      "source_evaluation"
+    ],
+    "eloRating": 1250,
+    "hints": [
+      "Think about whether the model has access to information that changed after training.",
+      "The safest workflow checks the authoritative source, not just the model memory."
+    ],
+    "explanation": "When facts change frequently, the system should retrieve or verify information from the current source of truth before answering. Prompt tone and model size cannot guarantee that yesterday's policy update is reflected.",
+    "realWorldContext": "This is the core reason many production AI systems use retrieval, tools, or database lookups for business-critical answers."
+  },
+  {
+    "source": "manual",
+    "externalId": "adult-space-003",
+    "isVerified": true,
+    "scientificDomain": "Space",
+    "didYouKnow": "A light-year measures distance, not time: it is how far light travels in one year.",
+    "difficulty": "Easy",
+    "questionText": "If a star is 8 light-years away, what does that mainly tell us?",
+    "options": [
+      "The star is 8 years old",
+      "The star is 8 times larger than the Sun",
+      "The light we see took about 8 years to reach us",
+      "The star will disappear in 8 years"
+    ],
+    "correctAnswer": "The light we see took about 8 years to reach us",
+    "topic": "Astronomy",
+    "topicID": "test-astronomy",
+    "cognitiveSkills": [
+      "logic",
+      "estimation"
+    ],
+    "eloRating": 900,
+    "hints": [
+      "Focus on what a light-year measures.",
+      "Distance in space also means we see objects as they were in the past."
+    ],
+    "explanation": "A light-year is the distance light travels in one year. Seeing a star 8 light-years away means the light reaching us today started its trip roughly 8 years ago.",
+    "realWorldContext": "This idea helps adults interpret astronomy news about distant stars, galaxies, and telescope images."
+  },
+  {
+    "source": "manual",
+    "externalId": "adult-health-004",
+    "isVerified": true,
+    "scientificDomain": "Health",
+    "didYouKnow": "Muscle and liver cells store glucose as glycogen so the body can access energy between meals.",
+    "difficulty": "Medium",
+    "questionText": "After a meal, insulin helps body cells absorb glucose from the bloodstream. What is the most direct effect of this process?",
+    "options": [
+      "Blood glucose tends to decrease toward a normal range",
+      "Oxygen levels in the lungs immediately rise",
+      "The stomach stops digesting protein",
+      "The body stops using energy"
+    ],
+    "correctAnswer": "Blood glucose tends to decrease toward a normal range",
+    "topic": "Cell Biology",
+    "topicID": "test-cell-biology",
+    "cognitiveSkills": [
+      "logic",
+      "health"
+    ],
+    "eloRating": 1150,
+    "hints": [
+      "Track where glucose moves after insulin signals cells.",
+      "If glucose leaves the bloodstream and enters cells, blood glucose should go down."
+    ],
+    "explanation": "Insulin signals cells to take up glucose from the blood. As glucose moves into cells for storage or energy use, blood glucose generally falls back toward a normal range.",
+    "realWorldContext": "Understanding this mechanism makes nutrition labels, diabetes discussions, and wearable glucose trends easier to interpret."
+  }
+]

@@ -4,6 +4,9 @@ struct DashboardSnapshot {
     var subjectCount: Int
     var topicCount: Int
     var questionCount: Int
+    var userCount: Int
+    var learningPathCount: Int
+    var dailyChallengeCount: Int
     var currentChallengeCount: Int
     var badgeCount: Int
     var featuredChallenges: [Challenge]
@@ -13,6 +16,9 @@ struct DashboardSnapshot {
         subjectCount: 0,
         topicCount: 0,
         questionCount: 0,
+        userCount: 0,
+        learningPathCount: 0,
+        dailyChallengeCount: 0,
         currentChallengeCount: 0,
         badgeCount: 0,
         featuredChallenges: [],
@@ -29,6 +35,9 @@ final class AdminDashboardViewModel: ObservableObject {
     private let subjectsRepository = SubjectsRepository()
     private let topicsRepository = TopicsRepository()
     private let questionsRepository = QuestionsRepository()
+    private let usersRepository = UsersRepository()
+    private let learningPathsRepository = LearningPathsRepository()
+    private let dailyChallengesRepository = DailyChallengesRepository()
     private let challengesRepository = ChallengesRepository()
     private let badgesRepository = BadgesRepository()
 
@@ -46,6 +55,9 @@ final class AdminDashboardViewModel: ObservableObject {
         var subjectCount = snapshot.subjectCount
         var topicCount = snapshot.topicCount
         var questionCount = snapshot.questionCount
+        var userCount = snapshot.userCount
+        var learningPathCount = snapshot.learningPathCount
+        var dailyChallengeCount = snapshot.dailyChallengeCount
         var currentChallengeCount = snapshot.currentChallengeCount
         var badgeCount = snapshot.badgeCount
         var featuredChallenges = snapshot.featuredChallenges
@@ -71,6 +83,9 @@ final class AdminDashboardViewModel: ObservableObject {
         captureCount(using: subjectsRepository.countAll) { subjectCount = $0 }
         captureCount(using: topicsRepository.countAll) { topicCount = $0 }
         captureCount(using: questionsRepository.countAll) { questionCount = $0 }
+        captureCount(using: usersRepository.countAll) { userCount = $0 }
+        captureCount(using: learningPathsRepository.countAll) { learningPathCount = $0 }
+        captureCount(using: dailyChallengesRepository.countAll) { dailyChallengeCount = $0 }
         captureCount(using: { completion in
             self.challengesRepository.countCurrentChallenges(completion: completion)
         }) { currentChallengeCount = $0 }
@@ -93,6 +108,9 @@ final class AdminDashboardViewModel: ObservableObject {
                 subjectCount: subjectCount,
                 topicCount: topicCount,
                 questionCount: questionCount,
+                userCount: userCount,
+                learningPathCount: learningPathCount,
+                dailyChallengeCount: dailyChallengeCount,
                 currentChallengeCount: currentChallengeCount,
                 badgeCount: badgeCount,
                 featuredChallenges: featuredChallenges,

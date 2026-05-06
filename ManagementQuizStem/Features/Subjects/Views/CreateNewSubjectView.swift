@@ -229,6 +229,43 @@ struct CreateNewSubjectView: View {
             SubjectsEditorField(title: "Display Name", text: $viewModel.name)
 
             SubjectsReadOnlyField(title: "Slug", value: viewModel.subjectSlug)
+            
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Subject Color")
+                    .font(.system(size: 11, weight: .bold, design: .rounded))
+                    .tracking(0.8)
+                    .foregroundStyle(.black)
+
+                HStack(spacing: 12) {
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(Color(hex: viewModel.colorHex) ?? SubjectsPalette.surfaceSecondary)
+                        .frame(width: 44, height: 44)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                .stroke(SubjectsPalette.border, lineWidth: 1)
+                        )
+
+                    TextField("FFFFFF", text: $viewModel.colorHex)
+                        .autocorrectionDisabled()
+                        .textFieldStyle(.plain)
+                        .foregroundStyle(.black)
+                        .font(.system(size: 14, weight: .medium, design: .rounded))
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(SubjectsPalette.surfaceSecondary)
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .stroke(SubjectsPalette.border, lineWidth: 1)
+                )
+
+                Text("Enter a 6-character hex value like FFFFFF.")
+                    .font(.system(size: 11, weight: .medium, design: .rounded))
+                    .foregroundStyle(SubjectsPalette.subtleInk)
+            }
 
             VStack(alignment: .leading, spacing: 8) {
                 Text("Category Mapping")
@@ -496,6 +533,10 @@ private struct SubjectLibraryRow: View {
     let isSelected: Bool
     let action: () -> Void
 
+    private var subjectAccentColor: Color {
+        Color(hex: subject.color_hex ?? "#000000") ?? SubjectsPalette.primary
+    }
+
     var body: some View {
         Button(action: action) {
             HStack(spacing: 0) {
@@ -553,7 +594,7 @@ private struct SubjectLibraryRow: View {
     private var iconCell: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(SubjectsPalette.surfaceSecondary)
+                .fill(subjectAccentColor.opacity(0.14))
                 .frame(width: 42, height: 42)
 
             if let url = URL(string: subject.icon_url), subject.icon_url.isEmpty == false {
@@ -565,13 +606,13 @@ private struct SubjectLibraryRow: View {
                 } placeholder: {
                     Image(systemName: SubjectCategoryMapping.mapping(for: subject.name).icon)
                         .font(.system(size: 16, weight: .bold))
-                        .foregroundStyle(SubjectsPalette.primary)
+                        .foregroundStyle(subjectAccentColor)
                 }
                 .frame(width: 42, height: 42)
             } else {
                 Image(systemName: SubjectCategoryMapping.mapping(for: subject.name).icon)
                     .font(.system(size: 16, weight: .bold))
-                    .foregroundStyle(SubjectsPalette.primary)
+                    .foregroundStyle(subjectAccentColor)
             }
         }
     }
@@ -759,6 +800,25 @@ private struct SubjectsSecondaryButtonStyle: ButtonStyle {
                     .stroke(SubjectsPalette.border, lineWidth: 1)
             )
             .opacity(configuration.isPressed ? 0.86 : 1)
+    }
+}
+
+private extension Color {
+    init?(hex: String) {
+        let sanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: "#", with: "")
+            .uppercased()
+
+        guard sanitized.count == 6,
+              let value = Int(sanitized, radix: 16) else {
+            return nil
+        }
+
+        let red = Double((value >> 16) & 0xFF) / 255.0
+        let green = Double((value >> 8) & 0xFF) / 255.0
+        let blue = Double(value & 0xFF) / 255.0
+
+        self.init(red: red, green: green, blue: blue)
     }
 }
 

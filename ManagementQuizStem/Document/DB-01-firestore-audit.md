@@ -1,5 +1,16 @@
 # DB-01 Firestore Audit
 
+## Brain Training Update
+
+This audit was originally written for the legacy quiz-admin schema. The current brain-training migration changes the operational question store from root `Questions` to root `questions` and adds these collections:
+
+- `users`
+- `learningPaths`
+- `dailyChallenges`
+- `satExamQuestions`
+
+Use `DB-03-brain-training-firestore-upgrade.md` and `diagram-db` as the current target schema references. Legacy `Questions` and `Topics/{topicId}/Questions` should be retained only for migration compatibility until all clients read from `questions`.
+
 ## Scope
 
 This is a code-level audit of the Firestore usage in the current macOS admin app. It inventories the collections and document shapes the shipped app can read or write, based on the Firestore code paths in:
@@ -23,10 +34,10 @@ Only `GoogleService-Info.plist` is currently present in the repo, so all environ
 The sidebar in `ContentView.swift` wires these Firestore-backed flows:
 
 - `Upload from CSV` -> Topics import and education-level backfill
-- `Delete Questions by Topic ID` -> root `Questions` read and delete
+- `Delete Questions by Topic ID` -> root `questions` read and delete
 - `Edit Topics` -> Topics read, update, delete
-- `Import Questions from Topics` -> Topics read plus root `Questions` batch import
-- `Upload challenges` -> Topics read, root `Questions` batch import, `challenges` create
+- `Import Questions from Topics` -> Topics read plus root `questions` batch import
+- `Upload challenges` -> Topics read, root `questions` batch import, `challenges` create
 - `Create Badge` -> `badges` batch seed upload
 - `Create subject` -> `Subjects` read/create/update plus Topics read
 
@@ -38,11 +49,16 @@ Anything outside those sidebar routes exists in code but is not currently reacha
   - `Subjects`
   - `Topics`
   - `Questions`
+  - `questions`
+  - `users`
+  - `learningPaths`
+  - `dailyChallenges`
   - `challenges`
   - `badges`
+  - `satExamQuestions`
 - The app uses batched writes for question imports, question deletes, and badge seed uploads.
 - The app does not use Firestore transactions.
-- The app does not use `collectionGroup("Questions")`; all question reads go to the root `Questions` collection.
+- The app does not use `collectionGroup("Questions")` or `collectionGroup("questions")`; current question reads go to the root `questions` collection.
 
 ## Collection Inventory
 
@@ -150,25 +166,30 @@ Legacy / risk notes:
 - Result: the current topic-edit screen can write the topic ID into the `category` field and can also swap the intended `name/category` semantics.
 - Duplicate prevention during CSV import checks only `category`, not document ID or the full `(name, category)` tuple.
 
-### 3. Root `Questions`
+### 3. Root `questions` / legacy root `Questions`
 
 Path:
 
-- `Questions/{questionId}`
+- `questions/{questionId}` is the current operational root question store.
+- `Questions/{questionId}` is the legacy root question store retained during migration.
 
 Document identity:
 
 - Batch question imports derive `questionId` as `SHA256(questionText)`.
 - The imported question payload does not explicitly write an `id` field; identity is primarily the document path.
 
-Observed fields written to root `Questions`:
+Observed fields written to current root `questions`:
 
 - `topicID: String`
 - `difficulty: String`
 - `questionText: String`
 - `options: [String]`
 - `correctAnswer: String`
+- `cognitiveSkills: [String]`
+- `eloRating: Int`
+- `hints: [String]`
 - `explanation: String`
+- `realWorldContext: String`
 
 Question model fields expected by reads:
 
@@ -179,7 +200,11 @@ Question model fields expected by reads:
 - `correctAnswer: String`
 - `topic: String?`
 - `topicID: String?`
+- `cognitiveSkills: [String]?`
+- `eloRating: Int?`
+- `hints: [String]?`
 - `explanation: String?`
+- `realWorldContext: String?`
 
 Important model/write mismatch:
 
@@ -205,22 +230,22 @@ Write paths:
 - JSON import from `ImportQuestionsFromJSONView`:
   - loads a local JSON file
   - resolves each question's topic from the loaded Topics collection
-  - batch writes new root `Questions/{sha256(questionText)}`
+  - batch writes new root `questions/{sha256(questionText)}`
 - Challenge import from `AdminCreateChallengeView`:
   - loads question payloads from a challenge JSON file
-  - batch writes root `Questions/{sha256(questionText)}`
+  - batch writes root `questions/{sha256(questionText)}`
   - stores the resulting question IDs into the challenge document
 
 Current usage notes:
 
-- All fetch and delete operations target the root `Questions` collection.
-- `DeleteQuestionsByTopicView` is hard-coded to root `Questions`, not the nested topic subcollection.
+- Current fetch and delete operations target the root `questions` collection through `FirestorePaths.rootQuestions`.
+- Legacy root `Questions` data must be copied/backfilled into `questions` before production traffic depends on the new app build.
 
 Legacy / risk notes:
 
 - `fetchQuestions(forTopicIDs:level:)` ignores its `topicIDs` parameter and instead uses `getSTEMTopicIDs()`.
 - `getSTEMTopicIDs()` filters Topics by `topic.name`, while question imports usually resolve topics by `topic.category`. That makes question lookup semantics inconsistent.
-- `uploadQuestionsForChallenges()` does not check for existing question IDs before writing. Because document IDs are deterministic hashes of `questionText`, it can overwrite existing root `Questions` documents.
+- `uploadQuestionsForChallenges()` does not check for existing question IDs before writing. Because document IDs are deterministic hashes of `questionText`, it can overwrite existing root `questions` documents.
 - The inline comment says `merge: false` is used "to avoid overwriting", but `setData(..., merge: false)` replaces the full document at that path.
 - `loadQuestions()` exists in the challenge screen but is never called from the UI.
 
@@ -251,7 +276,7 @@ Current usage notes:
 
 Legacy / migration note:
 
-- `Topics/{topicId}/Questions` is a legacy path retained in code, but the operational question store for the current app is the root `Questions` collection.
+- `Topics/{topicId}/Questions` is a legacy path retained in code, but the operational question store for the current app is the root `questions` collection.
 - Any migration should treat the nested topic question subcollection as legacy data unless external clients still depend on it.
 
 ### 5. `challenges`
@@ -297,7 +322,7 @@ Write paths:
 
 - Create challenge:
   - parse local challenge JSON
-  - import referenced questions into root `Questions`
+  - import referenced questions into root `questions`
   - after a fixed 2-second delay, write a new `challenges` document containing the generated question IDs
 
 Current usage notes:
@@ -372,6 +397,78 @@ Legacy / risk notes:
   - the seeded badge data includes values like `80.0`, `90.0`, `95.0`
   - any consumer assuming normalized accuracy values will get mixed data.
 
+### 7. `users`
+
+Path:
+
+- `users/{userId}`
+
+Observed fields:
+
+- `mentalQuotient: [String: Int]`
+- `streak: {currentStreak, longestStreak, lastActiveDate}`
+- `unlocks: [String]`
+- `preferences: {goals, focusSkills, preferredDifficultyELO}`
+
+Current usage notes:
+
+- The repository can fetch and upsert a single user profile by authenticated user ID.
+- Firestore rules should restrict user profile reads/writes to `request.auth.uid == userId`.
+
+### 8. `learningPaths`
+
+Path:
+
+- `learningPaths/{pathId}`
+
+Observed fields:
+
+- `title: String`
+- `description: String`
+- `difficulty: String`
+- `steps: [{title, questionIds, cognitiveSkills, targetELO}]`
+- `createdAt: Timestamp/Date?`
+- `updatedAt: Timestamp/Date?`
+
+Current usage notes:
+
+- The dashboard counts learning paths.
+- Path steps reference root `questions` document IDs.
+
+### 9. `dailyChallenges`
+
+Path:
+
+- `dailyChallenges/{challengeId}`
+
+Observed fields:
+
+- `date: String`
+- `questionId: DocumentReference?`
+- `globalStats: {totalAttempts, correctAttempts, optionDistribution}`
+
+Current usage notes:
+
+- The dashboard counts daily challenges.
+- `questionId` should point to `questions/{questionId}`.
+
+### 10. `satExamQuestions`
+
+Path:
+
+- `satExamQuestions/{questionId}`
+
+Observed fields:
+
+- SAT exam import payload fields
+- `domain: String`
+- `difficulty: String`
+- `createdAt: Timestamp/Date`
+
+Current usage notes:
+
+- SAT exam question imports use deterministic document IDs and duplicate checks against this collection.
+
 ## Legacy / Unwired Firestore Paths Summary
 
 These paths or functions still exist in code but are not part of the current active UI flow:
@@ -385,12 +482,12 @@ These paths or functions still exist in code but are not part of the current act
 
 If the goal is to migrate or redesign production Firestore, the current app behavior implies:
 
-1. The operational question source of truth is root `Questions`, not `Topics/{topicId}/Questions`.
+1. The operational question source of truth is root `questions`, not `Questions` or `Topics/{topicId}/Questions`.
 2. Subject-to-topic linkage is partially denormalized:
    - `Subjects.topicIds` exists
    - the UI also derives membership by matching `topic.name == subject.name`
 3. Topic writes are currently high-risk because the edit screen can corrupt `name` and `category`.
-4. Challenge creation depends on root `Questions` IDs and is not transactionally safe.
+4. Challenge creation depends on root `questions` IDs and is not transactionally safe.
 5. The visible badge screen seeds a predefined catalog into `badges`; it is not a free-form badge editor yet.
 
 ## Recommended Follow-Ups

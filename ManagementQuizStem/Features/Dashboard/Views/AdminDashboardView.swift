@@ -81,14 +81,21 @@ struct AdminDashboardView: View {
             DashboardMetricCard(
                 title: "Questions",
                 value: formattedCount(viewModel.snapshot.questionCount),
-                detail: "ready for delivery",
+                detail: "adaptive items",
                 tint: DashboardPalette.primary
             )
 
             DashboardMetricCard(
-                title: "Challenges",
-                value: "\(viewModel.snapshot.currentChallengeCount)",
-                detail: "active now",
+                title: "Paths",
+                value: "\(viewModel.snapshot.learningPathCount)",
+                detail: "training tracks",
+                tint: DashboardPalette.primary
+            )
+
+            DashboardMetricCard(
+                title: "Daily",
+                value: "\(viewModel.snapshot.dailyChallengeCount)",
+                detail: "brain drills",
                 tint: DashboardPalette.danger
             )
         }
@@ -176,8 +183,6 @@ struct AdminDashboardView: View {
     }
 
     private var activityItems: [DashboardActivityItem] {
-        let challengeTitle = viewModel.snapshot.featuredChallenges.first?.title ?? "No active challenge"
-
         return [
             DashboardActivityItem(
                 icon: "bolt.horizontal.circle.fill",
@@ -195,15 +200,15 @@ struct AdminDashboardView: View {
             ),
             DashboardActivityItem(
                 icon: "questionmark.bubble.fill",
-                title: "Question Library Ready",
-                message: "\(formattedCount(viewModel.snapshot.questionCount)) questions are available for import and challenge assembly.",
+                title: "Adaptive Question Bank Ready",
+                message: "\(formattedCount(viewModel.snapshot.questionCount)) questions are available with ELO and cognitive-skill metadata.",
                 stamp: "READY",
                 tint: DashboardPalette.primary
             ),
             DashboardActivityItem(
-                icon: "flag.2.crossed.fill",
-                title: "Challenge Window Loaded",
-                message: "\(viewModel.snapshot.currentChallengeCount) active challenges. Focus item: \(challengeTitle).",
+                icon: "point.3.connected.trianglepath.dotted",
+                title: "Training Graph Loaded",
+                message: "\(viewModel.snapshot.learningPathCount) learning paths, \(viewModel.snapshot.dailyChallengeCount) daily challenges, \(viewModel.snapshot.userCount) user profiles.",
                 stamp: "ACTIVE",
                 tint: DashboardPalette.danger
             ),
@@ -242,6 +247,9 @@ struct AdminDashboardView: View {
         Subjects: \(viewModel.snapshot.subjectCount)
         Topics: \(viewModel.snapshot.topicCount)
         Questions: \(viewModel.snapshot.questionCount)
+        Users: \(viewModel.snapshot.userCount)
+        Learning Paths: \(viewModel.snapshot.learningPathCount)
+        Daily Challenges: \(viewModel.snapshot.dailyChallengeCount)
         Active Challenges: \(viewModel.snapshot.currentChallengeCount)
         Badges: \(viewModel.snapshot.badgeCount)
         Last Sync: \(viewModel.snapshot.lastSyncedAt.formatted(date: .abbreviated, time: .standard))

@@ -1,0 +1,25 @@
+id,name,category,description,iconURL,educationLevel,trending
+opentdb-general-knowledge,General Knowledge,General Knowledge,A collection of facts you’ll only ever use to win an argument at a bar or annoy your family during dinner.,,Adult,10
+opentdb-entertainment-books,Entertainment,Entertainment: Books,For people who enjoy the smell of old paper and pretend they’ve actually finished Infinite Jest.,,Adult,7
+opentdb-entertainment-film,Entertainment,Entertainment: Film,Prove you’re a cinephile by knowing more about the director's cut than the actual plot of the movie.,,Adult,8
+opentdb-entertainment-music,Entertainment,Entertainment: Music,From Mozart to One Direction—test your ability to remember lyrics but forget where you put your keys.,,Adult,8
+opentdb-entertainment-musicals-theatres,Entertainment,Entertainment: Musicals & Theatres,"Jazz hands and dramatic monologues. Finally, a place where breaking into song in public is actually encouraged.",,Adult,5
+opentdb-entertainment-television,Entertainment,Entertainment: Television,A tribute to all the hours we’ve spent 'just watching one more episode' instead of being productive members of society.,,Adult,8
+opentdb-entertainment-video-games,Entertainment,Entertainment: Video Games,Validate the thousands of hours you spent 'testing' virtual physics instead of doing your laundry.,,Adult,9
+opentdb-entertainment-board-games,Entertainment,Entertainment: Board Games,Friendships were made to be tested. Relive the trauma of losing at Monopoly or being bad at Pictionary.,,Adult,6
+opentdb-science-nature,Science,Science & Nature,"Why does the universe exist? We don't know, but we do know how many legs a centipede actually has.",,Adult,10
+opentdb-science-computers,Science,Science: Computers,Turning it off and back on again: The Category. Questions for people who speak in binary and drink too much caffeine.,,Adult,9
+opentdb-science-mathematics,Science,Science: Mathematics,"The only place where someone buys 60 watermelons and no one asks why. Solve for X, where X is your lost sanity.",,Adult,9
+opentdb-mythology,Humanities,Mythology,Ancient fanfiction about gods who were mostly just really bad at managing their personal lives.,,Adult,6
+opentdb-sports,Culture,Sports,People running around in colorful outfits while millions of us yell at our TVs as if they can hear us.,,Adult,8
+opentdb-geography,World Knowledge,Geography,Where in the world is... literally anything? Great for people who can find a hidden taco shop but not their own country on a map.,,Adult,9
+opentdb-history,Humanities,History,Learning about all the mistakes humanity has made so that we can go ahead and make them all over again.,,Adult,8
+opentdb-politics,Civics,Politics,"The art of looking for trouble, finding it everywhere, diagnosing it incorrectly, and applying the wrong remedies.",,Adult,7
+opentdb-art,Arts,Art,Staring at a blank canvas or a banana taped to a wall and calling it 'deep.' Test your knowledge of things you could probably draw.,,Adult,6
+opentdb-celebrities,Entertainment,Celebrities,Keeping up with people who have more money than us and far more interesting scandals.,,Adult,6
+opentdb-animals,Science,Animals,"Nature is beautiful, majestic, and occasionally eats its own kind. Learn more about the weirdos of the animal kingdom.",,Adult,7
+opentdb-vehicles,Technology,Vehicles,"From skateboards to spaceships. Basically, a quiz about things that get you from Point A to Point B without walking.",,Adult,6
+opentdb-entertainment-comics,Entertainment,Entertainment: Comics,"Men in tights, capes, and the internal logic that allows a billionaire to dress like a bat.",,Adult,7
+opentdb-science-gadgets,Science,Science: Gadgets,Stuff you bought on impulse that is currently sitting in a drawer gathering dust. Batteries not included.,,Adult,6
+opentdb-entertainment-japanese-anime-manga,Entertainment,Entertainment: Japanese Anime & Manga,"Large eyes, spiky hair, and 20-minute power-ups. Prove your power level is over 9,000.",,Adult,8
+opentdb-entertainment-cartoon-animations,Entertainment,Entertainment: Cartoon & Animations,Saturday morning nostalgia and the physics of why anvils always fall on coyotes.,,Adult,7

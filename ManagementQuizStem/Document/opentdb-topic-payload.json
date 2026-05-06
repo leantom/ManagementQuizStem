@@ -1,0 +1,218 @@
+[
+  {
+    "id": "opentdb-general-knowledge",
+    "name": "General Knowledge",
+    "category": "General Knowledge",
+    "description": "General trivia questions covering everyday facts, culture, and broad knowledge.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 10
+  },
+  {
+    "id": "opentdb-entertainment-books",
+    "name": "Entertainment",
+    "category": "Entertainment: Books",
+    "description": "Questions about authors, novels, literary genres, and well-known books.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 7
+  },
+  {
+    "id": "opentdb-entertainment-film",
+    "name": "Entertainment",
+    "category": "Entertainment: Film",
+    "description": "Questions about movies, directors, actors, genres, and film history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 8
+  },
+  {
+    "id": "opentdb-entertainment-music",
+    "name": "Entertainment",
+    "category": "Entertainment: Music",
+    "description": "Questions about songs, artists, albums, instruments, and music history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 8
+  },
+  {
+    "id": "opentdb-entertainment-musicals-theatres",
+    "name": "Entertainment",
+    "category": "Entertainment: Musicals & Theatres",
+    "description": "Questions about stage productions, musical theatre, playwrights, and performances.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 5
+  },
+  {
+    "id": "opentdb-entertainment-television",
+    "name": "Entertainment",
+    "category": "Entertainment: Television",
+    "description": "Questions about television series, characters, actors, networks, and broadcast history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 8
+  },
+  {
+    "id": "opentdb-entertainment-video-games",
+    "name": "Entertainment",
+    "category": "Entertainment: Video Games",
+    "description": "Questions about video game franchises, platforms, mechanics, studios, and game culture.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 9
+  },
+  {
+    "id": "opentdb-entertainment-board-games",
+    "name": "Entertainment",
+    "category": "Entertainment: Board Games",
+    "description": "Questions about tabletop games, classic board games, rules, and strategy.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 6
+  },
+  {
+    "id": "opentdb-science-nature",
+    "name": "Science",
+    "category": "Science & Nature",
+    "description": "Questions about biology, chemistry, physics, earth science, and the natural world.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 10
+  },
+  {
+    "id": "opentdb-science-computers",
+    "name": "Science",
+    "category": "Science: Computers",
+    "description": "Questions about computing, software, hardware, internet concepts, and technology history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 9
+  },
+  {
+    "id": "opentdb-science-mathematics",
+    "name": "Science",
+    "category": "Science: Mathematics",
+    "description": "Questions about arithmetic, algebra, geometry, probability, and mathematical reasoning.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 9
+  },
+  {
+    "id": "opentdb-mythology",
+    "name": "Humanities",
+    "category": "Mythology",
+    "description": "Questions about myths, gods, legends, folklore, and ancient storytelling traditions.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 6
+  },
+  {
+    "id": "opentdb-sports",
+    "name": "Culture",
+    "category": "Sports",
+    "description": "Questions about sports rules, teams, athletes, competitions, and sporting history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 8
+  },
+  {
+    "id": "opentdb-geography",
+    "name": "World Knowledge",
+    "category": "Geography",
+    "description": "Questions about countries, capitals, maps, landmarks, regions, and physical geography.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 9
+  },
+  {
+    "id": "opentdb-history",
+    "name": "Humanities",
+    "category": "History",
+    "description": "Questions about historical events, civilizations, leaders, timelines, and social change.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 8
+  },
+  {
+    "id": "opentdb-politics",
+    "name": "Civics",
+    "category": "Politics",
+    "description": "Questions about governments, elections, political systems, institutions, and public affairs.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 7
+  },
+  {
+    "id": "opentdb-art",
+    "name": "Arts",
+    "category": "Art",
+    "description": "Questions about visual art, artists, movements, museums, and creative history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 6
+  },
+  {
+    "id": "opentdb-celebrities",
+    "name": "Entertainment",
+    "category": "Celebrities",
+    "description": "Questions about public figures, performers, entertainers, and popular culture.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 6
+  },
+  {
+    "id": "opentdb-animals",
+    "name": "Science",
+    "category": "Animals",
+    "description": "Questions about animal behavior, habitats, species, adaptations, and wildlife facts.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 7
+  },
+  {
+    "id": "opentdb-vehicles",
+    "name": "Technology",
+    "category": "Vehicles",
+    "description": "Questions about cars, aircraft, ships, transportation systems, and vehicle history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 6
+  },
+  {
+    "id": "opentdb-entertainment-comics",
+    "name": "Entertainment",
+    "category": "Entertainment: Comics",
+    "description": "Questions about comic books, characters, publishers, artists, and story arcs.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 7
+  },
+  {
+    "id": "opentdb-science-gadgets",
+    "name": "Science",
+    "category": "Science: Gadgets",
+    "description": "Questions about consumer gadgets, devices, hardware, and everyday technology.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 6
+  },
+  {
+    "id": "opentdb-entertainment-japanese-anime-manga",
+    "name": "Entertainment",
+    "category": "Entertainment: Japanese Anime & Manga",
+    "description": "Questions about anime, manga, creators, studios, characters, and Japanese pop culture.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 8
+  },
+  {
+    "id": "opentdb-entertainment-cartoon-animations",
+    "name": "Entertainment",
+    "category": "Entertainment: Cartoon & Animations",
+    "description": "Questions about animated series, cartoon characters, studios, and animation history.",
+    "iconURL": "",
+    "educationLevel": "Adult",
+    "trending": 7
+  }
+]

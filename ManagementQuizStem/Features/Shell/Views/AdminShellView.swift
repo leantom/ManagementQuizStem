@@ -230,6 +230,8 @@ struct AdminShellView: View {
             ImportQuestionsFromJSONView()
         case .topicImports:
             UploadFromCSVView()
+        case .satExam:
+            SATExamImportView()
         case .challenges:
             AdminCreateChallengeView()
         case .rewards:
@@ -245,6 +247,8 @@ struct AdminShellView: View {
             return "Search catalog..."
         case .questions:
             return "Search questions..."
+        case .satExam:
+            return "Search SAT exams..."
         case .topics:
             return "Search topics..."
         default:
@@ -336,6 +340,7 @@ enum AdminShellSectionGroup: CaseIterable {
     case dashboard
     case contentLibrary
     case imports
+    case exams
     case challenges
     case rewards
     case adminTools
@@ -348,6 +353,8 @@ enum AdminShellSectionGroup: CaseIterable {
             return "Content Library"
         case .imports:
             return "Imports"
+        case .exams:
+            return "Exams"
         case .challenges:
             return "Challenges"
         case .rewards:
@@ -365,6 +372,8 @@ enum AdminShellSectionGroup: CaseIterable {
             return [.subjects, .topics, .questions]
         case .imports:
             return [.topicImports]
+        case .exams:
+            return [.satExam]
         case .challenges:
             return [.challenges]
         case .rewards:
@@ -381,6 +390,7 @@ enum AdminShellSection: Hashable {
     case topics
     case questions
     case topicImports
+    case satExam
     case challenges
     case rewards
     case adminTools
@@ -397,6 +407,8 @@ enum AdminShellSection: Hashable {
             return "Questions"
         case .topicImports:
             return "Topic CSV"
+        case .satExam:
+            return "SAT Exam"
         case .challenges:
             return "Challenges"
         case .rewards:
@@ -418,6 +430,8 @@ enum AdminShellSection: Hashable {
             return "Questions Workspace"
         case .topicImports:
             return "Topic CSV Import"
+        case .satExam:
+            return "SAT Exam Import"
         case .challenges:
             return "Challenges Manager"
         case .rewards:
@@ -439,6 +453,8 @@ enum AdminShellSection: Hashable {
             return "Import and review question content for the quiz library."
         case .topicImports:
             return "Bulk import topics and normalize education-level metadata."
+        case .satExam:
+            return "Import and manage SAT exam question packages."
         case .challenges:
             return "Configure challenge payloads and active windows."
         case .rewards:
@@ -460,6 +476,8 @@ enum AdminShellSection: Hashable {
             return "questionmark.bubble.fill"
         case .topicImports:
             return "arrow.down.doc.fill"
+        case .satExam:
+            return "graduationcap.fill"
         case .challenges:
             return "flag.2.crossed.fill"
         case .rewards:

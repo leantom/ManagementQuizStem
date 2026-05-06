@@ -313,6 +313,61 @@ struct QuestionsRepository: FirestoreRepository {
         }
     }
 
+    func fetchExistingExternalQuestionKeys(
+        _ externalQuestionKeys: [String: Set<String>],
+        completion: @escaping (Result<Set<String>, Error>) -> Void
+    ) {
+        var existingKeys = Set<String>()
+        let lock = NSLock()
+        let dispatchGroup = DispatchGroup()
+        var capturedError: Error?
+
+        for (source, externalIDs) in externalQuestionKeys {
+            let cleanedExternalIDs = Array(externalIDs.filter { $0.isEmpty == false })
+            let batches = stride(from: 0, to: cleanedExternalIDs.count, by: 10).map {
+                Array(cleanedExternalIDs[$0..<min($0 + 10, cleanedExternalIDs.count)])
+            }
+
+            for batch in batches {
+                dispatchGroup.enter()
+                FirestorePaths.rootQuestions(in: db)
+                    .whereField(FirestoreField.Question.source, isEqualTo: source)
+                    .whereField(FirestoreField.Question.externalID, in: batch)
+                    .getDocuments { snapshot, error in
+                        defer { dispatchGroup.leave() }
+
+                        if let error {
+                            lock.lock()
+                            capturedError = error
+                            lock.unlock()
+                            return
+                        }
+
+                        lock.lock()
+                        snapshot?.documents.forEach { document in
+                            if let externalID = document.data()[FirestoreField.Question.externalID] as? String {
+                                existingKeys.insert("\(source):\(externalID)")
+                            }
+                        }
+                        lock.unlock()
+                    }
+            }
+        }
+
+        if externalQuestionKeys.isEmpty {
+            completion(.success(existingKeys))
+            return
+        }
+
+        dispatchGroup.notify(queue: .main) {
+            if let capturedError {
+                completion(.failure(capturedError))
+            } else {
+                completion(.success(existingKeys))
+            }
+        }
+    }
+
     func importedQuestionReferences(
         topicID: String,
         questionID: String
@@ -459,6 +514,111 @@ struct QuestionsRepository: FirestoreRepository {
     }
 }
 
+struct UsersRepository: FirestoreRepository {
+    let db: Firestore
+
+    init(db: Firestore = AppFirestore.database()) {
+        self.db = db
+    }
+
+    func fetchProfile(
+        userID: String,
+        completion: @escaping (Result<BrainTrainingUserProfile?, Error>) -> Void
+    ) {
+        FirestorePaths.user(userID, in: db).getDocument { snapshot, error in
+            if let error {
+                completion(.failure(error))
+                return
+            }
+
+            completion(.success(try? snapshot?.data(as: BrainTrainingUserProfile.self)))
+        }
+    }
+
+    func upsertProfile(
+        _ profile: BrainTrainingUserProfile,
+        userID: String,
+        completion: @escaping (Error?) -> Void
+    ) throws {
+        try FirestorePaths.user(userID, in: db).setData(from: profile, merge: true, completion: completion)
+    }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.users(in: db), completion: completion)
+    }
+}
+
+struct LearningPathsRepository: FirestoreRepository {
+    let db: Firestore
+
+    init(db: Firestore = AppFirestore.database()) {
+        self.db = db
+    }
+
+    func fetchAll(completion: @escaping (Result<[LearningPath], Error>) -> Void) {
+        FirestorePaths.learningPaths(in: db)
+            .order(by: FirestoreField.LearningPath.createdAt, descending: true)
+            .getDocuments { snapshot, error in
+                if let error {
+                    completion(.failure(error))
+                    return
+                }
+
+                completion(.success(snapshot?.decodedDocuments(as: LearningPath.self) ?? []))
+            }
+    }
+
+    func create(_ path: LearningPath, completion: @escaping (Error?) -> Void) throws {
+        if let pathID = path.id, pathID.isEmpty == false {
+            try FirestorePaths.learningPath(pathID, in: db).setData(from: path, completion: completion)
+        } else {
+            try FirestorePaths.learningPaths(in: db).addDocument(from: path, completion: completion)
+        }
+    }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.learningPaths(in: db), completion: completion)
+    }
+}
+
+struct DailyChallengesRepository: FirestoreRepository {
+    let db: Firestore
+
+    init(db: Firestore = AppFirestore.database()) {
+        self.db = db
+    }
+
+    func fetchByDate(
+        _ date: String,
+        completion: @escaping (Result<DailyChallenge?, Error>) -> Void
+    ) {
+        FirestorePaths.dailyChallenges(in: db)
+            .whereField(FirestoreField.DailyChallenge.date, isEqualTo: date)
+            .limit(to: 1)
+            .getDocuments { snapshot, error in
+                if let error {
+                    completion(.failure(error))
+                    return
+                }
+
+                completion(.success(snapshot?.decodedDocuments(as: DailyChallenge.self).first))
+            }
+    }
+
+    func upsert(
+        _ challenge: DailyChallenge,
+        challengeID: String,
+        completion: @escaping (Error?) -> Void
+    ) throws {
+        try FirestorePaths.dailyChallenge(challengeID, in: db)
+            .setData(from: challenge, merge: true, completion: completion)
+    }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.dailyChallenges(in: db), completion: completion)
+    }
+}
+
 struct ChallengesRepository: FirestoreRepository {
     let db: Firestore
 
@@ -552,6 +712,102 @@ struct ChallengesRepository: FirestoreRepository {
 
     func create(_ challenge: Challenge, completion: @escaping (Error?) -> Void) throws {
         try FirestorePaths.challenges(in: db).addDocument(from: challenge, completion: completion)
+    }
+}
+
+struct SATExamQuestionsRepository: FirestoreRepository {
+    let db: Firestore
+
+    init(db: Firestore = AppFirestore.database()) {
+        self.db = db
+    }
+
+    func fetchAll(completion: @escaping (Result<[SATExamQuestion], Error>) -> Void) {
+        FirestorePaths.satExamQuestions(in: db)
+            .order(by: FirestoreField.SATExamQuestion.createdAt, descending: true)
+            .getDocuments { snapshot, error in
+                if let error {
+                    completion(.failure(error))
+                    return
+                }
+
+                completion(.success(snapshot?.decodedDocuments(as: SATExamQuestion.self) ?? []))
+            }
+    }
+
+    func fetchExistingQuestionIDs(
+        _ questionIDs: [String],
+        completion: @escaping (Result<Set<String>, Error>) -> Void
+    ) {
+        var existingIDs = Set<String>()
+        let lock = NSLock()
+        let batchSize = 10
+        let batches = stride(from: 0, to: questionIDs.count, by: batchSize).map {
+            Array(questionIDs[$0..<min($0 + batchSize, questionIDs.count)])
+        }
+
+        if batches.isEmpty {
+            completion(.success(existingIDs))
+            return
+        }
+
+        let dispatchGroup = DispatchGroup()
+        var capturedError: Error?
+
+        for batch in batches {
+            dispatchGroup.enter()
+            FirestorePaths.satExamQuestions(in: db)
+                .whereField(FieldPath.documentID(), in: batch)
+                .getDocuments { snapshot, error in
+                    defer { dispatchGroup.leave() }
+
+                    if let error {
+                        lock.lock()
+                        capturedError = error
+                        lock.unlock()
+                        return
+                    }
+
+                    lock.lock()
+                    snapshot?.documents.forEach { doc in
+                        existingIDs.insert(doc.documentID)
+                    }
+                    lock.unlock()
+                }
+        }
+
+        dispatchGroup.notify(queue: .main) {
+            if let capturedError {
+                completion(.failure(capturedError))
+            } else {
+                completion(.success(existingIDs))
+            }
+        }
+    }
+
+    func addImportedQuestion(
+        to batch: WriteBatch,
+        question: SATExamQuestion
+    ) throws {
+        guard let questionID = question.id, questionID.isEmpty == false else {
+            throw NSError(domain: "SATExamQuestionsRepository", code: 1, userInfo: [
+                NSLocalizedDescriptionKey: "SAT exam question ID is missing."
+            ])
+        }
+
+        try batch.setData(
+            from: question,
+            forDocument: FirestorePaths.satExamQuestion(questionID, in: db),
+            merge: true
+        )
+    }
+
+    func commit(_ batch: WriteBatch, completion: @escaping (Error?) -> Void) {
+        batch.commit(completion: completion)
+    }
+
+    func countAll(completion: @escaping (Result<Int, Error>) -> Void) {
+        countDocuments(in: FirestorePaths.satExamQuestions(in: db), completion: completion)
     }
 }
 

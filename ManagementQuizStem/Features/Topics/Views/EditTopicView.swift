@@ -13,7 +13,7 @@ struct EditTopicView: View {
     @State private var showingDeleteConfirmation = false
 
     var body: some View {
-        HStack(alignment: .top, spacing: 22) {
+        HStack(alignment: .top, spacing: 50) {
             libraryPanel
             editorPanel
         }
@@ -312,7 +312,7 @@ struct EditTopicView: View {
                     .foregroundStyle(TopicsPalette.ink)
                     .scrollContentBackground(.hidden)
                     .padding(10)
-                    .frame(minHeight: 120)
+                    .frame(height: 300)
                     .background(
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
                             .fill(TopicsPalette.surfaceSecondary)

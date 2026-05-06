@@ -7,6 +7,7 @@ struct Subject: Identifiable, Codable {
     var description: String
     var trending: Int
     var icon_url: String
+    var color_hex: String?
     var topicIds: [String]?
 
     init(
@@ -16,6 +17,7 @@ struct Subject: Identifiable, Codable {
         description: String,
         trending: Int,
         icon_url: String,
+        color_hex: String = "FFFFFF",
         topicIds: [String] = []
     ) {
         self.id = id
@@ -24,6 +26,7 @@ struct Subject: Identifiable, Codable {
         self.description = description
         self.trending = trending
         self.icon_url = icon_url
+        self.color_hex = color_hex.uppercased()
         self.topicIds = topicIds
     }
 }

@@ -1,4 +1,3 @@
-
 graph TD
   subgraph Firestore
     S["Subjects/{subjectId}
@@ -7,6 +6,7 @@ graph TD
 - description
 - trending
 - icon_url
+- color_hex
 - topicIds[]"]
 
     T["Topics/{topicId}
@@ -18,15 +18,42 @@ graph TD
 - educationLevel
 - trending"]
 
-    Q["Questions/{questionId}
-- difficulty
+    Q["questions/{questionId}
+- source
+- externalId
+- isVerified
+- scientificDomain
+- didYouKnow
 - questionText
 - options[]
 - correctAnswer
 - topicID
+- difficulty
+- cognitiveSkills[]
+- eloRating
+- hints[]
 - explanation
-- imported root path
-- questionId is typically sha256(questionText)"]
+- realWorldContext
+- questionId = sha256(questionText)"]
+
+    U["users/{userId}
+- mentalRadar{}
+- streak{}
+- unlocks[]
+- preferences{}"]
+
+    LP["learningPaths/{pathId}
+- title
+- description
+- difficulty
+- steps[]
+- createdAt
+- updatedAt"]
+
+    DC["dailyChallenges/{challengeId}
+- date
+- questionId ref
+- globalStats{}"]
 
     C["challenges/{challengeId}
 - type
@@ -50,13 +77,52 @@ graph TD
 - createdAt
 - updatedAt"]
 
-    LQ["Topics/{topicId}/Questions
-- legacy subcollection path
-- still exists in code
-- not main read path"]
+    SAT["satExamQuestions/{questionId}
+- domain
+- difficulty
+- createdAt
+- SAT payload fields"]
+
+    LQ["Questions/{questionId}
+- legacy root collection
+- keep read-only during migration"]
+
+    NTQ["Topics/{topicId}/Questions
+- legacy nested subcollection"]
+
+    NTQL["Topics/{topicId}/questions
+- lowercase mirror path
+- only used if mirror flag is enabled"]
   end
 
   subgraph Embedded_Documents
+    MR["mentalRadar
+- logic: Int
+- estimation: Int
+- data_literacy: Int
+- cognitive_domain: Int"]
+
+    ST["streak
+- currentStreak
+- longestStreak
+- lastActiveDate"]
+
+    PREF["preferences
+- goals[]
+- focusSkills[]
+- preferredDifficultyELO"]
+
+    STEP["LearningPathStep
+- title
+- questionIds[]
+- cognitiveSkills[]
+- targetELO"]
+
+    GS2["DailyChallengeGlobalStats
+- totalAttempts
+- correctAttempts
+- optionDistribution{}"]
+
     BC["BadgeCriteria
 - action
 - topic
@@ -82,11 +148,22 @@ graph TD
 
   S -->|"topicIds[] declared relation"| T
   T -.->|"UI also matches Topic.name == Subject.name"| S
-  T -->|"Questions.topicID"| Q
+  Q -->|"topicID"| T
   C -->|"questions[] stores questionIds"| Q
+  LP -->|"steps[].questionIds[]"| Q
+  DC -->|"questionId reference"| Q
+  U -->|"mentalRadar"| MR
+  U -->|"streak"| ST
+  U -->|"preferences"| PREF
+  U -->|"unlocks[] can contain pathId or badgeId"| LP
+  U -->|"unlocks[] can contain pathId or badgeId"| B
+  LP -->|"steps[]"| STEP
+  DC -->|"globalStats"| GS2
   C -->|"rewards[]"| RW
   B -->|"criteria"| BC
   BC -->|"timeWindow"| TW
   S -->|"icon_url"| GS
   T -->|"iconURL"| GS
-  T -->|"legacy write path"| LQ
+  LQ -.->|"migrate/copy into"| Q
+  T -.->|"legacy write path"| NTQ
+  T -.->|"optional mirror path"| NTQL

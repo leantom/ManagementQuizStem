@@ -50,7 +50,7 @@ struct ImportQuestionsFromJSONView: View {
 
             Button("Cancel", role: .cancel) { }
         } message: {
-            Text("This removes the selected question from the root Questions collection.")
+            Text("This removes the selected question from the root questions collection.")
         }
     }
 
@@ -153,7 +153,7 @@ struct ImportQuestionsFromJSONView: View {
                         .font(.system(size: 34, weight: .bold, design: .rounded))
                         .foregroundStyle(QuestionsPalette.ink)
 
-                    Text("Manage validated STEM assessment items with import, review, and edit controls.")
+                    Text("Manage adaptive STEM brain-training items with import, ELO, and skill metadata controls.")
                         .font(.system(size: 14, weight: .medium, design: .rounded))
                         .foregroundStyle(QuestionsPalette.subtleInk)
                 }
@@ -372,6 +372,8 @@ struct ImportQuestionsFromJSONView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     previewSummaryCard
                     detailFieldsCard
+                    brainTrainingCard
+                    apiMetadataCard
                     optionsCard
                     validationCard
                     actionCard
@@ -420,6 +422,30 @@ struct ImportQuestionsFromJSONView: View {
                     QuestionsDetailStat(
                         title: "Difficulty",
                         value: viewModel.draftDifficulty.isEmpty ? "Medium" : viewModel.draftDifficulty
+                    )
+
+                    QuestionsDetailStat(
+                        title: "ELO",
+                        value: viewModel.draftEloRating.isEmpty ? "1200" : viewModel.draftEloRating
+                    )
+                }
+
+                HStack(spacing: 10) {
+                    QuestionsDetailStat(
+                        title: "Skills",
+                        value: viewModel.draftCognitiveSkillsText.isEmpty ? "logic" : viewModel.draftCognitiveSkillsText
+                    )
+
+                    QuestionsDetailStat(
+                        title: "Domain",
+                        value: viewModel.draftScientificDomain.isEmpty ? "Logic" : viewModel.draftScientificDomain
+                    )
+                }
+
+                HStack(spacing: 10) {
+                    QuestionsDetailStat(
+                        title: "Source",
+                        value: viewModel.draftSource.isEmpty ? "Manual" : viewModel.draftSource
                     )
 
                     QuestionsDetailStat(
@@ -524,6 +550,184 @@ struct ImportQuestionsFromJSONView: View {
                         .scrollContentBackground(.hidden)
                         .padding(10)
                         .frame(minHeight: 110)
+                        .background(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(QuestionsPalette.surfaceSecondary)
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .stroke(QuestionsPalette.border, lineWidth: 1)
+                        )
+                }
+
+                QuestionsEditorSection(title: "Real World Context") {
+                    TextEditor(text: $viewModel.draftRealWorldContext)
+                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                        .foregroundStyle(QuestionsPalette.success)
+                        .scrollContentBackground(.hidden)
+                        .padding(10)
+                        .frame(minHeight: 90)
+                        .background(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(QuestionsPalette.surfaceSecondary)
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .stroke(QuestionsPalette.border, lineWidth: 1)
+                        )
+                }
+            }
+        }
+    }
+
+    private var brainTrainingCard: some View {
+        QuestionsCard {
+            VStack(alignment: .leading, spacing: 14) {
+                Text("BRAIN TRAINING METADATA")
+                    .font(.system(size: 11, weight: .bold, design: .rounded))
+                    .tracking(0.8)
+                    .foregroundStyle(QuestionsPalette.subtleInk)
+
+                HStack(spacing: 12) {
+                    QuestionsEditorSection(title: "Cognitive Skills") {
+                        TextField("logic, estimation, data_literacy", text: $viewModel.draftCognitiveSkillsText)
+                            .textFieldStyle(.plain)
+                            .foregroundStyle(QuestionsPalette.success)
+                            .font(.system(size: 13, weight: .medium, design: .rounded))
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 12)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .fill(QuestionsPalette.surfaceSecondary)
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .stroke(QuestionsPalette.border, lineWidth: 1)
+                            )
+                    }
+
+                    QuestionsEditorSection(title: "ELO") {
+                        TextField("1200", text: $viewModel.draftEloRating)
+                            .textFieldStyle(.plain)
+                            .foregroundStyle(QuestionsPalette.success)
+                            .font(.system(size: 13, weight: .medium, design: .rounded))
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 12)
+                            .frame(width: 86)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .fill(QuestionsPalette.surfaceSecondary)
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .stroke(QuestionsPalette.border, lineWidth: 1)
+                            )
+                    }
+                }
+
+                QuestionsEditorSection(title: "Socratic Hints") {
+                    TextEditor(text: $viewModel.draftHintsText)
+                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                        .foregroundStyle(QuestionsPalette.success)
+                        .scrollContentBackground(.hidden)
+                        .padding(10)
+                        .frame(minHeight: 90)
+                        .background(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(QuestionsPalette.surfaceSecondary)
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .stroke(QuestionsPalette.border, lineWidth: 1)
+                        )
+                }
+            }
+        }
+    }
+
+    private var apiMetadataCard: some View {
+        QuestionsCard {
+            VStack(alignment: .leading, spacing: 14) {
+                HStack {
+                    Text("API AND ADULT LEARNING")
+                        .font(.system(size: 11, weight: .bold, design: .rounded))
+                        .tracking(0.8)
+                        .foregroundStyle(QuestionsPalette.subtleInk)
+
+                    Spacer(minLength: 0)
+
+                    Toggle("Verified", isOn: $viewModel.draftIsVerified)
+                        .toggleStyle(.checkbox)
+                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .foregroundStyle(QuestionsPalette.ink)
+                }
+
+                HStack(spacing: 12) {
+                    QuestionsEditorSection(title: "Source") {
+                        TextField("opentdb", text: $viewModel.draftSource)
+                            .textFieldStyle(.plain)
+                            .foregroundStyle(QuestionsPalette.success)
+                            .font(.system(size: 13, weight: .medium, design: .rounded))
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 12)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .fill(QuestionsPalette.surfaceSecondary)
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .stroke(QuestionsPalette.border, lineWidth: 1)
+                            )
+                    }
+
+                    QuestionsEditorSection(title: "External ID") {
+                        TextField("api-question-id", text: $viewModel.draftExternalID)
+                            .textFieldStyle(.plain)
+                            .foregroundStyle(QuestionsPalette.success)
+                            .font(.system(size: 13, weight: .medium, design: .rounded))
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 12)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .fill(QuestionsPalette.surfaceSecondary)
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                    .stroke(QuestionsPalette.border, lineWidth: 1)
+                            )
+                    }
+                }
+
+                QuestionsEditorSection(title: "Scientific Domain") {
+                    Picker("", selection: $viewModel.draftScientificDomain) {
+                        ForEach(viewModel.scientificDomainOptions, id: \.self) { domain in
+                            Text(domain)
+                                .foregroundStyle(QuestionsPalette.success)
+                                .tag(domain)
+                        }
+                    }
+                    .foregroundStyle(QuestionsPalette.success)
+                    .pickerStyle(.menu)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 12)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .fill(QuestionsPalette.surfaceSecondary)
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .stroke(QuestionsPalette.border, lineWidth: 1)
+                    )
+                }
+
+                QuestionsEditorSection(title: "Did You Know") {
+                    TextEditor(text: $viewModel.draftDidYouKnow)
+                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                        .foregroundStyle(QuestionsPalette.success)
+                        .scrollContentBackground(.hidden)
+                        .padding(10)
+                        .frame(minHeight: 90)
                         .background(
                             RoundedRectangle(cornerRadius: 14, style: .continuous)
                                 .fill(QuestionsPalette.surfaceSecondary)
@@ -743,14 +947,23 @@ private struct QuestionsImportPreviewSheet: View {
                 }
 
                 Spacer(minLength: 16)
-
-                Button {
-                    onUpload()
-                } label: {
-                    Label("Upload Questions", systemImage: "square.and.arrow.down.fill")
+                HStack(spacing:10) {
+                    Button {
+                        
+                    } label: {
+                        Label("Cancel", systemImage: "x.circle")
+                    }
+                    .buttonStyle(QuestionsPrimaryButtonStyle())
+                    .disabled(viewModel.listQuestions.isEmpty || unresolvedTopics.isEmpty == false)
+                    Button {
+                        onUpload()
+                    } label: {
+                        Label("Upload Questions", systemImage: "square.and.arrow.down.fill")
+                    }
+                    .buttonStyle(QuestionsPrimaryButtonStyle())
+                    .disabled(viewModel.listQuestions.isEmpty || unresolvedTopics.isEmpty == false)
                 }
-                .buttonStyle(QuestionsPrimaryButtonStyle())
-                .disabled(viewModel.listQuestions.isEmpty || unresolvedTopics.isEmpty == false)
+                
             }
 
             HStack(spacing: 12) {
